@@ -1,0 +1,141 @@
+/* ══ COMBO DATA ═════════════════════════════════════════════════════════════
+   A new library of complex combination movements built around muscle-up variants.
+   Use existing library infrastructure in Project/index.html to render this view.
+═════════════════════════════════════════════════════════════════════════════ */
+const combos = [
+  {
+    id: 1,
+    name: "Muscle-Up Flow",
+    alt: "Bar muscle-up combination",
+    muscles: [
+      {n:"Back", p:true},
+      {n:"Chest", p:true},
+      {n:"Shoulders", p:true},
+      {n:"Core", p:false}
+    ],
+    tags: ["pull", "push", "core", "bar", "dynamic"],
+    diff: 8,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    risk: 4,
+    joints: {wrist:3, elbow:3, shoulder:4, neck:1, lowerBack:2, hip:1, knee:1, ankle:0, fingers:2, thoracic:2, si:1, groin:0, foot:0},
+    technique: 4,
+    mobility: 3,
+    strength: 5,
+    kcalPerRep: [0.6, 1.0],
+    desc: "A muscle-up centric flow that links the pull, transition, and press into a continuous bar combination. It trains timing, body tension and explosive conversion between pulling and pushing.",
+    cues: "Stay compact through the turnover, keep the chest high at the top, and avoid losing the hollow-body pull into the catch.",
+    equipment: "Pull-up bar / rings",
+    position: "Vertical",
+    youtube: "LINK_TODO"
+  },
+  {
+    id: 2,
+    name: "L-Sit Muscle-Up",
+    alt: "Hold-to-pull muscle-up",
+    muscles: [
+      {n:"Core", p:true},
+      {n:"Back", p:true},
+      {n:"Triceps", p:false},
+      {n:"Shoulders", p:false}
+    ],
+    tags: ["pull", "core", "bar", "static", "dynamic"],
+    diff: 9,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    risk: 5,
+    joints: {wrist:3, elbow:3, shoulder:4, neck:1, lowerBack:3, hip:3, knee:1, ankle:0, fingers:2, thoracic:2, si:1, groin:0, foot:0},
+    technique: 5,
+    mobility: 4,
+    strength: 5,
+    kcalPerRep: [0.7, 1.1],
+    desc: "A muscle-up performed from an L-sit entry and finished with L-sit control on the top. This combo demands strong core compression and precise hip position throughout the pull and transition.",
+    cues: "Keep the legs straight and out in front, pull the chest up, and maintain a firm hollow position as you complete the transition.",
+    equipment: "Pull-up bar / rings",
+    position: "Vertical",
+    youtube: "LINK_TODO"
+  },
+  {
+    id: 3,
+    name: "Ring Muscle-Up to Dip",
+    alt: "Ring muscle-up dip combo",
+    muscles: [
+      {n:"Shoulders", p:true},
+      {n:"Triceps", p:true},
+      {n:"Back", p:true},
+      {n:"Core", p:false}
+    ],
+    tags: ["rings", "push", "pull", "dynamic", "stability"],
+    diff: 10,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    risk: 5,
+    joints: {wrist:4, elbow:4, shoulder:5, neck:1, lowerBack:3, hip:2, knee:0, ankle:0, fingers:3, thoracic:2, si:1, groin:0, foot:0},
+    technique: 5,
+    mobility: 4,
+    strength: 5,
+    kcalPerRep: [0.8, 1.2],
+    desc: "A ring muscle-up that flows into a strict ring dip at the top. The unstable ring path makes the transition and press much harder than a standard muscle-up, and it also builds elite ring stability.",
+    cues: "Control the rings through the transition, keep the shoulders packed, and only press once the rings are stable overhead.",
+    equipment: "Gymnastic rings",
+    position: "Rings",
+    youtube: "LINK_TODO"
+  },
+  {
+    id: 4,
+    name: "Bar Muscle-Up + Archer Pull-Up",
+    alt: "Explosive pull-up combo",
+    muscles: [
+      {n:"Back", p:true},
+      {n:"Shoulders", p:true},
+      {n:"Core", p:false},
+      {n:"Arms", p:false}
+    ],
+    tags: ["pull", "power", "bar", "complex"],
+    diff: 9,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    risk: 4,
+    joints: {wrist:3, elbow:4, shoulder:4, neck:1, lowerBack:2, hip:1, knee:0, ankle:0, fingers:3, thoracic:2, si:1, groin:0, foot:0},
+    technique: 5,
+    mobility: 3,
+    strength: 5,
+    kcalPerRep: [0.8, 1.25],
+    desc: "A powerful bar sequence where a muscle-up is immediately followed by a controlled archer pull-up to each side. It blends high-skill transition strength and unilateral upper-body tension.",
+    cues: "Complete the muscle-up efficiently, then keep the body long and use the hips only for balance while shifting to the archer pull-up.",
+    equipment: "Pull-up bar",
+    position: "Vertical",
+    youtube: "LINK_TODO"
+  },
+  {
+    id: 5,
+    name: "Muscle-Up to Planche Lean",
+    alt: "Transition to planche press",
+    muscles: [
+      {n:"Core", p:true},
+      {n:"Shoulders", p:true},
+      {n:"Chest", p:true},
+      {n:"Back", p:false}
+    ],
+    tags: ["planche", "push", "core", "advanced"],
+    diff: 10,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    risk: 5,
+    joints: {wrist:5, elbow:4, shoulder:5, neck:1, lowerBack:3, hip:2, knee:0, ankle:0, fingers:3, thoracic:2, si:1, groin:0, foot:0},
+    technique: 5,
+    mobility: 4,
+    strength: 5,
+    kcalPerRep: [0.7, 1.1],
+    desc: "A skill combo starting from a bar muscle-up and continuing into a forward-lean planche position. It links the upper-body pulling motion to a high-demand static press lean.",
+    cues: "After the muscle-up, lean the shoulders forward steadily while keeping the arms straight and the core braced.",
+    equipment: "Pull-up bar / parallettes",
+    position: "Vertical / Elevated",
+    youtube: "LINK_TODO"
+  }
+];
