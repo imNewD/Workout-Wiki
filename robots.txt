@@ -1,0 +1,8 @@
+# robots.txt — GRND // Workout Wiki
+# https://imnewd.github.io/Workout-Wiki/
+
+User-agent: *
+Allow: /
+
+# Sitemap (add one via GitHub Actions or manually if you generate it)
+# Sitemap: https://imnewd.github.io/Workout-Wiki/sitemap.xml
