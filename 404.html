@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — GRND // Workout Wiki</title>
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<script>try{var _st=localStorage.getItem('grnd_theme');document.documentElement.dataset.theme=(_st==='light'||_st==='dark')?_st:'light';}catch(e){}</script>
+<style>
+  :root {
+    --bg:#0d0d0d; --bg2:#141414; --bg3:#1c1c1c;
+    --border:#2a2a2a; --text:#e8e8e8; --text2:#888; --text3:#555;
+    --accent:#e63946;
+    --mono:'IBM Plex Mono',monospace;
+    --sans:'IBM Plex Sans',sans-serif;
+    --display:'Bebas Neue',sans-serif;
+  }
+  [data-theme="light"] {
+    --bg:#f0ede8; --bg2:#e8e4dd; --bg3:#ddd8cf;
+    --border:#ccc6bb; --text:#1a1a1a; --text2:#555; --text3:#999;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .code {
+    font-family: var(--display);
+    font-size: clamp(7rem, 22vw, 14rem);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    opacity: 0.15;
+    user-select: none;
+    position: absolute;
+    pointer-events: none;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+  }
+  .logo {
+    font-family: var(--display);
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+  .logo span { color: var(--accent); }
+
+  .headline {
+    font-family: var(--display);
+    font-size: clamp(2.4rem, 8vw, 4.2rem);
+    letter-spacing: 0.06em;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+  .sub {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text2);
+    margin-bottom: 40px;
+  }
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .back-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .back-btn svg { width: 14px; height: 14px; }
+
+  .divider {
+    width: 32px;
+    height: 2px;
+    background: var(--accent);
+    margin: 0 auto 32px;
+  }
+</style>
+</head>
+<body>
+  <div class="code" aria-hidden="true">404</div>
+  <div class="content">
+    <div class="logo">GR<span>ND</span></div>
+    <div class="headline">PAGE NOT FOUND</div>
+    <div class="divider"></div>
+    <p class="sub">This rep doesn't exist — or it never did.</p>
+    <a href="/Workout-Wiki/" class="back-btn">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to GRND
+    </a>
+  </div>
+</body>
+</html>
