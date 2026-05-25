@@ -1,86 +1,62 @@
-/* ══════════════════════════════════════════════════════
-   GRND // Workout Wiki — Service Worker
-   Caches the app shell so GRND loads offline.
-   Strategy: cache-first for static assets,
-             network-first for the HTML entry point.
-══════════════════════════════════════════════════════ */
+/* ══ GRND SERVICE WORKER ════════════════════════════════════
+   Caches core assets for offline use.
+   Update CACHE_NAME version when you make major changes.
+════════════════════════════════════════════════════════════ */
 
-const CACHE = 'grnd-v1';
+const CACHE_NAME = 'grnd-v1';
 
-const PRECACHE = [
+const CORE_ASSETS = [
   '/Workout-Wiki/',
   '/Workout-Wiki/index.html',
-  '/Workout-Wiki/media/themes.css',
-  '/Workout-Wiki/media/animations.js',
-  '/Workout-Wiki/favicon.svg',
-  '/Workout-Wiki/apple-touch-icon.png',
   '/Workout-Wiki/manifest.json',
-  /* Exercise data */
-  '/Workout-Wiki/library/warmup-data.js',
-  '/Workout-Wiki/library/pushup-data.js',
-  '/Workout-Wiki/library/chinup-data.js',
-  '/Workout-Wiki/library/pullup-data.js',
-  '/Workout-Wiki/library/combo-data.js',
-  '/Workout-Wiki/library/weighted-data.js',
-  '/Workout-Wiki/library/dip-data.js',
-  '/Workout-Wiki/library/squats-data.js',
-  '/Workout-Wiki/library/core-data.js',
-  '/Workout-Wiki/library/handstand-data.js',
-  '/Workout-Wiki/library/isometric-data.js',
-  '/Workout-Wiki/library/frontlever-data.js',
-  '/Workout-Wiki/library/backlever-data.js',
-  '/Workout-Wiki/library/pantheon-data.js',
+  '/Workout-Wiki/favicon.svg',
+  '/Workout-Wiki/favicon.ico',
+  '/Workout-Wiki/apple-touch-icon.png',
+  '/Workout-Wiki/icons/icon-192.png',
+  '/Workout-Wiki/icons/icon-512.png',
 ];
 
-/* ── Install: pre-cache app shell ── */
-self.addEventListener('install', event => {
+// Install — cache core assets
+self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(PRECACHE))
+    caches.open(CACHE_NAME).then(function(cache) {
+      console.log('[GRND SW] Caching core assets');
+      return cache.addAll(CORE_ASSETS);
+    })
   );
   self.skipWaiting();
 });
 
-/* ── Activate: purge old caches ── */
-self.addEventListener('activate', event => {
+// Activate — clean up old caches
+self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-    )
+    caches.keys().then(function(keys) {
+      return Promise.all(
+        keys.filter(function(key) { return key !== CACHE_NAME; })
+            .map(function(key) { return caches.delete(key); })
+      );
+    })
   );
   self.clients.claim();
 });
 
-/* ── Fetch: cache-first for assets, network-first for HTML ── */
-self.addEventListener('fetch', event => {
-  const { request } = event;
-  const url = new URL(request.url);
-
-  /* Skip non-GET and cross-origin requests (e.g. Google Fonts, YouTube) */
-  if (request.method !== 'GET' || url.origin !== self.location.origin) return;
-
-  /* HTML: network-first so updates are always picked up */
-  if (request.headers.get('accept')?.includes('text/html')) {
-    event.respondWith(
-      fetch(request)
-        .then(res => {
-          const clone = res.clone();
-          caches.open(CACHE).then(c => c.put(request, clone));
-          return res;
-        })
-        .catch(() => caches.match(request))
-    );
-    return;
-  }
-
-  /* Everything else: cache-first */
+// Fetch — serve from cache, fall back to network
+self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(request).then(cached => {
-      if (cached) return cached;
-      return fetch(request).then(res => {
-        const clone = res.clone();
-        caches.open(CACHE).then(c => c.put(request, clone));
-        return res;
+    caches.match(event.request).then(function(cached) {
+      return cached || fetch(event.request).then(function(response) {
+        // Cache new successful responses dynamically
+        if (response && response.status === 200 && response.type === 'basic') {
+          var clone = response.clone();
+          caches.open(CACHE_NAME).then(function(cache) {
+            cache.put(event.request, clone);
+          });
+        }
+        return response;
       });
+    }).catch(function() {
+      // Offline fallback
+      return caches.match('/Workout-Wiki/');
     })
   );
 });
