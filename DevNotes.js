@@ -1,11 +1,20 @@
-const DEVLOG_VERSION = 'V1.51';
+const DEVLOG_VERSION = 'V1.52';
 const DEVLOG_ENTRIES = [
+  {
+    ver: 'V1.52',
+    date: 'May 2026',
+    items: [
+      { tag:'new', text:'NEW: programs added for beginners.' },
+      { tag:'fix', text:'FIX: minor bugs, spelling, and grammar errors corrected.' },
+      { tag:'wip', text:'WIP: anatomical engine is entering testing and is almost completed.' },
+    ]
+  },
   {
     ver: 'V1.51',
     date: 'May 2026',
     items: [
-      { tag:'wip', text:'WIP: atonomical engine is entering testing and is almost completed!' },
-      { tag:'fix', text:'FIX: many minor bugs and visuals fixed or adjusted!' },
+      { tag:'new', text:'NEW: homepage category panel now supports drag-to-reorder and row/grid view toggling like the rest of the library pages.' },
+      { tag:'fix', text:'FIX: homepage icons restored and repositioned so category rows stay aligned without pushing content to the side.' },
     ]
   },
   {
