@@ -1,17 +1,15 @@
-/* ══ GRND SERVICE WORKER ════════════════════════════════════
-   Caches core assets for offline use.
-   Update CACHE_NAME version when you make major changes.
-════════════════════════════════════════════════════════════ */
-
-const CACHE_NAME = 'grnd-v1';
+const CACHE_NAME  = 'grnd-v2'; // bump this when you deploy changes
+const FONTS_CACHE = 'grnd-fonts-v1';
 
 const CORE_ASSETS = [
   '/Workout-Wiki/',
   '/Workout-Wiki/index.html',
+  '/Workout-Wiki/anatomy.js',
   '/Workout-Wiki/manifest.json',
   '/Workout-Wiki/favicon.svg',
   '/Workout-Wiki/favicon.ico',
   '/Workout-Wiki/apple-touch-icon.png',
+  '/Workout-Wiki/media/animations.js',
   '/Workout-Wiki/icons/icon-192.png',
   '/Workout-Wiki/icons/icon-512.png',
 ];
@@ -19,12 +17,10 @@ const CORE_ASSETS = [
 // Install — cache core assets
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(function(cache) {
-      console.log('[GRND SW] Caching core assets');
-      return cache.addAll(CORE_ASSETS);
-    })
+    caches.open(CACHE_NAME)
+      .then(function(cache) { return cache.addAll(CORE_ASSETS); })
+      .then(function() { return self.skipWaiting(); }) // ← inside waitUntil
   );
-  self.skipWaiting();
 });
 
 // Activate — clean up old caches
@@ -32,31 +28,49 @@ self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(keys) {
       return Promise.all(
-        keys.filter(function(key) { return key !== CACHE_NAME; })
-            .map(function(key) { return caches.delete(key); })
+        keys
+          .filter(function(k) { return k !== CACHE_NAME && k !== FONTS_CACHE; })
+          .map(function(k)   { return caches.delete(k); })
       );
-    })
+    }).then(function() { return self.clients.claim(); }) // ← inside waitUntil
   );
-  self.clients.claim();
 });
 
-// Fetch — serve from cache, fall back to network
+// Fetch — route by origin
 self.addEventListener('fetch', function(event) {
+  if (event.request.method !== 'GET') return;
+
+  var url = new URL(event.request.url);
+
+  // Google Fonts — stale-while-revalidate so they're always fast + stay fresh
+  if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
+    event.respondWith(
+      caches.open(FONTS_CACHE).then(function(cache) {
+        return cache.match(event.request).then(function(cached) {
+          var fetchPromise = fetch(event.request).then(function(response) {
+            if (response && response.status === 200) cache.put(event.request, response.clone());
+            return response;
+          }).catch(function() { return cached; });
+          return cached || fetchPromise;
+        });
+      })
+    );
+    return;
+  }
+
+  // Everything else — cache-first, update cache in background
   event.respondWith(
-    caches.match(event.request).then(function(cached) {
-      return cached || fetch(event.request).then(function(response) {
-        // Cache new successful responses dynamically
-        if (response && response.status === 200 && response.type === 'basic') {
-          var clone = response.clone();
-          caches.open(CACHE_NAME).then(function(cache) {
-            cache.put(event.request, clone);
-          });
-        }
-        return response;
+    caches.open(CACHE_NAME).then(function(cache) {
+      return cache.match(event.request).then(function(cached) {
+        var fetchPromise = fetch(event.request).then(function(response) {
+          // ← removed the 'basic' check so cors responses also get cached
+          if (response && response.status === 200) cache.put(event.request, response.clone());
+          return response;
+        }).catch(function() { return cached; });
+        return cached || fetchPromise; // serve cache instantly, refresh behind the scenes
       });
     }).catch(function() {
-      // Offline fallback
-      return caches.match('/Workout-Wiki/');
+      return caches.match('/Workout-Wiki/index.html');
     })
   );
 });
