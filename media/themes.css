@@ -1,0 +1,377 @@
+/*
+ * themes.css — GRND Workout Wiki
+ * All modular theme overrides in one file.
+ * To edit a theme: search for  THEME: {NAME}  and change the variables below it.
+ * Sections are clearly delimited — each theme ends with  END THEME: {NAME}
+ */
+
+/* ══════════════════════════════════════════════════════════
+   THEME: PUSHUP
+════════════════════════════════════════════════════════════ */
+
+  /* ── PUSHUP MODE THEME ─────────────────────────────────────
+     Deep ember reds. A third mode separate from light/dark.
+     To extract: move this block to themes/pushup.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="pushup"] {
+    --bg:#100404; --bg2:#180707; --bg3:#200a0a;
+    --border:#3a1010; --border2:#541818;
+    --text:#f5dada; --text2:#b07070; --text3:#6b3535;
+    --accent:#ff3b3b;
+    --gold:#e8884a;
+    --green:#4aaa72;
+    --pantheon-color:#ff6b6b;
+    --pantheon-border:#cc2222;
+    --pantheon-deep:#1a0505;
+    --pantheon-surface:rgba(180,30,30,0.18);
+    --pantheon-glow:rgba(255,60,60,0.40);
+  }
+
+/* END THEME: PUSHUP ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: PULL
+════════════════════════════════════════════════════════════ */
+
+  /* ── PULL MODE THEME ───────────────────────────────────────
+     Steel blue depths. Cold, disciplined, pulling against gravity.
+     To extract: move this block to themes/pull.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="pull"] {
+    --bg:#030d12; --bg2:#061318; --bg3:#0a1d24;
+    --border:#0e2d3a; --border2:#164050;
+    --text:#d0eaf5; --text2:#5a9ab5; --text3:#2d5f75;
+    --accent:#4a8fa8;
+    --gold:#e8884a;
+    --green:#4aaa72;
+    --pantheon-color:#6bbcd4;
+    --pantheon-border:#2a7a9a;
+    --pantheon-deep:#030d12;
+    --pantheon-surface:rgba(74,143,168,0.18);
+    --pantheon-glow:rgba(74,143,168,0.40);
+  }
+
+/* END THEME: PULL ────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: DIP
+════════════════════════════════════════════════════════════ */
+
+  /* ── DIP MODE THEME ────────────────────────────────────────
+     Burnt orange heat. Tricep-dominant bridge between push and shoulder.
+     To extract: move this block to themes/dip.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="dip"] {
+    --bg:#0f0800; --bg2:#181200; --bg3:#231800;
+    --border:#3e2800; --border2:#5e3e00;
+    --text:#feebd4; --text2:#d49858; --text3:#8a5e28;
+    --accent:#f07830;
+    --gold:#f4b870;
+    --green:#4aaa72;
+    --pantheon-color:#f0a860;
+    --pantheon-border:#c86830;
+    --pantheon-deep:#0f0800;
+    --pantheon-surface:rgba(240,120,48,0.18);
+    --pantheon-glow:rgba(240,120,48,0.42);
+  }
+
+/* END THEME: DIP ─────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: SQUAT
+════════════════════════════════════════════════════════════ */
+
+  /* ── SQUAT MODE THEME ──────────────────────────────────────
+     Deep forest greens. Rooted, grounded, leg-dominant earth.
+     To extract: move this block to themes/squat.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="squat"] {
+    --bg:#020d04; --bg2:#051408; --bg3:#091c0e;
+    --border:#0e3016; --border2:#164a22;
+    --text:#d0f0d8; --text2:#4db870; --text3:#236635;
+    --accent:#3db56a;
+    --gold:#a8d84a;
+    --green:#6ed68a;
+    --pantheon-color:#6ed68a;
+    --pantheon-border:#2a7a48;
+    --pantheon-deep:#020d04;
+    --pantheon-surface:rgba(61,181,106,0.16);
+    --pantheon-glow:rgba(61,181,106,0.40);
+  }
+
+/* END THEME: SQUAT ───────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: CORE
+════════════════════════════════════════════════════════════ */
+
+  /* ── CORE MODE THEME ───────────────────────────────────────
+     Acid electric yellow-green. Static tension, ignited centre.
+     To extract: move this block to themes/core.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="core"] {
+    --bg:#080b01; --bg2:#0e1202; --bg3:#151a04;
+    --border:#263008; --border2:#384810;
+    --text:#eef5b8; --text2:#aac020; --text3:#607010;
+    --accent:#c8e020;
+    --gold:#f4d060;
+    --green:#80d840;
+    --pantheon-color:#d4f040;
+    --pantheon-border:#88a010;
+    --pantheon-deep:#080b01;
+    --pantheon-surface:rgba(200,224,32,0.14);
+    --pantheon-glow:rgba(200,224,32,0.38);
+  }
+
+/* END THEME: CORE ────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: HANDSTAND
+════════════════════════════════════════════════════════════ */
+
+  /* ── HANDSTAND MODE THEME ──────────────────────────────────
+     Airy sky. Cerebral clarity, inverted light, open space.
+     To extract: move this block to themes/handstand.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="handstand"] {
+    --bg:#f0f7ff; --bg2:#e4f0fc; --bg3:#d6e8f8;
+    --border:#aac8e8; --border2:#88aed0;
+    --text:#08182e; --text2:#2e5880; --text3:#6090b8;
+    --accent:#1a5ccc;
+    --gold:#3a80d0;
+    --green:#1a9080;
+    --pantheon-color:#4060c8;
+    --pantheon-border:#2848a8;
+    --pantheon-deep:#eef4ff;
+    --pantheon-surface:rgba(26,92,204,0.10);
+    --pantheon-glow:rgba(26,92,204,0.22);
+  }
+
+/* END THEME: HANDSTAND ───────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: ISOMETRIC
+════════════════════════════════════════════════════════════ */
+
+  /* ── ISOMETRIC MODE THEME ──────────────────────────────────
+     Shiny metal. Brushed chrome, polished angles, active reflection.
+     To extract: move this block to themes/isometric.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="isometric"] {
+    --bg:#e9edf3; --bg2:#d4d9e2; --bg3:#c0c6d1;
+    --border:#aab3bb; --border2:#7f8d99;
+    --text:#111821; --text2:#3b4959; --text3:#6f7d8c;
+    --accent:#6a8396;
+    --gold:#bec7d0;
+    --green:#73908c;
+    --pantheon-color:#6c7ea1;
+    --pantheon-border:#5b6f88;
+    --pantheon-deep:#e6eff8;
+    --pantheon-surface:rgba(96,118,138,0.16);
+    --pantheon-glow:rgba(118,140,162,0.32);
+  }
+  [data-theme="isometric"] body {
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,0.36), transparent 10%),
+      radial-gradient(circle at 82% 18%, rgba(255,255,255,0.24), transparent 8%),
+      linear-gradient(135deg, #f6f9fd 0%, #e8eef5 24%, #d8dfe8 50%, #e2e9f1 74%, #f2f7fb 100%),
+      repeating-linear-gradient(120deg, rgba(255,255,255,0.14) 0 2px, transparent 2px 22px),
+      repeating-linear-gradient(30deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 24px);
+    background-blend-mode: screen, screen, normal, overlay, overlay;
+    background-attachment: fixed;
+    background-size: auto, auto, auto, 240px 240px, 260px 260px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  [data-theme="isometric"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(120deg, rgba(255,255,255,0.22), rgba(255,255,255,0) 20%, rgba(255,255,255,0.18) 48%, rgba(255,255,255,0) 72%, rgba(255,255,255,0.16));
+    opacity: 0.58;
+    transform: translateX(-130%);
+    mix-blend-mode: screen;
+    filter: blur(1px);
+    animation: isometricSheen 8.5s linear infinite;
+    z-index: -1;
+  }
+  @keyframes isometricSheen {
+    0% { transform: translateX(-130%); opacity: 0.22; }
+    35% { opacity: 0.55; }
+    65% { transform: translateX(110%); opacity: 0.62; }
+    100% { transform: translateX(240%); opacity: 0.18; }
+  }
+  [data-theme="isometric"] .detail-row {
+    background: linear-gradient(120deg, rgba(255,255,255,0.96), rgba(236,242,248,0.84));
+    border: 1px solid rgba(186,198,210,0.24);
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.85), 0 0 0 1px rgba(255,255,255,0.08);
+  }
+  [data-theme="isometric"] .detail-cell {
+    background: rgba(255,255,255,0.86);
+    border-color: rgba(155,175,190,0.32);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.72), 0 0 0 1px rgba(255,255,255,0.06);
+  }
+  [data-theme="isometric"] .detail-block {
+    position: relative;
+    background: linear-gradient(145deg, rgba(255,255,255,0.96), rgba(229,235,242,0.82));
+    border-color: rgba(175,190,205,0.24);
+    box-shadow: inset 0 2px 10px rgba(255,255,255,0.72), 0 16px 24px rgba(90,105,120,0.08);
+    overflow: hidden;
+  }
+  [data-theme="isometric"] .detail-block::before {
+    content: '';
+    position: absolute;
+    inset: -30% 0 60%;
+    transform: rotate(25deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.42), rgba(255,255,255,0.02));
+    filter: blur(10px);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+/* END THEME: ISOMETRIC ───────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: COMBO
+════════════════════════════════════════════════════════════ */
+
+  /* ── COMBO MODE THEME ──────────────────────────────────────
+     Forge purple. Push red + pull blue fused under heat.
+     To extract: move this block to themes/combo.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="combo"] {
+    --bg:#080208; --bg2:#100510; --bg3:#180a1a;
+    --border:#301030; --border2:#4a1a4a;
+    --text:#f0d8f0; --text2:#b868b8; --text3:#703870;
+    --accent:#c050c0;
+    --gold:#e080e0;
+    --green:#4aaa72;
+    --pantheon-color:#e080e0;
+    --pantheon-border:#922892;
+    --pantheon-deep:#080208;
+    --pantheon-surface:rgba(192,80,192,0.16);
+    --pantheon-glow:rgba(192,80,192,0.42);
+  }
+
+/* END THEME: COMBO ───────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: WARMUP
+════════════════════════════════════════════════════════════ */
+
+  /* ── WARMUP MODE THEME ─────────────────────────────────────
+     Fresh morning light. Active, natural, ready to move.
+     To extract: move this block to themes/warmup.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="warmup"] {
+    --bg:#f0f9ee; --bg2:#e4f2e0; --bg3:#d6ead0;
+    --border:#aad4a2; --border2:#88c07e;
+    --text:#0a1e08; --text2:#285a20; --text3:#60a050;
+    --accent:#2e8a22;
+    --gold:#70b030;
+    --green:#2e8a22;
+    --pantheon-color:#44a832;
+    --pantheon-border:#2a7a1e;
+    --pantheon-deep:#eaf6e6;
+    --pantheon-surface:rgba(46,138,34,0.10);
+    --pantheon-glow:rgba(46,138,34,0.22);
+  }
+
+/* END THEME: WARMUP ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: HOF
+════════════════════════════════════════════════════════════ */
+
+  /* ── HALL OF FAME MODE THEME ───────────────────────────────
+     Forged gold on void obsidian. The rarest air. Earned.
+     To extract: move this block to themes/hof.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="hof"] {
+    --bg:#fef8e8; --bg2:#fdf3d0; --bg3:#faeac8;
+    --border:#e0c060; --border2:#c87d00;
+    --text:#2a1a00; --text2:#8a5c1a; --text3:#b8924a;
+    --accent:#c87d00;
+    --gold:#e8a428;
+    --green:#2a9d5c;
+    --pantheon-color:#c87d00;
+    --pantheon-border:#a86000;
+    --pantheon-deep:#fef8e8;
+    --pantheon-surface:rgba(200,125,0,0.12);
+    --pantheon-glow:rgba(232,168,40,0.30);
+  }
+  /* HoF shimmer overlay — cinematic golden atmosphere */
+  #hof-shimmer-bg {
+    display:none;
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    background:
+      radial-gradient(ellipse 90% 60% at -8% 0%,   rgba(220,140,0,0.18) 0%, transparent 55%),
+      radial-gradient(ellipse 65% 50% at 108% 6%,  rgba(244,180,40,0.11) 0%, transparent 52%),
+      radial-gradient(ellipse 50% 45% at 52% 42%,  rgba(180,100,0,0.06) 0%, transparent 100%),
+      radial-gradient(ellipse 75% 38% at -6% 104%, rgba(200,120,0,0.09) 0%, transparent 58%),
+      radial-gradient(ellipse 58% 32% at 108% 98%, rgba(244,160,24,0.08) 0%, transparent 55%);
+    animation: hofAmbient 16s ease-in-out infinite alternate;
+  }
+  [data-theme="hof"] #hof-shimmer-bg { display:block; }
+  @keyframes hofAmbient {
+    0%   { opacity:0.60; transform:scale(1.00) translate( 0.0%,  0.0%); filter:brightness(1.00); }
+    20%  { opacity:0.82; transform:scale(1.02) translate( 0.5%, -0.4%); filter:brightness(1.07); }
+    45%  { opacity:0.68; transform:scale(1.01) translate(-0.3%,  0.5%); filter:brightness(1.02); }
+    70%  { opacity:0.92; transform:scale(1.03) translate( 0.6%,  0.3%); filter:brightness(1.10); }
+    100% { opacity:0.75; transform:scale(1.01) translate(-0.4%, -0.3%); filter:brightness(1.04); }
+  }
+
+/* END THEME: HOF ─────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: PANTHEON
+════════════════════════════════════════════════════════════ */
+
+  /* ── PANTHEON MODE THEME ────────────────────────────────────
+     Celestial marble. Soft lavender. Heavenly light.
+     Light mode with matte whites, cream surfaces, violet accents.
+     To extract: move this block to themes/pantheon.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="pantheon"] {
+    --bg:#f7efff; --bg2:#eedcff; --bg3:#e5d4ff;
+    --border:#d9bef3; --border2:#f2cf7f;
+    --text:#4e3277; --text2:#6c55a8; --text3:#7d66b9;
+    --accent:#be95ff;
+    --gold:#f3c869;
+    --green:#1e5f3d;
+    --pantheon-color:#d9b7ff;
+    --pantheon-border:#caa7ff;
+    --pantheon-deep:#5f4a8f;
+    --pantheon-surface:rgba(245,217,120,0.16);
+    --pantheon-glow:rgba(248,216,108,0.26);
+  }
+
+  /* Live background support — Pantheon canvas sits below all content */
+  [data-theme="pantheon"] body { background: transparent; }
+  #pantheon-bg-canvas {
+    display:none;
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-1;
+  }
+  [data-theme="pantheon"] #pantheon-bg-canvas { display:block; }
+
+/* END THEME: PANTHEON ────────────────────────────────────── */
+
