@@ -33,7 +33,7 @@
 /* ── Anatomy view: full-screen overlay within SPA ── */
 #view-anatomy {
   position: fixed !important;
-  top: var(--header-h); left: 0; right: 0; bottom: 56px;
+  top: 0; left: 0; right: 0; bottom: 56px;
   display: none; flex-direction: row;
   overflow: hidden; background: var(--bg);
   z-index: 99; max-width: none !important;
@@ -45,8 +45,8 @@
 @media(min-width:700px){#view-anatomy{bottom:0}}
 
 /* ── VIEWER PANEL ── */
-.viewer-panel{width:420px;flex-shrink:0;display:flex;flex-direction:column;border-right:1px solid var(--border);background:var(--bg);position:relative;overflow:hidden}
-@media(max-width:767px){.viewer-panel{width:100%;height:var(--viewer-h,62vh)}}
+.viewer-panel{flex:0 0 450px;max-width:450px;display:flex;flex-direction:column;border-right:1px solid var(--border);background:var(--bg);position:relative;overflow:hidden}
+@media(max-width:767px){.viewer-panel{width:100%;max-width:100%;height:var(--viewer-h,62vh)}}
 
 /* ── RESIZE HANDLE (mobile only) ── */
 .resize-handle{display:none;height:16px;background:var(--bg);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);flex-shrink:0;cursor:row-resize;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;position:relative;z-index:5}
@@ -80,6 +80,13 @@
 .zoom-out-btn{position:absolute;bottom:14px;right:12px;z-index:10;font-family:var(--mono);font-size:0.56rem;letter-spacing:0.08em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--accent);color:var(--accent);border-radius:6px;background:rgba(230,57,70,0.08);transition:all var(--trans);opacity:0;pointer-events:none}
 .zoom-out-btn.show{opacity:1;pointer-events:all}
 .zoom-out-btn:hover{background:rgba(230,57,70,0.20)}
+/* Home button — desktop only, bottom-left of svg-wrap */
+.anatomy-home-btn{position:absolute;bottom:14px;left:12px;z-index:10;font-family:var(--mono);font-size:0.56rem;letter-spacing:0.08em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--border2);color:var(--text3);border-radius:6px;background:var(--bg3);transition:all var(--trans);display:flex;align-items:center;gap:6px;cursor:pointer}
+.anatomy-home-btn:hover{border-color:var(--border);color:var(--text);background:var(--bg2)}
+@media(max-width:767px){.anatomy-home-btn{display:none}}
+.zoom-controls{display:flex;gap:8px;align-items:center}
+.zoom-button{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.08em;text-transform:none;padding:6px 10px;border:1px solid var(--border2);border-radius:8px;background:var(--bg3);color:var(--text3);cursor:pointer;transition:all var(--trans)}
+.zoom-button:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,57,70,0.08)}
 
 /* ── SVG ELEMENT STYLES ── */
 .body-base{fill:var(--body-fill);stroke:var(--body-stroke);stroke-width:0.7;transition:fill var(--trans)}
@@ -495,7 +502,30 @@
 [data-anatomy-lite="1"] #bodySvg{transition:none!important}
 @media(max-width:767px){.view-controls{align-items:stretch;flex-wrap:wrap}.view-toggle{flex:1 1 auto}.vtbtn{flex:1;padding:8px 9px}.layers{justify-content:flex-start;width:100%}.svg-wrap.mode-3d::after{bottom:48px}}
 @media(max-width:540px){.header-title{display:none}.layers{display:none}}
+
+/* ── MUSCLE SEARCH PANEL (idle state) ── */
+.info-idle{display:flex;flex-direction:column;height:100%;padding:0;text-align:left;justify-content:flex-start}
+.msearch-wrap{display:flex;flex-direction:column;width:100%;padding:12px 14px 8px;gap:10px;box-sizing:border-box;flex:1;min-height:0}
+.msearch-bar{display:flex;align-items:center;gap:8px;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:7px 12px;transition:border-color .18s,box-shadow .18s;flex-shrink:0}
+.msearch-bar:focus-within{border-color:var(--accent);box-shadow:0 0 0 2px rgba(230,57,70,0.14)}
+.msearch-icon{font-size:0.68rem;color:var(--text3);flex-shrink:0;pointer-events:none}
+.msearch-input{flex:1;background:transparent;border:none;outline:none;font-family:var(--mono);font-size:0.6rem;letter-spacing:0.05em;color:var(--text);min-width:0}
+.msearch-input::placeholder{color:var(--text3);opacity:0.7}
+.msearch-clear{font-family:var(--mono);font-size:0.5rem;color:var(--text3);cursor:pointer;padding:2px 6px;border-radius:3px;transition:color .12s;display:none;flex-shrink:0;background:transparent;border:none}
+.msearch-clear.show{display:block}
+.msearch-clear:hover{color:var(--accent)}
+.msearch-filters{display:flex;flex-wrap:wrap;gap:5px;flex-shrink:0}
+.mfchip{font-family:var(--mono);font-size:0.48rem;letter-spacing:0.09em;text-transform:uppercase;padding:5px 10px;border-radius:6px;border:1px solid var(--border2);color:var(--text3);background:var(--bg3);cursor:pointer;transition:all .14s}
+.mfchip.active,.mfchip:hover{border-color:var(--accent);color:var(--accent);background:rgba(230,57,70,0.08)}
+.msearch-results{display:flex;flex-direction:column;gap:3px;overflow-y:auto;flex:1;padding-bottom:8px}
+.msearch-result{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:7px;border:1px solid var(--border2);background:var(--bg3);cursor:pointer;transition:border-color .12s,background .12s;flex-shrink:0}
+.msearch-result:hover{border-color:var(--accent);background:rgba(230,57,70,0.07)}
+.msearch-result-name{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text);flex:0 0 auto;white-space:nowrap}
+.msearch-result-sci{font-family:var(--sans);font-size:0.5rem;color:var(--text3);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.msearch-result-region{font-family:var(--mono);font-size:0.44rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);padding:2px 6px;border:1px solid rgba(230,57,70,0.35);border-radius:4px;background:rgba(230,57,70,0.07);flex-shrink:0;white-space:nowrap}
+.msearch-empty{padding:20px;text-align:center;font-family:var(--mono);font-size:0.56rem;color:var(--text3);letter-spacing:0.1em}
 `;
+
     document.head.appendChild(s);
   })();
 
@@ -518,6 +548,10 @@
         <button class="vtbtn" id="btnBack" onclick="setView('back')">◉ BACK</button>
         <button class="vtbtn" id="btnSide" onclick="toggleSideView()">◉ LEFT</button>
       </div>
+      <div class="zoom-controls">
+        <button class="zoom-button" id="zoomStepInBtn" onclick="zoomIn()">＋</button>
+        <button class="zoom-button" id="zoomStepOutBtn" onclick="zoomOut()">−</button>
+      </div>
       <div class="layers">
         <button class="layer-chip on" id="layerMuscles" onclick="toggleLayer('muscles')">MUSCLES</button>
         <button class="layer-chip" id="layerBones" onclick="toggleLayer('bones')">BONES</button>
@@ -532,7 +566,7 @@
     </div>
 
     <div class="svg-wrap" id="svgWrap">
-      <svg id="bodySvg" viewBox="0 0 200 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <svg id="bodySvg" viewBox="19 0 162 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="2.5" result="blur"/>
@@ -556,7 +590,8 @@
         <g id="rippleLayer"></g>
       </svg>
       <div class="scanlines"></div>
-      <button class="zoom-out-btn" id="zoomOutBtn" onclick="clearSelection()">⟵ ZOOM OUT</button>
+      <button class="zoom-out-btn" id="zoomOutBtn" onclick="zoomReset()">⟵ ZOOM OUT</button>
+      <button class="anatomy-home-btn" onclick="(function(){if(typeof goTo==='function'){goTo('home')}else if(typeof window.goTo==='function'){window.goTo('home')}else{history.back()}})()" title="Back to home">⌂ HOME</button>
     </div>
 
   </div>
@@ -573,11 +608,23 @@
     </div>
 
     <div class="info-idle" id="infoIdle">
-      <div class="info-idle-icon">⊕</div>
-      SELECT A MUSCLE OR BONE
-      <div class="info-idle-sub">CLICK ANY REGION — ENABLE BONES LAYER FOR SKELETON</div>
-      <div class="info-idle-keys">
-        <kbd>F</kbd> FRONT &nbsp; <kbd>B</kbd> BACK &nbsp; <kbd>ESC</kbd> CLEAR
+      <div class="msearch-wrap">
+        <div class="msearch-bar">
+          <span class="msearch-icon">⌕</span>
+          <input class="msearch-input" id="msearchInput" type="text" placeholder="SEARCH MUSCLES…" autocomplete="off" spellcheck="false"/>
+          <button class="msearch-clear" id="msearchClear" tabindex="-1">✕</button>
+        </div>
+        <div class="msearch-filters" id="msearchFilters">
+          <button class="mfchip active" data-filter="all">ALL</button>
+          <button class="mfchip" data-filter="chest">CHEST</button>
+          <button class="mfchip" data-filter="back">BACK</button>
+          <button class="mfchip" data-filter="shoulders">SHOULDERS</button>
+          <button class="mfchip" data-filter="arms">ARMS</button>
+          <button class="mfchip" data-filter="core">CORE</button>
+          <button class="mfchip" data-filter="legs">LEGS</button>
+          <button class="mfchip" data-filter="neck">NECK</button>
+        </div>
+        <div class="msearch-results" id="msearchResults"></div>
       </div>
     </div>
 
@@ -2480,9 +2527,15 @@ let vbRaf          = null;
 let selectedBoneKey = null;
 let boneMode        = false;   // true when bones layer is active
 let currentVB      = {x:0,y:0,w:200,h:520};
+const PAN_LIMIT     = 200;
 
 const isMobile = navigator.maxTouchPoints > 0;
 const svgWrap  = document.getElementById('svgWrap');
+
+function clampPan() {
+  currentVB.x = Math.min(Math.max(currentVB.x, -PAN_LIMIT), PAN_LIMIT);
+  currentVB.y = Math.min(Math.max(currentVB.y, -PAN_LIMIT), PAN_LIMIT);
+}
 
 /* ── TOUCH STATE ── */
 let touchPinching  = false;
@@ -2492,6 +2545,7 @@ let touchStartMid  = null;
 let panStart       = null;
 let panStartVB     = null;
 let panMoved       = false;
+let ignoreNextClick = false;
 
 /* ══════════════════════════════════════════════════════
    SVG BUILDER
@@ -3136,10 +3190,117 @@ function zoomTo(key) {
   document.getElementById('zoomOutBtn').classList.add('show');
 }
 
+function getCurrentViewBox() {
+  const vb = svg.viewBox && svg.viewBox.baseVal && svg.viewBox.baseVal.width > 0
+    ? {x: svg.viewBox.baseVal.x, y: svg.viewBox.baseVal.y, w: svg.viewBox.baseVal.width, h: svg.viewBox.baseVal.height}
+    : (function() {
+        const parts = (svg.getAttribute('viewBox') || '').split(/\s+|,/).map(Number);
+        return {x: parts[0] || 0, y: parts[1] || 0, w: parts[2] || 200, h: parts[3] || 520};
+      })();
+  return {
+    x: Number.isFinite(currentVB.x) ? currentVB.x : vb.x,
+    y: Number.isFinite(currentVB.y) ? currentVB.y : vb.y,
+    w: Number.isFinite(currentVB.w) ? currentVB.w : vb.w,
+    h: Number.isFinite(currentVB.h) ? currentVB.h : vb.h,
+  };
+}
+
+function setViewBox(v) {
+  currentVB = {x: v.x, y: v.y, w: v.w, h: v.h};
+  svg.setAttribute('viewBox', `${v.x} ${v.y} ${v.w} ${v.h}`);
+}
+
+function getFullViewBox() {
+  const rect = svg.getBoundingClientRect();
+  let bb;
+  try {
+    bb = svg.getBBox();
+  } catch (err) {
+    return {x: 0, y: 0, w: 200, h: 520};
+  }
+  if (!rect.width || !rect.height || !isFinite(bb.width) || !isFinite(bb.height) || bb.width <= 0 || bb.height <= 0) {
+    return {x: 0, y: 0, w: 200, h: 520};
+  }
+
+  const pad = 8;
+  let x = bb.x - pad;
+  let y = bb.y - pad;
+  let w = bb.width + pad * 2;
+  let h = bb.height + pad * 2;
+  const dispAR = rect.width / rect.height;
+  const contentAR = w / h;
+
+  if (contentAR > dispAR) {
+    const newH = w / dispAR;
+    y -= (newH - h) / 2;
+    h = newH;
+  } else {
+    const newW = h * dispAR;
+    x -= (newW - w) / 2;
+    w = newW;
+  }
+
+  return {x, y, w, h};
+}
+
 function zoomReset() {
-  animateVB({x:0, y:0, w:200, h:520}, 380);
+  const full = getFullViewBox();
+  animateVB({x: full.x, y: full.y, w: full.w, h: full.h}, 380);
   isZoomed = false;
   document.getElementById('zoomOutBtn').classList.remove('show');
+}
+
+function zoomIn() {
+  const current = getCurrentViewBox();
+  const rect = svg.getBoundingClientRect();
+  if (!rect.width || !rect.height) return;
+  const dispAR = rect.width / rect.height;
+  const factor = 0.82;
+  const newW = Math.max(40, current.w * factor);
+  const newH = newW / dispAR;
+  const target = {
+    x: current.x + current.w / 2 - newW / 2,
+    y: current.y + current.h / 2 - newH / 2,
+    w: newW,
+    h: newH,
+  };
+  const full = getFullViewBox();
+  animateVB(target, 280);
+  isZoomed = target.w < full.w - 1 || target.h < full.h - 1;
+  document.getElementById('zoomOutBtn').classList.toggle('show', isZoomed);
+}
+
+function zoomOut() {
+  const current = getCurrentViewBox();
+  const rect = svg.getBoundingClientRect();
+  if (!rect.width || !rect.height) return;
+  const dispAR = rect.width / rect.height;
+  const full = getFullViewBox();
+  if (current.w >= full.w * 0.995 || current.h >= full.h * 0.995) {
+    zoomReset();
+    return;
+  }
+  const factor = 1.25;
+  let newW = Math.min(full.w, current.w * factor);
+  let newH = newW / dispAR;
+  if (newH > full.h) {
+    newH = full.h;
+    newW = newH * dispAR;
+  }
+  const target = {
+    x: current.x + current.w / 2 - newW / 2,
+    y: current.y + current.h / 2 - newH / 2,
+    w: newW,
+    h: newH,
+  };
+  if (newW >= full.w - 1 && newH >= full.h - 1) {
+    animateVB(full, 280);
+    isZoomed = false;
+  } else {
+    animateVB(target, 280);
+    isZoomed = true;
+  }
+  document.getElementById('zoomOutBtn').classList.toggle('show', isZoomed);
 }
 
 function animateVB(to, dur) {
@@ -3153,6 +3314,7 @@ function animateVB(to, dur) {
     currentVB.y = from.y + (to.y - from.y) * ease;
     currentVB.w = from.w + (to.w - from.w) * ease;
     currentVB.h = from.h + (to.h - from.h) * ease;
+    clampPan();
     svg.setAttribute('viewBox', `${currentVB.x} ${currentVB.y} ${currentVB.w} ${currentVB.h}`);
     if(t < 1) vbRaf = requestAnimationFrame(step);
   })(performance.now());
@@ -3315,6 +3477,7 @@ function hideInfo() {
   document.getElementById('stickyHdr').classList.remove('show');
   document.getElementById('stickyName').textContent    = '';
   document.getElementById('stickySubName').textContent = '';
+  if(typeof window._refreshMuscleSearch === 'function') window._refreshMuscleSearch();
 }
 
 
@@ -3462,6 +3625,7 @@ function hideBoneInfo() {
   document.getElementById('stickyHdr').classList.remove('show');
   document.getElementById('stickyName').textContent    = '';
   document.getElementById('stickySubName').textContent = '';
+  if(typeof window._refreshMuscleSearch === 'function') window._refreshMuscleSearch();
 }
 
 /* ══════════════════════════════════════════════════════
@@ -3548,6 +3712,10 @@ document.addEventListener('keydown', e => {
 
 /* ── CLICK BODY TO DESELECT ── */
 svg.addEventListener('click', e => {
+  if(ignoreNextClick) {
+    ignoreNextClick = false;
+    return;
+  }
   if(!e.target.closest('.muscle-path') && !e.target.closest('.sub-muscle') && selectedKey) clearSelection();
 });
 
@@ -3567,6 +3735,8 @@ function clientToVB(cx, cy) {
 
 svgWrap.addEventListener('touchstart', e => {
   if(e.touches.length === 2) {
+    // Cancel any running zoom animation so it doesn't fight the pinch
+    if(vbRaf) { cancelAnimationFrame(vbRaf); vbRaf = null; }
     touchPinching  = true;
     panStart       = null;
     touchStartDist = t2dist(e.touches);
@@ -3576,6 +3746,8 @@ svgWrap.addEventListener('touchstart', e => {
     touchStartMid  = clientToVB(mx, my);
     e.preventDefault();
   } else if(e.touches.length === 1) {
+    // Cancel animation so pan doesn't fight it
+    if(vbRaf) { cancelAnimationFrame(vbRaf); vbRaf = null; }
     panStart   = {x: e.touches[0].clientX, y: e.touches[0].clientY};
     panStartVB = {...currentVB};
     panMoved   = false;
@@ -3590,8 +3762,9 @@ svgWrap.addEventListener('touchmove', e => {
     const scale   = Math.max(0.1, touchStartDist / newDist);
     const rawW    = touchStartVB.w * scale;
 
-    // No hard upper cap — snap to full view on touchend instead
-    const newW    = Math.max(15, rawW);
+    // Allow zooming in freely; cap zoom-out at 2x the full view
+    const full    = getFullViewBox();
+    const newW    = Math.min(full.w * 2, Math.max(15, rawW));
     const r       = svg.getBoundingClientRect();
     const dAR     = r.width > 0 ? r.width / r.height : 200/520;
     const newH    = newW / dAR;
@@ -3600,8 +3773,11 @@ svgWrap.addEventListener('touchmove', e => {
     const fx      = (mx - r.left) / r.width;
     const fy      = (my - r.top)  / r.height;
     currentVB     = {x: touchStartMid.x - fx*newW, y: touchStartMid.y - fy*newH, w: newW, h: newH};
+    // Only clamp pan position, not zoom level
+    currentVB.x = Math.min(Math.max(currentVB.x, -PAN_LIMIT), PAN_LIMIT);
+    currentVB.y = Math.min(Math.max(currentVB.y, -PAN_LIMIT), PAN_LIMIT);
     svg.setAttribute('viewBox', `${currentVB.x} ${currentVB.y} ${currentVB.w} ${currentVB.h}`);
-    isZoomed = rawW < 185;
+    isZoomed = newW < full.w - 1;
     document.getElementById('zoomOutBtn').classList.toggle('show', isZoomed);
 
   } else if(e.touches.length === 1 && panStart && !touchPinching) {
@@ -3609,10 +3785,12 @@ svgWrap.addEventListener('touchmove', e => {
     const dy = e.touches[0].clientY - panStart.y;
     if(!panMoved && Math.hypot(dx, dy) < 7) return;
     panMoved = true;
+    ignoreNextClick = true;
     e.preventDefault();
     const r      = svg.getBoundingClientRect();
     currentVB.x  = panStartVB.x - dx * (panStartVB.w / r.width);
     currentVB.y  = panStartVB.y - dy * (panStartVB.h / r.height);
+    clampPan();
     svg.setAttribute('viewBox', `${currentVB.x} ${currentVB.y} ${currentVB.w} ${currentVB.h}`);
   }
 }, {passive: false});
@@ -3622,15 +3800,14 @@ svgWrap.addEventListener('touchend', e => {
   if(e.touches.length < 2) setTimeout(() => { touchPinching = false; }, 80);
 
   if(e.touches.length === 0) {
-    panStart = null;
-    // KEY FIX: if user has pinched out far enough, snap cleanly to full view.
-    if(currentVB.w >= 170) {
-      zoomReset();
+    if(panMoved) {
+      ignoreNextClick = true;
+      e.preventDefault();
     }
+    panStart = null;
+    // No auto-reset on pinch-end — the user controls zoom freely.
 
-    // ── Double-tap to reset zoom ──────────────────────────────────────────
-    // Track timing and position of last tap; if second tap is close enough
-    // in time and space, trigger zoomReset with a visual ring animation.
+    // Double-tap to reset zoom
     const now = Date.now();
     const changedTouch = e.changedTouches[0];
     if(changedTouch && !panMoved && !touchPinching) {
@@ -3639,12 +3816,10 @@ svgWrap.addEventListener('touchend', e => {
       const tdy  = changedTouch.clientY - (_lastTapY || 0);
       const dist = Math.hypot(tdx, tdy);
       if(dt < 340 && dist < 40) {
-        // It's a double-tap — reset zoom and show ripple ring
         _lastTapTime = 0;
         if(isZoomed) {
           _haptic(12);
           zoomReset();
-          // Visual confirmation ring
           const vbPt = clientToVB(changedTouch.clientX, changedTouch.clientY);
           const ring = mkEl('circle', {
             cx: vbPt.x, cy: vbPt.y, r: 6,
@@ -3663,11 +3838,225 @@ svgWrap.addEventListener('touchend', e => {
       }
     }
   }
+}, {passive: false});
+
+svgWrap.addEventListener('pointerdown', e => {
+  if(e.pointerType !== 'mouse' || e.button !== 0) return;
+  if(e.target.closest('.muscle-path') || e.target.closest('.sub-muscle')) return;
+  panStart   = {x: e.clientX, y: e.clientY};
+  panStartVB = {...currentVB};
+  panMoved   = false;
+  ignoreNextClick = false;
+  svgWrap.setPointerCapture(e.pointerId);
+  e.preventDefault();
+});
+
+svgWrap.addEventListener('pointermove', e => {
+  if(e.pointerType !== 'mouse' || !panStart || touchPinching) return;
+  const dx = e.clientX - panStart.x;
+  const dy = e.clientY - panStart.y;
+  if(!panMoved && Math.hypot(dx, dy) < 7) return;
+  panMoved = true;
+  ignoreNextClick = true;
+  e.preventDefault();
+  const r      = svg.getBoundingClientRect();
+  currentVB.x  = panStartVB.x - dx * (panStartVB.w / r.width);
+  currentVB.y  = panStartVB.y - dy * (panStartVB.h / r.height);
+  clampPan();
+  svg.setAttribute('viewBox', `${currentVB.x} ${currentVB.y} ${currentVB.w} ${currentVB.h}`);
+});
+
+svgWrap.addEventListener('pointerup', e => {
+  if(e.pointerType !== 'mouse') return;
+  if(panMoved) ignoreNextClick = true;
+  panStart = null;
+  if(e.pointerId != null) svgWrap.releasePointerCapture(e.pointerId);
+});
+
+svgWrap.addEventListener('pointercancel', e => {
+  if(e.pointerType !== 'mouse') return;
+  panStart = null;
+  if(e.pointerId != null) svgWrap.releasePointerCapture(e.pointerId);
+});
+
+svgWrap.addEventListener('mousedown', e => {
+  if(e.button !== 0) return;
+  if(e.target.closest('.muscle-path') || e.target.closest('.sub-muscle')) return;
+  panStart   = {x: e.clientX, y: e.clientY};
+  panStartVB = {...currentVB};
+  panMoved   = false;
+  ignoreNextClick = false;
+  e.preventDefault();
+});
+
+document.addEventListener('mousemove', e => {
+  if(!panStart || touchPinching || e.buttons !== 1) return;
+  const dx = e.clientX - panStart.x;
+  const dy = e.clientY - panStart.y;
+  if(!panMoved && Math.hypot(dx, dy) < 7) return;
+  panMoved = true;
+  ignoreNextClick = true;
+  const r      = svg.getBoundingClientRect();
+  currentVB.x  = panStartVB.x - dx * (panStartVB.w / r.width);
+  currentVB.y  = panStartVB.y - dy * (panStartVB.h / r.height);
+  clampPan();
+  svg.setAttribute('viewBox', `${currentVB.x} ${currentVB.y} ${currentVB.w} ${currentVB.h}`);
+});
+
+document.addEventListener('mouseup', e => {
+  if(e.button !== 0) return;
+  if(panMoved) ignoreNextClick = true;
+  panStart = null;
 });
 
 // Double-tap state variables
 let _lastTapTime = 0, _lastTapX = 0, _lastTapY = 0;
 
+
+/* ══════════════════════════════════════════════════════
+   MUSCLE SEARCH PANEL
+   ══════════════════════════════════════════════════════ */
+(function _initMuscleSearch() {
+  // Flat searchable index: { key, name, sci, region, filterTags[] }
+  const SEARCH_INDEX = Object.entries(MUSCLES)
+    .filter(([, d]) => d && d.name && !d.boneType) // muscles only, skip bones
+    .map(([key, d]) => ({
+      key,
+      name: d.name,
+      sci:  d.sci || '',
+      region: d.region || '',
+      filterTags: _getFilterTags(d.region || '', key),
+    }));
+
+  function _getFilterTags(region, key) {
+    const r = region.toLowerCase();
+    const k = key.toLowerCase();
+    const tags = [];
+    // Chest
+    if(r.includes('chest') || k === 'pectorals' || k === 'serratus') tags.push('chest');
+    // Back
+    if(r.includes('back') || r.includes('interscapular') || k === 'lats' || k === 'trapezius' || k === 'rhomboids' || k === 'lowerback') tags.push('back');
+    // Shoulders
+    if(r.includes('shoulder') || k === 'deltoids' || k === 'reardelts' || k === 'rotatorcuff') tags.push('shoulders');
+    // Arms
+    if(r.includes('arm') || r.includes('forearm') || k === 'biceps' || k === 'triceps' || k === 'forearms' || k === 'hands') tags.push('arms');
+    // Core
+    if(r.includes('core') || k === 'abs' || k === 'obliques' || k === 'deepcore' || k === 'intercostals') tags.push('core');
+    // Legs
+    if(r.includes('thigh') || r.includes('hip') || r.includes('glut') || r.includes('leg') || r.includes('foot') || r.includes('knee') ||
+       k === 'quadriceps' || k === 'hamstrings' || k === 'calves' || k === 'glutes' || k === 'hipflexors' || k === 'adductors' ||
+       k === 'tibialis' || k === 'peroneals' || k === 'feet') tags.push('legs');
+    // Neck
+    if(r.includes('neck') || r.includes('cervical') || k === 'neck') tags.push('neck');
+    return tags;
+  }
+
+  let activeFilter = 'all';
+
+  function _getResults(query, filter) {
+    const q = query.trim().toLowerCase();
+    return SEARCH_INDEX.filter(item => {
+      // Filter chip match
+      if(filter !== 'all' && !item.filterTags.includes(filter)) return false;
+      // Text match
+      if(!q) return true;
+      return item.name.toLowerCase().includes(q) ||
+             item.sci.toLowerCase().includes(q) ||
+             item.region.toLowerCase().includes(q);
+    }).slice(0, 40);
+  }
+
+  function _renderResults(results, query) {
+    const container = document.getElementById('msearchResults');
+    if(!container) return;
+    if(!results.length) {
+      container.innerHTML = `<div class="msearch-empty">NO MUSCLES FOUND</div>`;
+      return;
+    }
+    const q = query.trim().toLowerCase();
+    container.innerHTML = results.map(item => {
+      // Highlight matching text
+      function hl(str) {
+        if(!q) return str;
+        const idx = str.toLowerCase().indexOf(q);
+        if(idx === -1) return str;
+        return str.slice(0, idx) +
+               `<mark style="background:rgba(230,57,70,0.28);color:var(--accent);border-radius:2px">${str.slice(idx, idx + q.length)}</mark>` +
+               str.slice(idx + q.length);
+      }
+      return `<div class="msearch-result" data-mkey="${item.key}" tabindex="0">
+        <div class="msearch-result-name">${hl(item.name)}</div>
+        <div class="msearch-result-sci">${hl(item.sci)}</div>
+        <div class="msearch-result-region">${item.region}</div>
+      </div>`;
+    }).join('');
+
+    container.querySelectorAll('.msearch-result').forEach(el => {
+      const key = el.dataset.mkey;
+      el.addEventListener('click', () => selectKey(key));
+      el.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' ') selectKey(key); });
+    });
+  }
+
+  function _update() {
+    const q = (document.getElementById('msearchInput') || {}).value || '';
+    const results = _getResults(q, activeFilter);
+    _renderResults(results, q);
+    const clr = document.getElementById('msearchClear');
+    if(clr) clr.classList.toggle('show', q.length > 0);
+  }
+
+  // Wait for DOM elements to exist (they're injected right before this runs)
+  setTimeout(() => {
+    const input   = document.getElementById('msearchInput');
+    const clear   = document.getElementById('msearchClear');
+    const filters = document.getElementById('msearchFilters');
+
+    if(input) {
+      input.addEventListener('input', _update);
+      input.addEventListener('keydown', e => {
+        if(e.key === 'Escape') {
+          input.value = '';
+          _update();
+          input.blur();
+        }
+      });
+    }
+    if(clear) {
+      clear.addEventListener('click', () => {
+        if(input) { input.value = ''; input.focus(); }
+        _update();
+      });
+    }
+    if(filters) {
+      filters.querySelectorAll('.mfchip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          filters.querySelectorAll('.mfchip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeFilter = chip.dataset.filter;
+          _update();
+        });
+      });
+    }
+    _update(); // initial render (all muscles)
+  }, 0);
+
+  // Re-show idle panel with search when clearing selection
+  const _origHideInfo = window._hideInfoForSearch; // no-op sentinel
+  // Patch hideInfo to also refresh the search results list
+  const _patchHide = () => {
+    const results = _getResults(
+      (document.getElementById('msearchInput') || {}).value || '',
+      activeFilter
+    );
+    _renderResults(
+      results,
+      (document.getElementById('msearchInput') || {}).value || ''
+    );
+  };
+  // Expose so hideInfo can call it
+  window._refreshMuscleSearch = _patchHide;
+})();
 
     /* ── Expose button handlers to global scope ── */
     // All onclick="..." attributes in the injected HTML look up functions on window.
@@ -3681,6 +4070,9 @@ let _lastTapTime = 0, _lastTapX = 0, _lastTapY = 0;
     window._clearRelHighlight = _clearRelHighlight;
     window.selectKey   = selectKey;
     window.clearBoneSelection = clearBoneSelection;
+    window.zoomIn      = zoomIn;
+    window.zoomOut     = zoomOut;
+    window.zoomReset   = zoomReset;
 
     /* ── Init ── */
     setView('front');
