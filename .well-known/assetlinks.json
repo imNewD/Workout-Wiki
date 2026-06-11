@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.imnewd.twa",
+        "sha256_cert_fingerprints": ["B3:2E:74:08:51:90:DB:6E:A0:EF:6C:0F:E1:D5:8B:C1:B1:8B:66:DD:A8:E2:03:0D:AB:7F:0F:5D:92:91:39:DE"]
+      }
+    }]
