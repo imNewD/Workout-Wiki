@@ -4,7 +4,7 @@ const DEVLOG_ENTRIES = [
     ver: 'V1.58',
     date: 'June 2026',
     items: [
-      { tag:'win', text:'WIN: nutrition is active, with egg testing currently in use.' },
+      { tag:'win', text:'WIP: nutrition is under work, with the egg being tested.' },
       { tag:'new', text:'NEW: progress tree added for cardio/gym.' },
       { tag:'fix', text:'FIX: various bugs and glitches fixed.' },
       { tag:'new', text:'NEW: exercise tags in anatomy engine now target exercises for the selected muscle.' },
