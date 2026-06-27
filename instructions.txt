@@ -1,0 +1,61 @@
+GRND — WHERE TO EDIT WHAT
+Plain map of "I want to change X" -> file(s). Edit only the files listed.
+
+THEMES
+  Change a theme's colors ....... assets/themes.css
+  Add a new theme ............... assets/themes.css   (add a [data-theme="name"] block)
+                                  config/settings.js  (register it in the theme list/switcher)
+  Base/non-theme styles ......... assets/main.css
+
+ANIMATIONS / VISUAL FX
+  Change/adjust any animation ... assets/animations.js
+      (this file = all motion FX: glass-shard, HoF/Pantheon cinematics,
+       pantheon awakening modal, drifting-pollen ambient)
+  Animation keyframes (CSS) ..... assets/main.css
+  When an animation FIRES ........ src/app-core.js, config/progress.js, config/ranking.js
+                                   (these call into animations.js)
+
+EXERCISES (workout data)
+  Edit an exercise / its stats .. src/workouts/<group>-data.js   (e.g. pushup-data.js)
+  Add/edit a library VIEW ....... src/library-views.js
+  Library render / routing / search  src/app-core.js
+
+PROGRESS / RANKING / HALL OF FAME / PANTHEON
+  Save/load progress ............ config/progress.js
+  Ranking / "Your Progress" ..... config/ranking.js
+  HoF / Pantheon flags on a move  the exercise's src/workouts/<group>-data.js entry
+                                  (hof: true / pantheon: true)
+
+MODALS / OVERLAYS
+  Any modal or overlay .......... src/modals.js   (includes the muscle modal + custom-program builder)
+
+PROGRAMS (training programs)
+  Program logic / detail panel .. content/programs.js
+  The actual programs (data) .... content/programs-data.js
+
+METRICS / REMINDERS / BACKUP
+  PR board, training profile .... src/services.js
+  Reminders / notifications ..... src/services.js
+  Export / import / backup ...... src/services.js
+
+NUTRITION
+  Food data ..................... data/nutrition-data.js, data/nutrient-info-data.js
+  Nutrition UI / trackers ....... data/nutrition-ui.js, data/intake-tracker.js
+
+PERSONALISATION (Preferences popup)
+  Custom loading page/background/alarm ...... src/customizer.js
+      (unlock gates, image pick/downscale, IDB blob store, info-faq
+       first-run hint; the rows live in index.html #preferencesModal)
+  Completed-program count (alarm gate) ...... content/programs.js (getCompletedPremadeProgramCount)
+
+OTHER
+  Anatomy / muscle viewer ....... src/anatomy.js
+  Home screen / counts / search . src/home-init.js
+  Settings / profile / menu ..... config/settings.js
+  Icons ......................... assets/icons.js
+  Wording / terminology ......... src/terminology.js
+
+NOTES
+  - Scripts load in a fixed order in index.html. Do NOT reorder script tags blindly.
+  - To add a new script, add its <script> tag in index.html in the right spot.
+  - A timestamped copy of the pre-reorg files is in _reorg_backup_* (safe to delete once happy).
