@@ -381,9 +381,13 @@
   function _initInfoHint() {
     var seen = false;
     try { seen = localStorage.getItem(LS_HINT) === '1'; } catch (e) {}
-    if (seen) return;
     var item = document.querySelector('[data-drag-id="home-info-faq"]');
     if (!item) return;
+    var container = item.closest('.grnd-drag-container');
+    if (!seen && container) {
+      container.insertBefore(item, container.firstElementChild);
+    }
+    if (seen) return;
     item.classList.add('grnd-hint-pulse');
     if (!item.querySelector('.grnd-hint-arrow')) {
       var arrow = document.createElement('span');
@@ -396,6 +400,12 @@
       item.classList.remove('grnd-hint-pulse');
       var a = item.querySelector('.grnd-hint-arrow');
       if (a) a.remove();
+      if (container) {
+        container.appendChild(item);
+        if (window.GrndDrag && typeof window.GrndDrag.saveOrder === 'function') {
+          window.GrndDrag.saveOrder(container.dataset.dragKey);
+        }
+      }
     };
     item.addEventListener('click', dismiss, { once: true });
   }
