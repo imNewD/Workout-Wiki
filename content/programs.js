@@ -582,6 +582,7 @@
       const src = LIB_DATA[key];
       const arr = Array.isArray(src) ? src : (src?.data || []);
       const match = arr.find(e => {
+        if(!e.name) return false;
         const en   = e.name.toLowerCase();
         const ea   = e.alt ? e.alt.toLowerCase() : '';
         const en_s = stripEquip(en);
@@ -601,6 +602,7 @@
       const src = LIB_DATA[key];
       const arr = Array.isArray(src) ? src : (src?.data || []);
       for(const e of arr) {
+        if(!e.name) continue;
         const en_e = expandAbbr(stripEquip(e.name.toLowerCase()));
         const entryWords = en_e.split(' ').filter(w => w.length > 2);
         const matchCount = searchWords.filter(w => en_e.includes(w)).length;
