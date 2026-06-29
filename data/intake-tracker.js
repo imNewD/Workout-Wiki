@@ -139,7 +139,23 @@ function setIntakeMode(mode) {
   document.getElementById('intakeMicroPanel').style.display = mode === 'micro' ? '' : 'none';
   if(mode === 'micro') _intakeRenderMicro();
 }
+function _intakeRender() {
+  // Sync the MACRO/MICRO tab buttons to saved state
+  const mode = INTAKE_STATE.mode || 'macro';
+  document.querySelectorAll('#intakeModeSwitch .tree-mode-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.intakeMode === mode)
+  );
+  document.getElementById('intakeMacroPanel').style.display = mode === 'macro' ? '' : 'none';
+  document.getElementById('intakeMicroPanel').style.display = mode === 'micro'  ? '' : 'none';
 
+  if(mode === 'micro') {
+    _intakeRenderMicro();
+  } else {
+    _intakeRenderTargetCard();
+    _intakeRenderEntries();
+    _intakeRefreshHistory();
+  }
+}
 /* Resolves what the tracker compares against today: the profile's
    calculated goal target, or this tracker's own override on top of it. */
 function _intakeGetActiveTarget() {
