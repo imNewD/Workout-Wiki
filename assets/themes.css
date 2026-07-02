@@ -1,0 +1,3077 @@
+/*
+ * themes.css — GRND Workout Wiki
+ * All modular theme overrides in one file.
+ * To edit a theme: search for  THEME: {NAME}  and change the variables below it.
+ * Sections are clearly delimited — each theme ends with  END THEME: {NAME}
+ */
+
+/* ══════════════════════════════════════════════════════════
+   THEME: PUSHUP
+════════════════════════════════════════════════════════════ */
+
+  /* ── PUSHUP MODE THEME ─────────────────────────────────────
+     Deep ember reds. A third mode separate from light/dark.
+     To extract: move this block to themes/pushup.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="pushup"] {
+    --bg:#100404; --bg2:#180707; --bg3:#200a0a;
+    --border:#3a1010; --border2:#541818;
+    --text:#f5dada; --text2:#b07070; --text3:#6b3535;
+    --accent:#ff3b3b;
+    --gold:#e8884a;
+    --green:#4aaa72;
+    --pantheon-color:#ff6b6b;
+    --pantheon-border:#cc2222;
+    --pantheon-deep:#1a0505;
+    --pantheon-surface:rgba(180,30,30,0.18);
+    --pantheon-glow:rgba(255,60,60,0.40);
+  }
+
+/* END THEME: PUSHUP ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: PULL
+════════════════════════════════════════════════════════════ */
+
+  /* ── PULL MODE THEME ───────────────────────────────────────
+     Steel blue depths. Cold, disciplined, pulling against gravity.
+     To extract: move this block to themes/pull.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="pull"] {
+    --bg:#030d12; --bg2:#061318; --bg3:#0a1d24;
+    --border:#0e2d3a; --border2:#164050;
+    --text:#d0eaf5; --text2:#5a9ab5; --text3:#2d5f75;
+    --accent:#4a8fa8;
+    --gold:#e8884a;
+    --green:#4aaa72;
+    --pantheon-color:#6bbcd4;
+    --pantheon-border:#2a7a9a;
+    --pantheon-deep:#030d12;
+    --pantheon-surface:rgba(74,143,168,0.18);
+    --pantheon-glow:rgba(74,143,168,0.40);
+  }
+
+/* END THEME: PULL ────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: DIP
+════════════════════════════════════════════════════════════ */
+
+  /* ── DIP MODE THEME ────────────────────────────────────────
+     Burnt orange heat. Tricep-dominant bridge between push and shoulder.
+     Reworked: text/accent luminance brought down to match the muted-tint
+     pattern used by pushup/pull (was near-white text + hot saturated
+     orange accent, which read as glaring/high-contrast on screen).
+     To extract: move this block to themes/dip.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="dip"] {
+    --bg:#0f0800; --bg2:#181200; --bg3:#231800;
+    --border:#3e2800; --border2:#5e3e00;
+    --text:#e8c8a0; --text2:#b8783c; --text3:#7a4f24;
+    --accent:#c8602a;
+    --gold:#d89858;
+    --green:#4aaa72;
+    --pantheon-color:#d88c50;
+    --pantheon-border:#a85420;
+    --pantheon-deep:#0f0800;
+    --pantheon-surface:rgba(200,96,42,0.18);
+    --pantheon-glow:rgba(200,96,42,0.38);
+  }
+
+/* END THEME: DIP ─────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: SQUAT
+════════════════════════════════════════════════════════════ */
+
+  /* ── SQUAT MODE THEME ──────────────────────────────────────
+     Deep forest greens. Rooted, grounded, leg-dominant earth.
+     To extract: move this block to themes/squat.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="squat"] {
+    --bg:#020d04; --bg2:#051408; --bg3:#091c0e;
+    --border:#0e3016; --border2:#164a22;
+    --text:#d0f0d8; --text2:#4db870; --text3:#236635;
+    --accent:#3db56a;
+    --gold:#a8d84a;
+    --green:#6ed68a;
+    --pantheon-color:#6ed68a;
+    --pantheon-border:#2a7a48;
+    --pantheon-deep:#020d04;
+    --pantheon-surface:rgba(61,181,106,0.16);
+    --pantheon-glow:rgba(61,181,106,0.40);
+  }
+
+/* END THEME: SQUAT ───────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: CORE
+════════════════════════════════════════════════════════════ */
+
+  /* ── CORE MODE THEME ───────────────────────────────────────
+     Light matte clay-red — the opposite of pushup's dark saturated
+     red. Pale terracotta paper background, espresso-brown text,
+     a brick/terracotta accent instead of fire-engine red so it stays
+     matte and grounded rather than glossy. Same light-theme family as
+     handstand/hof, just on the red side of the wheel.
+     To extract: move this block to themes/core.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="core"] {
+    --bg:#f7efe9; --bg2:#f0e2d8; --bg3:#e8d4c4;
+    --border:#d8b8a0; --border2:#c49878;
+    --text:#2e1810; --text2:#7a4030; --text3:#a87858;
+    --accent:#9c3820;
+    --gold:#9c6428;
+    --green:#4a8a5c;
+    --pantheon-color:#9c3820;
+    --pantheon-border:#7a2c18;
+    --pantheon-deep:#f7efe9;
+    --pantheon-surface:rgba(156,56,32,0.10);
+    --pantheon-glow:rgba(156,56,32,0.22);
+  }
+
+/* END THEME: CORE ────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: HANDSTAND
+════════════════════════════════════════════════════════════ */
+
+  /* ── HANDSTAND MODE THEME ──────────────────────────────────
+     Airy sky. Cerebral clarity, inverted light, open space.
+     To extract: move this block to themes/handstand.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="handstand"] {
+    --bg:#f0f7ff; --bg2:#e4f0fc; --bg3:#d6e8f8;
+    --border:#aac8e8; --border2:#88aed0;
+    --text:#08182e; --text2:#2e5880; --text3:#6090b8;
+    --accent:#1a5ccc;
+    --gold:#3a80d0;
+    --green:#1a9080;
+    --pantheon-color:#4060c8;
+    --pantheon-border:#2848a8;
+    --pantheon-deep:#eef4ff;
+    --pantheon-surface:rgba(26,92,204,0.10);
+    --pantheon-glow:rgba(26,92,204,0.22);
+  }
+
+/* END THEME: HANDSTAND ───────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: ISOMETRIC
+════════════════════════════════════════════════════════════ */
+
+  /* ── ISOMETRIC MODE THEME ──────────────────────────────────
+     Shiny metal. Brushed chrome, polished angles, active reflection.
+     To extract: move this block to themes/isometric.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="isometric"] {
+    --bg:#e9edf3; --bg2:#d4d9e2; --bg3:#c0c6d1;
+    --border:#aab3bb; --border2:#7f8d99;
+    --text:#111821; --text2:#3b4959; --text3:#6f7d8c;
+    --accent:#6a8396;
+    --gold:#bec7d0;
+    --green:#73908c;
+    --pantheon-color:#6c7ea1;
+    --pantheon-border:#5b6f88;
+    --pantheon-deep:#e6eff8;
+    --pantheon-surface:rgba(96,118,138,0.16);
+    --pantheon-glow:rgba(118,140,162,0.32);
+  }
+  [data-theme="isometric"] body {
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,0.36), transparent 10%),
+      radial-gradient(circle at 82% 18%, rgba(255,255,255,0.24), transparent 8%),
+      linear-gradient(135deg, #f6f9fd 0%, #e8eef5 24%, #d8dfe8 50%, #e2e9f1 74%, #f2f7fb 100%),
+      repeating-linear-gradient(120deg, rgba(255,255,255,0.14) 0 2px, transparent 2px 22px),
+      repeating-linear-gradient(30deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 24px);
+    background-blend-mode: screen, screen, normal, overlay, overlay;
+    background-attachment: fixed;
+    background-size: auto, auto, auto, 240px 240px, 260px 260px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  [data-theme="isometric"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(120deg, rgba(255,255,255,0.22), rgba(255,255,255,0) 20%, rgba(255,255,255,0.18) 48%, rgba(255,255,255,0) 72%, rgba(255,255,255,0.16));
+    opacity: 0.58;
+    transform: translateX(-130%);
+    mix-blend-mode: screen;
+    filter: blur(1px);
+    animation: isometricSheen 8.5s linear infinite;
+    z-index: -1;
+  }
+  @keyframes isometricSheen {
+    0% { transform: translateX(-130%); opacity: 0.22; }
+    35% { opacity: 0.55; }
+    65% { transform: translateX(110%); opacity: 0.62; }
+    100% { transform: translateX(240%); opacity: 0.18; }
+  }
+  [data-theme="isometric"] .detail-row {
+    background: linear-gradient(120deg, rgba(255,255,255,0.96), rgba(236,242,248,0.84));
+    border: 1px solid rgba(186,198,210,0.24);
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.85), 0 0 0 1px rgba(255,255,255,0.08);
+  }
+  [data-theme="isometric"] .detail-cell {
+    background: rgba(255,255,255,0.86);
+    border-color: rgba(155,175,190,0.32);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.72), 0 0 0 1px rgba(255,255,255,0.06);
+  }
+  [data-theme="isometric"] .detail-block {
+    position: relative;
+    background: linear-gradient(145deg, rgba(255,255,255,0.96), rgba(229,235,242,0.82));
+    border-color: rgba(175,190,205,0.24);
+    box-shadow: inset 0 2px 10px rgba(255,255,255,0.72), 0 16px 24px rgba(90,105,120,0.08);
+    overflow: hidden;
+  }
+  [data-theme="isometric"] .detail-block::before {
+    content: '';
+    position: absolute;
+    inset: -30% 0 60%;
+    transform: rotate(25deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.42), rgba(255,255,255,0.02));
+    filter: blur(10px);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+/* END THEME: ISOMETRIC ───────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: CHEMIST
+════════════════════════════════════════════════════════════ */
+
+  /* ── CHEMIST MODE THEME ────────────────────────────────────
+     Clean white lab coat. Bright clinical white surfaces with
+     cool blue-grey ink lines, like a chemistry notebook — and
+     atom diagrams (nucleus + electron orbits) drifting slowly
+     across the page in two parallax layers.
+     To extract: move this block to themes/chemist.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="chemist"] {
+    --bg:#fbfdff; --bg2:#f2f7fb; --bg3:#e8f0f7;
+    --border:#c8dced; --border2:#a4c4de;
+    --text:#132433; --text2:#3d647e; --text3:#6f93aa;
+    --accent:#1f8fce;
+    --gold:#3dbf9a;
+    --green:#2fae7a;
+    --pantheon-color:#1f8fce;
+    --pantheon-border:#1670a4;
+    --pantheon-deep:#fbfdff;
+    --pantheon-surface:rgba(31,143,206,0.10);
+    --pantheon-glow:rgba(61,191,154,0.24);
+  }
+  [data-theme="chemist"] body {
+    background-color: #fbfdff;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'%3E%3Cg fill='none' stroke='%239cc3e0' stroke-width='2'%3E%3Cellipse cx='60' cy='60' rx='46' ry='19' transform='rotate(12 60 60)'/%3E%3Cellipse cx='60' cy='60' rx='46' ry='19' transform='rotate(72 60 60)'/%3E%3Cellipse cx='60' cy='60' rx='46' ry='19' transform='rotate(132 60 60)'/%3E%3C/g%3E%3Ccircle cx='60' cy='60' r='8' fill='%23ff8a5c'/%3E%3Ccircle cx='106' cy='60' r='4' fill='%231f8fce'/%3E%3Ccircle cx='23' cy='23' r='4' fill='%233dbf9a'/%3E%3Cpath d='M170 190 l22 -22 l22 22 l20 -14' stroke='%23a4c4de' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='170' cy='190' r='5' fill='%231f8fce'/%3E%3Ccircle cx='192' cy='168' r='5' fill='%23ff8a5c'/%3E%3Ccircle cx='214' cy='190' r='5' fill='%233dbf9a'/%3E%3Ccircle cx='234' cy='176' r='5' fill='%231f8fce'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='340' viewBox='0 0 340 340'%3E%3Cg fill='none' stroke='%23cfe3f2' stroke-width='2'%3E%3Cellipse cx='250' cy='90' rx='58' ry='24' transform='rotate(-18 250 90)'/%3E%3Cellipse cx='250' cy='90' rx='58' ry='24' transform='rotate(42 250 90)'/%3E%3Cellipse cx='250' cy='90' rx='58' ry='24' transform='rotate(102 250 90)'/%3E%3C/g%3E%3Ccircle cx='250' cy='90' r='10' fill='%233dbf9a'/%3E%3Ccircle cx='308' cy='90' r='5' fill='%23ff8a5c'/%3E%3Ccircle cx='60' cy='260' r='7' fill='%231f8fce' opacity='0.7'/%3E%3Ccircle cx='90' cy='240' r='4' fill='%233dbf9a' opacity='0.7'/%3E%3Cpath d='M40 250 l20 -18 l20 18' stroke='%23cfe3f2' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: repeat, repeat;
+    background-size: 260px 260px, 340px 340px;
+    background-position: 0 0, 0 0;
+    background-attachment: fixed, fixed;
+    animation: chemistDriftA 46s linear infinite, chemistDriftB 68s linear infinite;
+  }
+  @keyframes chemistDriftA {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 260px 130px, 0 0; }
+  }
+  @keyframes chemistDriftB {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 0 0, -340px 200px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-theme="chemist"] body { animation: none; }
+  }
+
+/* END THEME: CHEMIST ─────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: BIOLOGIST
+════════════════════════════════════════════════════════════ */
+
+  /* ── BIOLOGIST MODE THEME ──────────────────────────────────
+     Same clean white lab coat as Chemist, on the green/violet
+     side — cell diagrams (membrane, nucleus, organelles)
+     drifting slowly across the page in two parallax layers.
+     To extract: move this block to themes/biologist.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="biologist"] {
+    --bg:#fbfdfa; --bg2:#f1f8f0; --bg3:#e6f2e4;
+    --border:#c9e5c4; --border2:#a3d19c;
+    --text:#132c17; --text2:#3d6b46; --text3:#6fa27a;
+    --accent:#2fa563;
+    --gold:#8a5fc9;
+    --green:#2fa563;
+    --pantheon-color:#2fa563;
+    --pantheon-border:#1f7d47;
+    --pantheon-deep:#fbfdfa;
+    --pantheon-surface:rgba(47,165,99,0.10);
+    --pantheon-glow:rgba(138,95,201,0.24);
+  }
+  [data-theme="biologist"] body {
+    background-color: #fbfdfa;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280' viewBox='0 0 280 280'%3E%3Ccircle cx='70' cy='70' r='52' fill='none' stroke='%23a3d19c' stroke-width='2.5'/%3E%3Ccircle cx='58' cy='60' r='16' fill='%238a5fc9' opacity='0.55'/%3E%3Ccircle cx='90' cy='90' r='7' fill='%232fa563' opacity='0.8'/%3E%3Ccircle cx='40' cy='95' r='5' fill='%232fa563' opacity='0.7'/%3E%3Cellipse cx='95' cy='48' rx='9' ry='5' fill='%23ff9a6b' opacity='0.8'/%3E%3Ccircle cx='220' cy='190' r='34' fill='none' stroke='%23c9e5c4' stroke-width='2'/%3E%3Ccircle cx='212' cy='182' r='10' fill='%238a5fc9' opacity='0.5'/%3E%3Ccircle cx='236' cy='200' r='4' fill='%232fa563'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' viewBox='0 0 360 360'%3E%3Ccircle cx='270' cy='90' r='62' fill='none' stroke='%23d6ecd2' stroke-width='2.5'/%3E%3Ccircle cx='256' cy='78' r='18' fill='%238a5fc9' opacity='0.45'/%3E%3Ccircle cx='300' cy='108' r='6' fill='%232fa563' opacity='0.7'/%3E%3Ccircle cx='60' cy='280' r='30' fill='none' stroke='%23d6ecd2' stroke-width='2'/%3E%3Ccircle cx='52' cy='272' r='9' fill='%238a5fc9' opacity='0.5'/%3E%3Cellipse cx='80' cy='294' rx='7' ry='4' fill='%23ff9a6b' opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat, repeat;
+    background-size: 280px 280px, 360px 360px;
+    background-position: 0 0, 0 0;
+    background-attachment: fixed, fixed;
+    animation: biologistDriftA 50s linear infinite, biologistDriftB 74s linear infinite;
+  }
+  @keyframes biologistDriftA {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: -280px 140px, 0 0; }
+  }
+  @keyframes biologistDriftB {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 0 0, 360px 210px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-theme="biologist"] body { animation: none; }
+  }
+
+/* END THEME: BIOLOGIST ───────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: COMBO
+════════════════════════════════════════════════════════════ */
+
+  /* ── COMBO MODE THEME ──────────────────────────────────────
+     Forge purple. Push red + pull blue fused under heat.
+     To extract: move this block to themes/combo.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="combo"] {
+    --bg:#080208; --bg2:#100510; --bg3:#180a1a;
+    --border:#301030; --border2:#4a1a4a;
+    --text:#f0d8f0; --text2:#b868b8; --text3:#703870;
+    --accent:#c050c0;
+    --gold:#e080e0;
+    --green:#4aaa72;
+    --pantheon-color:#e080e0;
+    --pantheon-border:#922892;
+    --pantheon-deep:#080208;
+    --pantheon-surface:rgba(192,80,192,0.16);
+    --pantheon-glow:rgba(192,80,192,0.42);
+  }
+
+/* END THEME: COMBO ───────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: WARMUP
+════════════════════════════════════════════════════════════ */
+
+  /* ── WARMUP MODE THEME ─────────────────────────────────────
+     Fresh morning light. Active, natural, ready to move.
+     To extract: move this block to themes/warmup.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="warmup"] {
+    --bg:#f0f9ee; --bg2:#e4f2e0; --bg3:#d6ead0;
+    --border:#aad4a2; --border2:#88c07e;
+    --text:#0a1e08; --text2:#285a20; --text3:#60a050;
+    --accent:#2e8a22;
+    --gold:#70b030;
+    --green:#2e8a22;
+    --pantheon-color:#44a832;
+    --pantheon-border:#2a7a1e;
+    --pantheon-deep:#eaf6e6;
+    --pantheon-surface:rgba(46,138,34,0.10);
+    --pantheon-glow:rgba(46,138,34,0.22);
+  }
+
+/* END THEME: WARMUP ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: STRETCH
+════════════════════════════════════════════════════════════ */
+
+  /* ── STRETCH MODE THEME ────────────────────────────────────
+     Light rose and soft bloom tones. Calm, opening, mobility-focused.
+     To extract: move this block to themes/stretch.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="stretch"] {
+    --bg:#ffe4ef; --bg2:#ffd0e3; --bg3:#f9bcd4;
+    --border:#f5a0bb; --border2:#ef80a0;
+    --text:#3d1b25; --text2:#7d3a55; --text3:#a95d78;
+    --accent:#e56a8f;
+    --gold:#f4a0b7;
+    --green:#8f5f6e;
+    --pantheon-color:#e57a9f;
+    --pantheon-border:#c64775;
+    --pantheon-deep:#fde3eb;
+    --pantheon-surface:rgba(229,106,143,0.12);
+    --pantheon-glow:rgba(229,106,143,0.28);
+  }
+
+/* END THEME: STRETCH ─────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: SIDEQUESTS
+════════════════════════════════════════════════════════════ */
+
+  /* ── SIDEQUESTS MODE THEME ─────────────────────────────────
+     "You're done — now sit and stare." A wide, calm view across a
+     distant green field as the day winds down: dusky indigo overhead
+     easing through mauve and coral to a golden horizon, a low warm
+     sun near setting, backlit hills, a shadowed-gold meadow, and
+     slow-drifting pollen catching the last light.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="sidequests"] {
+    --bg:#fbf3e3; --bg2:#f6ead2; --bg3:#eedcbd;
+    --border:#d8bf94; --border2:#a78a5e;
+    --text:#2e2a1c; --text2:#5e5236; --text3:#917b58;
+    --accent:#c2863c;
+    --gold:#dc9a3f;
+    --green:#5d9447;
+    --pantheon-color:#c79a55;
+    --pantheon-border:#9c7a42;
+    --pantheon-deep:#fcf4e6;
+    --pantheon-surface:rgba(196,150,88,0.16);
+    --pantheon-glow:rgba(244,190,108,0.26);
+  }
+  /* Base dusk sky → golden horizon → shadowed field. */
+  [data-theme="sidequests"] body {
+    background: linear-gradient(180deg,
+      #39477a 0%,
+      #54618f 12%,
+      #82749d 24%,
+      #ad7c91 35%,
+      #db9276 45%,
+      #f2b06d 52%,
+      #f8c97c 57%,
+      #ecd791 60%,
+      #c6c873 63%,
+      #9caf57 71%,
+      #708d44 85%,
+      #506a33 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+  }
+  [data-theme="sidequests"] body::before,
+  [data-theme="sidequests"] body::after {
+    content: '';
+    position: fixed;
+    pointer-events: none;
+  }
+  /* Dusk atmosphere: a low warm sun near the horizon, a golden glow
+     band along the horizon, distant dusk-hazed hills peeking just
+     above the near ridge, and deepening ground shadow for evening. */
+  [data-theme="sidequests"] body::before {
+    inset: 0;
+    z-index: 1;
+    background:
+      radial-gradient(circle at 72% 50%, rgba(255,249,228,1) 0%, rgba(255,234,172,0.95) 2.5%, rgba(255,201,121,0.5) 7%, rgba(255,171,96,0.22) 16%, rgba(255,150,80,0) 30%),
+      radial-gradient(38% 7% at 24% 57%,  rgba(122,108,124,0.42) 0 75%, transparent 78%),
+      radial-gradient(46% 8% at 66% 56.5%, rgba(110,98,116,0.38) 0 75%, transparent 78%),
+      linear-gradient(180deg, rgba(255,222,150,0) 50%, rgba(255,219,146,0.45) 57%, rgba(255,205,135,0) 63%),
+      linear-gradient(180deg, rgba(40,44,28,0) 68%, rgba(40,42,24,0.22) 86%, rgba(26,28,16,0.50) 100%);
+    opacity: 1;
+  }
+  /* Near rolling field: gently undulating ridge crest at the horizon,
+     warm-gold where the low sun rims the tops, deep shadowed olive in
+     the foreground. */
+  [data-theme="sidequests"] body::after {
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg,
+      #d4ca80 0%, #aeb866 20%, #87a050 50%, #5f7c3a 100%);
+    clip-path: polygon(
+      0% 100%, 0% 58.5%,
+      9% 57.4%, 19% 58.6%, 31% 56.8%, 42% 58.2%, 54% 56.4%,
+      65% 57.8%, 77% 56.6%, 88% 58%, 100% 56.8%, 100% 100%);
+    filter: blur(0.2px);
+    opacity: 0.97;
+  }
+  [data-theme="sidequests"] .sidequests-mote {
+    will-change: transform, opacity;
+    mix-blend-mode: screen;
+  }
+  /* Wind-blown grass blades: kept at normal blend so the green reads
+     against the golden sky (screen would wash it out). */
+  [data-theme="sidequests"] .sidequests-grass {
+    will-change: transform, opacity;
+    pointer-events: none;
+  }
+  /* Sun glint bloom + lens-flare streak: screen blend so they only
+     add warm light over the scene, never darken it. */
+  [data-theme="sidequests"] .sidequests-sunshine {
+    will-change: transform, opacity;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+  [data-theme="sidequests"] main,
+  [data-theme="sidequests"] .view,
+  [data-theme="sidequests"] .card-mode,
+  [data-theme="sidequests"] .detail-row,
+  [data-theme="sidequests"] .detail-cell,
+  [data-theme="sidequests"] .detail-block,
+  [data-theme="sidequests"] .lib-item,
+  [data-theme="sidequests"] .panel,
+  [data-theme="sidequests"] .section {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+  }
+
+/* END THEME: SIDEQUESTS ──────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: HOF
+════════════════════════════════════════════════════════════ */
+
+  /* ── HALL OF FAME MODE THEME ───────────────────────────────
+     Forged gold on void obsidian. The rarest air. Earned.
+     To extract: move this block to themes/hof.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="hof"] {
+    --bg:#fef8e8; --bg2:#fdf3d0; --bg3:#faeac8;
+    --border:#e0c060; --border2:#c87d00;
+    --text:#2a1a00; --text2:#8a5c1a; --text3:#b8924a;
+    --accent:#c87d00;
+    --gold:#e8a428;
+    --green:#2a9d5c;
+    --pantheon-color:#c87d00;
+    --pantheon-border:#a86000;
+    --pantheon-deep:#fef8e8;
+    --pantheon-surface:rgba(200,125,0,0.12);
+    --pantheon-glow:rgba(232,168,40,0.30);
+  }
+  /* HoF live background — full-page cream marble + gold veins.
+     Sits behind all content (z-index:-1) like the Pantheon canvas,
+     so the whole app reads as a marble hall. Marble is static (one
+     GPU composite, no layout shift); only a faint golden glow
+     breathes via opacity for subtle life. --hof-veins lives in
+     main.css :root (the inline gold-vein SVG). */
+  [data-theme="hof"] body { background: transparent; }
+  /* Base: bright WHITE marble (cool/warm cloud mottling) */
+  #hof-shimmer-bg {
+    display:none;
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+    background:
+      radial-gradient(130% 90% at 18% 8%,   #ffffff 0%, rgba(255,255,255,0) 52%),
+      radial-gradient(120% 84% at 86% 16%,  #fbf7ef 0%, rgba(251,247,239,0) 52%),
+      radial-gradient(130% 96% at 74% 92%,  #f1ece0 0%, rgba(241,236,224,0) 55%),
+      radial-gradient(100% 80% at 6% 84%,   #fffefb 0%, rgba(255,254,251,0) 50%),
+      radial-gradient(85% 66% at 48% 44%,   rgba(236,230,216,0.45) 0%, rgba(236,230,216,0) 62%),
+      linear-gradient(150deg,#fefcf7 0%,#f6f0e4 52%,#fdfbf6 100%);
+  }
+  [data-theme="hof"] #hof-shimmer-bg { display:block; }
+  /* ::before = soft breathing golden atmosphere (paints below) */
+  #hof-shimmer-bg::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+      radial-gradient(ellipse 90% 54% at 50% -6%,  rgba(244,184,46,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 74% 44% at 50% 106%, rgba(208,128,8,0.13) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 46% at 10% 38%,  rgba(224,150,10,0.09) 0%, transparent 58%);
+    animation: hofAmbient 9s ease-in-out infinite alternate;
+  }
+  /* ::after = glowing GOLD veins (paints on top of the atmosphere).
+     Static gold halo via drop-shadow + pulsing opacity so the veins
+     gently glow. Opacity-only animation keeps it GPU-cheap. */
+  #hof-shimmer-bg::after {
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background: var(--hof-veins) center/cover no-repeat;
+    filter:
+      drop-shadow(0 0 2px rgba(234,178,62,0.75))
+      drop-shadow(0 0 9px rgba(214,150,28,0.45));
+    animation: hofVeinGlow 5.5s ease-in-out infinite;
+    will-change: opacity;
+  }
+  @keyframes hofAmbient {
+    from { opacity:0.45; }
+    to   { opacity:0.95; }
+  }
+  @keyframes hofVeinGlow {
+    0%,100% { opacity:0.60; }
+    50%     { opacity:1.00; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #hof-shimmer-bg::before { animation:none; opacity:0.7; }
+    #hof-shimmer-bg::after  { animation:none; opacity:0.85; }
+  }
+
+/* END THEME: HOF ─────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: PANTHEON
+════════════════════════════════════════════════════════════ */
+
+  /* ── PANTHEON MODE THEME ────────────────────────────────────
+     Standing high among the gods. The live canvas behind the UI
+     rises vertically from an ivory-and-gold marble floor at the
+     bottom, up through a soft purple sunset, into the black void
+     of space — twinkling stars and meteors falling overhead.
+     Both night and day in one frame. Surfaces stay light marble
+     with violet accents so content reads over the cosmos.
+     Background scene: #pantheon-bg-canvas (injector in index.html).
+     To extract: move this block to themes/pantheon.css
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="pantheon"] {
+    --bg:#f7efff; --bg2:#eedcff; --bg3:#e5d4ff;
+    --border:#d9bef3; --border2:#f2cf7f;
+    --text:#4e3277; --text2:#6c55a8; --text3:#7d66b9;
+    --accent:#be95ff;
+    --gold:#f3c869;
+    --green:#1e5f3d;
+    --pantheon-color:#d9b7ff;
+    --pantheon-border:#caa7ff;
+    --pantheon-deep:#5f4a8f;
+    --pantheon-surface:rgba(245,217,120,0.16);
+    --pantheon-glow:rgba(248,216,108,0.26);
+  }
+
+  /* Live background support — Pantheon canvas sits below all content */
+  [data-theme="pantheon"] body { background: transparent; }
+  #pantheon-bg-canvas {
+    display:none;
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-1;
+  }
+  [data-theme="pantheon"] #pantheon-bg-canvas { display:block; }
+
+/* END THEME: PANTHEON ────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: GYM
+════════════════════════════════════════════════════════════ */
+
+  /* ── GYM MODE THEME ────────────────────────────────────────
+     Cold iron and brushed steel. Near-black ground with cool
+     blue-gray surfaces — like a dimly lit powerlifting platform
+     where chalk dust and barbell steel are the only colours.
+     Unlocks after completing your first gym exercise.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="gym"] {
+    --bg:#07090b; --bg2:#0d1114; --bg3:#141b1f;
+    --border:#222c32; --border2:#313e46;
+    --text:#bec8d0; --text2:#5e7280; --text3:#334450;
+    --accent:#7aaec8;
+    --gold:#9a7848;
+    --green:#3a8860;
+    --pantheon-color:#7aaec8;
+    --pantheon-border:#2e5c80;
+    --pantheon-deep:#07090b;
+    --pantheon-surface:rgba(122,174,200,0.12);
+    --pantheon-glow:rgba(122,174,200,0.28);
+  }
+  /* Scene: a dim lifting platform — one cold overhead spotlight,
+     brushed-steel grain, chalk haze low against the floor, and a
+     heavy vignette. Static gradients only — zero animation cost. */
+  [data-theme="gym"] body {
+    background-image:
+      radial-gradient(60% 42% at 50% -6%, rgba(140,190,220,0.13) 0%, rgba(140,190,220,0.04) 55%, rgba(140,190,220,0) 78%),
+      radial-gradient(46% 20% at 50% 100%, rgba(160,180,196,0.06) 0%, rgba(160,180,196,0) 70%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.014) 0 1px, transparent 1px 7px),
+      radial-gradient(130% 100% at 50% 40%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.42) 100%),
+      linear-gradient(180deg, #05070a 0%, #07090c 55%, #0a0e12 100%);
+    background-attachment: fixed;
+  }
+
+/* END THEME: GYM ─────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: CARDIO
+════════════════════════════════════════════════════════════ */
+
+  /* ── CARDIO MODE THEME ─────────────────────────────────────
+     Dawn horizon. Deep teal-dark sky, fresh grass tones, a
+     vibrant teal-green accent — like the first mile at sunrise
+     when lungs open and the trail stretches out ahead.
+     Unlocks after completing your first cardio exercise.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="cardio"] {
+    --bg:#030c0a; --bg2:#061410; --bg3:#0b1e18;
+    --border:#102e24; --border2:#184438;
+    --text:#b4ecd8; --text2:#269870; --text3:#10584c;
+    --accent:#1ec890;
+    --gold:#58d878;
+    --green:#1ec890;
+    --pantheon-color:#3ee8b0;
+    --pantheon-border:#107860;
+    --pantheon-deep:#030c0a;
+    --pantheon-surface:rgba(30,200,144,0.12);
+    --pantheon-glow:rgba(30,200,144,0.30);
+  }
+  /* Scene: first light on the trail — deep teal night overhead
+     breaking into a green-gold dawn line at the bottom of the
+     page. Static gradients only — zero animation cost. */
+  [data-theme="cardio"] body {
+    background-image:
+      radial-gradient(52% 26% at 50% 102%, rgba(88,216,120,0.16) 0%, rgba(60,200,140,0.07) 48%, rgba(60,200,140,0) 74%),
+      radial-gradient(30% 12% at 50% 101%, rgba(240,255,220,0.10) 0%, rgba(240,255,220,0) 70%),
+      linear-gradient(180deg, #020806 0%, #04100c 40%, #071a14 68%, #0c2a1e 86%, #14402a 100%);
+    background-attachment: fixed;
+  }
+
+/* END THEME: CARDIO ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: BEBER  💗  (secret — unlocked by typing "beber" in feedback)
+════════════════════════════════════════════════════════════ */
+
+  /* ── BEBER MODE THEME ──────────────────────────────────────
+     A hidden love-letter theme. A tall romantic sunset: deep plum
+     dusk overhead, easing down through rose and coral to a soft
+     glowing sun resting on a rolling flower-meadow horizon.
+     Twinkling stars high in the sky, a warm bloom at the horizon,
+     and little hearts drifting down (spawned in animations.js).
+     Surfaces stay blush-translucent so content reads over the scene.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="beber"] {
+    --bg:#fff0f6;
+    /* Surfaces are translucent so the sunset glows through every box. */
+    --bg2:rgba(255,231,243,0.46); --bg3:rgba(255,219,236,0.42);
+    --border:#f6b3cf; --border2:#ef8fb6;
+    --text:#4a1430; --text2:#8a2f57; --text3:#b85a82;
+    --accent:#ff5e9a;
+    --gold:#ffb24d;
+    --green:#7bbf8a;
+    --pantheon-color:#ff7fb0;
+    --pantheon-border:#e64f8a;
+    --pantheon-deep:#fde3ee;
+    --pantheon-surface:rgba(255,120,170,0.14);
+    --pantheon-glow:rgba(255,120,170,0.32);
+  }
+
+  /* Base sky: a tall sunset — plum dusk at the top, falling through
+     mauve, rose and coral to a warm peach-gold horizon. */
+  [data-theme="beber"] body {
+    background: linear-gradient(180deg,
+      #2a1230 0%,
+      #3d1942 11%,
+      #56204f 21%,
+      #7a2c5c 31%,
+      #a23c63 40%,
+      #c85070 48%,
+      #e8697a 55%,
+      #f7866f 61%,
+      #ffa177 66%,
+      #ffc089 70%,
+      #ffd9a0 73%,
+      #f9b6a0 77%,
+      #c75f86 86%,
+      #8a3a68 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+  }
+
+  /* ::before — celestial layer: twinkling stars high in the dusk,
+     a glowing setting sun on the horizon, and a warm horizon bloom. */
+  [data-theme="beber"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      /* the soft glowing sun resting just above the meadow */
+      radial-gradient(circle at 50% 70%,
+        rgba(255,252,245,1) 0%,
+        rgba(255,240,214,0.97) 3%,
+        rgba(255,212,180,0.6) 8%,
+        rgba(255,176,150,0.28) 16%,
+        rgba(255,150,140,0) 30%),
+      /* wide warm bloom haloing the sun for depth */
+      radial-gradient(46% 34% at 50% 70%,
+        rgba(255,206,170,0.30) 0%,
+        rgba(255,180,150,0.10) 46%,
+        rgba(255,160,140,0) 74%),
+      /* soft sunset clouds catching the low light */
+      radial-gradient(34% 9% at 22% 58%, rgba(255,158,150,0.34) 0%, rgba(255,158,150,0) 72%),
+      radial-gradient(40% 8% at 71% 62%, rgba(255,138,165,0.30) 0%, rgba(255,138,165,0) 72%),
+      radial-gradient(27% 7% at 50% 53%, rgba(255,192,162,0.26) 0%, rgba(255,192,162,0) 72%),
+      radial-gradient(30% 7% at 86% 56%, rgba(255,170,186,0.24) 0%, rgba(255,170,186,0) 72%),
+      radial-gradient(24% 6% at 11% 64%, rgba(255,182,160,0.22) 0%, rgba(255,182,160,0) 72%),
+      /* warm glow band along the horizon */
+      linear-gradient(180deg,
+        rgba(255,210,160,0) 64%,
+        rgba(255,206,150,0.45) 71%,
+        rgba(255,190,150,0) 78%),
+      /* scattered twinkling stars in the upper sky */
+      radial-gradient(1.6px 1.6px at 12% 9%,  rgba(255,255,255,0.95) 0 50%, transparent 51%),
+      radial-gradient(1.3px 1.3px at 27% 16%, rgba(255,240,250,0.85) 0 50%, transparent 51%),
+      radial-gradient(1.8px 1.8px at 41% 7%,  rgba(255,255,255,0.9) 0 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 58% 13%, rgba(255,238,248,0.8) 0 50%, transparent 51%),
+      radial-gradient(1.7px 1.7px at 70% 6%,  rgba(255,255,255,0.92) 0 50%, transparent 51%),
+      radial-gradient(1.3px 1.3px at 83% 15%, rgba(255,244,252,0.82) 0 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 91% 8%,  rgba(255,255,255,0.88) 0 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 19% 22%, rgba(255,236,246,0.7) 0 50%, transparent 51%),
+      radial-gradient(1.4px 1.4px at 49% 20%, rgba(255,255,255,0.78) 0 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 64% 24%, rgba(255,240,250,0.7) 0 50%, transparent 51%);
+    animation: beberTwinkle 4.2s ease-in-out infinite alternate;
+  }
+  @keyframes beberTwinkle {
+    0%   { opacity: 0.78; }
+    100% { opacity: 1; }
+  }
+
+  /* ::after — a gently rolling flower-meadow silhouette across the
+     bottom, deep rose fading to dusk, catching warm light at its crest. */
+  [data-theme="beber"] body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg,
+      #b14a78 0%, #8a3360 34%, #5f2245 70%, #3f1730 100%);
+    clip-path: polygon(
+      0% 100%, 0% 80%,
+      8% 78.6%, 17% 79.8%, 26% 77.6%, 36% 79.2%, 46% 77.4%,
+      56% 79%, 66% 77.8%, 76% 79.4%, 86% 77.8%, 94% 79.2%, 100% 78%,
+      100% 100%);
+    box-shadow: 0 -1px 18px rgba(255,200,160,0.35);
+    opacity: 0.97;
+  }
+
+  /* Floating hearts + petals injected by animations.js. screen blend so
+     they only add soft light/colour over the romantic scene. */
+  [data-theme="beber"] .beber-heart {
+    will-change: transform, opacity;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Lift the page content above the sky / sun / meadow layers.
+     (Menus & modals are intentionally left alone — they own their
+     own high z-index stacking and backgrounds.) */
+  [data-theme="beber"] main,
+  [data-theme="beber"] .view,
+  [data-theme="beber"] .card-mode,
+  [data-theme="beber"] .detail-row,
+  [data-theme="beber"] .detail-cell,
+  [data-theme="beber"] .detail-block,
+  [data-theme="beber"] .lib-item,
+  [data-theme="beber"] .panel,
+  [data-theme="beber"] .section {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+  }
+
+  /* See-through blush surfaces — the sunset, hearts and sweet words all
+     glow softly through. A light blur keeps text legible over the busy
+     scene without hiding it. */
+  [data-theme="beber"] .detail-row,
+  [data-theme="beber"] .detail-cell,
+  [data-theme="beber"] .detail-block,
+  [data-theme="beber"] .lib-item {
+    background: linear-gradient(135deg, rgba(255,244,250,0.50), rgba(255,224,238,0.40));
+    border-color: rgba(246,150,190,0.42);
+    box-shadow: 0 6px 18px rgba(190,60,110,0.10);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+
+  /* The slide-in menu panel: see-through blush with a soft blur so the
+     sky reads behind the settings without washing out the text. */
+  [data-theme="beber"] .menu-panel {
+    background: rgba(255,233,245,0.46);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  [data-theme="beber"] .menu-section {
+    background: rgba(255,240,248,0.16);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-theme="beber"] body::before { animation: none; opacity: 0.95; }
+  }
+
+/* END THEME: BEBER ───────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   SEASONAL THEMES — SHARED SKY MACHINERY  ☀
+   The sun engine (animations.js) drives these CSS variables
+   from the DEVICE CLOCK, once a minute:
+     --sun-x / --sun-y     sun disc position (arcs across the sky)
+     --sun-halo-rgb        halo colour ("255,236,170")
+     --sun-op              disc opacity (0 at night)
+     html[data-sun-phase]  dawn | day | dusk | night
+   #season-daylight is a fixed tint layer between the scene and
+   the content — it re-lights the whole page per phase (warm dawn
+   glow, fiery dusk, deep star-lit night) with one cheap opacity/
+   background transition.
+   PERFORMANCE TIERS — default is LITE: opaque-ish cards, no
+   backdrop blur, static scene. [data-ui-power="high"] unlocks
+   translucency, blur and the slow breathing animations.
+════════════════════════════════════════════════════════════ */
+#season-daylight {
+  display: none;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+:is([data-theme="summer"],[data-theme="winter"],[data-theme="spring"],[data-theme="autumn"]) #season-daylight {
+  display: block;
+}
+
+/* Dawn — a soft rose-gold wash rising from the horizon. */
+html[data-sun-phase="dawn"]:is([data-theme="summer"],[data-theme="spring"],[data-theme="autumn"]) #season-daylight {
+  opacity: 1;
+  background: linear-gradient(180deg,
+    rgba(255,140,100,0.10) 0%,
+    rgba(255,166,120,0.14) 38%,
+    rgba(255,196,140,0.20) 58%,
+    rgba(255,150,110,0.10) 100%);
+}
+/* Dusk — the whole scene catches fire, purple creeping in above. */
+html[data-sun-phase="dusk"]:is([data-theme="summer"],[data-theme="spring"],[data-theme="autumn"]) #season-daylight {
+  opacity: 1;
+  background: linear-gradient(180deg,
+    rgba(76,48,120,0.30) 0%,
+    rgba(148,70,110,0.22) 28%,
+    rgba(255,116,60,0.24) 55%,
+    rgba(210,90,70,0.20) 75%,
+    rgba(90,50,80,0.24) 100%);
+}
+/* Night — deep blue darkness with real stars overhead. Content
+   cards sit above this layer, so text stays readable. */
+html[data-sun-phase="night"]:is([data-theme="summer"],[data-theme="spring"],[data-theme="autumn"]) #season-daylight {
+  opacity: 1;
+  background:
+    radial-gradient(1.6px 1.6px at 13% 7%,  rgba(255,255,255,0.9) 0 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 29% 15%, rgba(225,238,255,0.75) 0 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 44% 5%,  rgba(255,255,255,0.85) 0 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 58% 12%, rgba(225,238,255,0.7) 0 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 72% 8%,  rgba(255,255,255,0.85) 0 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 86% 16%, rgba(230,240,255,0.75) 0 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 51% 22%, rgba(240,246,255,0.6) 0 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 20% 27%, rgba(230,240,255,0.5) 0 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 92% 30%, rgba(240,246,255,0.55) 0 50%, transparent 51%),
+    linear-gradient(180deg,
+      rgba(3,7,22,0.86) 0%,
+      rgba(5,10,26,0.76) 45%,
+      rgba(7,13,30,0.66) 75%,
+      rgba(9,15,32,0.60) 100%);
+}
+/* ── NIGHT FLIPS THE WHOLE THEME ─────────────────────────────
+   When the sun engine says night, the light seasonal themes go
+   dark with the sky: tokens flip to night values so every
+   component (text, borders, pills, trees) re-lights itself, and
+   the cards become dark glass under the stars. Text would be
+   unreadable otherwise — and it's what a real night looks like. */
+html[data-sun-phase="night"][data-theme="summer"] {
+  --bg:#0a1a2a; --bg2:rgba(12,30,46,0.72); --bg3:rgba(16,38,56,0.66);
+  --border:#1e4258; --border2:#2e5a74;
+  --text:#e2f2fc; --text2:#8ec0da; --text3:#54809c;
+}
+html[data-sun-phase="night"][data-theme="summer"] :is(.detail-row,.detail-cell,.detail-block,.lib-item) {
+  background: linear-gradient(135deg, rgba(12,30,46,0.82), rgba(8,22,36,0.72));
+  border-color: rgba(70,140,180,0.35);
+  box-shadow: 0 6px 18px rgba(0,6,14,0.4);
+}
+html[data-sun-phase="night"][data-theme="summer"] .menu-panel { background: rgba(10,26,40,0.88); }
+html[data-sun-phase="night"][data-theme="spring"] {
+  --bg:#0c1c10; --bg2:rgba(14,32,20,0.74); --bg3:rgba(18,40,26,0.68);
+  --border:#24482e; --border2:#356644;
+  --text:#e4f6e6; --text2:#9cc8a4; --text3:#5c8a66;
+}
+html[data-sun-phase="night"][data-theme="spring"] :is(.detail-row,.detail-cell,.detail-block,.lib-item) {
+  background: linear-gradient(135deg, rgba(14,32,20,0.84), rgba(10,24,15,0.74));
+  border-color: rgba(90,150,100,0.35);
+  box-shadow: 0 6px 18px rgba(0,8,2,0.4);
+}
+html[data-sun-phase="night"][data-theme="spring"] .menu-panel { background: rgba(12,28,17,0.9); }
+html[data-sun-phase="night"][data-theme="autumn"] {
+  --bg:#1a1408; --bg2:rgba(36,28,14,0.76); --bg3:rgba(46,36,18,0.70);
+  --border:#4c3e1e; --border2:#68562c;
+  --text:#f2e8d2; --text2:#c0ac84; --text3:#84714c;
+}
+html[data-sun-phase="night"][data-theme="autumn"] :is(.detail-row,.detail-cell,.detail-block,.lib-item) {
+  background: linear-gradient(135deg, rgba(36,28,14,0.86), rgba(26,20,10,0.76));
+  border-color: rgba(150,120,70,0.35);
+  box-shadow: 0 6px 18px rgba(8,4,0,0.4);
+}
+html[data-sun-phase="night"][data-theme="autumn"] .menu-panel { background: rgba(30,24,12,0.9); }
+
+/* Winter nights are its natural state — a much lighter touch. */
+html[data-sun-phase="night"][data-theme="winter"] #season-daylight {
+  opacity: 1;
+  background: linear-gradient(180deg,
+    rgba(1,3,10,0.42) 0%, rgba(2,5,14,0.30) 60%, rgba(3,7,16,0.22) 100%);
+}
+/* Winter day: kept DARK (no washed-out grey overlay across the whole
+   UI) — the only light is a dim, heatless yellow-blue glow around the
+   live sun position itself, same sun-engine variables summer/spring
+   use, just cold and weak instead of warm and bright. */
+html[data-sun-phase="day"][data-theme="winter"] #season-daylight {
+  opacity: 1;
+  background:
+    radial-gradient(40% 32% at var(--sun-x,50%) var(--sun-y,64%),
+      rgba(235,220,170, calc(0.16 * var(--sun-op,1))) 0%,
+      rgba(180,205,230, calc(0.10 * var(--sun-op,1))) 42%,
+      rgba(180,205,230,0) 74%),
+    linear-gradient(180deg,
+      rgba(2,5,12,0.32) 0%,
+      rgba(3,7,16,0.22) 55%,
+      rgba(4,8,18,0.12) 100%);
+}
+/* Winter dawn/dusk: a weak, cold blush — the sun barely tries. */
+html[data-sun-phase="dawn"][data-theme="winter"] #season-daylight,
+html[data-sun-phase="dusk"][data-theme="winter"] #season-daylight {
+  opacity: 1;
+  background: linear-gradient(180deg,
+    rgba(120,110,140,0.10) 0%,
+    rgba(210,150,120,0.12) 55%,
+    rgba(160,120,110,0.08) 100%);
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: SUMMER  🌊  (seasonal — Jun/Jul/Aug, or admin preview)
+════════════════════════════════════════════════════════════ */
+
+  /* ── "WE'RE COOL FOR THE SUMMER" ───────────────────────────
+     A live beach day. The sun rises out of the sea at ~5:30,
+     blazes overhead through the afternoon, melts into the water
+     at ~21:30 and leaves a starfield over the bay — all wired to
+     the device clock. Turquoise sea with depth bands and a
+     glitter column tracking under the sun; white foam breaking
+     on warm sand. Everything alive, saturated, open — the exact
+     opposite pole to Winter Arc's isolation.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="summer"] {
+    --bg:#eafaff;
+    --bg2:rgba(255,255,255,0.46); --bg3:rgba(235,251,255,0.42);
+    --border:#7fd0ea; --border2:#4db8dc;
+    --text:#062a40; --text2:#136088; --text3:#4692b6;
+    --accent:#ff7a45;
+    --gold:#ffc23d;
+    --green:#1fa87c;
+    --pantheon-color:#2ab4dc;
+    --pantheon-border:#1a8cb4;
+    --pantheon-deep:#e8f9ff;
+    --pantheon-surface:rgba(42,180,220,0.12);
+    --pantheon-glow:rgba(255,194,61,0.30);
+  }
+  /* Sky → hazy horizon → turquoise shallows → deep water → sand.
+     Sea depth reads through three blue bands; wave shading lines
+     give the water surface real texture. */
+  [data-theme="summer"] body {
+    background:
+      /* subtle wave shading on the water band */
+      repeating-linear-gradient(180deg,
+        rgba(255,255,255,0)    0px,  rgba(255,255,255,0)    22px,
+        rgba(255,255,255,0.05) 23px, rgba(255,255,255,0)    26px),
+      linear-gradient(180deg,
+        #2fa0ea 0%,
+        #4fb6f2 14%,
+        #7fcdf7 28%,
+        #b4e6fb 40%,
+        #ddf5fe 45.5%,
+        #eefbff 46.4%,
+        #48d4d8 47.6%,
+        #28bed2 53%,
+        #14a2c6 60%,
+        #0b84b0 66%,
+        #086e9e 69.5%,
+        #f9edc4 70.6%,
+        #f6dd9e 80%,
+        #edc57a 92%,
+        #e2b567 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+  }
+  /* ::before — THE SUN (live position from the clock), its glitter
+     column on the water, drifting cumulus and the horizon haze. */
+  [data-theme="summer"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      /* live sun disc + halo */
+      radial-gradient(circle at var(--sun-x,76%) var(--sun-y,12%),
+        rgba(255,255,252, calc(0.98 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,255,236,170), calc(0.88 * var(--sun-op,1))) 2%,
+        rgba(var(--sun-halo-rgb,255,236,170), calc(0.42 * var(--sun-op,1))) 6%,
+        rgba(var(--sun-halo-rgb,255,236,170), calc(0.16 * var(--sun-op,1))) 13%,
+        rgba(var(--sun-halo-rgb,255,236,170), 0) 26%),
+      /* wide warm bloom around the sun */
+      radial-gradient(42% 32% at var(--sun-x,76%) var(--sun-y,12%),
+        rgba(var(--sun-halo-rgb,255,236,170), calc(0.30 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,255,236,170), 0) 70%),
+      /* glitter column: the sun's reflection running down the sea,
+         horizontally locked to wherever the sun is right now */
+      radial-gradient(5% 26% at var(--sun-x,76%) 58%,
+        rgba(255,246,196, calc(0.50 * var(--sun-op,1))) 0%,
+        rgba(255,240,180, calc(0.18 * var(--sun-op,1))) 55%,
+        rgba(255,240,180, 0) 100%),
+      /* one anchored cumulus — the rest drift by via animations.js */
+      radial-gradient(13% 4% at 22% 18%, rgba(255,255,255,0.88) 0 60%, rgba(255,255,255,0) 78%),
+      radial-gradient(8% 3% at 29.5% 15.8%, rgba(255,255,255,0.78) 0 58%, rgba(255,255,255,0) 78%),
+      /* distant headland on the right horizon — depth anchor */
+      radial-gradient(18% 3.2% at 96% 45.8%, rgba(70,110,130,0.42) 0 68%, rgba(70,110,130,0) 80%),
+      /* horizon haze line where sky meets sea */
+      linear-gradient(180deg,
+        rgba(255,255,255,0) 44.4%,
+        rgba(255,255,255,0.6) 46.4%,
+        rgba(255,255,255,0) 48.6%);
+  }
+  /* ::after — surf: foam line, wet-sand mirror sheen below it. */
+  [data-theme="summer"] body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      /* scalloped foam edge */
+      radial-gradient(9% 1.6% at 8% 70.2%,  rgba(255,255,255,0.95) 0 62%, rgba(255,255,255,0) 80%),
+      radial-gradient(11% 1.8% at 26% 70%,  rgba(255,255,255,0.9) 0 62%, rgba(255,255,255,0) 80%),
+      radial-gradient(10% 1.7% at 45% 70.3%, rgba(255,255,255,0.94) 0 62%, rgba(255,255,255,0) 80%),
+      radial-gradient(12% 1.8% at 65% 70%,  rgba(255,255,255,0.9) 0 62%, rgba(255,255,255,0) 80%),
+      radial-gradient(10% 1.6% at 84% 70.2%, rgba(255,255,255,0.92) 0 62%, rgba(255,255,255,0) 80%),
+      radial-gradient(8% 1.5% at 97% 70%,   rgba(255,255,255,0.88) 0 62%, rgba(255,255,255,0) 80%),
+      /* wet sand catching the sky */
+      linear-gradient(180deg,
+        rgba(255,255,255,0) 70.4%,
+        rgba(190,230,238,0.30) 71.6%,
+        rgba(235,248,250,0.14) 73.4%,
+        rgba(255,255,255,0) 76%);
+    filter: blur(0.5px);
+  }
+  /* The surf is ALWAYS alive — waves roll in and pull back on a
+     transform-only animation (GPU composite, cheap even on lite).
+     High power layers the JS foam washes on top. */
+  [data-theme="summer"] body::after {
+    animation: summerTide 7s ease-in-out infinite;
+  }
+  @keyframes summerTide {
+    0%   { transform: translateY(0.35%) scaleY(0.995); opacity: 0.72; }
+    45%  { transform: translateY(-0.75%) scaleY(1.01); opacity: 1; }
+    62%  { transform: translateY(-0.55%);              opacity: 0.95; }
+    100% { transform: translateY(0.35%) scaleY(0.995); opacity: 0.72; }
+  }
+  /* Ambient FX spawned by animations.js */
+  [data-theme="summer"] .summer-fx {
+    will-change: transform, opacity;
+    pointer-events: none;
+    user-select: none;
+  }
+  [data-theme="summer"] .summer-sparkle { mix-blend-mode: screen; }
+  /* Lift content above the scene layers. */
+  [data-theme="summer"] main,
+  [data-theme="summer"] .view,
+  [data-theme="summer"] .card-mode,
+  [data-theme="summer"] .detail-row,
+  [data-theme="summer"] .detail-cell,
+  [data-theme="summer"] .detail-block,
+  [data-theme="summer"] .lib-item,
+  [data-theme="summer"] .panel,
+  [data-theme="summer"] .section {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+  }
+  /* LITE surfaces: milky beach glass, opaque enough to read without
+     any blur cost. */
+  [data-theme="summer"] .detail-row,
+  [data-theme="summer"] .detail-cell,
+  [data-theme="summer"] .detail-block,
+  [data-theme="summer"] .lib-item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.80), rgba(232,250,255,0.68));
+    border-color: rgba(120,205,235,0.45);
+    box-shadow: 0 6px 18px rgba(10,90,130,0.10);
+  }
+  [data-theme="summer"] .menu-panel { background: rgba(238,251,255,0.86); }
+  [data-theme="summer"] .menu-section { background: rgba(255,255,255,0.16); }
+  /* HIGH surfaces: true see-through frosted glass over the beach. */
+  [data-ui-power="high"][data-theme="summer"] .detail-row,
+  [data-ui-power="high"][data-theme="summer"] .detail-cell,
+  [data-ui-power="high"][data-theme="summer"] .detail-block,
+  [data-ui-power="high"][data-theme="summer"] .lib-item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.52), rgba(232,250,255,0.38));
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  [data-ui-power="high"][data-theme="summer"] .menu-panel {
+    background: rgba(238,251,255,0.50);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+  }
+
+/* END THEME: SUMMER ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: WINTER  ❄  (seasonal — Dec/Jan/Feb, or admin preview)
+════════════════════════════════════════════════════════════ */
+
+  /* ── "WINTER ARC" ──────────────────────────────────────────
+     ISOLATION. A vast, featureless snow plain under a huge
+     empty sky — the horizon is a flat, endless line with one
+     lone dead tree standing far away. Colour has almost left
+     the world: greys, cold blue shadow, breath-fog. The winter
+     sun (live, from the clock) barely climbs above the horizon
+     and gives no warmth; the day is short and the nights are
+     long, lit only by stars and a faint, foreign aurora. Where
+     summer is loud and alive, this is the silence after.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="winter"] {
+    --bg:#050608; --bg2:#0a0c10; --bg3:#101318;
+    --border:#1c2129; --border2:#2b333e;
+    --text:#d8e0e8; --text2:#78848f; --text3:#454f59;
+    --accent:#8fb4cc;
+    --gold:#a8bccb;
+    --green:#4f8878;
+    --pantheon-color:#9cc4dd;
+    --pantheon-border:#3e6580;
+    --pantheon-deep:#07090e;
+    --pantheon-surface:rgba(127,178,210,0.10);
+    --pantheon-glow:rgba(127,178,210,0.24);
+  }
+  /* A huge, empty, near-monochrome sky pressing down on a pale
+     snow line. Almost no colour — the cold has drained it. */
+  [data-theme="winter"] body {
+    background: linear-gradient(180deg,
+      #010202 0%,
+      #040507 22%,
+      #080a0e 44%,
+      #0d1015 60%,
+      #14181e 70%,
+      #1e242c 76%,
+      #2c343e 78%,
+      #8c99a4 78.6%,
+      #7a8692 86%,
+      #5e6a76 94%,
+      #4a5560 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+  }
+  /* ::before — the low cold sun (live), thin stratus, stars, a
+     faint foreign aurora, and a heavy isolating vignette. */
+  [data-theme="winter"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      /* the winter sun: pale, low, heatless — position is live */
+      radial-gradient(circle at var(--sun-x,50%) var(--sun-y,64%),
+        rgba(244,248,252, calc(0.85 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,200,220,240), calc(0.45 * var(--sun-op,1))) 2.2%,
+        rgba(var(--sun-halo-rgb,200,220,240), calc(0.16 * var(--sun-op,1))) 6%,
+        rgba(var(--sun-halo-rgb,200,220,240), calc(0.06 * var(--sun-op,1))) 12%,
+        rgba(var(--sun-halo-rgb,200,220,240), 0) 20%),
+      /* thin high stratus — smeared, joyless clouds */
+      linear-gradient(94deg,
+        rgba(150,170,188,0) 18%, rgba(150,170,188,0.07) 30%,
+        rgba(150,170,188,0) 44%, rgba(150,170,188,0.05) 58%,
+        rgba(150,170,188,0) 72%),
+      /* sparse cold stars (the night overlay dims the sky further) */
+      radial-gradient(1.4px 1.4px at 12% 9%,  rgba(255,255,255,0.8) 0 50%, transparent 51%),
+      radial-gradient(1.1px 1.1px at 31% 18%, rgba(215,232,246,0.6) 0 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 49% 6%,  rgba(255,255,255,0.7) 0 50%, transparent 51%),
+      radial-gradient(1.1px 1.1px at 66% 14%, rgba(215,232,246,0.55) 0 50%, transparent 51%),
+      radial-gradient(1.4px 1.4px at 81% 8%,  rgba(255,255,255,0.7) 0 50%, transparent 51%),
+      radial-gradient(1.1px 1.1px at 93% 20%, rgba(220,236,248,0.55) 0 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 22% 30%, rgba(215,232,246,0.4) 0 50%, transparent 51%),
+      /* isolating vignette — the dark presses in from the edges */
+      radial-gradient(120% 90% at 50% 42%,
+        rgba(0,0,0,0) 52%, rgba(1,3,8,0.34) 78%, rgba(0,2,6,0.62) 100%);
+  }
+  /* Faint aurora — only at night, only on high power. It doesn't
+     comfort; it just reminds you how far from home this is. */
+  html[data-sun-phase="night"][data-ui-power="high"][data-theme="winter"] body::before {
+    background:
+      radial-gradient(circle at var(--sun-x,50%) var(--sun-y,64%),
+        rgba(244,248,252, calc(0.85 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,200,220,240), calc(0.45 * var(--sun-op,1))) 2.2%,
+        rgba(var(--sun-halo-rgb,200,220,240), 0) 20%),
+      linear-gradient(108deg,
+        rgba(64,190,170,0) 34%,
+        rgba(64,190,170,0.10) 44%,
+        rgba(96,140,220,0.09) 54%,
+        rgba(64,190,170,0) 66%),
+      radial-gradient(1.4px 1.4px at 12% 9%,  rgba(255,255,255,0.85) 0 50%, transparent 51%),
+      radial-gradient(1.1px 1.1px at 31% 18%, rgba(215,232,246,0.65) 0 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 49% 6%,  rgba(255,255,255,0.75) 0 50%, transparent 51%),
+      radial-gradient(1.1px 1.1px at 66% 14%, rgba(215,232,246,0.6) 0 50%, transparent 51%),
+      radial-gradient(1.4px 1.4px at 81% 8%,  rgba(255,255,255,0.75) 0 50%, transparent 51%),
+      radial-gradient(1.1px 1.1px at 93% 20%, rgba(220,236,248,0.6) 0 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 22% 30%, rgba(215,232,246,0.45) 0 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 57% 26%, rgba(215,232,246,0.4) 0 50%, transparent 51%),
+      radial-gradient(120% 90% at 50% 42%,
+        rgba(0,0,0,0) 52%, rgba(1,3,8,0.34) 78%, rgba(0,2,6,0.62) 100%);
+    animation: winterAurora 12s ease-in-out infinite alternate;
+  }
+  @keyframes winterAurora {
+    0%   { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+  /* ::after — the endless plain. An almost perfectly flat horizon
+     (no comforting hills), long blue shadow streaks in the snow,
+     and ONE lone dead tree far off to the right. Nothing else. */
+  [data-theme="winter"] body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+      /* the lone dead tree — small, distant, alone */
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 90'><path d='M30 90 L30 42 M30 60 L19 46 M19 46 L14 38 M30 52 L41 36 M41 36 L47 26 M41 36 L36 24 M30 42 L30 30 M30 36 L23 24 M23 24 L18 15 M23 24 L27 13 M30 30 L36 18 M36 18 L42 9' stroke='%23202e3a' stroke-width='2.4' fill='none' stroke-linecap='round'/></svg>"),
+      /* long cold shadow streaks across the snow */
+      linear-gradient(92deg,
+        rgba(62,84,104,0) 4%,  rgba(62,84,104,0.20) 12%, rgba(62,84,104,0) 22%,
+        rgba(62,84,104,0) 38%, rgba(62,84,104,0.16) 50%, rgba(62,84,104,0) 60%,
+        rgba(62,84,104,0) 74%, rgba(62,84,104,0.18) 85%, rgba(62,84,104,0) 96%),
+      /* the plain itself, fading colder toward the viewer */
+      linear-gradient(180deg, #98a4ae 0%, #87939e 22%, #6c7883 58%, #515c66 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 44px 66px, 100% 100%, 100% 100%;
+    background-position: 74% 0%, 0 0, 0 0;
+    clip-path: polygon(
+      0% 100%, 0% 78.4%,
+      18% 78.15%, 42% 78.4%, 63% 78.1%, 84% 78.35%, 100% 78.2%,
+      100% 100%);
+    opacity: 0.98;
+  }
+  /* Snow piling up on idle boxes (animations.js): little snowballs
+     gather along the top edge of any card you leave untouched, and
+     shake off when you tap it. */
+  [data-theme="winter"] :is(.detail-row,.detail-cell,.detail-block,.lib-item,.prog-card,.cat-card,.nutrition-card,.prog-group,.wip-card) {
+    position: relative;
+  }
+  [data-theme="winter"] .winter-snowpile {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 34%,
+      rgba(255,255,255,0.98) 0%, rgba(230,242,250,0.9) 55%, rgba(222,236,248,0.55) 100%);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    will-change: transform, opacity;
+    z-index: 3;
+  }
+  /* Snowfall + flurries injected by animations.js */
+  [data-theme="winter"] .winter-flake {
+    will-change: transform, opacity;
+    pointer-events: none;
+    user-select: none;
+  }
+  /* Lift content above the waste. */
+  [data-theme="winter"] main,
+  [data-theme="winter"] .view,
+  [data-theme="winter"] .card-mode,
+  [data-theme="winter"] .detail-row,
+  [data-theme="winter"] .detail-cell,
+  [data-theme="winter"] .detail-block,
+  [data-theme="winter"] .lib-item,
+  [data-theme="winter"] .panel,
+  [data-theme="winter"] .section {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+  }
+  /* Snow settled on every box — frost caps + icy rim. The cards are
+     the only shelter out here. */
+  [data-theme="winter"] .detail-row,
+  [data-theme="winter"] .detail-cell,
+  [data-theme="winter"] .detail-block,
+  [data-theme="winter"] .lib-item,
+  [data-theme="winter"] .prog-card,
+  [data-theme="winter"] .cat-card,
+  [data-theme="winter"] .nutrition-card,
+  [data-theme="winter"] .prog-group,
+  [data-theme="winter"] .wip-card {
+    background-image: linear-gradient(180deg,
+      rgba(222,236,246,0.18) 0%,
+      rgba(206,226,242,0.07) 12%,
+      rgba(206,226,242,0) 26%);
+    border-top-color: rgba(198,222,242,0.42);
+    box-shadow:
+      inset 0 1.5px 0 rgba(226,240,250,0.5),
+      0 6px 18px rgba(0,4,10,0.5);
+  }
+  [data-theme="winter"] header {
+    background-image: linear-gradient(180deg,
+      rgba(218,234,246,0.12) 0%, rgba(218,234,246,0) 40%);
+    border-bottom-color: rgba(170,200,224,0.28);
+  }
+  [data-theme="winter"] .menu-panel {
+    background-image: linear-gradient(180deg,
+      rgba(218,234,246,0.09) 0%, rgba(218,234,246,0) 22%);
+  }
+
+/* END THEME: WINTER ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: SPRING  🌱  (seasonal — Mar/Apr/May, or admin preview)
+════════════════════════════════════════════════════════════ */
+
+  /* ── "SPRING CUT" ──────────────────────────────────────────
+     A perfect spring day, live on your clock: the sun climbs out
+     of the fields at ~6:30, hangs bright through the day and
+     sets behind the far ridge at ~19:30. Crisp blue sky, green
+     fields rolling away through two hazy ridge lines, and the
+     near meadow dusted with tiny white / yellow / pink
+     wildflowers. Clouds drift by; petals ride the breeze.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="spring"] {
+    --bg:#f2fbee;
+    --bg2:rgba(255,255,255,0.50); --bg3:rgba(235,249,228,0.46);
+    --border:#a2d494; --border2:#78bc64;
+    --text:#122f0d; --text2:#2e6a26; --text3:#527e46;
+    --accent:#3aa32e;
+    --gold:#ffd84a;
+    --green:#3aa32e;
+    --pantheon-color:#5cbe4e;
+    --pantheon-border:#348a28;
+    --pantheon-deep:#eef9e8;
+    --pantheon-surface:rgba(58,163,46,0.10);
+    --pantheon-glow:rgba(255,216,74,0.26);
+  }
+  /* Morning-clear sky easing into a bright hazy horizon, fields
+     rolling away below in three depth bands. */
+  [data-theme="spring"] body {
+    background: linear-gradient(180deg,
+      #2f8ee2 0%,
+      #4aa4ec 16%,
+      #74c0f4 32%,
+      #aadcfa 45%,
+      #ddf2fe 52%,
+      #b9dd74 53.4%,
+      #a4d05e 56%,
+      #86c04a 63%,
+      #62a636 76%,
+      #4a8c28 89%,
+      #38721e 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+  }
+  /* ::before — the live sun, morning haze, two far hazy ridges. */
+  [data-theme="spring"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      /* live sun disc + halo */
+      radial-gradient(circle at var(--sun-x,27%) var(--sun-y,16%),
+        rgba(255,255,250, calc(0.98 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,255,244,190), calc(0.85 * var(--sun-op,1))) 2%,
+        rgba(var(--sun-halo-rgb,255,244,190), calc(0.38 * var(--sun-op,1))) 6%,
+        rgba(var(--sun-halo-rgb,255,244,190), calc(0.14 * var(--sun-op,1))) 13%,
+        rgba(var(--sun-halo-rgb,255,244,190), 0) 25%),
+      radial-gradient(38% 28% at var(--sun-x,27%) var(--sun-y,16%),
+        rgba(var(--sun-halo-rgb,255,244,190), calc(0.26 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,255,244,190), 0) 70%),
+      /* far hazy ridge — most distant, most blue */
+      radial-gradient(48% 5.2% at 20% 53.6%, rgba(112,158,138,0.60) 0 70%, transparent 79%),
+      radial-gradient(56% 6% at 76% 53.2%,  rgba(104,150,132,0.55) 0 70%, transparent 79%),
+      /* nearer ridge, greener */
+      radial-gradient(42% 5% at 42% 54.6%,  rgba(112,166,92,0.65) 0 70%, transparent 79%),
+      radial-gradient(38% 4.6% at 92% 54.2%, rgba(106,160,86,0.6) 0 70%, transparent 79%),
+      /* soft morning haze band on the horizon */
+      linear-gradient(180deg,
+        rgba(255,255,255,0) 47%,
+        rgba(255,255,255,0.55) 52%,
+        rgba(255,255,255,0) 57%);
+  }
+  /* ::after — the near meadow: rolling crest sprinkled with tiny
+     wildflowers (the dot tiles only render inside the clip-path),
+     plus mowing-line texture running with the slope. */
+  [data-theme="spring"] body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+      radial-gradient(2px 2px at 24px 30px,  rgba(255,255,255,0.95) 0 50%, transparent 51%),
+      radial-gradient(1.8px 1.8px at 120px 84px, rgba(255,232,120,0.95) 0 50%, transparent 51%),
+      radial-gradient(2px 2px at 210px 46px,  rgba(255,190,215,0.95) 0 50%, transparent 51%),
+      radial-gradient(1.6px 1.6px at 66px 128px, rgba(255,255,255,0.9) 0 50%, transparent 51%),
+      radial-gradient(1.8px 1.8px at 168px 150px, rgba(255,236,140,0.9) 0 50%, transparent 51%),
+      radial-gradient(1.6px 1.6px at 250px 110px, rgba(255,255,255,0.85) 0 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 96px 62px,  rgba(255,205,225,0.8) 0 50%, transparent 51%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 42px),
+      linear-gradient(180deg, #9ecc54 0%, #7ab840 36%, #569c2e 70%, #407a20 100%);
+    background-size: 280px 190px, 280px 190px, 280px 190px, 280px 190px, 280px 190px, 280px 190px, 280px 190px, auto, auto;
+    clip-path: polygon(
+      0% 100%, 0% 62%,
+      9% 60.8%, 20% 62.2%, 32% 60.4%, 44% 61.8%, 56% 60.2%,
+      68% 61.6%, 79% 60.4%, 90% 61.8%, 100% 60.6%, 100% 100%);
+    opacity: 0.98;
+  }
+  /* Wind sheen sweeping the meadow (animations.js) — screen blend
+     so it reads as light rolling over the grass. */
+  [data-theme="spring"] .spring-sheen {
+    mix-blend-mode: screen;
+  }
+  /* Clouds & petals injected by animations.js */
+  [data-theme="spring"] .spring-fx {
+    will-change: transform, opacity;
+    pointer-events: none;
+    user-select: none;
+  }
+  /* Lift content above the meadow. */
+  [data-theme="spring"] main,
+  [data-theme="spring"] .view,
+  [data-theme="spring"] .card-mode,
+  [data-theme="spring"] .detail-row,
+  [data-theme="spring"] .detail-cell,
+  [data-theme="spring"] .detail-block,
+  [data-theme="spring"] .lib-item,
+  [data-theme="spring"] .panel,
+  [data-theme="spring"] .section {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+  }
+  /* LITE surfaces: fresh milky white, no blur. */
+  [data-theme="spring"] .detail-row,
+  [data-theme="spring"] .detail-cell,
+  [data-theme="spring"] .detail-block,
+  [data-theme="spring"] .lib-item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.84), rgba(238,250,230,0.72));
+    border-color: rgba(140,200,120,0.45);
+    box-shadow: 0 6px 18px rgba(30,90,20,0.10);
+  }
+  [data-theme="spring"] .menu-panel { background: rgba(242,251,238,0.88); }
+  [data-theme="spring"] .menu-section { background: rgba(255,255,255,0.16); }
+  /* HIGH surfaces: dewy frosted glass over the fields. */
+  [data-ui-power="high"][data-theme="spring"] .detail-row,
+  [data-ui-power="high"][data-theme="spring"] .detail-cell,
+  [data-ui-power="high"][data-theme="spring"] .detail-block,
+  [data-ui-power="high"][data-theme="spring"] .lib-item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.56), rgba(238,250,230,0.42));
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  [data-ui-power="high"][data-theme="spring"] .menu-panel {
+    background: rgba(242,251,238,0.52);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+  }
+
+/* END THEME: SPRING ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME: AUTUMN  🍂  (seasonal — Sep/Oct/Nov, or admin preview)
+════════════════════════════════════════════════════════════ */
+
+  /* ── "AUTUMN BULK" ─────────────────────────────────────────
+     Harvest weight. Golden stubble fields running to the
+     horizon under a heavy overcast lid — the low autumn sun
+     (live, from your clock) fights through one break in the
+     cloud. Dry dead patches scar the ground, bare hedgerows
+     line the horizon, and the wind never quite stops moving
+     the leaves.
+  ──────────────────────────────────────────────────────────── */
+  [data-theme="autumn"] {
+    --bg:#f6eeda;
+    --bg2:rgba(250,242,222,0.62); --bg3:rgba(242,229,198,0.58);
+    --border:#c9ad74; --border2:#a2854c;
+    --text:#33250e; --text2:#6d5424; --text3:#7e6234;
+    --accent:#c8741e;
+    --gold:#d99a2b;
+    --green:#7a8a3a;
+    --pantheon-color:#d9982f;
+    --pantheon-border:#a87420;
+    --pantheon-deep:#f6eeda;
+    --pantheon-surface:rgba(200,116,30,0.12);
+    --pantheon-glow:rgba(217,154,43,0.28);
+  }
+  /* Overcast lid → one warm tear in the cloud → golden fields. */
+  [data-theme="autumn"] body {
+    background: linear-gradient(180deg,
+      #8a8578 0%,
+      #a39a84 14%,
+      #bfb08a 27%,
+      #d8c188 38%,
+      #ecce84 46%,
+      #f2ce74 50.2%,
+      #dcb254 53%,
+      #c5983e 64%,
+      #ab8030 78%,
+      #8d6624 90%,
+      #78551c 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+  }
+  /* ::before — cloud bellies, the sun burning through one gap
+     (live position), hedgerow silhouettes on the horizon. */
+  [data-theme="autumn"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      /* the sun pushing through the overcast — diffuse, veiled */
+      radial-gradient(circle at var(--sun-x,64%) var(--sun-y,40%),
+        rgba(255,244,220, calc(0.75 * var(--sun-op,1))) 0%,
+        rgba(var(--sun-halo-rgb,240,225,180), calc(0.42 * var(--sun-op,1))) 3%,
+        rgba(var(--sun-halo-rgb,240,225,180), calc(0.20 * var(--sun-op,1))) 8%,
+        rgba(var(--sun-halo-rgb,240,225,180), calc(0.08 * var(--sun-op,1))) 15%,
+        rgba(var(--sun-halo-rgb,240,225,180), 0) 26%),
+      /* wider veiled glow where the cloud thins */
+      radial-gradient(26% 18% at var(--sun-x,64%) var(--sun-y,40%),
+        rgba(255,226,150, calc(0.30 * var(--sun-op,1))) 0%,
+        rgba(255,214,130, calc(0.10 * var(--sun-op,1))) 55%,
+        rgba(255,214,130, 0) 78%),
+      /* two anchored cloud bellies, warm-lit — the rest drift by
+         via animations.js */
+      radial-gradient(42% 10% at 24% 10%, rgba(112,104,88,0.40) 0 66%, rgba(112,104,88,0) 80%),
+      radial-gradient(38% 9% at 80% 20%, rgba(120,110,90,0.32) 0 66%, rgba(120,110,90,0) 80%),
+      /* bare-tree / hedgerow silhouettes on the horizon */
+      radial-gradient(30% 4% at 18% 49.4%, rgba(88,66,34,0.50) 0 70%, transparent 80%),
+      radial-gradient(24% 3.4% at 66% 49%, rgba(80,60,30,0.45) 0 70%, transparent 80%),
+      radial-gradient(18% 3% at 90% 49.6%, rgba(88,66,34,0.40) 0 70%, transparent 80%);
+  }
+  /* ::after — near stubble field with dry dead patches. */
+  [data-theme="autumn"] body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+      /* dry / dead patches of ground */
+      radial-gradient(20% 9% at 24% 78%, rgba(115,84,42,0.55) 0 64%, rgba(115,84,42,0) 80%),
+      radial-gradient(16% 7% at 68% 86%, rgba(100,72,36,0.50) 0 64%, rgba(100,72,36,0) 80%),
+      radial-gradient(13% 6% at 46% 94%, rgba(92,64,30,0.45) 0 64%, rgba(92,64,30,0) 80%),
+      radial-gradient(11% 5% at 88% 74%, rgba(115,84,42,0.42) 0 64%, rgba(115,84,42,0) 80%),
+      radial-gradient(9% 4% at 6% 88%,  rgba(104,74,36,0.4) 0 64%, rgba(104,74,36,0) 80%),
+      /* stubble rows converging into the distance */
+      repeating-linear-gradient(90deg, rgba(140,102,48,0.14) 0 2px, transparent 2px 34px),
+      linear-gradient(180deg, #d8aa4a 0%, #bc8a34 34%, #986c26 70%, #7a541e 100%);
+    clip-path: polygon(
+      0% 100%, 0% 51%,
+      10% 49.8%, 22% 51.2%, 35% 49.6%, 47% 51%, 59% 49.4%,
+      71% 50.8%, 83% 49.8%, 93% 51%, 100% 50%, 100% 100%);
+    opacity: 0.98;
+  }
+  /* Leaves & gusts injected by animations.js */
+  [data-theme="autumn"] .autumn-fx {
+    will-change: transform, opacity;
+    pointer-events: none;
+    user-select: none;
+  }
+  /* Lift content above the fields. */
+  [data-theme="autumn"] main,
+  [data-theme="autumn"] .view,
+  [data-theme="autumn"] .card-mode,
+  [data-theme="autumn"] .detail-row,
+  [data-theme="autumn"] .detail-cell,
+  [data-theme="autumn"] .detail-block,
+  [data-theme="autumn"] .lib-item,
+  [data-theme="autumn"] .panel,
+  [data-theme="autumn"] .section {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+  }
+  /* LITE surfaces: warm parchment, opaque, no blur. */
+  [data-theme="autumn"] .detail-row,
+  [data-theme="autumn"] .detail-cell,
+  [data-theme="autumn"] .detail-block,
+  [data-theme="autumn"] .lib-item {
+    background: linear-gradient(135deg, rgba(252,244,226,0.88), rgba(244,228,192,0.78));
+    border-color: rgba(178,142,80,0.48);
+    box-shadow: 0 6px 18px rgba(80,52,10,0.14);
+  }
+  [data-theme="autumn"] .menu-panel { background: rgba(250,242,224,0.90); }
+  [data-theme="autumn"] .menu-section { background: rgba(255,250,238,0.18); }
+  /* HIGH surfaces: translucent parchment glass over the harvest. */
+  [data-ui-power="high"][data-theme="autumn"] .detail-row,
+  [data-ui-power="high"][data-theme="autumn"] .detail-cell,
+  [data-ui-power="high"][data-theme="autumn"] .detail-block,
+  [data-ui-power="high"][data-theme="autumn"] .lib-item {
+    background: linear-gradient(135deg, rgba(252,244,226,0.66), rgba(244,228,192,0.52));
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  [data-ui-power="high"][data-theme="autumn"] .menu-panel {
+    background: rgba(250,242,224,0.60);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+  }
+
+/* END THEME: AUTUMN ──────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════
+   UI THEME: LIQUID GLASS
+   Applied via data-ui-theme="glass" on <html>.
+   Composable — works on top of any color theme.
+   ─────────────────────────────────────────────────────────
+   Material layers:
+   1. Deep blur + high saturation   → true frosted glass body
+   2. Multi-stop gradient bg        → internal light refraction
+   3. Animated shimmer sweep        → liquid surface in motion
+   4. Inset box-shadows             → glass rim / edge thickness
+   5. Accent-color bleed (::before) → iridescent theme tinting
+════════════════════════════════════════════════════════════ */
+
+/* ── Keyframes ──────────────────────────────────────────── */
+/* Shimmer uses transform (GPU-composited) not left (triggers paint) */
+@keyframes gl-shimmer {
+  0%      { transform: translateX(0);    opacity: 0; }
+  8%, 92% { opacity: 1; }
+  100%    { transform: translateX(580%); opacity: 0; }
+}
+
+/* ── Dark-surface tokens (default — most workout themes) ─── */
+[data-ui-theme="glass"] {
+  --gl-s0:     rgba(255,255,255,0.055);
+  --gl-s1:     rgba(255,255,255,0.090);
+  --gl-s2:     rgba(255,255,255,0.130);
+  --gl-s3:     rgba(255,255,255,0.185);
+  --gl-e:      rgba(255,255,255,0.20);
+  --gl-spec:   rgba(255,255,255,0.60);
+  --gl-shim:   rgba(255,255,255,0.18);
+  --gl-dur:    8s;
+  --gl-blur:   blur(22px) saturate(1.8) brightness(1.06);
+  --gl-blur-h: blur(30px) saturate(2.0) brightness(1.08);
+
+  --gl-shadow:
+    0 1px 1px    rgba(0,0,0,0.06),
+    0 4px 8px    rgba(0,0,0,0.10),
+    0 14px 28px  rgba(0,0,0,0.16),
+    0 36px 60px  rgba(0,0,0,0.10),
+    inset 0  1.5px 0  var(--gl-spec),
+    inset 0 -1px   0  rgba(0,0,0,0.12),
+    inset  1px 0   0  rgba(255,255,255,0.09),
+    inset -1px 0   0  rgba(255,255,255,0.04);
+
+  --gl-shadow-sm:
+    0 2px 4px    rgba(0,0,0,0.08),
+    0 6px 18px   rgba(0,0,0,0.14),
+    inset 0 1px 0 var(--gl-spec);
+}
+
+/* ── Light-surface tokens (all light-background themes) ───── */
+[data-theme="light"][data-ui-theme="glass"],
+[data-theme="core"][data-ui-theme="glass"],
+[data-theme="handstand"][data-ui-theme="glass"],
+[data-theme="isometric"][data-ui-theme="glass"],
+[data-theme="warmup"][data-ui-theme="glass"],
+[data-theme="stretch"][data-ui-theme="glass"],
+[data-theme="sidequests"][data-ui-theme="glass"],
+[data-theme="hof"][data-ui-theme="glass"],
+[data-theme="pantheon"][data-ui-theme="glass"],
+[data-theme="beber"][data-ui-theme="glass"],
+[data-theme="summer"][data-ui-theme="glass"],
+[data-theme="spring"][data-ui-theme="glass"],
+[data-theme="autumn"][data-ui-theme="glass"] {
+  --gl-s0:     rgba(255,255,255,0.40);
+  --gl-s1:     rgba(255,255,255,0.55);
+  --gl-s2:     rgba(255,255,255,0.67);
+  --gl-s3:     rgba(255,255,255,0.80);
+  --gl-e:      rgba(255,255,255,0.72);
+  --gl-spec:   rgba(255,255,255,0.98);
+  --gl-shim:   rgba(255,255,255,0.40);
+  --gl-blur:   blur(16px) saturate(1.6) brightness(1.02);
+  --gl-blur-h: blur(22px) saturate(1.8) brightness(1.04);
+
+  --gl-shadow:
+    0 1px 1px    rgba(0,0,0,0.03),
+    0 4px 8px    rgba(0,0,0,0.05),
+    0 14px 28px  rgba(0,0,0,0.07),
+    inset 0  1.5px 0  var(--gl-spec),
+    inset 0 -1px   0  rgba(0,0,0,0.04),
+    inset  1px 0   0  rgba(255,255,255,0.60),
+    inset -1px 0   0  rgba(255,255,255,0.35);
+
+  --gl-shadow-sm:
+    0 2px 4px    rgba(0,0,0,0.04),
+    0 6px 18px   rgba(0,0,0,0.07),
+    inset 0 1px 0 var(--gl-spec);
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+[data-ui-theme="glass"] header {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 55%),
+    var(--gl-s2) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+  border-bottom: 1px solid var(--gl-e) !important;
+  box-shadow: var(--gl-shadow);
+}
+
+/* ── Bottom nav ─────────────────────────────────────────── */
+[data-ui-theme="glass"] .bottom-nav {
+  background:
+    linear-gradient(0deg, rgba(255,255,255,0.14) 0%, transparent 55%),
+    var(--gl-s2) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+  border-top: 1px solid var(--gl-e) !important;
+  box-shadow:
+    0 -1px 1px    rgba(0,0,0,0.06),
+    0 -4px 12px   rgba(0,0,0,0.12),
+    0 -16px 40px  rgba(0,0,0,0.14),
+    inset 0 1px 0 var(--gl-spec);
+}
+[data-ui-theme="glass"] .bnav-home,
+[data-ui-theme="glass"] .bnav-menu {
+  border-color: var(--gl-e) !important;
+}
+[data-ui-theme="glass"] .bnav-back:active:not(.disabled),
+[data-ui-theme="glass"] .bnav-home:active,
+[data-ui-theme="glass"] .bnav-menu:active {
+  background: var(--gl-s3) !important;
+}
+
+/* ── Program cards ──────────────────────────────────────── */
+[data-ui-theme="glass"] .prog-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0.20) 0%,
+      rgba(255,255,255,0.04) 50%,
+      rgba(255,255,255,0.10) 100%),
+    var(--gl-s0) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border: 1px solid var(--gl-e) !important;
+  box-shadow: var(--gl-shadow);
+}
+[data-ui-theme="glass"] .prog-card:hover {
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0.28) 0%,
+      rgba(255,255,255,0.08) 50%,
+      rgba(255,255,255,0.16) 100%),
+    var(--gl-s1) !important;
+  border-color: rgba(255,255,255,0.38) !important;
+}
+/* Theme-accent iridescent tint — picks up whatever --accent the active theme sets */
+[data-ui-theme="glass"] .prog-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--accent, transparent);
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Liquid shimmer sweep */
+[data-ui-theme="glass"] .prog-card::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -80%;
+  width: 45%;
+  height: 140%;
+  will-change: transform;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    var(--gl-shim) 40%,
+    rgba(255,255,255,0.06) 55%,
+    transparent 100%
+  );
+  animation: gl-shimmer var(--gl-dur) ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+[data-ui-theme="glass"] .prog-card:nth-child(2)::after { animation-delay: -2.7s; }
+[data-ui-theme="glass"] .prog-card:nth-child(3)::after { animation-delay: -5.3s; }
+[data-ui-theme="glass"] .prog-card:nth-child(4)::after { animation-delay: -1.4s; }
+[data-ui-theme="glass"] .prog-card:nth-child(5)::after { animation-delay: -4.0s; }
+[data-ui-theme="glass"] .prog-card:nth-child(6)::after { animation-delay: -6.6s; }
+
+/* ── Library list items ─────────────────────────────────── */
+[data-ui-theme="glass"] .lib-item {
+  border-bottom-color: var(--gl-e) !important;
+}
+[data-ui-theme="glass"] .lib-item.active:hover {
+  background: var(--gl-s0) !important;
+}
+[data-ui-theme="glass"] #libraryListWrap.card-mode .lib-item,
+[data-ui-theme="glass"] #gymLibraryListWrap.card-mode .lib-item,
+[data-ui-theme="glass"] #cardioLibraryListWrap.card-mode .lib-item,
+[data-ui-theme="glass"] #homeCategoryWrap.card-mode .lib-item,
+[data-ui-theme="glass"] #nutritionLibraryListWrap.card-mode .lib-item,
+[data-ui-theme="glass"] #recoverHubList.card-mode .lib-item {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0.18) 0%,
+      rgba(255,255,255,0.03) 45%,
+      rgba(255,255,255,0.09) 100%),
+    var(--gl-s0) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border: 1px solid var(--gl-e) !important;
+  box-shadow: var(--gl-shadow-sm);
+}
+/* Shimmer on card-mode lib items */
+[data-ui-theme="glass"] #libraryListWrap.card-mode .lib-item::after,
+[data-ui-theme="glass"] #gymLibraryListWrap.card-mode .lib-item::after,
+[data-ui-theme="glass"] #cardioLibraryListWrap.card-mode .lib-item::after,
+[data-ui-theme="glass"] #homeCategoryWrap.card-mode .lib-item::after,
+[data-ui-theme="glass"] #nutritionLibraryListWrap.card-mode .lib-item::after,
+[data-ui-theme="glass"] #recoverHubList.card-mode .lib-item::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -80%;
+  width: 45%;
+  height: 140%;
+  will-change: transform;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    var(--gl-shim) 40%,
+    rgba(255,255,255,0.05) 55%,
+    transparent 100%
+  );
+  animation: gl-shimmer calc(var(--gl-dur) * 1.4) ease-in-out infinite;
+  pointer-events: none;
+}
+[data-ui-theme="glass"] #libraryListWrap.card-mode .lib-item:nth-child(even)::after,
+[data-ui-theme="glass"] #gymLibraryListWrap.card-mode .lib-item:nth-child(even)::after,
+[data-ui-theme="glass"] #cardioLibraryListWrap.card-mode .lib-item:nth-child(even)::after,
+[data-ui-theme="glass"] #homeCategoryWrap.card-mode .lib-item:nth-child(even)::after,
+[data-ui-theme="glass"] #nutritionLibraryListWrap.card-mode .lib-item:nth-child(even)::after,
+[data-ui-theme="glass"] #recoverHubList.card-mode .lib-item:nth-child(even)::after {
+  animation-delay: -4s;
+}
+
+/* ── Modals (slide-up sheets) ───────────────────────────── */
+[data-ui-theme="glass"] .muscle-modal {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.16) 0%, transparent 28%),
+    var(--gl-s3) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+  border-top: 1px solid var(--gl-e) !important;
+  box-shadow:
+    0 -1px 1px    rgba(0,0,0,0.06),
+    0 -6px 20px   rgba(0,0,0,0.18),
+    0 -24px 56px  rgba(0,0,0,0.14),
+    inset 0 1.5px 0 var(--gl-spec);
+}
+[data-ui-theme="glass"] .modal-divider {
+  border-color: var(--gl-e) !important;
+  background: var(--gl-e) !important;
+}
+
+/* ── Menu panel ─────────────────────────────────────────── */
+[data-ui-theme="glass"] .menu-panel {
+  background:
+    linear-gradient(270deg, rgba(255,255,255,0.14) 0%, transparent 25%),
+    var(--gl-s3) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+  border-left: 1px solid var(--gl-e) !important;
+  box-shadow:
+    -1px 0 1px    rgba(0,0,0,0.06),
+    -4px 0 16px   rgba(0,0,0,0.14),
+    -16px 0 48px  rgba(0,0,0,0.12),
+    inset 1px 0 0 var(--gl-spec);
+}
+[data-ui-theme="glass"] .menu-section {
+  border-color: var(--gl-e) !important;
+}
+[data-ui-theme="glass"] .menu-setting-row {
+  border-color: var(--gl-e) !important;
+}
+
+/* ── Preferences modal ──────────────────────────────────── */
+[data-ui-theme="glass"] #preferencesModal {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 25%),
+    var(--gl-s3) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+  border-top: 1px solid var(--gl-e) !important;
+  box-shadow:
+    0 -1px 1px    rgba(0,0,0,0.06),
+    0 -6px 20px   rgba(0,0,0,0.18),
+    inset 0 1.5px 0 var(--gl-spec);
+}
+
+/* ── Progression tree tier headers ─────────────────────── */
+[data-ui-theme="glass"] .tier-header {
+  border-bottom-color: var(--gl-e) !important;
+}
+
+/* ── Sub-hero / view header strips ─────────────────────── */
+[data-ui-theme="glass"] .sub-hero {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.12) 0%, transparent 50%),
+    var(--gl-s1) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border-bottom: 1px solid var(--gl-e) !important;
+  box-shadow: var(--gl-shadow-sm);
+}
+
+/* ── Theme pill ─────────────────────────────────────────── */
+[data-ui-theme="glass"] .theme-pill {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.04) 100%),
+    var(--gl-s1) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border-color: var(--gl-e) !important;
+  box-shadow: var(--gl-shadow-sm);
+}
+[data-ui-theme="glass"] .theme-pill-opt.active {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.08) 100%),
+    var(--gl-s2) !important;
+}
+
+/* ── Nutrition cards ────────────────────────────────────── */
+[data-ui-theme="glass"] .nutrition-card {
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0.14) 0%,
+      rgba(255,255,255,0.03) 50%,
+      rgba(255,255,255,0.08) 100%),
+    var(--gl-s0) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border: 1px solid var(--gl-e) !important;
+  box-shadow: var(--gl-shadow-sm);
+}
+
+/* ── Library hero / view header ─────────────────────────── */
+[data-ui-theme="glass"] .lib-hero {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.10) 0%, transparent 60%),
+    var(--gl-s1) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border-bottom: 1px solid var(--gl-e) !important;
+}
+
+/* ── Mode switcher tab strip ────────────────────────────── */
+[data-ui-theme="glass"] .tree-mode-switcher {
+  background: var(--gl-s1) !important;
+  backdrop-filter: var(--gl-blur);
+  -webkit-backdrop-filter: var(--gl-blur);
+  border-color: var(--gl-e) !important;
+  box-shadow: var(--gl-shadow-sm);
+}
+[data-ui-theme="glass"] .tree-mode-btn.active {
+  background: var(--accent) !important;
+  color: #fff !important;
+  box-shadow: inset 0 1px 0 var(--gl-spec), 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* ── Slide-up overlay sheets ────────────────────────────── */
+[data-ui-theme="glass"] .metrics-overlay-sheet,
+[data-ui-theme="glass"] .apd-refresh-sheet,
+[data-ui-theme="glass"] .apd-picker-sheet,
+[data-ui-theme="glass"] .prog-picker-sheet {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.12) 0%, transparent 22%),
+    var(--gl-s3) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+  border-top: 1px solid var(--gl-e) !important;
+  box-shadow:
+    0 -1px 1px    rgba(0,0,0,0.06),
+    0 -6px 20px   rgba(0,0,0,0.16),
+    0 -24px 56px  rgba(0,0,0,0.12),
+    inset 0 1.5px 0 var(--gl-spec);
+}
+
+/* ── Metrics / dashboard section borders ────────────────── */
+[data-ui-theme="glass"] .db-section {
+  border-bottom-color: var(--gl-e) !important;
+}
+
+/* ── Reduced motion: disable shimmer animations only ───── */
+@media (prefers-reduced-motion: reduce) {
+  [data-ui-theme="glass"] .prog-card::after,
+  [data-ui-theme="glass"] #libraryListWrap.card-mode .lib-item::after,
+  [data-ui-theme="glass"] #gymLibraryListWrap.card-mode .lib-item::after,
+  [data-ui-theme="glass"] #cardioLibraryListWrap.card-mode .lib-item::after,
+  [data-ui-theme="glass"] #homeCategoryWrap.card-mode .lib-item::after,
+  [data-ui-theme="glass"] #nutritionLibraryListWrap.card-mode .lib-item::after,
+  [data-ui-theme="glass"] #recoverHubList.card-mode .lib-item::after {
+    display: none;
+  }
+}
+
+/* END UI THEME: LIQUID GLASS ─────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   UI STYLE ENGINE  ·  whole-app re-skins  ·  (the "glass" style above is a
+   separate legacy implementation, intentionally left untouched)
+   ──────────────────────────────────────────────────────────────────────
+   HOW IT WORKS — three layers stack to transform the ENTIRE app:
+
+   1. TOKEN REDEFINITION   Each style redefines the core surface tokens
+      (--bg2 / --bg3 / --border / --border2 …). Because virtually every
+      component in the app is built from those tokens — progression tree,
+      detail blocks, chips, inputs, modals — overriding them re-skins
+      everything at once.
+
+   2. FX BACKGROUND        A fixed #uiFxLayer (injected once by JS) carries
+      a dramatic per-style background with two independently-animated
+      child layers. Lives below content so frosted panels reveal it.
+
+   3. SIGNATURE TREATMENT  A curated set of "hero" surfaces (cards, panels,
+      sheets) get the style's defining material — neumorphic extrude, clay
+      puff, skeuomorphic gloss, spatial float, glass frost.
+
+   PERFORMANCE TIERS
+     • Default (lite)             : opaque-ish tokens, NO backdrop blur, a
+                                    static background. Smooth on weak
+                                    devices.
+     • [data-ui-power="high"]     : translucency, backdrop blur, animated
+                                    backgrounds, glows. The full show.
+═══════════════════════════════════════════════════════════════════════ */
+
+/* ── FX background layer (shared scaffold) ──────────────────────────── */
+#uiFxLayer {
+  position: fixed; inset: 0; z-index: -1;
+  pointer-events: none; overflow: hidden;
+  opacity: 0; transition: opacity 0.6s ease;
+}
+/* The FX background layer is retained but disabled. A UI style must NOT
+   touch the colour theme's background — that's what made night-mode look
+   washed-out / "white" under glass. Styles contribute FORM only (shape,
+   material, typography); the colour theme owns the backdrop and colours. */
+[data-ui-theme] #uiFxLayer { display: none !important; }
+#uiFxLayer .ui-fx-1,
+#uiFxLayer .ui-fx-2 {
+  content: ''; position: absolute; inset: -25%;
+  background-repeat: no-repeat;
+  will-change: transform, opacity;
+}
+
+/* ── Shared keyframes ───────────────────────────────────────────────── */
+@keyframes uiDriftA { 0%,100% { transform: translate(0,0) scale(1); }    50% { transform: translate(5%,-4%) scale(1.14); } }
+@keyframes uiDriftB { 0%,100% { transform: translate(0,0) scale(1.12); } 50% { transform: translate(-6%,5%) scale(1); } }
+@keyframes uiTwinkle { 0%,100% { opacity: 0.45; } 50% { opacity: 0.95; } }
+@keyframes uiSheen  { 0% { transform: translateX(-60%) skewX(-12deg); } 100% { transform: translateX(160%) skewX(-12deg); } }
+@keyframes uiBlob   {
+  0%,100% { transform: translate(0,0) scale(1);    border-radius: 42% 58% 60% 40% / 50% 45% 55% 50%; }
+  50%     { transform: translate(4%,-3%) scale(1.13); border-radius: 60% 40% 45% 55% / 45% 55% 50% 50%; }
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   SHARED SIGNATURE TREATMENT
+   Applied to the hero-surface set across all five styles. Background is
+   NOT set here (token redefinition handles it) — only the material:
+   radius, shadow and (high-power) backdrop blur.
+═══════════════════════════════════════════════════════════════════════ */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"])
+  :is(.prog-card,.cat-card,.nutrition-card,.pgd-tip-block,.pgd-ex-card,.detail-block,.prog-group,
+      .prog-picker-card,.custom-program-preview,.jb-panel,.jb-tendon-card,.muscle-modal,.menu-panel,
+      .legal-panel,.devlog-panel,.wip-card,.modal-anatomy,#treeFilterPanel,.filter-dropdown,
+      .workout-preview-list,.metrics-overlay-sheet,.apd-refresh-sheet,.apd-picker-sheet,.prog-picker-sheet,
+      .search-input,.preview-search-input,.legal-panel,.notification-body),
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"])
+  :is(#libraryListWrap,#gymLibraryListWrap,#cardioLibraryListWrap,#homeCategoryWrap,#nutritionLibraryListWrap,#recoverHubList).card-mode .lib-item {
+  border-radius: var(--ui-radius, 14px) !important;
+  box-shadow: var(--ui-shadow) !important;
+  backdrop-filter: var(--ui-blur, none);
+  -webkit-backdrop-filter: var(--ui-blur, none);
+  transition: background var(--trans), box-shadow var(--trans), transform var(--trans), border-color var(--trans) !important;
+}
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"])
+  :is(.prog-card,.cat-card,.prog-picker-card):hover {
+  box-shadow: var(--ui-shadow-hover, var(--ui-shadow)) !important;
+}
+
+/* Header · bottom-nav · hero strips · mode switchers — chrome surfaces */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) :is(header,.bottom-nav) {
+  background: var(--ui-nav, var(--bg2)) !important;
+  border-color: var(--border) !important;
+  box-shadow: var(--ui-shadow-nav, none);
+  backdrop-filter: var(--ui-blur, none);
+  -webkit-backdrop-filter: var(--ui-blur, none);
+}
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) :is(.sub-hero,.lib-hero) {
+  backdrop-filter: var(--ui-blur, none);
+  -webkit-backdrop-filter: var(--ui-blur, none);
+}
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) :is(.theme-pill,.tree-mode-switcher) {
+  box-shadow: var(--ui-shadow-sm, none) !important;
+}
+/* Active pills keep the THEME's accent colour — a UI style only changes
+   their material (shadow/sheen below), never the colour. This guarantees
+   readable text and keeps colour ownership with the colour theme. */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) :is(.theme-pill-opt.active,.tree-mode-btn.active) {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+/* Primary buttons pick up the style's accent material */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) .menu-action-btn-primary {
+  box-shadow: var(--ui-btn-shadow, none) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ① NEOMORPHISM — soft extruded monochrome
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="neo"] {
+  --ui-hl: rgba(255,255,255,0.05);
+  --ui-sh: rgba(0,0,0,0.55);
+  --bg2: var(--bg);
+  --bg3: color-mix(in srgb, var(--bg) 92%, var(--text) 8%);
+  --border:  transparent;
+  --border2: color-mix(in srgb, var(--text) 8%, transparent);
+  --ui-nav: var(--bg);
+  --ui-radius: 18px;
+  --ui-blur: none;
+  --ui-shadow:       -6px -6px 14px var(--ui-hl),  7px  7px 18px var(--ui-sh);
+  --ui-shadow-hover: -8px -8px 18px var(--ui-hl), 10px 10px 24px var(--ui-sh);
+  --ui-shadow-sm: inset 2px 2px 5px var(--ui-sh), inset -2px -2px 5px var(--ui-hl);
+  --ui-shadow-nav: 0 6px 20px var(--ui-sh);
+  --ui-pill-active: var(--bg);
+  --ui-btn-shadow: -4px -4px 10px var(--ui-hl), 5px 5px 12px var(--ui-sh);
+}
+:is([data-theme="light"],[data-theme="core"],[data-theme="handstand"],[data-theme="isometric"],[data-theme="warmup"],[data-theme="stretch"],[data-theme="sidequests"],[data-theme="hof"],[data-theme="pantheon"],[data-theme="beber"],[data-theme="summer"],[data-theme="spring"],[data-theme="autumn"])[data-ui-theme="neo"] {
+  --ui-hl: rgba(255,255,255,0.92);
+  --ui-sh: rgba(0,0,0,0.12);
+}
+/* Neo is the one monochrome exception: the active pill is pressed INTO the
+   surface (so it stays the surface colour) with the accent only as the label. */
+[data-ui-theme="neo"] :is(.theme-pill-opt.active,.tree-mode-btn.active) {
+  background: var(--bg) !important;
+  color: var(--accent) !important;
+  box-shadow: inset 3px 3px 7px var(--ui-sh), inset -3px -3px 7px var(--ui-hl) !important;
+}
+[data-ui-theme="neo"] .menu-action-btn-primary { background: var(--accent) !important; border: none !important; color: #fff !important; }
+[data-ui-theme="neo"] .menu-action-btn-primary:active { box-shadow: inset 3px 3px 7px rgba(0,0,0,0.4), inset -3px -3px 7px rgba(255,255,255,0.18) !important; }
+/* FX: a single soft directional light, very restrained */
+[data-ui-theme="neo"] #uiFxLayer { background: var(--bg); }
+[data-ui-theme="neo"] .ui-fx-1 {
+  background:
+    radial-gradient(55% 55% at 22% 18%, var(--ui-hl), transparent 60%),
+    radial-gradient(60% 60% at 82% 92%, var(--ui-sh), transparent 62%);
+  opacity: 0.5;
+}
+[data-ui-power="high"][data-ui-theme="neo"] .ui-fx-1 { animation: uiDriftA 48s ease-in-out infinite; }
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ② SKEUOMORPHISM — glossy real-world materials, linen texture
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="skeu"] {
+  --ui-bevel: rgba(255,255,255,0.18);
+  --ui-deep:  rgba(0,0,0,0.34);
+  /* Colours stay with the theme — skeu adds bevels, gloss & a metal header
+     as MATERIAL on top of the theme's own surfaces. Only the border is
+     deepened to read as a bevelled edge. */
+  --border:  color-mix(in srgb, #000 28%, var(--border2));
+  --ui-nav: linear-gradient(180deg, color-mix(in srgb,#fff 12%, var(--bg2)), var(--bg2) 60%, var(--bg));
+  --ui-radius: 11px;
+  --ui-blur: none;
+  --ui-shadow:
+    inset 0 1px 0 var(--ui-bevel),
+    inset 0 -2px 5px var(--ui-deep),
+    0 3px 7px rgba(0,0,0,0.4),
+    0 1px 2px rgba(0,0,0,0.34);
+  --ui-shadow-hover:
+    inset 0 1px 0 rgba(255,255,255,0.26),
+    inset 0 -2px 6px var(--ui-deep),
+    0 6px 14px rgba(0,0,0,0.45);
+  --ui-shadow-sm: inset 0 1px 0 var(--ui-bevel), 0 2px 5px rgba(0,0,0,0.35);
+  --ui-shadow-nav: inset 0 1px 0 var(--ui-bevel), 0 3px 10px rgba(0,0,0,0.45);
+  --ui-pill-active: linear-gradient(180deg, rgba(255,255,255,0.24), rgba(255,255,255,0.02) 55%, rgba(0,0,0,0.12)), var(--accent);
+  --ui-btn-shadow: inset 0 1px 0 rgba(255,255,255,0.45), inset 0 -2px 4px rgba(0,0,0,0.22), 0 2px 6px rgba(0,0,0,0.4);
+}
+:is([data-theme="light"],[data-theme="core"],[data-theme="handstand"],[data-theme="isometric"],[data-theme="warmup"],[data-theme="stretch"],[data-theme="sidequests"],[data-theme="hof"],[data-theme="pantheon"],[data-theme="beber"],[data-theme="summer"],[data-theme="spring"],[data-theme="autumn"])[data-ui-theme="skeu"] {
+  --ui-bevel: rgba(255,255,255,0.9);
+  --ui-deep:  rgba(0,0,0,0.1);
+  --ui-shadow:
+    inset 0 1px 0 var(--ui-bevel),
+    inset 0 -2px 5px var(--ui-deep),
+    0 3px 7px rgba(80,55,30,0.2),
+    0 1px 2px rgba(80,55,30,0.16);
+}
+/* Hero surfaces get a vertical gloss gradient layered over the token bg */
+[data-ui-theme="skeu"] :is(.prog-card,.cat-card,.nutrition-card,.detail-block,.prog-group,.menu-panel,.muscle-modal,.wip-card,.pgd-tip-block,.metrics-overlay-sheet,.apd-refresh-sheet) {
+  background-image: linear-gradient(180deg, var(--ui-bevel) 0%, transparent 14%, transparent 86%, var(--ui-deep) 100%) !important;
+}
+[data-ui-theme="skeu"] :is(.theme-pill-opt.active,.tree-mode-btn.active) {
+  background: linear-gradient(180deg, rgba(255,255,255,0.26), rgba(255,255,255,0.02) 55%, rgba(0,0,0,0.14)), var(--accent) !important;
+  color: #fff !important; text-shadow: 0 1px 1px rgba(0,0,0,0.45) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.4) !important;
+}
+[data-ui-theme="skeu"] .menu-action-btn-primary {
+  background: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0.02) 50%, rgba(0,0,0,0.14)), var(--accent) !important;
+  border: 1px solid rgba(0,0,0,0.28) !important; color: #fff !important; text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+}
+/* FX: fine linen weave + top sheen + vignette */
+[data-ui-theme="skeu"] #uiFxLayer { background: var(--bg); }
+[data-ui-theme="skeu"] .ui-fx-1 {
+  inset: 0;
+  background:
+    repeating-linear-gradient(45deg,  rgba(255,255,255,0.018) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-45deg, rgba(0,0,0,0.03) 0 1px, transparent 1px 3px),
+    radial-gradient(130% 120% at 50% -10%, rgba(255,255,255,0.06), transparent 55%),
+    radial-gradient(140% 130% at 50% 120%, rgba(0,0,0,0.4), transparent 60%);
+}
+[data-ui-theme="skeu"] .ui-fx-2 {
+  inset: 0; opacity: 0; background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,0.05) 50%, transparent 62%);
+}
+[data-ui-power="high"][data-ui-theme="skeu"] .ui-fx-2 { opacity: 1; animation: uiSheen 14s ease-in-out infinite; }
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ③ GLASSMORPHISM — frosted panels over vivid drifting light
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="glassmorph"] {
+  --bg2: color-mix(in srgb, var(--bg) 76%, transparent);
+  --bg3: color-mix(in srgb, var(--bg) 62%, transparent);
+  --border:  color-mix(in srgb, #fff 16%, transparent);
+  --border2: color-mix(in srgb, #fff 26%, transparent);
+  --ui-nav: color-mix(in srgb, var(--bg) 60%, transparent);
+  --ui-radius: 18px;
+  --ui-blur: none;
+  --ui-shadow:       0 8px 30px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.4);
+  --ui-shadow-hover: 0 14px 44px rgba(0,0,0,0.26), inset 0 1px 0 rgba(255,255,255,0.55);
+  --ui-shadow-sm:    0 4px 16px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.35);
+  --ui-shadow-nav:   0 6px 26px rgba(0,0,0,0.16), inset 0 -1px 0 rgba(255,255,255,0.28);
+  --ui-pill-active:  color-mix(in srgb, #fff 22%, transparent);
+  --ui-btn-shadow:   0 6px 18px -3px color-mix(in srgb, var(--accent) 60%, transparent), inset 0 1px 0 rgba(255,255,255,0.4);
+}
+/* High power: real glass — more translucent + backdrop blur */
+[data-ui-power="high"][data-ui-theme="glassmorph"] {
+  --bg2: color-mix(in srgb, var(--bg) 40%, transparent);
+  --bg3: color-mix(in srgb, var(--bg) 28%, transparent);
+  --ui-blur: blur(18px) saturate(1.8);
+}
+/* FX: four jewel-tone light orbs; first adopts the colour theme's accent */
+[data-ui-theme="glassmorph"] #uiFxLayer { background: var(--bg); }
+[data-ui-theme="glassmorph"] .ui-fx-1 {
+  background:
+    radial-gradient(42% 42% at 18% 22%, color-mix(in srgb, var(--accent) 60%, transparent), transparent 72%),
+    radial-gradient(40% 40% at 84% 80%, rgba(170,80,230,0.5), transparent 72%);
+  opacity: 0.6;
+}
+[data-ui-theme="glassmorph"] .ui-fx-2 {
+  background:
+    radial-gradient(38% 38% at 82% 16%, rgba(80,140,255,0.5), transparent 72%),
+    radial-gradient(42% 42% at 22% 86%, rgba(40,205,180,0.45), transparent 72%);
+  opacity: 0.55;
+}
+[data-ui-power="high"][data-ui-theme="glassmorph"] .ui-fx-1 { animation: uiDriftA 26s ease-in-out infinite; opacity: 0.85; filter: blur(34px); }
+[data-ui-power="high"][data-ui-theme="glassmorph"] .ui-fx-2 { animation: uiDriftB 32s ease-in-out infinite; opacity: 0.8;  filter: blur(38px); }
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ④ CLAYMORPHISM — puffy pastel 3D clay
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="clay"] {
+  --ui-hl:   rgba(255,255,255,0.08);
+  --ui-sh:   rgba(0,0,0,0.45);
+  --ui-drop: rgba(0,0,0,0.32);
+  /* Colours stay with the theme — clay only adds round shapes + puffy
+     material. Borders dropped for the seamless inflated look. */
+  --border:  transparent;
+  --ui-radius: 26px;
+  --ui-blur: none;
+  --ui-shadow:
+    12px 12px 26px var(--ui-drop),
+    inset -6px -6px 12px var(--ui-sh),
+    inset 7px 7px 14px var(--ui-hl);
+  --ui-shadow-hover:
+    16px 16px 34px var(--ui-drop),
+    inset -6px -6px 12px var(--ui-sh),
+    inset 8px 8px 16px var(--ui-hl);
+  --ui-shadow-sm:
+    6px 6px 15px var(--ui-drop),
+    inset -3px -3px 7px var(--ui-sh),
+    inset 4px 4px 8px var(--ui-hl);
+  --ui-shadow-nav: 0 8px 22px var(--ui-drop), inset 0 -4px 10px var(--ui-sh), inset 0 5px 10px var(--ui-hl);
+  --ui-pill-active: var(--accent);
+  --ui-btn-shadow: 6px 6px 16px var(--ui-drop), inset -3px -3px 8px rgba(0,0,0,0.22), inset 4px 4px 8px rgba(255,255,255,0.3);
+}
+:is([data-theme="light"],[data-theme="core"],[data-theme="handstand"],[data-theme="isometric"],[data-theme="warmup"],[data-theme="stretch"],[data-theme="sidequests"],[data-theme="hof"],[data-theme="pantheon"],[data-theme="beber"],[data-theme="summer"],[data-theme="spring"],[data-theme="autumn"])[data-ui-theme="clay"] {
+  --ui-hl:   rgba(255,255,255,0.7);
+  --ui-sh:   rgba(0,0,0,0.1);
+  --ui-drop: rgba(0,0,0,0.13);
+}
+[data-ui-theme="clay"] :is(.theme-pill-opt.active,.tree-mode-btn.active) {
+  color: #fff !important;
+  box-shadow: inset -3px -3px 7px rgba(0,0,0,0.22), inset 3px 3px 7px rgba(255,255,255,0.28) !important;
+}
+[data-ui-theme="clay"] .menu-action-btn-primary { background: var(--accent) !important; border: none !important; color: #fff !important; border-radius: 999px !important; }
+[data-ui-theme="clay"] .prog-card:hover { transform: translateY(-3px) !important; }
+/* Round the small controls too — clay is all about soft corners */
+[data-ui-theme="clay"] :is(.menu-action-btn,.view-toggle-btn,.search-input,.prof-field-input,.filter-chip,.mtag) { border-radius: 999px !important; }
+/* FX: big soft candy blobs */
+[data-ui-theme="clay"] #uiFxLayer { background: linear-gradient(160deg, color-mix(in srgb, var(--accent) 9%, var(--bg)), var(--bg) 70%); }
+[data-ui-theme="clay"] .ui-fx-1 {
+  background:
+    radial-gradient(34% 34% at 24% 26%, color-mix(in srgb, var(--accent) 38%, transparent), transparent 70%),
+    radial-gradient(30% 30% at 80% 30%, rgba(120,200,255,0.32), transparent 70%);
+  opacity: 0.7; filter: blur(8px);
+}
+[data-ui-theme="clay"] .ui-fx-2 {
+  background:
+    radial-gradient(34% 34% at 74% 78%, rgba(255,170,210,0.32), transparent 70%),
+    radial-gradient(30% 30% at 22% 82%, rgba(180,240,200,0.3), transparent 70%);
+  opacity: 0.65; filter: blur(8px);
+}
+[data-ui-power="high"][data-ui-theme="clay"] .ui-fx-1 { animation: uiBlob 22s ease-in-out infinite; }
+[data-ui-power="high"][data-ui-theme="clay"] .ui-fx-2 { animation: uiBlob 28s ease-in-out infinite reverse; }
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ⑤ SPATIAL — floating translucent panels, depth & accent glow.
+   Colours stay with the active colour theme: surfaces are derived from
+   var(--bg) so text the theme chose stays readable on dark OR light
+   themes. Spatial only contributes FORM — depth shadows, accent glow,
+   float and a star/nebula backdrop.
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="spatial"] {
+  --bg2: color-mix(in srgb, var(--bg) 72%, transparent);
+  --bg3: color-mix(in srgb, var(--bg) 58%, transparent);
+  --border:  color-mix(in srgb, var(--text) 14%, transparent);
+  --border2: color-mix(in srgb, var(--text) 24%, transparent);
+  --ui-glow: color-mix(in srgb, var(--accent) 55%, transparent);
+  --ui-nav: color-mix(in srgb, var(--bg) 62%, transparent);
+  --ui-radius: 20px;
+  --ui-blur: none;
+  --ui-shadow:
+    0 16px 48px rgba(0,0,0,0.45),
+    inset 0 1px 0 color-mix(in srgb, var(--text) 14%, transparent),
+    0 0 28px -10px var(--ui-glow);
+  --ui-shadow-hover:
+    0 26px 66px rgba(0,0,0,0.5),
+    inset 0 1px 0 color-mix(in srgb, var(--text) 20%, transparent),
+    0 0 44px -8px var(--ui-glow);
+  --ui-shadow-sm: 0 8px 22px rgba(0,0,0,0.4), inset 0 1px 0 color-mix(in srgb, var(--text) 12%, transparent);
+  --ui-shadow-nav: 0 8px 36px rgba(0,0,0,0.4), inset 0 1px 0 color-mix(in srgb, var(--text) 14%, transparent);
+  --ui-btn-shadow: 0 4px 18px -2px var(--ui-glow), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+[data-ui-power="high"][data-ui-theme="spatial"] {
+  --bg2: color-mix(in srgb, var(--bg) 45%, transparent);
+  --bg3: color-mix(in srgb, var(--bg) 32%, transparent);
+  --ui-blur: blur(22px) saturate(1.5) brightness(1.1);
+}
+[data-ui-theme="spatial"] .prog-card:hover { transform: translateY(-4px) scale(1.005) !important; }
+[data-ui-theme="spatial"] :is(.theme-pill-opt.active,.tree-mode-btn.active) {
+  color: #fff !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 0 18px -4px var(--ui-glow) !important;
+}
+/* FX: nebula + starfield — backdrop derives from the theme so dark themes
+   read as deep space and light themes as a bright, airy expanse. */
+[data-ui-theme="spatial"] #uiFxLayer {
+  background:
+    radial-gradient(90% 60% at 50% -10%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%),
+    radial-gradient(120% 120% at 50% 120%, color-mix(in srgb, var(--bg) 60%, #000), transparent 70%),
+    color-mix(in srgb, var(--bg) 90%, #000);
+}
+[data-ui-theme="spatial"] .ui-fx-1 {
+  background:
+    radial-gradient(34% 34% at 14% 30%, rgba(110,90,255,0.2), transparent 70%),
+    radial-gradient(32% 32% at 86% 72%, rgba(60,190,210,0.16), transparent 70%),
+    radial-gradient(40% 30% at 60% 50%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%);
+  opacity: 0.85;
+}
+[data-ui-theme="spatial"] .ui-fx-2 {
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1.5px 1.5px at 80px 160px, #fff, transparent),
+    radial-gradient(1px 1px at 200px 120px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 250px 220px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50px 240px, rgba(255,255,255,0.85), transparent);
+  background-size: 300px 300px; opacity: 0.5;
+}
+[data-ui-power="high"][data-ui-theme="spatial"] .ui-fx-1 { animation: uiDriftB 40s ease-in-out infinite; }
+[data-ui-power="high"][data-ui-theme="spatial"] .ui-fx-2 { animation: uiTwinkle 6s ease-in-out infinite; }
+
+
+/* ── Reduced motion: keep the look, drop the movement ───────────────── */
+@media (prefers-reduced-motion: reduce) {
+  #uiFxLayer .ui-fx-1, #uiFxLayer .ui-fx-2 { animation: none !important; }
+  [data-ui-theme="spatial"] .prog-card:hover,
+  [data-ui-theme="clay"] .prog-card:hover { transform: none !important; }
+}
+/* END UI STYLE ENGINE ─────────────────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   MAX DIFFERENTIATION LAYER
+   Pushes each style to its iconic extreme on the axes the base engine
+   left shared: TYPOGRAPHY, TEXT EFFECTS, EXTREME RADIUS, PER-ELEMENT
+   MATERIAL (incl. the progression tree), and richer backgrounds.
+   Appended last so these rules win over the base engine where they
+   intentionally override it.
+═══════════════════════════════════════════════════════════════════════ */
+
+/* Progression-tree nodes pick up each style's surface so the tree itself
+   visibly transforms (background comes from the redefined tokens). */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) .prog-item {
+  background: var(--bg2) !important;
+  border-radius: var(--ui-node-radius, 12px) !important;
+  box-shadow: var(--ui-shadow-sm) !important;
+  backdrop-filter: var(--ui-blur, none);
+  -webkit-backdrop-filter: var(--ui-blur, none);
+  margin: 3px 0 !important;
+  transition: transform var(--trans), box-shadow var(--trans) !important;
+}
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) .prog-item:hover {
+  box-shadow: var(--ui-shadow-hover, var(--ui-shadow-sm)) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ① NEOMORPHISM — a calm, colourless world moulded from one slab.
+   Every control is extruded from the surface; nothing has a hard edge.
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="neo"] {
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ui-node-radius: 14px;
+}
+[data-ui-theme="neo"] :is(.lib-hero h2,.sub-hero h2) { font-weight: 600; letter-spacing: 0.01em; }
+[data-ui-theme="neo"] :is(.db-section-title,.menu-setting-name) { color: var(--text2) !important; }
+/* Extrude every interactive control out of the background */
+[data-ui-theme="neo"] :is(.menu-action-btn,.view-toggle-btn,.prog-filter-menu-btn,.search-input,.preview-search-input,.prof-field-input,.lib-icon,.modal-close,.jb-close,.header-menu-btn,.back-tree-btn) {
+  background: var(--bg) !important; border: none !important;
+  box-shadow: -3px -3px 7px var(--ui-hl), 4px 4px 9px var(--ui-sh) !important;
+  border-radius: 12px !important;
+}
+[data-ui-theme="neo"] :is(.filter-chip,.mtag,.prog-family-chip,.tree-fp-chip,.pgd-chip,.modal-tag,.prog-qchip) {
+  background: var(--bg) !important; border: none !important;
+  box-shadow: -2px -2px 5px var(--ui-hl), 3px 3px 6px var(--ui-sh) !important;
+  border-radius: 999px !important;
+}
+[data-ui-theme="neo"] :is(.menu-action-btn:active,.view-toggle-btn:active,.filter-chip:active,.lib-icon:active) {
+  box-shadow: inset 2px 2px 5px var(--ui-sh), inset -2px -2px 5px var(--ui-hl) !important;
+}
+/* Recess progress tracks into the surface */
+[data-ui-theme="neo"] :is(.pgd-prog-track,.tier-progress-bar,.cat-progress-bar,.diff-bar,.tech-bar-wrap,.home-tree-card-progress-bar) {
+  background: var(--bg) !important; border: none !important;
+  box-shadow: inset 2px 2px 4px var(--ui-sh), inset -2px -2px 4px var(--ui-hl) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ② SKEUOMORPHISM — iOS-6 richness: woven leather, serif type,
+   letterpress headings, glossy keys, stitched seams.
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="skeu"] {
+  --sans: ui-serif, Georgia, "Times New Roman", serif;
+  --ui-node-radius: 9px;
+}
+/* Engraved / letterpress headings */
+[data-ui-theme="skeu"] :is(.lib-hero h2,.sub-hero h2,.db-section-title,.menu-setting-name,.modal-name,.tree-fp-title) {
+  text-shadow: 0 1px 0 var(--ui-bevel), 0 -1px 1px rgba(0,0,0,0.35) !important;
+}
+/* Stitched leather seam inset into every panel */
+[data-ui-theme="skeu"] :is(.prog-card,.cat-card,.nutrition-card,.detail-block,.prog-group,.menu-panel,.muscle-modal,.wip-card,.pgd-tip-block,.legal-panel,.devlog-panel) {
+  outline: 1.5px dashed color-mix(in srgb, var(--text) 20%, transparent);
+  outline-offset: -5px;
+}
+/* Heavier, sharper, glossier buttons & chips */
+[data-ui-theme="skeu"] :is(.menu-action-btn,.view-toggle-btn,.prog-filter-menu-btn,.header-menu-btn) {
+  background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(0,0,0,0.12)), var(--bg3) !important;
+  border: 1px solid color-mix(in srgb, #000 30%, var(--border2)) !important;
+  box-shadow: inset 0 1px 0 var(--ui-bevel), 0 2px 4px rgba(0,0,0,0.35) !important;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+[data-ui-theme="skeu"] :is(.filter-chip,.mtag,.prog-family-chip,.tree-fp-chip,.modal-tag) {
+  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(0,0,0,0.1)), var(--bg3) !important;
+  box-shadow: inset 0 1px 0 var(--ui-bevel), 0 1px 2px rgba(0,0,0,0.3) !important;
+}
+/* Tight woven-leather backdrop with a warm vignette */
+[data-ui-theme="skeu"] #uiFxLayer {
+  background:
+    radial-gradient(130% 110% at 50% -10%, color-mix(in srgb,#fff 7%, var(--bg)), var(--bg) 55%, color-mix(in srgb,#000 22%, var(--bg)) 100%);
+}
+[data-ui-theme="skeu"] .ui-fx-1 {
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg,  rgba(0,0,0,0.045) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.045) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 4px);
+  opacity: 1;
+}
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ③ GLASSMORPHISM — bright, airy, vivid. Light weight type, crisp
+   white edges, saturated drifting colour.
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="glassmorph"] {
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ui-node-radius: 16px;
+}
+[data-ui-power="high"][data-ui-theme="glassmorph"] { --ui-blur: blur(20px) saturate(2); }
+[data-ui-theme="glassmorph"] :is(.lib-hero h2,.sub-hero h2) { font-weight: 300; letter-spacing: 0.05em; }
+[data-ui-theme="glassmorph"] :is(.menu-action-btn,.view-toggle-btn,.filter-chip,.mtag,.prog-family-chip,.tree-fp-chip,.search-input,.prof-field-input) {
+  background: rgba(255,255,255,0.12) !important;
+  border: 1px solid rgba(255,255,255,0.25) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4) !important;
+  backdrop-filter: var(--ui-blur, none); -webkit-backdrop-filter: var(--ui-blur, none);
+}
+/* Brighter, more saturated, faster light */
+[data-ui-theme="glassmorph"] .ui-fx-1 {
+  background:
+    radial-gradient(44% 44% at 16% 20%, color-mix(in srgb, var(--accent) 75%, transparent), transparent 70%),
+    radial-gradient(40% 40% at 86% 78%, rgba(190,70,255,0.62), transparent 70%);
+  opacity: 0.72;
+}
+[data-ui-theme="glassmorph"] .ui-fx-2 {
+  background:
+    radial-gradient(40% 40% at 84% 14%, rgba(60,150,255,0.62), transparent 70%),
+    radial-gradient(44% 44% at 20% 88%, rgba(30,225,190,0.55), transparent 70%),
+    radial-gradient(30% 30% at 52% 52%, rgba(255,210,90,0.4), transparent 70%);
+  opacity: 0.66;
+}
+[data-ui-power="high"][data-ui-theme="glassmorph"] .ui-fx-1 { animation: uiDriftA 20s ease-in-out infinite; opacity: 0.95; filter: blur(40px); }
+[data-ui-power="high"][data-ui-theme="glassmorph"] .ui-fx-2 { animation: uiDriftB 25s ease-in-out infinite; opacity: 0.9;  filter: blur(44px); }
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ④ CLAYMORPHISM — maximally round, fat, pastel & bouncy.
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="clay"] {
+  --sans: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif;
+  --display: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif;
+  --ui-radius: 30px;
+  --ui-node-radius: 20px;
+}
+[data-ui-theme="clay"] :is(.lib-hero h2,.sub-hero h2) { font-weight: 800 !important; letter-spacing: 0 !important; }
+/* Round absolutely everything that holds content or takes a tap */
+[data-ui-theme="clay"] :is(.menu-action-btn,.view-toggle-btn,.prog-filter-menu-btn,.search-input,.preview-search-input,.prof-field-input,.filter-chip,.mtag,.pgd-chip,.prog-family-chip,.tree-fp-chip,.modal-tag,.lib-icon,.cat-badge,.header-menu-btn,.back-tree-btn,.wip-mtag) {
+  border-radius: 999px !important;
+}
+[data-ui-theme="clay"] :is(.detail-block,.pgd-ex-card,.modal-anatomy,.jb-tendon-card,.program-day-card,.workout-preview-list) {
+  border-radius: 22px !important;
+}
+/* Bouncy press on cards & nodes */
+[data-ui-theme="clay"] :is(.prog-card,.cat-card,.prog-item) {
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow var(--trans) !important;
+}
+[data-ui-theme="clay"] :is(.prog-card,.cat-card):hover { transform: translateY(-4px) scale(1.015) !important; }
+[data-ui-theme="clay"] :is(.prog-card,.cat-card):active { transform: scale(0.97) !important; }
+/* More candy blobs, bigger drift */
+[data-ui-theme="clay"] .ui-fx-1 {
+  background:
+    radial-gradient(36% 36% at 22% 24%, color-mix(in srgb, var(--accent) 45%, transparent), transparent 70%),
+    radial-gradient(32% 32% at 82% 28%, rgba(120,205,255,0.4), transparent 70%),
+    radial-gradient(28% 28% at 60% 8%, rgba(255,225,130,0.36), transparent 70%);
+  opacity: 0.78; filter: blur(10px);
+}
+[data-ui-theme="clay"] .ui-fx-2 {
+  background:
+    radial-gradient(36% 36% at 76% 80%, rgba(255,160,205,0.4), transparent 70%),
+    radial-gradient(32% 32% at 18% 84%, rgba(170,240,195,0.38), transparent 70%),
+    radial-gradient(26% 26% at 46% 60%, rgba(200,170,255,0.34), transparent 70%);
+  opacity: 0.74; filter: blur(10px);
+}
+
+
+/* ════════════════════════════════════════════════════════════════════
+   ⑤ SPATIAL — deeper space, glowing rims, wide premium type, denser
+   starfield. Every panel floats and breathes light.
+═══════════════════════════════════════════════════════════════════════ */
+[data-ui-theme="spatial"] {
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ui-node-radius: 16px;
+}
+[data-ui-theme="spatial"] :is(.lib-hero h2,.sub-hero h2,.db-section-title) {
+  letter-spacing: 0.16em !important;
+  text-shadow: 0 0 20px var(--ui-glow), 0 0 2px rgba(255,255,255,0.4) !important;
+}
+/* Luminous accent rim on the hero surfaces */
+[data-ui-theme="spatial"] :is(.prog-card,.cat-card,.nutrition-card,.detail-block,.prog-group,.menu-panel,.muscle-modal,.metrics-overlay-sheet) {
+  border-top: 1px solid color-mix(in srgb, var(--accent) 45%, rgba(255,255,255,0.25)) !important;
+}
+[data-ui-theme="spatial"] :is(.menu-action-btn,.view-toggle-btn,.filter-chip,.mtag,.prog-family-chip,.tree-fp-chip,.search-input,.prof-field-input) {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  color: var(--text) !important;
+  backdrop-filter: var(--ui-blur, none); -webkit-backdrop-filter: var(--ui-blur, none);
+}
+/* Bigger twin nebula */
+[data-ui-theme="spatial"] .ui-fx-1 {
+  background:
+    radial-gradient(40% 40% at 12% 26%, rgba(120,95,255,0.26), transparent 70%),
+    radial-gradient(38% 38% at 88% 70%, rgba(55,200,225,0.2), transparent 70%),
+    radial-gradient(46% 34% at 58% 46%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 72%),
+    radial-gradient(30% 30% at 70% 12%, rgba(255,120,200,0.16), transparent 70%);
+  opacity: 0.9;
+}
+/* Denser starfield — tighter tile, more dots */
+[data-ui-theme="spatial"] .ui-fx-2 {
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 18px 28px, #fff, transparent),
+    radial-gradient(1px 1px at 70px 60px, rgba(255,255,255,0.75), transparent),
+    radial-gradient(1.6px 1.6px at 110px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 150px 110px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 30px 130px, #fff, transparent),
+    radial-gradient(1.4px 1.4px at 175px 75px, rgba(255,255,255,0.85), transparent),
+    radial-gradient(1px 1px at 95px 150px, rgba(255,255,255,0.7), transparent);
+  background-size: 200px 200px; opacity: 0.55;
+}
+/* END MAX DIFFERENTIATION LAYER ─────────────────────────────────────── */
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   COVERAGE LAYER — catch every remaining surface so a UI style transforms
+   the WHOLE app, not just the headline components. Two gaps are closed:
+     (a) elements painted with var(--bg) directly (menu rows, inputs,
+         profile, recovery/journal demo screens, confirm modals) — the
+         token redefinition can't reach these, so they're remapped to the
+         style surface here.
+     (b) elements already using var(--bg2)/var(--bg3) (so they re-colour
+         via tokens) but lacking the style's material — given radius +
+         shadow + blur here (recovery cards, tables, side-panel rows…).
+   Appended last so it wins where it must.
+═══════════════════════════════════════════════════════════════════════ */
+
+/* Label-font commitment: skeu → typewriter, clay → rounded */
+[data-ui-theme="skeu"] { --mono: "Courier New", Courier, ui-monospace, monospace; }
+[data-ui-theme="clay"] { --mono: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; }
+
+/* (a) var(--bg) neutral surfaces → adopt the style surface + material */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"])
+  :is(.contact-link-row,.prof-skill-opt,.prof-level-block,.prog-board,.metrics-confirm-box,
+      .apd-preview-modal,.apd-preview-ft,.iff-demo,.iff-jrn-screen,.iff-jrn-ex-stat,.iff-jrn-macro,
+      .pgd-exercise-row,.metrics-segtab-btn.active,.modal-anatomy,.yt-placeholder) {
+  background: var(--bg2) !important;
+  border-color: var(--border) !important;
+  border-radius: var(--ui-node-radius, 12px) !important;
+  box-shadow: var(--ui-shadow-sm) !important;
+  backdrop-filter: var(--ui-blur, none); -webkit-backdrop-filter: var(--ui-blur, none);
+}
+
+/* (b) token-coloured surfaces that just need the material */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"])
+  :is(.rcv-card,.rcv-tbl-wrap,.rcv-note,.jb-panel,.prog-legend,.devlog-panel,.legal-panel,.wip-card,.notification-body,.menu-panel-hdr) {
+  border-radius: var(--ui-node-radius, 12px) !important;
+  box-shadow: var(--ui-shadow-sm) !important;
+  backdrop-filter: var(--ui-blur, none); -webkit-backdrop-filter: var(--ui-blur, none);
+}
+
+/* Inputs → tinted/frosted fields (glassmorph & spatial keep their own
+   white/translucent field rules from the MAX layer, so exclude them) */
+:is([data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="clay"])
+  :is(.prof-field-input,.feedback-textarea,.exercise-input-field,.search-input,.preview-search-input) {
+  background: var(--bg2) !important;
+  border-color: var(--border2) !important;
+}
+
+/* Recovery summary cards get the bouncy/lift hover where the style has one */
+[data-ui-theme="clay"] .rcv-card { border-radius: 22px !important; }
+[data-ui-theme="spatial"] :is(.rcv-card,.rcv-tbl-wrap) {
+  border-top: 1px solid color-mix(in srgb, var(--accent) 40%, rgba(255,255,255,0.22)) !important;
+}
+[data-ui-theme="skeu"] .rcv-card {
+  outline: 1.5px dashed color-mix(in srgb, var(--text) 18%, transparent); outline-offset: -5px;
+}
+/* END COVERAGE LAYER ───────────────────────────────────────────────────── */
+/* UI STYLE CORRECTION LAYER */
+:is([data-ui-theme="glass"],[data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) .metrics-confirm-box {
+  background: var(--bg2) !important;
+  border-color: var(--border2) !important;
+  color: var(--text) !important;
+  border-radius: var(--ui-node-radius, var(--ui-radius, 14px)) !important;
+  box-shadow: var(--ui-shadow, 0 18px 48px rgba(0,0,0,0.45)) !important;
+  backdrop-filter: var(--ui-blur, none);
+  -webkit-backdrop-filter: var(--ui-blur, none);
+}
+:is([data-ui-theme="glass"],[data-ui-theme="neo"],[data-ui-theme="skeu"],[data-ui-theme="glassmorph"],[data-ui-theme="clay"],[data-ui-theme="spatial"]) :is(.metrics-confirm-cancel,.metrics-confirm-ok) {
+  border-radius: var(--ui-control-radius, 9px) !important;
+  box-shadow: var(--ui-shadow-sm, none) !important;
+}
+
+[data-ui-theme="glass"] {
+  --gl-s2: color-mix(in srgb, var(--bg2) 58%, transparent);
+  --gl-s3: color-mix(in srgb, var(--bg2) 46%, transparent);
+  --gl-e: color-mix(in srgb, var(--text) 18%, transparent);
+  --gl-spec: color-mix(in srgb, #fff 18%, transparent);
+  --gl-blur-h: blur(18px) saturate(1.35);
+  --ui-radius: 18px;
+  --ui-node-radius: 16px;
+  --ui-control-radius: 999px;
+  --ui-blur: var(--gl-blur-h);
+  --ui-shadow: 0 16px 42px rgba(0,0,0,0.26), inset 0 1px 0 var(--gl-spec);
+  --ui-shadow-sm: 0 8px 18px rgba(0,0,0,0.16), inset 0 1px 0 var(--gl-spec);
+}
+[data-ui-theme="glass"] :is(.menu-panel,.muscle-modal,#preferencesModal,.metrics-confirm-box) {
+  background: var(--gl-s3) !important;
+  border-color: var(--gl-e) !important;
+  box-shadow: var(--ui-shadow) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+}
+[data-ui-theme="glass"] :is(.menu-setting-row,.menu-action-btn,.theme-pill,.theme-pill-opt,.filter-chip,.mtag,.search-input,.preview-search-input,.prof-field-input) {
+  background: color-mix(in srgb, var(--bg2) 34%, transparent) !important;
+  border-color: var(--gl-e) !important;
+  box-shadow: var(--ui-shadow-sm) !important;
+  backdrop-filter: var(--gl-blur-h);
+  -webkit-backdrop-filter: var(--gl-blur-h);
+}
+[data-ui-theme="glass"] :is(.prog-card,#libraryListWrap.card-mode .lib-item,#gymLibraryListWrap.card-mode .lib-item,#cardioLibraryListWrap.card-mode .lib-item)::after {
+  display: none !important;
+}
+
+[data-ui-theme="glassmorph"] {
+  --bg2: color-mix(in srgb, var(--bg) 52%, transparent);
+  --bg3: color-mix(in srgb, var(--bg) 38%, transparent);
+  --border: color-mix(in srgb, #fff 24%, var(--accent) 10%, transparent);
+  --border2: color-mix(in srgb, #fff 36%, var(--accent) 12%, transparent);
+  --ui-blur: blur(14px) saturate(1.55);
+  --ui-shadow: 0 18px 46px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.30), inset 0 -1px 0 rgba(255,255,255,0.10);
+  --ui-shadow-sm: 0 8px 20px rgba(0,0,0,0.16), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+[data-ui-theme="glassmorph"] :is(.menu-panel,.muscle-modal,.metrics-confirm-box,.prog-card,.cat-card,.detail-block,.prog-group,.wip-card,.metrics-overlay-sheet) {
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03)), var(--bg2) !important;
+  border-color: var(--border2) !important;
+}
+[data-ui-theme="glassmorph"] :is(.menu-action-btn,.view-toggle-btn,.filter-chip,.mtag,.prog-family-chip,.tree-fp-chip,.search-input,.prof-field-input,.metrics-confirm-cancel,.metrics-confirm-ok) {
+  background: color-mix(in srgb, var(--bg2) 62%, #fff 8%, transparent) !important;
+  border-color: var(--border2) !important;
+  color: var(--text) !important;
+}
+
+[data-ui-theme="clay"] {
+  --ui-radius: 24px;
+  --ui-node-radius: 22px;
+  --ui-control-radius: 999px;
+}
+[data-ui-theme="clay"] :is(.menu-panel,.muscle-modal,.metrics-confirm-box,.prog-card,.cat-card,.detail-block,.prog-group,.wip-card,.metrics-overlay-sheet) {
+  border-radius: var(--ui-node-radius) !important;
+  border-color: transparent !important;
+  box-shadow: var(--ui-shadow) !important;
+}
+[data-ui-theme="clay"] :is(.menu-panel-hdr,.menu-setting-row,.menu-action-btn,.theme-pill,.theme-pill-opt,.metrics-confirm-cancel,.metrics-confirm-ok) {
+  border-radius: var(--ui-control-radius) !important;
+  border-color: transparent !important;
+  box-shadow: var(--ui-shadow-sm) !important;
+}
+[data-ui-theme="clay"] :is(.lib-hero h2,.sub-hero h2) {
+  letter-spacing: 0 !important;
+}
+
+[data-ui-theme="spatial"] {
+  --ui-blur: none;
+  --ui-shadow: 0 12px 28px rgba(0,0,0,0.28), 0 0 0 1px color-mix(in srgb, var(--accent) 22%, transparent);
+  --ui-shadow-sm: 0 6px 16px rgba(0,0,0,0.18), 0 0 0 1px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+[data-ui-theme="spatial"] :is(.lib-hero h2,.sub-hero h2,.db-section-title) {
+  letter-spacing: 0.06em !important;
+}
+[data-ui-theme="spatial"] :is(.prog-card,.cat-card,.detail-block,.prog-group,.menu-panel,.muscle-modal,.metrics-confirm-box) {
+  background: color-mix(in srgb, var(--bg2) 88%, transparent) !important;
+  transform: translateZ(0);
+}
+[data-ui-power="high"][data-ui-theme="spatial"] {
+  --ui-blur: blur(8px) saturate(1.25);
+}
+[data-ui-theme="spatial"] #uiFxLayer,
+[data-ui-theme="spatial"] .ui-fx-1,
+[data-ui-theme="spatial"] .ui-fx-2 {
+  animation: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   UI STYLE REFINEMENT v2
+   Sharpens the identity of every selectable UI style (standard and
+   neomorphism intentionally untouched). Appended last so it wins over
+   the base engine + correction layer where it must.
+═══════════════════════════════════════════════════════════════════════ */
+
+/* ── ② SKEUOMORPHISM — richer materials: deeper bevels, double gloss,
+      a machined-metal header and a brass primary button. ─────────── */
+[data-ui-theme="skeu"] {
+  --ui-shadow:
+    inset 0 1.5px 0 var(--ui-bevel),
+    inset 0 -3px 6px var(--ui-deep),
+    inset 1px 0 0 rgba(255,255,255,0.05),
+    0 4px 9px rgba(0,0,0,0.42),
+    0 1px 2px rgba(0,0,0,0.36);
+  --ui-nav: linear-gradient(180deg,
+    color-mix(in srgb,#fff 18%, var(--bg2)) 0%,
+    color-mix(in srgb,#fff 6%, var(--bg2)) 48%,
+    var(--bg2) 52%,
+    color-mix(in srgb,#000 10%, var(--bg)) 100%);
+}
+/* Double gloss: hard specular band over a soft falloff */
+[data-ui-theme="skeu"] :is(.prog-card,.cat-card,.nutrition-card,.detail-block,.prog-group,.menu-panel,.muscle-modal,.wip-card,.pgd-tip-block,.metrics-overlay-sheet,.apd-refresh-sheet) {
+  background-image:
+    linear-gradient(180deg,
+      var(--ui-bevel) 0%, transparent 8%,
+      rgba(255,255,255,0.05) 8%, transparent 46%,
+      transparent 82%, var(--ui-deep) 100%) !important;
+}
+/* Brass primary button */
+[data-ui-theme="skeu"] .menu-action-btn-primary {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0.06) 46%,
+      rgba(0,0,0,0.10) 54%, rgba(0,0,0,0.22) 100%),
+    var(--accent) !important;
+  border: 1px solid rgba(0,0,0,0.36) !important;
+  color: #fff !important;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.45);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -2px 4px rgba(0,0,0,0.28), 0 2px 6px rgba(0,0,0,0.42) !important;
+}
+/* Deeper letterpress on headings */
+[data-ui-theme="skeu"] :is(.lib-hero h2,.sub-hero h2,.db-section-title,.modal-name) {
+  text-shadow: 0 1.5px 0 var(--ui-bevel), 0 -1px 1px rgba(0,0,0,0.5) !important;
+}
+
+/* ── ③ GLASSMORPHISM — crisper edges, brighter specular, and a lite
+      tier that still reads as glass instead of a flat wash. ───────── */
+[data-ui-theme="glassmorph"] {
+  --border:  color-mix(in srgb, #fff 30%, var(--accent) 8%, transparent);
+  --border2: color-mix(in srgb, #fff 44%, var(--accent) 10%, transparent);
+  --ui-shadow:
+    0 18px 46px rgba(0,0,0,0.26),
+    0 0 0 1px color-mix(in srgb, #fff 10%, transparent),
+    inset 0 1.5px 0 rgba(255,255,255,0.45),
+    inset 0 -1px 0 rgba(255,255,255,0.12);
+  --ui-shadow-hover:
+    0 26px 62px rgba(0,0,0,0.32),
+    0 0 34px -8px color-mix(in srgb, var(--accent) 55%, transparent),
+    inset 0 1.5px 0 rgba(255,255,255,0.6);
+}
+/* Lite fallback: gradient body + hard 1px crystal edge — no blur, but
+   still unmistakably glass */
+[data-ui-theme="glassmorph"] :is(.prog-card,.cat-card,.detail-block,.prog-group,.wip-card,.menu-panel,.muscle-modal,.metrics-confirm-box,.metrics-overlay-sheet) {
+  background:
+    linear-gradient(160deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.03) 42%, rgba(255,255,255,0.09) 100%),
+    var(--bg2) !important;
+  border: 1px solid var(--border2) !important;
+}
+[data-ui-power="high"][data-ui-theme="glassmorph"] :is(.prog-card,.cat-card,.detail-block,.prog-group,.wip-card,.menu-panel,.muscle-modal,.metrics-confirm-box,.metrics-overlay-sheet) {
+  background:
+    linear-gradient(160deg, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.04) 42%, rgba(255,255,255,0.12) 100%),
+    color-mix(in srgb, var(--bg) 34%, transparent) !important;
+}
+
+/* ── ④ CLAYMORPHISM — pastel surfaces actually tinted by the theme's
+      accent, fatter drop shadows, springier presses. ──────────────── */
+[data-ui-theme="clay"] {
+  --bg2: color-mix(in srgb, var(--accent) 7%, var(--bg));
+  --bg3: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  --ui-shadow:
+    14px 14px 30px var(--ui-drop),
+    inset -7px -7px 14px var(--ui-sh),
+    inset 8px 8px 16px var(--ui-hl);
+  --ui-shadow-hover:
+    18px 18px 40px var(--ui-drop),
+    inset -7px -7px 14px var(--ui-sh),
+    inset 9px 9px 18px var(--ui-hl);
+}
+[data-ui-theme="clay"] :is(.prog-card,.cat-card,.prog-item):active {
+  transform: scale(0.965) !important;
+}
+[data-ui-theme="clay"] .menu-action-btn-primary {
+  box-shadow: 6px 6px 16px var(--ui-drop), inset -3px -3px 8px rgba(0,0,0,0.24), inset 4px 4px 8px rgba(255,255,255,0.34) !important;
+}
+
+/* ── ⑤ SPATIAL — luminance gradient on floating panels, stronger
+      accent rim + glow, and the starfield twinkles again on high. ── */
+[data-ui-theme="spatial"] {
+  --ui-shadow:
+    0 14px 32px rgba(0,0,0,0.32),
+    0 0 0 1px color-mix(in srgb, var(--accent) 26%, transparent),
+    0 0 26px -10px color-mix(in srgb, var(--accent) 60%, transparent);
+  --ui-shadow-sm:
+    0 6px 16px rgba(0,0,0,0.2),
+    0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+[data-ui-theme="spatial"] :is(.prog-card,.cat-card,.detail-block,.prog-group,.menu-panel,.muscle-modal,.metrics-confirm-box) {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--text) 5%, transparent) 0%, transparent 30%),
+    color-mix(in srgb, var(--bg2) 88%, transparent) !important;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 55%, rgba(255,255,255,0.3)) !important;
+}
+[data-ui-theme="spatial"] :is(.prog-card,.cat-card):hover {
+  box-shadow:
+    0 26px 60px rgba(0,0,0,0.42),
+    0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent),
+    0 0 44px -8px color-mix(in srgb, var(--accent) 75%, transparent) !important;
+}
+/* The correction layer froze all spatial FX — give high power its
+   twinkle back (opacity-only, GPU-cheap). */
+[data-ui-power="high"][data-ui-theme="spatial"] .ui-fx-2 {
+  animation: uiTwinkle 6s ease-in-out infinite !important;
+}
+
+/* ── ① LIQUID GLASS — deeper saturation, brighter rim, hover lift. ── */
+[data-ui-theme="glass"] {
+  --gl-e: color-mix(in srgb, var(--text) 24%, transparent);
+  --gl-spec: color-mix(in srgb, #fff 30%, transparent);
+  --gl-blur-h: blur(20px) saturate(1.6);
+}
+[data-ui-theme="glass"] .prog-card,
+[data-ui-theme="glass"] .cat-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+[data-ui-theme="glass"] :is(.prog-card,.cat-card):hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-ui-power="high"][data-ui-theme="spatial"] .ui-fx-2 { animation: none !important; }
+}
+/* END UI STYLE REFINEMENT v2 ─────────────────────────────────────────── */
