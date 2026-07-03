@@ -1718,6 +1718,16 @@ function setWLMode(mode) {
   document.querySelectorAll('.wl-panel').forEach(function(p) { p.classList.remove('active'); });
   const panel = document.getElementById('wl-panel-' + mode);
   if (panel) panel.classList.add('active');
+
+  /* Hub search boxes are launch pads into search-result views — start each
+     one fresh whenever the tab changes, otherwise stale text lingers. */
+  ['globalSearch','gym-search','cardio-search'].forEach(id => {
+    const inp = document.getElementById(id);
+    if (inp) inp.value = '';
+  });
+  if (LIB_STATE.all)     LIB_STATE.all.searchTerm = '';
+  if (LIB_STATE.gymAll)  LIB_STATE.gymAll.searchTerm = '';
+  if (LIB_STATE.cardioAll) LIB_STATE.cardioAll.searchTerm = '';
 }
 
 /* ══ PROGRESSION TREE MODE (bodyweight / cardio / gym) ═══════
@@ -1727,6 +1737,26 @@ const TREE_MODE_KEY = 'grnd_tree_mode';
 let _treeMode = (function(){
   try { const v = localStorage.getItem(TREE_MODE_KEY); return (v === 'cardio' || v === 'gym') ? v : 'bodyweight'; } catch(e){ return 'bodyweight'; }
 })();
+
+/* ── Progression view style ────────────────────────────────────── */
+const TREE_VIEW_STYLE_KEY = 'grnd_tree_view_style';
+let _treeViewStyle = (function(){
+  try { const v = localStorage.getItem(TREE_VIEW_STYLE_KEY); return v === 'tree' ? v : 'tree'; } catch(e){ return 'tree'; }
+})();
+const TREE_VIEW_STYLE_TITLES = { tree:'PROGRESSION TREE' };
+window._treeViewStyleCurrent = function() { return _treeViewStyle; };
+
+window.setTreeViewStyle = function(style) {
+  if(style !== 'tree') return;
+  if(style === _treeViewStyle) return;
+  _treeViewStyle = style;
+  try { localStorage.setItem(TREE_VIEW_STYLE_KEY, style); } catch(e){}
+  const titleEl = document.getElementById('progTreeTitle');
+  if(titleEl) titleEl.textContent = TREE_VIEW_STYLE_TITLES[style] || TREE_VIEW_STYLE_TITLES.tree;
+  if(document.querySelector('.view.active')?.id === 'view-progression-tree') {
+    renderProgressionTree();
+  }
+};
 
 const CARDIO_TREE_SOURCES = [
   { lib:'cardio-running-library',  libKey:'cardioRunning',  family:'running',  data:_cardioRunning  },
@@ -3389,6 +3419,15 @@ const LIB_IDS = {
   /* ── nutrition ── */
   foods:     { body:'foods-body',    shown:'foods-shown',    total:'foods-total',    unlocked:'foods-logged',    locked:'foods-locked',    empty:'foods-empty',    search:'foods-search',    filterRow:'foods-quickChips',    sticky:'foods-sticky',    scroll:'foods-scroll'    },
 };
+/* Every exercise library also gets a mobile-style card grid, mirroring
+   the table one-to-one (id derived from the same body id — see viewHTML
+   and the hand-written weighted-library markup in index.html). Foods has
+   its own separate nutrition card system (renderNutritionCards), so it's
+   excluded here. */
+Object.keys(LIB_IDS).forEach(k => {
+  if (k === 'foods') return;
+  LIB_IDS[k].cards = LIB_IDS[k].body.replace('-body', '-cards');
+});
 
 const LIB_STATE = {
   warmup:    { sortCol:'diff', sortDir:1, activeFilter:'all', searchTerm:'', openRow:null },
@@ -3424,6 +3463,27 @@ const LIB_STATE = {
   /* ── nutrition ── */
   foods:     { sortCol:'diff', sortDir:1, activeFilter:'all', searchTerm:'', openRow:null },
 };
+
+/* ── Exercise library GRID / LIST view toggle ─────────────────────
+   One global preference (not per-library) — matches how the Programs
+   view toggle already behaves. Defaults to grid on narrow screens so
+   nobody has to scroll a table sideways on first visit; the button
+   lets anyone override that on any screen size. */
+const EX_VIEW_KEY = 'grndExLibView';
+function getExViewMode() {
+  let stored = null;
+  try { stored = localStorage.getItem(EX_VIEW_KEY); } catch(e){}
+  if (stored === 'list' || stored === 'grid') return stored;
+  return window.innerWidth <= 767 ? 'grid' : 'list';
+}
+function toggleExView() {
+  const next = getExViewMode() === 'grid' ? 'list' : 'grid';
+  try { localStorage.setItem(EX_VIEW_KEY, next); } catch(e){}
+  const activeView = document.querySelector('.view.active');
+  const viewId = activeView ? activeView.id.replace('view-','') : null;
+  const libKey = viewId && LIB_VIEW_MAP[viewId];
+  if (libKey) renderLibTable(libKey);
+}
 
 function isListedExercise(exercise) {
   return exercise?.listed !== false;
@@ -3545,15 +3605,24 @@ function renderLibTable(libKey) {
   const isGymLib     = libKey.startsWith('gym');
   const isCardioLib  = libKey.startsWith('cardio');
   const empty = document.getElementById(ids.empty);
+  const cardsGrid = ids.cards ? document.getElementById(ids.cards) : null;
   st.openRow  = null;
-  if(!data.length){ body.innerHTML=''; empty.style.display='block'; return; }
+  if(!data.length){
+    body.innerHTML=''; empty.style.display='block';
+    if(cardsGrid) cardsGrid.innerHTML='';
+    return;
+  }
   empty.style.display = 'none';
-  body.innerHTML = data.map(e => {
+  const tableRows = [];
+  const cardRows  = [];
+  data.forEach(e => {
     const rowKey=COMPOSITE_LIB_KEYS.has(libKey)?(e._uniqueKey||`${e._libKey||libKey}-${e.id}`):`${e.id}`;
     const dc=diffColor(e.diff), dp=(e.diff/10)*100;
     const diffDisplay=Number.isInteger(e.diff)?e.diff:e.diff.toFixed(1);
     const hofBadge=e.hof?'<span class="hof-badge">HALL OF FAME</span>':'';
     const pantheonBadge=e._libKey==='pantheon'?'<span class="hof-badge" style="background:rgba(124,58,237,0.16);border-color:rgba(192,132,252,0.45);color:#f0abfc">PANTHEON</span>':'';
+    const riskMeta = isNutritionLib ? null : (RISK_META[exerciseRisk(e)] || RISK_META[1]);
+    const riskDot = riskMeta ? `<span class="risk-dot" style="background:${riskMeta.c};box-shadow:0 0 5px ${riskMeta.c}88" title="Risk: ${riskMeta.l}"></span>` : '';
     const openMetaFn = isNutritionLib ? 'openNutrient' : 'openMuscle';
     const tags=(e.muscles||[]).map(m=>`<span class="mtag${m.p?' primary':''}" onclick="${openMetaFn}(event,'${m.n}')">${m.n}</span>`).join('');
     const loadLabel = isGymLib && e.load?.absolute?.label
@@ -3576,20 +3645,8 @@ function renderLibTable(libKey) {
       }).join(' · ');
       return `<div class="inj-banner"><span class="inj-banner-ico">⚠</span><div><div class="inj-banner-text">This exercise loads areas you've flagged as injured.</div><div class="inj-banner-joints">${jointNames}</div></div></div>`;
     })() : '';
-    return `
-    <tr data-id="${e.id}" data-row-key="${rowKey}" class="${isInjFlagged?'inj-flagged':''}" onclick="toggleDetail('${libKey}','${rowKey}')">
-      <td class="ex-name">${displayName}${hofBadge}${pantheonBadge}${injWarnBadge}${e.alt?`<span class="ex-alt">${e.alt}</span>`:''}</td>
-      <td><div class="muscles">${tags}</div></td>
-      <td><div class="diff-wrap">
-        <div class="diff-bar"><div class="diff-fill" style="width:${dp}%;background:${dc}"></div></div>
-        <span class="diff-num" style="color:${dc}">${diffDisplay}/10</span>
-      </div></td>
-      ${tCell(e.str)}${tCell(e.vol)}${tCell(e.end)}
-      ${riskCell(exerciseRisk(e))}
-    </tr>
-    <tr class="detail-row${e.hof?' hof':''}" id="${detailId}">
-      <td class="detail-cell" colspan="7">
-        ${isNutritionLib ? nutritionStatFooter(e) : `${injBanner}${isInjFlagged && !isDismissed ? '<div class="inj-section-wrap"><div class="inj-section-blur">' : ''}<div class="detail-grid">
+    // Shared by both the table's detail row and the card's detail panel.
+    const detailInner = isNutritionLib ? nutritionStatFooter(e) : `${injBanner}${isInjFlagged && !isDismissed ? '<div class="inj-section-wrap"><div class="inj-section-blur">' : ''}<div class="detail-grid">
           <div class="${e.hof?'hof-desc-block':'detail-block'}">${e.hof
             ? `<strong>DESCRIPTION</strong><span class="hof-desc-text">${e.desc}</span><span class="hof-feat-tag">★ HALL OF FAME FEAT</span>`
             : `<strong>DESCRIPTION</strong><div class="detail-block-text">${e.desc}</div>`
@@ -3614,28 +3671,88 @@ function renderLibTable(libKey) {
             </div>
           </div>
         </div>
-        ${prescriptionBlock(e)}${isInjFlagged && !isDismissed ? `</div><div class="inj-blur-overlay"><span class="inj-blur-msg">COULD HARM YOU FURTHER</span><button class="inj-got-it-btn" onclick="event.stopPropagation();dismissInjuryWarning('${detailId}')">Got it — show anyway</button></div></div>` : ''}`}
-        ${e.youtube?(e.youtube==='LINK_TODO'
-          ?`<div class="yt-section"><div class="yt-label">Watch the Movement</div><div class="yt-placeholder"><div class="yt-placeholder-icon">▶</div><div class="yt-placeholder-text">Video coming soon</div></div></div>`
-          :`<div class="yt-section"><div class="yt-label">Watch the Movement</div><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/${e.youtube}" allowfullscreen loading="lazy"></iframe></div></div>`):''}
+        ${prescriptionBlock(e)}${isInjFlagged && !isDismissed ? `</div><div class="inj-blur-overlay"><span class="inj-blur-msg">COULD HARM YOU FURTHER</span><button class="inj-got-it-btn" onclick="event.stopPropagation();dismissInjuryWarning('${detailId}')">Got it — show anyway</button></div></div>` : ''}`;
+    const ytHTML = e.youtube?(e.youtube==='LINK_TODO'
+      ?`<div class="yt-section"><div class="yt-label">Watch the Movement</div><div class="yt-placeholder"><div class="yt-placeholder-icon">▶</div><div class="yt-placeholder-text">Video coming soon</div></div></div>`
+      :`<div class="yt-section"><div class="yt-label">Watch the Movement</div><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/${e.youtube}" allowfullscreen loading="lazy"></iframe></div></div>`):'';
+
+    tableRows.push(`
+    <tr data-id="${e.id}" data-row-key="${rowKey}" class="${isInjFlagged?'inj-flagged':''}" onclick="toggleDetail('${libKey}','${rowKey}')">
+      <td class="ex-name">${displayName}${hofBadge}${pantheonBadge}${injWarnBadge}${e.alt?`<span class="ex-alt">${e.alt}</span>`:''}</td>
+      <td><div class="muscles">${tags}</div></td>
+      <td><div class="diff-wrap">
+        <div class="diff-bar"><div class="diff-fill" style="width:${dp}%;background:${dc}"></div></div>
+        <span class="diff-num" style="color:${dc}">${diffDisplay}/10</span>
+      </div></td>
+      ${tCell(e.str)}${tCell(e.vol)}${tCell(e.end)}
+      ${riskCell(exerciseRisk(e))}
+    </tr>
+    <tr class="detail-row${e.hof?' hof':''}" id="${detailId}">
+      <td class="detail-cell" colspan="7">
+        ${detailInner}
+        ${ytHTML}
       </td>
-    </tr>`;
-  }).join('');
-  // Mobile card grid for nutrition libs
+    </tr>`);
+
+    if (cardsGrid) {
+      cardRows.push(`<div class="ex-mob-wrap" data-row-key="${rowKey}" id="ex-mob-wrap-${libKey}-${rowKey}">
+      <div class="ex-mob-card" onclick="toggleDetail('${libKey}','${rowKey}')">
+        <div class="ex-mob-card-top">
+          <div class="ex-mob-card-name">${displayName}${hofBadge}${pantheonBadge}${injWarnBadge}${e.alt?`<span class="ex-alt">${e.alt}</span>`:''}</div>
+          ${riskDot}
+        </div>
+        <div class="muscles">${tags}</div>
+        <div class="diff-wrap">
+          <div class="diff-bar"><div class="diff-fill" style="width:${dp}%;background:${dc}"></div></div>
+          <span class="diff-num" style="color:${dc}">${diffDisplay}/10</span>
+        </div>
+      </div>
+      <div class="ex-mob-detail" id="ex-mob-detail-${libKey}-${rowKey}">${detailInner}${ytHTML}</div>
+    </div>`);
+    }
+  });
+  body.innerHTML = tableRows.join('');
+  if (cardsGrid) cardsGrid.innerHTML = cardRows.join('');
+
+  // Mobile card grid for nutrition libs (separate system — richer macro cards)
   if (isNutritionLib) renderNutritionCards(libKey, data);
+
+  // Apply the GRID/LIST view mode to every exercise library (not nutrition,
+  // which has its own always-on responsive card system above).
+  if (!isNutritionLib) {
+    const mode = getExViewMode();
+    const viewEl = body.closest('.view');
+    if (viewEl) viewEl.classList.toggle('ex-grid-mode', mode === 'grid');
+    const prefix = ids.body.replace('-body','');
+    const toggleBtn = document.getElementById(prefix + '-viewToggle');
+    if (toggleBtn) toggleBtn.textContent = mode === 'grid' ? '☰ LIST' : '⊞ GRID';
+  }
 }
 
 function toggleDetail(libKey, rowKey) {
-  const st  = LIB_STATE[libKey];
-  const row = document.getElementById(`detail-${libKey}-${rowKey}`);
-  if(!row) return;
-  const isOpening = !row.classList.contains('open');
-  if(st.openRow && st.openRow !== row) st.openRow.classList.remove('open');
-  row.classList.toggle('open');
-  st.openRow = row.classList.contains('open') ? row : null;
-  /* Scroll detail into view at top for mobile */
-  if(isOpening && row.classList.contains('open')) {
-    const baseRow = document.querySelector(`tr[data-row-key="${rowKey}"]`);
+  const st = LIB_STATE[libKey];
+  const row  = document.getElementById(`detail-${libKey}-${rowKey}`);
+  const card = document.getElementById(`ex-mob-wrap-${libKey}-${rowKey}`);
+  if(!row && !card) return;
+  const isOpening = st.openRow !== rowKey;
+
+  /* Close whatever was open before (table row and/or card), then open
+     the new one — table and card mirror the same open/closed state so
+     switching GRID/LIST mid-session never leaves something stuck open. */
+  if(st.openRow && st.openRow !== rowKey) {
+    document.getElementById(`detail-${libKey}-${st.openRow}`)?.classList.remove('open');
+    document.getElementById(`ex-mob-wrap-${libKey}-${st.openRow}`)?.classList.remove('open');
+  }
+  row?.classList.toggle('open', isOpening);
+  card?.classList.toggle('open', isOpening);
+  st.openRow = isOpening ? rowKey : null;
+
+  /* Scroll detail into view at top for mobile. Table row and card share
+     the same data-row-key but only one is visible at a time (GRID/LIST) —
+     pick whichever one is actually on screen. */
+  if(isOpening) {
+    const candidates = document.querySelectorAll(`[data-row-key="${rowKey}"]`);
+    const baseRow = [...candidates].find(el => el.offsetParent !== null) || candidates[0];
     if(baseRow) {
       setTimeout(() => {
         baseRow.scrollIntoView({behavior:'smooth', block:'start'});
@@ -3881,10 +3998,13 @@ function toggleDetail(libKey, rowKey) {
           '<div class="lib-stats">'+statsHTML(p, L.statCols)+'</div>'+
         '</div>'+
         '<div class="search-bar"><input class="search-input" id="'+p+'-search" type="text" placeholder="'+esc(ph)+'" /></div>'+
-        '<div class="filter-row-wrap"><div class="filter-row" id="'+p+'-filterRow">'+chips+'</div></div>'+
+        '<div class="filter-row-wrap"><div class="filter-row" id="'+p+'-filterRow">'+chips+'</div>'+
+          '<button class="view-toggle-btn" id="'+p+'-viewToggle" onclick="toggleExView()" title="Switch view">⊞ GRID</button>'+
+        '</div>'+
         '<div class="sticky-header" id="'+p+'-sticky"></div>'+
         '<div class="scroll-hint">'+SCROLL_HINT+'</div>'+
         '<div class="table-wrap" id="'+p+'-scroll"><table><tbody id="'+p+'-body"></tbody></table></div>'+
+        '<div class="ex-card-grid" id="'+p+'-cards"></div>'+
         '<div class="empty-state" id="'+p+'-empty" style="display:none"><span class="empty-icon">🔍</span>'+esc(empty)+'</div>'+
       '</div>';
   }
@@ -5751,10 +5871,10 @@ function updateHomeBodyweightSummary() {
   const bwCount = ['pushup','planche','pullup','chinup','frontlever','backlever','combo','squat','core','dip','handstand','isometric'].reduce((s,k) => s + getLibEntries(k).length, 0);
 
   // Cardio count
-  const cardioCount = ['cardioRunning','cardioCycling','cardioHIIT','cardioRowing','cardioRecovery','cardioMobility'].reduce((s,k) => s + (LIB_DATA[k]||[]).length, 0);
+  const cardioCount = ['cardioRunning','cardioCycling','cardioHIIT','cardioRowing','cardioRecovery','cardioMobility'].reduce((s,k) => s + getLibEntries(k).length, 0);
 
   // Weights count
-  const weightsCount = ['gymChest','gymBack','gymShoulders','gymLegs','gymArms','gymCore','weighted'].reduce((s,k) => s + (LIB_DATA[k]||[]).length, 0);
+  const weightsCount = ['gymChest','gymBack','gymShoulders','gymLegs','gymArms','gymCore','weighted'].reduce((s,k) => s + getLibEntries(k).length, 0);
 
   // Unified workout library count
   const totalEl = document.getElementById('home-workout-library-count');
@@ -5795,7 +5915,7 @@ function updateHomeBodyweightSummary() {
   Object.entries(_libCountMap).forEach(([k, id]) => {
     const el = document.getElementById(id);
     if(el) {
-      const n = (typeof LIB_DATA !== 'undefined' && Array.isArray(LIB_DATA[k])) ? LIB_DATA[k].length : 0;
+      const n = getLibEntries(k).length;
       if(n > 0) el.textContent = n + ' exercises';
     }
   });
@@ -6000,7 +6120,10 @@ window.setProgressFromCtx = function(status) {
         animBtn.classList.add('glass-shatter-effect');
         setTimeout(() => animBtn.classList.remove('glass-shatter-effect'), 1200);
         if(typeof createGlassBreakEffect === 'function') {
-          setTimeout(() => createGlassBreakEffect(animBtn, false, false), 100);
+          setTimeout(() => {
+            if (typeof window.playUnlockCelebration === 'function') window.playUnlockCelebration(animBtn, false, false);
+            else createGlassBreakEffect(animBtn, false, false);
+          }, 100);
         }
       }
     }
@@ -6044,8 +6167,13 @@ window.setProgressFromCtx = function(status) {
           // Subsequent HoF unlocks that gate Pantheon content: card-to-centre reveal only
           setTimeout(() => playHofCardRevealAnimation(btn), 80);
         } else if(isPantheon) {
-          // Pantheon completion: 5-second epic black-screen cinematic
-          setTimeout(() => triggerPantheonCompletionCinematic(btn), 80);
+          // Routine Pantheon exercise unlock — defaults to the 5-second
+          // black-screen cinematic, but selectable via the Achievements
+          // hex map's Celebrations cluster (Slash/Landed/Melt/Unbroken).
+          setTimeout(() => {
+            if (typeof window.playUnlockCelebration === 'function') window.playUnlockCelebration(btn, isHoF, true);
+            else triggerPantheonCompletionCinematic(btn);
+          }, 80);
         } else {
           setTimeout(() => {
             // Re-query by data attrs in case a re-render detached btn (getBCR returns zeros on detached nodes).
@@ -6055,7 +6183,8 @@ window.setProgressFromCtx = function(status) {
                 `[data-lib="${_btnLib}"][data-id="${_btnId}"]`
               ) || btn;
             }
-            createGlassBreakEffect(animBtn, isHoF, isPantheon);
+            if (typeof window.playUnlockCelebration === 'function') window.playUnlockCelebration(animBtn, isHoF, isPantheon);
+            else createGlassBreakEffect(animBtn, isHoF, isPantheon);
           }, 100);
           maybeShowPantheonAwakening(prevPantheonUnlocked, status);
         }
