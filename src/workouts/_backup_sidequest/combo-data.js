@@ -34,7 +34,6 @@ const combos = [
   {
     id: 1,
     name: "Muscle-Up | Flow (Bar / Rings)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "Bar muscle-up combination",
     muscles: [
       {n:"Back", p:true},
@@ -62,7 +61,6 @@ const combos = [
   {
     id: 2,
     name: "L-Sit Muscle-Up | Combo (Bar / Rings)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Hold-to-pull muscle-up",
     muscles: [
       {n:"Core", p:true},
@@ -90,7 +88,6 @@ const combos = [
   {
     id: 3,
     name: "Muscle-Up | Dip Combo (Rings)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "Ring muscle-up dip combo",
     muscles: [
       {n:"Shoulders", p:true},
@@ -118,7 +115,6 @@ const combos = [
   {
     id: 4,
     name: "Muscle-Up | Archer Combo (Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Explosive pull-up combo",
     muscles: [
       {n:"Back", p:true},
@@ -148,7 +144,6 @@ const combos = [
   {
     id: 6,
     name: "Supinated Muscle-Up | (Bar)",
-    sidequestKey: "False-Grip Muscle-Up | (Bar)",
     alt: "Supinated / underhand muscle-up",
     muscles: [
       {n:"Biceps", p:true},
@@ -203,7 +198,6 @@ const combos = [
   {
     id: 8,
     name: "Wide-Grip Muscle-Up | (Wide Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Snatch-width / broad-grip muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -231,7 +225,6 @@ const combos = [
   {
     id: 9,
     name: "Neutral-Grip Muscle-Up | (Parallel Bars / Neutral Handles)",
-    sidequestKey: "False-Grip Muscle-Up | (Bar)",
     alt: "Hammer / parallel-grip muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -286,7 +279,6 @@ const combos = [
   {
     id: 11,
     name: "Mixed-Grip Muscle-Up | (Bar)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "One-over one-under muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -371,7 +363,6 @@ const combos = [
   {
     id: 14,
     name: "Chest-to-Bar Kipping Muscle-Up | (Bar)",
-    sidequestKey: "False-Grip Muscle-Up | (Bar)",
     alt: "CTB muscle-up / contact-pull muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -399,7 +390,6 @@ const combos = [
   {
     id: 15,
     name: "Muscle-Up | Slow Negative (Bar / Rings)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "Eccentric descent / 5-second lowering",
     muscles: [
       {n:"Back", p:true},
@@ -427,7 +417,6 @@ const combos = [
   {
     id: 16,
     name: "Muscle-Up | Paused (Bar / Rings)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Isometric-hold / sticking-point pause",
     muscles: [
       {n:"Back", p:true},
@@ -455,7 +444,6 @@ const combos = [
   {
     id: 17,
     name: "Typewriter Muscle-Up | (Wide Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Side-to-side lateral muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -484,7 +472,6 @@ const combos = [
   {
     id: 36,
     name: "Muscle-Up | Tempo (Bar / Rings)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "Counted-cadence muscle-up (e.g. 3-1-2)",
     muscles: [
       {n:"Back", p:true},
@@ -515,7 +502,6 @@ const combos = [
   {
     id: 18,
     name: "High-Pull Muscle-Up | (Bar)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "Hip-height pull / floating muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -543,7 +529,6 @@ const combos = [
   {
     id: 19,
     name: "Clapping Muscle-Up | (Bar)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "Bar-release / plyometric press muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -571,7 +556,6 @@ const combos = [
   {
     id: 20,
     name: "360 Muscle-Up | (Bar)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "Spinning / full-rotation bar muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -602,7 +586,6 @@ const combos = [
   {
     id: 21,
     name: "Weighted Muscle-Up | (Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Loaded muscle-up — vest or dip belt",
     muscles: [
       {n:"Back", p:true},
@@ -630,7 +613,6 @@ const combos = [
   {
     id: 22,
     name: "Archer Muscle-Up | (Wide Bar)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "Offset-dominant arm muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -688,7 +670,6 @@ const combos = [
   {
     id: 24,
     name: "Tuck Muscle-Up | (Rings)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "Knee-tuck ring muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -716,7 +697,6 @@ const combos = [
   {
     id: 25,
     name: "Strict Muscle-Up | (Rings)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "Dead-hang false-grip ring muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -744,7 +724,6 @@ const combos = [
   {
     id: 26,
     name: "L-Sit Muscle-Up | (Rings)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "L-sit entry / exit ring muscle-up",
     muscles: [
       {n:"Core", p:true},
@@ -773,7 +752,6 @@ const combos = [
   {
     id: 38,
     name: "Kipping Muscle-Up | (Rings)",
-    sidequestKey: "Close-Grip Muscle-Up | (Bar)",
     alt: "Hip-driven ring muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -801,7 +779,6 @@ const combos = [
   {
     id: 39,
     name: "Weighted Muscle-Up | (Rings)",
-    sidequestKey: "One-Arm Muscle-Up | (Bar)",
     alt: "Loaded ring muscle-up — vest or belt",
     muscles: [
       {n:"Back", p:true},
@@ -832,7 +809,6 @@ const combos = [
   {
     id: 27,
     name: "Behind-the-Neck Muscle-Up | (Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "BTN muscle-up",
     muscles: [
       {n:"Back", p:true},
@@ -862,7 +838,6 @@ const combos = [
   {
     id: 29,
     name: "Parallel Bar Muscle-Up | (Parallel Bars)",
-    sidequestKey: "False-Grip Muscle-Up | (Bar)",
     alt: "Between-bars / dip-bar muscle-up",
     muscles: [
       {n:"Chest", p:true},
@@ -948,7 +923,6 @@ const combos = [
   {
     id: 31,
     name: "Double Muscle-Up | (Bar / Rings)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "Touch-and-go muscle-up × 2",
     muscles: [
       {n:"Back", p:true},
@@ -1003,7 +977,6 @@ const combos = [
   {
     id: 33,
     name: "Muscle-Up | Back Lever (Bar)",
-    sidequestKey: "Muscle-Up | Front Lever (Bar)",
     alt: "MU to back lever hold",
     muscles: [
       {n:"Shoulders", p:true},
@@ -1031,7 +1004,6 @@ const combos = [
   {
     id: 34,
     name: "Muscle-Up | Handstand (Bar)",
-    sidequestKey: "Muscle-Up | Front Lever (Bar)",
     alt: "Bar MU to bar handstand",
     muscles: [
       {n:"Shoulders", p:true},
@@ -1059,7 +1031,6 @@ const combos = [
   {
     id: 35,
     name: "Muscle-Up | Negative + Kip (Bar)",
-    sidequestKey: "False-Grip Muscle-Up | (Bar)",
     alt: "Slow down, fast up — negative-kip cycle",
     muscles: [
       {n:"Back", p:true},
@@ -1087,7 +1058,6 @@ const combos = [
   {
     id: 40,
     name: "Muscle-Up | Skin-the-Cat (Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "MU to German hang rotation",
     muscles: [
       {n:"Shoulders", p:true},
@@ -1115,7 +1085,6 @@ const combos = [
   {
     id: 41,
     name: "Muscle-Up | Top L-Sit (Bar)",
-    sidequestKey: "Strict Muscle-Up | (Bar)",
     alt: "MU to support L-sit",
     muscles: [
       {n:"Core", p:true},
@@ -1260,7 +1229,6 @@ const combos = [
   {
     id: 46,
     name: "FL | Pull-Up (Bar)",
-    sidequestKey: "Muscle-Up | Front Lever (Bar)",
     alt: "Static front lever into vertical pull",
     muscles: [
       {n:"Back", p:true},
@@ -1351,7 +1319,6 @@ const combos = [
   {
     id: 49,
     name: "L-Sit | Press to Handstand (Parallettes)",
-    sidequestKey: "Muscle-Up | Front Lever (Bar)",
     alt: "Compression press-up / L-press to HS",
     muscles: [
       {n:"Shoulders", p:true},

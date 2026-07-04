@@ -114,6 +114,7 @@ const chinupData = [
 {
   id: 4,
   name: "Slow Negative Chin-Up",
+  sidequestKey: "Chin-Up",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -142,6 +143,7 @@ const chinupData = [
 {
   id: 31,
   name: "One-Arm Scapular Pull",
+  sidequestKey: "One-Arm Australian Pull-Up | (Low Bar)",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -172,35 +174,6 @@ const chinupData = [
 // Supinated inverted row variants performed under a low bar. Body is horizontal
 // or near-horizontal, heels on the floor, pulling the chest up to the bar.
 // Load is scaled by body angle — more horizontal = harder.
-
-{
-  id: 5,
-  name: "Australian Pull-Up | (Low Bar)",
-  alt: null,
-  pathTag: "one-arm-chin",
-  muscles: [
-    { n: "Lats",       p: true  },
-    { n: "Rear Delts", p: true  },
-    { n: "Biceps",     p: false },
-    { n: "Core",       p: false },
-  ],
-  tags: ["back", "biceps", "shoulders", "core"],
-  diff: 1.5,
-  str:  { suit: true,  eff: 3 },
-  vol:  { suit: true,  eff: 4 },
-  end:  { suit: true,  eff: 4 },
-  joints: { wrist: 0, elbow: 1, shoulder: 2, neck: 0, lowerBack: 1,
-            knee: 0, fingers: 0, thoracic: 0, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
-  strength: 1,
-  mobility: 1,
-  technique: 2,
-  kcalPerRep: [0.11, 0.20],
-  desc: "A horizontal pulling movement performed under a bar set at waist-to-chest height, with a supinated (underhand, palms-toward-you) grip. The body hangs under the bar at an angle — heels on the floor — and the chest is pulled up to meet the bar. The supinated grip in this horizontal plane increases bicep involvement compared to the pronated version and provides a useful pulling stimulus for athletes who find vertical pulling too demanding. Load is easily adjusted by lowering the bar (closer to horizontal = harder) or bending the knees. A.K.A. Inverted Row, Bodyweight Row.",
-  cues: "Set the bar at roughly hip height and grip it with palms facing toward you, shoulder-width. Walk the feet forward until the body forms a straight line from head to heel. Keep the body rigid — do not allow the hips to sag. Drive the elbows back toward the hips. Touch the chest to the bar, then lower under control to full arm extension.",
-  equipment: "Low bar",
-  position: "Supine",
-  youtube: "LINK_TODO"
-},
 
 // ── FAMILY: STANDARD ──
 // The core bilateral supinated pull-up variants — standard, close, and wide
@@ -268,7 +241,7 @@ const chinupData = [
 {
   id: 8,
   name: "Wide Chin-Up",
-  sidequestKey: "Chin-Up",
+  sidequestKey: null,
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -297,7 +270,7 @@ const chinupData = [
 {
   id: 22,
   name: "Paused Chin-Up",
-  sidequestKey: "Chin-Up",
+  sidequestKey: "Wide Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -332,6 +305,7 @@ const chinupData = [
 {
   id: 9,
   name: "Chin-Up | (Rings)",
+  sidequestKey: "Wide Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -388,6 +362,7 @@ const chinupData = [
 {
   id: 10,
   name: "Commando Chin-Up",
+  sidequestKey: "Wide Chin-Up",
   alt: null,
   muscles: [
     { n: "Lats",       p: true  },
@@ -473,6 +448,7 @@ const chinupData = [
 {
   id: 27,
   name: "False Grip Chin-Up",
+  sidequestKey: "Fingertip Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -501,6 +477,7 @@ const chinupData = [
 {
   id: 32,
   name: "Vertical Rope Chin-Up",
+  sidequestKey: "Towel Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -529,6 +506,7 @@ const chinupData = [
 {
   id: 12,
   name: "Plyo Chin-Up",
+  sidequestKey: "Wide Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -585,6 +563,7 @@ const chinupData = [
 {
   id: 28,
   name: "False Grip Chin-Up | (Rings)",
+  sidequestKey: "L-Sit Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -613,6 +592,7 @@ const chinupData = [
 {
   id: 24,
   name: "Sternum Chin-Up",
+  sidequestKey: "Fingertip Chin-Up",
   alt: null,
   muscles: [
     { n: "Lats",       p: true  },
@@ -641,6 +621,7 @@ const chinupData = [
 {
   id: 33,
   name: "One-Arm Ring Row",
+  sidequestKey: "Fingertip Chin-Up",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -670,6 +651,7 @@ const chinupData = [
 {
   id: 34,
   name: "L-Sit Chin-Up | (Rings)",
+  sidequestKey: "One-Arm Chin-Up | Lock-Off",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -698,6 +680,7 @@ const chinupData = [
 {
   id: 35,
   name: "Plyo Chin-Up | (Rings)",
+  sidequestKey: "Towel Chin-Up",
   alt: null,
   muscles: [
     { n: "Biceps",     p: true  },
@@ -817,6 +800,7 @@ const chinupData = [
 {
   id: 17,
   name: "Uneven Chin-Up",
+  sidequestKey: "Towel Chin-Up",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -876,6 +860,7 @@ const chinupData = [
 {
   id: 19,
   name: "One-Arm Chin-Up | Negative",
+  sidequestKey: "One-Arm Chin-Up | Lock-Off",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -905,6 +890,7 @@ const chinupData = [
 {
   id: 20,
   name: "Wrist-Assisted One-Arm Chin-Up",
+  sidequestKey: "One-Arm Chin-Up | Lock-Off",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -934,6 +920,7 @@ const chinupData = [
 {
   id: 26,
   name: "Finger-Assisted One-Arm Chin-Up",
+  sidequestKey: "One-Arm Chin-Up | Lock-Off",
   alt: null,
   pathTag: "one-arm-chin",
   muscles: [
@@ -974,7 +961,7 @@ const chinupData = [
     { n: "Rear Delts", p: false },
   ],
   tags: ["chin-up", "back", "biceps", "core"],
-  diff: 9.5,
+  diff: 8.9,
   str:  { suit: true,  eff: 5 },
   vol:  { suit: false, eff: 1 },
   end:  { suit: false, eff: 1 },

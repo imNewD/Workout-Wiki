@@ -198,7 +198,6 @@ const squats = [
   {
     id: 7,
     name: "Shrimp Squat",
-    sidequestKey: "Pistol Squat",
     alt: "Rear-foot-in-hand pistol · dragon pistol",
     muscles: [
       {n:"Quads", p:true},
@@ -284,7 +283,6 @@ const squats = [
   {
     id: 10,
     name: "Dragon Squat",
-    sidequestKey: "Pistol Squat",
     alt: "Behind-the-back leg squat · crossing pistol",
     muscles: [
       {n:"Quads", p:true},
@@ -314,7 +312,6 @@ const squats = [
   {
     id: 11,
     name: "Wall Sit | (Wall)",
-    sidequestKey: "Box Squat | (Box)",
     alt: "Isometric squat hold · static squat",
     muscles: [
       {n:"Quads", p:true},
@@ -370,7 +367,6 @@ const squats = [
   {
     id: 13,
     name: "Baithak",
-    sidequestKey: "Hindu Squat",
     alt: "Pehlwani squat · kushti squat",
     muscles: [
       {n:"Quads", p:true},
@@ -399,7 +395,6 @@ const squats = [
   {
     id: 14,
     name: "Prisoner Squat",
-    sidequestKey: "Half Squat",
     alt: "Hands-behind-head squat · military squat",
     muscles: [
       {n:"Quads", p:true},
@@ -482,7 +477,6 @@ const squats = [
   {
     id: 17,
     name: "Heel-Elevated Squat | (Wedge)",
-    sidequestKey: "Box Squat | (Box)",
     alt: "Heel-raise squat · quad squat",
     muscles: [
       {n:"Quads", p:true},
@@ -537,7 +531,6 @@ const squats = [
   {
     id: 19,
     name: "Kang Squat",
-    sidequestKey: "Cossack Squat",
     alt: "Squat-good-morning hybrid · hinge squat",
     muscles: [
       {n:"Hamstrings", p:true},
@@ -594,7 +587,6 @@ const squats = [
   {
     id: 21,
     name: "Airborne Lunge",
-    sidequestKey: "Skater Squat",
     alt: "Suspended single-leg squat · floating lunge",
     muscles: [
       {n:"Quads", p:true},
@@ -623,7 +615,6 @@ const squats = [
   {
     id: 22,
     name: "Single-Leg Box Squat | (Box)",
-    sidequestKey: "Cossack Squat",
     alt: "Box pistol · assisted pistol squat",
     muscles: [
       {n:"Quads", p:true},
@@ -652,7 +643,6 @@ const squats = [
   {
     id: 23,
     name: "Deep Squat Hold",
-    sidequestKey: "Half Squat",
     alt: "Resting squat · hip opener squat",
     muscles: [
       {n:"Glutes", p:true},
@@ -708,7 +698,6 @@ const squats = [
   {
     id: 25,
     name: "Squat Pulse",
-    sidequestKey: "Half Squat",
     alt: "Bottom squat pulse · partial squat",
     muscles: [
       {n:"Quads", p:true},
@@ -790,7 +779,6 @@ const squats = [
   {
     id: 28,
     name: "Close Stance Squat",
-    sidequestKey: "Squat | Paused",
     alt: "Narrow squat · feet-together squat",
     muscles: [
       {n:"Quads", p:true},
@@ -818,7 +806,6 @@ const squats = [
   {
     id: 29,
     name: "Frog Squat",
-    sidequestKey: "Hindu Squat",
     alt: "Frog stance squat · groin squat",
     muscles: [
       {n:"Adductors", p:true},
@@ -875,7 +862,6 @@ const squats = [
   {
     id: 31,
     name: "Split Squat Jump",
-    sidequestKey: "Bulgarian Split Squat | (Bench)",
     alt: "Plyometric split squat · lunge jump",
     muscles: [
       {n:"Quads", p:true},
@@ -932,7 +918,6 @@ const squats = [
   {
     id: 33,
     name: "Split Squat | Isometric",
-    sidequestKey: "Split Squat",
     alt: "Split squat hold · lunge hold",
     muscles: [
       {n:"Quads", p:true},
@@ -961,7 +946,6 @@ const squats = [
   {
     id: 34,
     name: "Pistol Squat | Eccentric",
-    sidequestKey: "Skater Squat",
     alt: "Negative pistol · pistol lowering",
     muscles: [
       {n:"Quads", p:true},
@@ -989,7 +973,6 @@ const squats = [
   {
     id: 35,
     name: "Broad Jump",
-    sidequestKey: "Jump Squat",
     alt: "Standing broad jump · squat jump for distance",
     muscles: [
       {n:"Quads", p:true},
@@ -1018,7 +1001,6 @@ const squats = [
   {
     id: 36,
     name: "Squat | Tempo",
-    sidequestKey: "Squat | Paused",
     alt: "Slow squat · timed eccentric squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1046,7 +1028,6 @@ const squats = [
   {
     id: 37,
     name: "1.5-Rep Squat",
-    sidequestKey: "Squat | Paused",
     alt: "One-and-a-half squat · extended tension squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1101,7 +1082,6 @@ const squats = [
   {
     id: 39,
     name: "Zombie Squat",
-    sidequestKey: "Cossack Squat",
     alt: "No-hands front squat · Frankenstein squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1156,7 +1136,6 @@ const squats = [
   {
     id: 41,
     name: "Landmine Squat | (Barbell)",
-    sidequestKey: "Goblet Squat | (Kettlebell)",
     alt: "T-bar squat · corner squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1184,7 +1163,6 @@ const squats = [
   {
     id: 42,
     name: "Banded Squat | (Band)",
-    sidequestKey: "Spanish Squat | (Band)",
     alt: "Resistance band squat · accommodating resistance squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1350,7 +1328,6 @@ const squats = [
   {
     id: 48,
     name: "Front Squat | (Barbell)",
-    sidequestKey: "Low Bar Back Squat | (Barbell)",
     alt: "Clean grip squat · front rack squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1378,7 +1355,6 @@ const squats = [
   {
     id: 49,
     name: "Safety Bar Squat | (Barbell)",
-    sidequestKey: "High Bar Back Squat | (Barbell)",
     alt: "SSB squat · camber bar squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1437,7 +1413,6 @@ const squats = [
   {
     id: 51,
     name: "Slav Squat",
-    sidequestKey: "Asian Squat",
     alt: "Gopnik squat · Eastern European squat",
     muscles: [
       {n:"Glutes", p:true},
@@ -1495,7 +1470,6 @@ const squats = [
   {
     id: 53,
     name: "ATG Squat",
-    sidequestKey: "Hindu Squat",
     alt: "Ass-to-grass squat · full-depth squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1550,7 +1524,6 @@ const squats = [
   {
     id: 55,
     name: "ATG Split Squat | (Plate)",
-    sidequestKey: "Bulgarian Split Squat | (Bench)",
     alt: "Patrick step · KOT split squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1579,7 +1552,6 @@ const squats = [
   {
     id: 56,
     name: "Single-Leg Wall Sit | (Wall)",
-    sidequestKey: "Sissy Squat | (Wall)",
     alt: "One-leg wall sit · unilateral wall sit",
     muscles: [
       {n:"Quads", p:true},
@@ -1635,7 +1607,6 @@ const squats = [
   {
     id: 58,
     name: "Hatfield Squat | (Barbell)",
-    sidequestKey: "Zercher Squat | (Barbell)",
     alt: "Safety squat bar hands-on-rack · SSB self-spot squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1664,7 +1635,6 @@ const squats = [
   {
     id: 61,
     name: "Bear Hug Squat | (Sandbag)",
-    sidequestKey: "Belt Squat | (Belt)",
     alt: "Bear hug squat · sandbag front squat",
     muscles: [
       {n:"Quads", p:true},
@@ -1779,7 +1749,6 @@ const squats = [
   {
     id: 60,
     name: "Quarter Squat",
-    sidequestKey: "Squat",
     alt: "Partial squat · power-position squat",
     muscles: [
       {n:"Quads", p:true},

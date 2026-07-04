@@ -60,7 +60,7 @@ const _blTuck = {
 // ─── ADVANCED TUCK BL ────────────────────────────────────────────────────────
 const _blAdvTuck = {
   id: 2004,
-  name: 'Advanced Tuck BL | (Parallettes)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+  name: 'Advanced Tuck BL | (Parallettes)',
   alt: 'Advanced tuck back lever on parallettes · flat-back tuck BL',
   muscles: [
     {n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Core', p:true},
@@ -162,7 +162,7 @@ const backlevers = (() => {
   // ── TUCK BL: BAR & RINGS ────────────────────────────────────
   entries.push(cloneExercise(tuck, {
     id: 2001,
-    name: 'Tuck BL | (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    name: 'Tuck BL | (Bar)',
     alt: 'Tuck back lever hold on pull-up bar',
     tags: ['shoulders', 'chest', 'core', 'bar'],
     diff: 6,
@@ -176,7 +176,7 @@ const backlevers = (() => {
 
   entries.push(cloneExercise(tuck, {
     id: 2003,
-    name: 'Tuck BL | (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    name: 'Tuck BL | (Rings)',
     alt: 'Tuck back lever hold on gymnastic rings',
     tags: ['shoulders', 'chest', 'core', 'rings'],
     diff: 7,
@@ -191,7 +191,7 @@ const backlevers = (() => {
   // ── ADVANCED TUCK BL: BAR & RINGS ───────────────────────────
   entries.push(cloneExercise(advTuck, {
     id: 2005,
-    name: 'Advanced Tuck BL | (Bar)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    name: 'Advanced Tuck BL | (Bar)',
     alt: 'Advanced tuck back lever on pull-up bar',
     tags: ['shoulders', 'core', 'bar'],
     diff: 6.5,
@@ -205,7 +205,7 @@ const backlevers = (() => {
 
   entries.push(cloneExercise(advTuck, {
     id: 2006,
-    name: 'Advanced Tuck BL | (Rings)', sidequestKey: "Advanced Tuck BL | Fingertip (Bar)",
+    name: 'Advanced Tuck BL | (Rings)',
     alt: 'Advanced tuck back lever on rings',
     tags: ['shoulders', 'core', 'rings'],
     diff: 7.5,
@@ -220,7 +220,7 @@ const backlevers = (() => {
   // ── HALF LAY BL: BAR & RINGS ────────────────────────────────
   entries.push(cloneExercise(halfLay, {
     id: 2008,
-    name: 'Half Lay BL | (Bar)', sidequestKey: "Half Lay BL | (Parallettes)",
+    name: 'Half Lay BL | (Bar)',
     alt: 'Half-lay back lever on pull-up bar',
     tags: ['shoulders', 'core', 'bar'],
     diff: 7.0,
@@ -249,7 +249,7 @@ const backlevers = (() => {
   // ── STRADDLE BL: BAR & RINGS ─────────────────────────────────
   entries.push(cloneExercise(straddle, {
     id: 2014,
-    name: 'Straddle BL | (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    name: 'Straddle BL | (Bar)',
     alt: 'Straddle back lever on pull-up bar',
     tags: ['shoulders', 'core', 'bar'],
     diff: 8.0,
@@ -263,7 +263,7 @@ const backlevers = (() => {
 
   entries.push(cloneExercise(straddle, {
     id: 2015,
-    name: 'Straddle BL | (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    name: 'Straddle BL | (Rings)',
     alt: 'Straddle back lever on rings',
     tags: ['shoulders', 'core', 'rings'],
     diff: 9.0,
@@ -278,7 +278,7 @@ const backlevers = (() => {
   // ── FULL BL: BAR & RINGS ─────────────────────────────────────
   entries.push(cloneExercise(full, {
     id: 2017,
-    name: 'Full BL | (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    name: 'Full BL | (Bar)',
     alt: 'Full back lever on pull-up bar',
     tags: ['shoulders', 'core', 'bar'],
     diff: 9.0,
@@ -292,7 +292,7 @@ const backlevers = (() => {
 
   entries.push(cloneExercise(full, {
     id: 2018,
-    name: 'Full BL | (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    name: 'Full BL | (Rings)',
     alt: 'Full back lever on rings',
     tags: ['shoulders', 'core', 'rings'],
     diff: 10.0,
@@ -307,7 +307,7 @@ const backlevers = (() => {
   // ── PREP: GERMAN HANG ────────────────────────────────────────
   entries.push({
     id: 2019,
-    name: 'German Hang | (Bar)', sidequestKey: "German Hang | Bent Arm | (Bar)",
+    name: 'German Hang | (Bar)',
     alt: 'German hang · skin the cat start position · inverted hang',
     muscles: [
       {n:'Biceps', p:false}, {n:'Shoulders', p:true}, {n:'Chest', p:false}, {n:'Lats', p:false}
@@ -326,7 +326,7 @@ const backlevers = (() => {
 
   entries.push({
     id: 2020,
-    name: 'German Hang | (Rings)', sidequestKey: "Straddle German Hang | (Parallettes)",
+    name: 'German Hang | (Rings)',
     alt: 'German hang on rings · ring German hang',
     muscles: [
       {n:'Biceps', p:false}, {n:'Shoulders', p:true}, {n:'Chest', p:false}
@@ -366,7 +366,7 @@ const backlevers = (() => {
 
   entries.push({
     id: 2022,
-    name: 'Skin the Cat | (Rings)', sidequestKey: "German Hang | Fingertip | (Bar)",
+    name: 'Skin the Cat | (Rings)',
     alt: 'Skin the cat on rings · ring rotation',
     muscles: [
       {n:'Lats', p:true}, {n:'Shoulders', p:true}, {n:'Core', p:true},
@@ -406,7 +406,7 @@ const backlevers = (() => {
 
   entries.push({
     id: 2024,
-    name: 'Straddle Skin the Cat | (Rings)', sidequestKey: "German Hang | Fingertip | (Bar)",
+    name: 'Straddle Skin the Cat | (Rings)',
     alt: 'Straddle skin the cat on rings',
     muscles: [
       {n:'Lats', p:true}, {n:'Shoulders', p:true}, {n:'Core', p:true},
@@ -446,7 +446,7 @@ const backlevers = (() => {
 
   entries.push({
     id: 2026,
-    name: 'Tuck BL | Negative | (Rings)', sidequestKey: "Tuck BL | (Parallettes)",
+    name: 'Tuck BL | Negative | (Rings)',
     alt: 'Ring tuck back lever eccentric',
     muscles: [
       {n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}
@@ -466,7 +466,6 @@ const backlevers = (() => {
   entries.push({
     id: 2027,
     name: 'Straddle BL | Negative | (Bar)',
-    sidequestKey: "Straddle BL | Negative | (Parallettes)",
     alt: 'Straddle back lever eccentric',
     muscles: [
       {n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true},
@@ -486,7 +485,7 @@ const backlevers = (() => {
 
   entries.push({
     id: 2028,
-    name: 'Full BL | Negative | (Bar)', sidequestKey: "Full BL | Negative | (Parallettes)",
+    name: 'Full BL | Negative | (Bar)',
     alt: 'Full back lever eccentric · straight back lever lower',
     muscles: [
       {n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true},
@@ -526,7 +525,7 @@ const backlevers = (() => {
 
   // ── WIDE GRIP HOLDS ─────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2030, name: 'Tuck BL | Wide Grip (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2030, name: 'Tuck BL | Wide Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.2,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:2, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -534,7 +533,7 @@ const backlevers = (() => {
     cues: 'Set hands wider than shoulder-width before rotating. Maintain the tuck tension and level hips. Expect the shoulder pull to feel slightly different at the wider angle.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2031, name: 'Tuck BL | Wide Grip (Parallettes)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2031, name: 'Tuck BL | Wide Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.0,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -542,7 +541,7 @@ const backlevers = (() => {
     cues: 'Place parallettes wider than shoulder-width. Neutral grip keeps wrists comfortable as the wider position shifts loading to the outer shoulders.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2032, name: 'Tuck BL | Wide Grip (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2032, name: 'Tuck BL | Wide Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.2,
     strength: 4, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -550,7 +549,7 @@ const backlevers = (() => {
     cues: 'Spread rings wider than shoulder-width and keep them from swinging inward. The combined wide-plus-ring challenge demands exceptional shoulder co-contraction.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2033, name: 'Advanced Tuck BL | Wide Grip (Bar)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2033, name: 'Advanced Tuck BL | Wide Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.7,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:2, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -558,7 +557,7 @@ const backlevers = (() => {
     cues: 'Keep the back flat and hips extended. Wide grip shifts the pull to the outer shoulder heads — resist any shoulder forward rounding.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2034, name: 'Advanced Tuck BL | Wide Grip (Parallettes)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2034, name: 'Advanced Tuck BL | Wide Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.5,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -566,7 +565,7 @@ const backlevers = (() => {
     cues: 'Flatten the back completely, spread the parallettes, and maintain shoulder-depression throughout.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2035, name: 'Advanced Tuck BL | Wide Grip (Rings)', sidequestKey: "Advanced Tuck BL | Fingertip (Bar)",
+    id: 2035, name: 'Advanced Tuck BL | Wide Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.7,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -574,7 +573,7 @@ const backlevers = (() => {
     cues: 'Keep rings wide and prevent inward drift. Flat back, extended hips — any rounding immediately reduces the shoulder loading.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2036, name: 'Half Lay BL | Wide Grip (Bar)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2036, name: 'Half Lay BL | Wide Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 7.2,
     strength: 5, risk: 3, technique: 4, mobility: 3, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:2, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -582,7 +581,7 @@ const backlevers = (() => {
     cues: 'Extend one leg fully while keeping the other slightly bent. Grip wide and hold the shoulder in active extension — the wide grip makes this notably harder than standard half-lay.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2037, name: 'Half Lay BL | Wide Grip (Parallettes)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2037, name: 'Half Lay BL | Wide Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 7.0,
     strength: 5, risk: 2, technique: 4, mobility: 3, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -590,7 +589,7 @@ const backlevers = (() => {
     cues: 'Parallettes allow a comfortable wide neutral grip. Focus on shoulder extension and keeping the extended leg driving upward through the heel.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2038, name: 'Half Lay BL | Wide Grip (Rings)', sidequestKey: "Half Lay BL | (Rings)",
+    id: 2038, name: 'Half Lay BL | Wide Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 8.2,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -598,7 +597,7 @@ const backlevers = (() => {
     cues: 'Spread rings wide, hold the half-lay body position, and prevent ring drift inward. Three simultaneous demands on shoulder stability.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2039, name: 'Straddle BL | Wide Grip (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2039, name: 'Straddle BL | Wide Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.2,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:2, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -606,7 +605,7 @@ const backlevers = (() => {
     cues: 'Spread legs as wide as possible while gripping the bar wider than shoulder-width. Straddle and wide grip combine — prioritise not letting the hips drop.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2040, name: 'Straddle BL | Wide Grip (Parallettes)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2040, name: 'Straddle BL | Wide Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 8.0,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -614,7 +613,7 @@ const backlevers = (() => {
     cues: 'Place parallettes wide. Full straddle, flat body, shoulder in deep extension. Neutral grip means wrists are never the limiter here.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2041, name: 'Straddle BL | Wide Grip (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2041, name: 'Straddle BL | Wide Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.2,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -622,7 +621,7 @@ const backlevers = (() => {
     cues: 'Pull rings apart actively, spread legs maximally, and brace the entire posterior chain. Any relaxation results in immediate ring drift and position collapse.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2042, name: 'Full BL | Wide Grip (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2042, name: 'Full BL | Wide Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.3,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -630,7 +629,7 @@ const backlevers = (() => {
     cues: 'Squeeze every muscle, grip wide, and fight to keep the body perfectly horizontal. Wide grip makes the full lever noticeably harder than the standard-width version.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2043, name: 'Full BL | Wide Grip (Parallettes)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2043, name: 'Full BL | Wide Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 9.1,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -638,7 +637,7 @@ const backlevers = (() => {
     cues: 'Neutral wide grip, full body extension, every posterior chain muscle engaged. The parallettes take wrist pain completely out of the equation.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2044, name: 'Full BL | Wide Grip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2044, name: 'Full BL | Wide Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.2,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -648,7 +647,7 @@ const backlevers = (() => {
 
   // ── CLOSE/NARROW GRIP HOLDS ──────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2045, name: 'Tuck BL | Close Grip (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2045, name: 'Tuck BL | Close Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.2,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -656,7 +655,7 @@ const backlevers = (() => {
     cues: 'Grip narrower than shoulder-width. Expect more elbow involvement. Maintain the same tuck body tension — the grip change mainly alters the upper-arm loading pattern.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2046, name: 'Tuck BL | Close Grip (Parallettes)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2046, name: 'Tuck BL | Close Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.0,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -664,7 +663,7 @@ const backlevers = (() => {
     cues: 'Place parallettes closer than shoulder-width. The narrow neutral grip concentrates the bicep-tendon load slightly differently than the standard position.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2047, name: 'Tuck BL | Close Grip (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2047, name: 'Tuck BL | Close Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.2,
     strength: 4, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -672,7 +671,7 @@ const backlevers = (() => {
     cues: 'Keep rings close together and prevent them from spreading outward. Tight grip with elbows pointing rearward.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2048, name: 'Advanced Tuck BL | Close Grip (Bar)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2048, name: 'Advanced Tuck BL | Close Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.7,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -680,7 +679,7 @@ const backlevers = (() => {
     cues: 'Keep the back flat and hips extended fully. Close grip will make elbows more prominent in the overall demand — build elbow tolerance before this variation.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2049, name: 'Advanced Tuck BL | Close Grip (Parallettes)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2049, name: 'Advanced Tuck BL | Close Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.5,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -688,7 +687,7 @@ const backlevers = (() => {
     cues: 'Parallettes close together, flat back, hips extended. Pure elbow and shoulder extension challenge on neutral grip.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2050, name: 'Advanced Tuck BL | Close Grip (Rings)', sidequestKey: "Advanced Tuck BL | Fingertip (Bar)",
+    id: 2050, name: 'Advanced Tuck BL | Close Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.7,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:3, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -696,7 +695,7 @@ const backlevers = (() => {
     cues: 'Press rings toward each other actively. Flat back, hips out. Any outward ring drift means the close-grip challenge is doing its job.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2051, name: 'Half Lay BL | Close Grip (Bar)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2051, name: 'Half Lay BL | Close Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 7.2,
     strength: 5, risk: 3, technique: 4, mobility: 3, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -704,7 +703,7 @@ const backlevers = (() => {
     cues: 'Narrow grip on bar with one leg extended. Manage the asymmetric body position while the narrow grip focuses the bicep-tendon and elbow load.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2052, name: 'Half Lay BL | Close Grip (Parallettes)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2052, name: 'Half Lay BL | Close Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 7.0,
     strength: 5, risk: 2, technique: 4, mobility: 3, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -712,7 +711,7 @@ const backlevers = (() => {
     cues: 'Close parallettes, one leg extended, flat body. The neutral grip keeps the exercise shoulder-and-elbow-pure.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2053, name: 'Half Lay BL | Close Grip (Rings)', sidequestKey: "Half Lay BL | (Rings)",
+    id: 2053, name: 'Half Lay BL | Close Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 8.2,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -720,7 +719,7 @@ const backlevers = (() => {
     cues: 'Keep rings close and fight their tendency to spread. Half-lay body, flat back, extended hip on the straight leg.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2054, name: 'Straddle BL | Close Grip (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2054, name: 'Straddle BL | Close Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.2,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -728,7 +727,7 @@ const backlevers = (() => {
     cues: 'Spread legs maximally, grip bar narrower than shoulder-width. The straddle reduces lever length but the close grip adds unique elbow stress.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2055, name: 'Straddle BL | Close Grip (Parallettes)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2055, name: 'Straddle BL | Close Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 8.0,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -736,7 +735,7 @@ const backlevers = (() => {
     cues: 'Parallettes close, legs straddled wide, body flat. Neutral grip keeps the challenge in the shoulder and elbow without wrist discomfort.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2056, name: 'Straddle BL | Close Grip (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2056, name: 'Straddle BL | Close Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.2,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -744,7 +743,7 @@ const backlevers = (() => {
     cues: 'Resist ring outward drift aggressively. Straddle the legs fully. Flat body, arms straight. Close rings and wide legs simultaneously.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2057, name: 'Full BL | Close Grip (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2057, name: 'Full BL | Close Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.3,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -752,7 +751,7 @@ const backlevers = (() => {
     cues: 'Grip narrow, squeeze the whole body tight, keep hips level. The close grip dramatically increases bicep-tendon vulnerability — only attempt after significant elbow tendon conditioning.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2058, name: 'Full BL | Close Grip (Parallettes)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2058, name: 'Full BL | Close Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 9.1,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -760,7 +759,7 @@ const backlevers = (() => {
     cues: 'Close parallettes, straight body, maximum contraction. Neutral grip means the elbow is the main stress point — not the wrist.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2059, name: 'Full BL | Close Grip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2059, name: 'Full BL | Close Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.2,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -770,7 +769,7 @@ const backlevers = (() => {
 
   // ── REVERSE GRIP HOLDS ───────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2060, name: 'Tuck BL | Reverse Grip (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2060, name: 'Tuck BL | Reverse Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.3,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:3, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -778,7 +777,7 @@ const backlevers = (() => {
     cues: 'Grip bar with palms facing away from the ground (supinated). Rotate into the inverted tuck carefully — the wrist and elbow will feel the reversed angle immediately. Build this tolerance gradually.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2061, name: 'Tuck BL | Reverse Grip (Parallettes)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2061, name: 'Tuck BL | Reverse Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.1,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -786,7 +785,7 @@ const backlevers = (() => {
     cues: 'Rotate grip so thumbs point inward (reverse). Parallettes allow slight wrist angle adjustment — use it to find the least uncomfortable supinated position.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2062, name: 'Tuck BL | Reverse Grip (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2062, name: 'Tuck BL | Reverse Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.0,
     strength: 4, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -794,7 +793,7 @@ const backlevers = (() => {
     cues: 'Allow rings to rotate into the most comfortable supinated position. The ring freedom makes reverse grip much more accessible than on a fixed bar.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2063, name: 'Advanced Tuck BL | Reverse Grip (Bar)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2063, name: 'Advanced Tuck BL | Reverse Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.8,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:3, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -802,7 +801,7 @@ const backlevers = (() => {
     cues: 'Flat back, hips extended, supinated grip. The flat-back position at supinated grip requires more shoulder and elbow tendon conditioning than the standard tuck reverse grip.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2064, name: 'Advanced Tuck BL | Reverse Grip (Parallettes)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2064, name: 'Advanced Tuck BL | Reverse Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.6,
     strength: 4, risk: 2, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -810,7 +809,7 @@ const backlevers = (() => {
     cues: 'Reverse the grip on the parallettes — thumbs should point inward. Flat back and extended hips with the grip-angle change.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2065, name: 'Advanced Tuck BL | Reverse Grip (Rings)', sidequestKey: "Advanced Tuck BL | Fingertip (Bar)",
+    id: 2065, name: 'Advanced Tuck BL | Reverse Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.6,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:3, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -818,7 +817,7 @@ const backlevers = (() => {
     cues: 'Allow the rings to turn into the supinated position naturally. Flat back, extended hips, stable ring control.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2066, name: 'Half Lay BL | Reverse Grip (Bar)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2066, name: 'Half Lay BL | Reverse Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 7.3,
     strength: 5, risk: 3, technique: 4, mobility: 3, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -826,7 +825,7 @@ const backlevers = (() => {
     cues: 'Supinated grip, one leg extended. The half-lay lever makes the reverse grip much harder on the wrist than in the tuck — build bar RG tuck first.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2067, name: 'Half Lay BL | Reverse Grip (Parallettes)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2067, name: 'Half Lay BL | Reverse Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 7.1,
     strength: 5, risk: 2, technique: 4, mobility: 3, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -834,7 +833,7 @@ const backlevers = (() => {
     cues: 'Supinated parallette grip, one leg extended. Wrist is the most comfortable here — focus on the shoulder extension and half-lay body tension.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2068, name: 'Half Lay BL | Reverse Grip (Rings)', sidequestKey: "Half Lay BL | (Rings)",
+    id: 2068, name: 'Half Lay BL | Reverse Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 8.1,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -842,7 +841,7 @@ const backlevers = (() => {
     cues: 'Let rings find natural supinated angle. Half-lay body, shoulder extension — ring rotation removes the worst of the wrist torsion.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2069, name: 'Straddle BL | Reverse Grip (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2069, name: 'Straddle BL | Reverse Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.3,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -850,7 +849,7 @@ const backlevers = (() => {
     cues: 'Full straddle, supinated grip. The wide-leg position reduces some of the lever stress to make the reverse-grip wrist and elbow load manageable.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2070, name: 'Straddle BL | Reverse Grip (Parallettes)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2070, name: 'Straddle BL | Reverse Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 8.1,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -858,7 +857,7 @@ const backlevers = (() => {
     cues: 'Straddle wide, parallette supinated grip. Body flat, shoulder deep in extension. Most accessible supinated straddle variant.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2071, name: 'Straddle BL | Reverse Grip (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2071, name: 'Straddle BL | Reverse Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.1,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -866,7 +865,7 @@ const backlevers = (() => {
     cues: 'Allow rings to settle into supinated angle. Hold the straddle firmly. An excellent ring-conditioning straddle variant.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2072, name: 'Full BL | Reverse Grip (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2072, name: 'Full BL | Reverse Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.5,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:5, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -874,7 +873,7 @@ const backlevers = (() => {
     cues: 'Supinated grip, full body extension, total muscle contraction. The wrist and elbow are under severe stress at this combination — only attempt after extensive reverse-grip tuck and straddle progression.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2073, name: 'Full BL | Reverse Grip (Parallettes)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2073, name: 'Full BL | Reverse Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 9.3,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -882,7 +881,7 @@ const backlevers = (() => {
     cues: 'Supinated parallette grip, full body extension. Neutral handles reduce wrist torque significantly vs the bar — prioritise this version for building the pattern.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2074, name: 'Full BL | Reverse Grip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2074, name: 'Full BL | Reverse Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.3,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -892,7 +891,7 @@ const backlevers = (() => {
 
   // ── FINGERTIP HOLDS ──────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2075, name: 'Tuck BL | Fingertip (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2075, name: 'Tuck BL | Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 6.5,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -900,7 +899,7 @@ const backlevers = (() => {
     cues: 'Open the hand so only the fingertip pads contact the bar. The tuck body position is the minimum lever length to start fingertip BL work. Grip strength failure will come before shoulder failure.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2076, name: 'Tuck BL | Fingertip (Parallettes)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2076, name: 'Tuck BL | Fingertip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes', 'fingertip'], diff: 6.3,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -908,7 +907,7 @@ const backlevers = (() => {
     cues: 'Drape fingertips over the parallette edges. Neutral wrist is easier on the forearm than the bar position. Tuck tight and keep body tension high.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2077, name: 'Tuck BL | Fingertip (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2077, name: 'Tuck BL | Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 7.5,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -916,7 +915,7 @@ const backlevers = (() => {
     cues: 'Curl fingertips around the ring surface. The ring will want to rotate — the fingertip grip must resist that rotation. Start with very short holds.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2078, sidequestKey: null, name: 'Advanced Tuck BL | Fingertip (Bar)',
+    id: 2078, name: 'Advanced Tuck BL | Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 7.0,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -924,7 +923,7 @@ const backlevers = (() => {
     cues: 'Flat back, extended hips, fingertip grip. Every second on fingertips is earned — the flat position removes the tuck\'s lever-shortening benefit.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2079, name: 'Advanced Tuck BL | Fingertip (Parallettes)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2079, name: 'Advanced Tuck BL | Fingertip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes', 'fingertip'], diff: 6.8,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -932,7 +931,7 @@ const backlevers = (() => {
     cues: 'Flat back and hips extended. Parallette fingertip is the gentlest way to add fingertip load at this progression level.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2080, name: 'Advanced Tuck BL | Fingertip (Rings)', sidequestKey: "Advanced Tuck BL | One Arm (Parallettes)",
+    id: 2080, name: 'Advanced Tuck BL | Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 8.0,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -940,7 +939,7 @@ const backlevers = (() => {
     cues: 'Flat back, ring fingertip. Minimal hold time — this is a max-intensity conditioning stimulus, not a duration challenge.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2081, name: 'Half Lay BL | Fingertip (Bar)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2081, name: 'Half Lay BL | Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 7.5,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -948,7 +947,7 @@ const backlevers = (() => {
     cues: 'One leg extended, fingertip grip. Expect very short hold durations. The half-lay lever makes finger fatigue arrive rapidly.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2082, name: 'Half Lay BL | Fingertip (Parallettes)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2082, name: 'Half Lay BL | Fingertip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes', 'fingertip'], diff: 7.3,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -956,7 +955,7 @@ const backlevers = (() => {
     cues: 'Half-lay body, fingertip on parallettes. Neutral wrist keeps this manageable — build long-duration holds before moving to bar fingertip at this progression.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2083, name: 'Half Lay BL | Fingertip (Rings)', sidequestKey: "Half Lay BL | (Rings)",
+    id: 2083, name: 'Half Lay BL | Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 8.5,
     strength: 5, risk: 4, technique: 5, mobility: 3, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -964,7 +963,7 @@ const backlevers = (() => {
     cues: 'Fingertip on rings, half-lay body. Ring rotation against the fingertip adds a unique demand — the grip cannot passively lock as it would on a fixed bar.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2084, name: 'Straddle BL | Fingertip (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2084, name: 'Straddle BL | Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 8.5,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -972,7 +971,7 @@ const backlevers = (() => {
     cues: 'Max straddle spread, fingertip grip. The straddle is necessary to make the fingertip grip survivable at this level. Build tuck and advanced tuck fingertip first.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2085, name: 'Straddle BL | Fingertip (Parallettes)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2085, name: 'Straddle BL | Fingertip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes', 'fingertip'], diff: 8.3,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -980,7 +979,7 @@ const backlevers = (() => {
     cues: 'Full straddle, fingertip on parallette edges. The neutral grip is the most tendon-friendly way to accumulate straddle fingertip BL volume.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2086, name: 'Straddle BL | Fingertip (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2086, name: 'Straddle BL | Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 9.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -988,7 +987,7 @@ const backlevers = (() => {
     cues: 'Max straddle, fingertip on rings. Everything is fighting your stability simultaneously. Sub-5-second holds are elite-level achievement.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2087, name: 'Full BL | Fingertip (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2087, name: 'Full BL | Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 9.8,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -996,7 +995,7 @@ const backlevers = (() => {
     cues: 'Maximum body tension, fingertip grip. The full lever loads the fingers maximally. This is a feat of both shoulder extension and finger tendon strength at the elite level.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2088, name: 'Full BL | Fingertip (Parallettes)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2088, name: 'Full BL | Fingertip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes', 'fingertip'], diff: 9.6,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1004,7 +1003,7 @@ const backlevers = (() => {
     cues: 'Fingertip on parallette edges, full body extended. Neutral grip isolates the finger and shoulder demands without adding wrist torsion.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2089, name: 'Full BL | Fingertip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2089, name: 'Full BL | Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 10.8,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1014,7 +1013,7 @@ const backlevers = (() => {
 
   // ── PINCH GRIP HOLDS ──────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2090, name: 'Tuck BL | Pinch Grip (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2090, name: 'Tuck BL | Pinch Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.4,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1022,7 +1021,7 @@ const backlevers = (() => {
     cues: 'Squeeze the bar between the thumb and fingers without wrapping the thumb underneath. The tuck is the appropriate start position — pinch grip will fatigue faster than a standard grip.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2091, name: 'Tuck BL | Pinch Grip (Parallettes)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2091, name: 'Tuck BL | Pinch Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.2,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1030,7 +1029,7 @@ const backlevers = (() => {
     cues: 'Pinch the parallette top surface. The wider handle trains a slightly different thumb abductor angle than the bar. Tuck body for minimum lever.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2092, name: 'Tuck BL | Pinch Grip (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2092, name: 'Tuck BL | Pinch Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.4,
     strength: 4, risk: 3, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1038,7 +1037,7 @@ const backlevers = (() => {
     cues: 'Pinch the ring. The ring rotates against the pinch — actively resist this. Tuck body only. This combination makes for a very short maximal hold.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2093, name: 'Advanced Tuck BL | Pinch Grip (Bar)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2093, name: 'Advanced Tuck BL | Pinch Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.9,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -1046,7 +1045,7 @@ const backlevers = (() => {
     cues: 'Flat back, hips extended, pinch grip. The flat position eliminates the tuck\'s lever advantage, making the pinch grip\'s shorter fatigue timeline matter more.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2094, name: 'Advanced Tuck BL | Pinch Grip (Parallettes)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    id: 2094, name: 'Advanced Tuck BL | Pinch Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 6.7,
     strength: 5, risk: 3, technique: 5, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -1054,7 +1053,7 @@ const backlevers = (() => {
     cues: 'Flat back, pinch the parallette tops. Wrists are comfortable — focus on maintaining the flat-back body line as pinch fatigue sets in.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2095, name: 'Advanced Tuck BL | Pinch Grip (Rings)', sidequestKey: "Advanced Tuck BL | Fingertip (Bar)",
+    id: 2095, name: 'Advanced Tuck BL | Pinch Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.9,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -1062,7 +1061,7 @@ const backlevers = (() => {
     cues: 'Flat back, pinch rings. Ring rotation is the enemy of pinch grip — the flat-back advanced tuck requires full grip tendon readiness before this variation.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2096, name: 'Half Lay BL | Pinch Grip (Bar)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2096, name: 'Half Lay BL | Pinch Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 7.4,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -1070,7 +1069,7 @@ const backlevers = (() => {
     cues: 'One leg extended, pinch grip. The half-lay lever significantly accelerates grip fatigue. Short quality holds are the training stimulus here.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2097, name: 'Half Lay BL | Pinch Grip (Parallettes)', sidequestKey: "Half Lay BL | (Parallettes)",
+    id: 2097, name: 'Half Lay BL | Pinch Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 7.2,
     strength: 5, risk: 3, technique: 5, mobility: 3, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -1078,7 +1077,7 @@ const backlevers = (() => {
     cues: 'Half-lay body, pinch the parallette. Neutral wrist keeps the focus on the thumb and finger load rather than wrist stress.',
   }));
   entries.push(cloneExercise(halfLay, {
-    id: 2098, name: 'Half Lay BL | Pinch Grip (Rings)', sidequestKey: "Half Lay BL | (Rings)",
+    id: 2098, name: 'Half Lay BL | Pinch Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 8.4,
     strength: 5, risk: 4, technique: 5, mobility: 3, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:3, groin:1, knee:0, ankle:0, foot:0},
@@ -1086,7 +1085,7 @@ const backlevers = (() => {
     cues: 'Half-lay body, pinch the ring surface. Ring rotation fights the pinch continuously — micro-adjustments to the grip are constant throughout the hold.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2099, name: 'Straddle BL | Pinch Grip (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2099, name: 'Straddle BL | Pinch Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.4,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1094,7 +1093,7 @@ const backlevers = (() => {
     cues: 'Max straddle, pinch grip. The straddle reduces lever arm enough to make pinch grip achievable at this level. Build straddle full-grip first.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2100, name: 'Straddle BL | Pinch Grip (Parallettes)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2100, name: 'Straddle BL | Pinch Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 8.2,
     strength: 5, risk: 3, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1102,7 +1101,7 @@ const backlevers = (() => {
     cues: 'Full straddle, pinch parallettes. Neutral grip prevents wrist issues — accumulate quality seconds and build up hold duration progressively.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2101, name: 'Straddle BL | Pinch Grip (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2101, name: 'Straddle BL | Pinch Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.4,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1110,7 +1109,7 @@ const backlevers = (() => {
     cues: 'Straddle wide, pinch rings. Ring rotation relentlessly attacks the pinch — active resistance is continuous throughout the hold.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2102, name: 'Full BL | Pinch Grip (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2102, name: 'Full BL | Pinch Grip (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.7,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1118,7 +1117,7 @@ const backlevers = (() => {
     cues: 'Full body straight, pinch grip. The maximum lever amplifies pinch failure — only seconds are possible even at elite level. Track hold time carefully.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2103, name: 'Full BL | Pinch Grip (Parallettes)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2103, name: 'Full BL | Pinch Grip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 9.5,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1126,7 +1125,7 @@ const backlevers = (() => {
     cues: 'Full body, neutral pinch on parallettes. Wrist is comfortable — the grip and shoulder demand is the focus.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2104, name: 'Full BL | Pinch Grip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2104, name: 'Full BL | Pinch Grip (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.7,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1136,7 +1135,7 @@ const backlevers = (() => {
 
   // ── 4-FINGER HOLDS ───────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2105, name: 'Tuck BL | 4-Finger (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2105, name: 'Tuck BL | 4-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.6,
     strength: 4, risk: 3, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1144,7 +1143,7 @@ const backlevers = (() => {
     cues: 'Lift the pinky off the bar. Four fingers must now carry what five did. The tuck is essential — finger tendons fatigue faster than shoulders at this grip.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2106, name: 'Tuck BL | 4-Finger (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2106, name: 'Tuck BL | 4-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.6,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1152,7 +1151,7 @@ const backlevers = (() => {
     cues: 'Four fingers on the ring, tuck body. Rings rotate against the grip — brace the remaining four fingers and prevent ring drift.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2107, name: 'Straddle BL | 4-Finger (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2107, name: 'Straddle BL | 4-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.6,
     strength: 5, risk: 4, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1160,7 +1159,7 @@ const backlevers = (() => {
     cues: 'Max straddle, 4 fingers on bar. The straddle reduces lever length enough to make this achievable. Build extensive tuck 4-finger capacity first.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2108, name: 'Straddle BL | 4-Finger (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2108, name: 'Straddle BL | 4-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.6,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1168,7 +1167,7 @@ const backlevers = (() => {
     cues: 'Wide straddle, 4 fingers on rings. Ring rotation and four-finger load simultaneously — only experienced athletes with strong tendon conditioning should attempt this.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2109, name: 'Full BL | 4-Finger (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    id: 2109, name: 'Full BL | 4-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.9,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1178,7 +1177,7 @@ const backlevers = (() => {
 
   // ── 3-FINGER HOLDS ───────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2110, name: 'Tuck BL | 3-Finger (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    id: 2110, name: 'Tuck BL | 3-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 6.9,
     strength: 4, risk: 4, technique: 4, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1186,7 +1185,7 @@ const backlevers = (() => {
     cues: 'Three fingers on bar, tuck body. The two removed fingers shift load dramatically — this grip requires substantial preparation through full-grip and 4-finger work first.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2111, name: 'Tuck BL | 3-Finger (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2111, name: 'Tuck BL | 3-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 7.9,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1194,7 +1193,7 @@ const backlevers = (() => {
     cues: 'Three fingers, ring surface, tuck body. The ring\'s rotational force is completely unforgiving with only three fingers — brief maximal holds only.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2112, name: 'Straddle BL | 3-Finger (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    id: 2112, name: 'Straddle BL | 3-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.9,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1202,7 +1201,7 @@ const backlevers = (() => {
     cues: 'Max straddle, 3 fingers. The straddle is a prerequisite for managing the 3-finger load. Respect tendon warm-up and volume limits rigorously.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2113, name: 'Straddle BL | 3-Finger (Rings)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2113, name: 'Straddle BL | 3-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.9,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1220,7 +1219,7 @@ const backlevers = (() => {
 
   // ── 2-FINGER HOLDS ───────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2115, name: 'Tuck BL | 2-Finger (Bar)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    id: 2115, name: 'Tuck BL | 2-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 7.5,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1228,7 +1227,7 @@ const backlevers = (() => {
     cues: 'Two fingers on bar, tuck body. The load per finger is now 2.5× a full grip. Only athletes with serious finger tendon preparation should attempt this.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2116, name: 'Tuck BL | 2-Finger (Rings)', sidequestKey: "Tuck BL | One Arm (Parallettes)",
+    id: 2116, name: 'Tuck BL | 2-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 8.5,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:3, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1236,7 +1235,7 @@ const backlevers = (() => {
     cues: 'Two fingers on rings, tuck. Ring rotation is unforgiving with only two fingers — brief supramaximal holds only, with extensive warm-up.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2117, name: 'Straddle BL | 2-Finger (Bar)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2117, name: 'Straddle BL | 2-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1244,7 +1243,7 @@ const backlevers = (() => {
     cues: 'Max straddle, 2 fingers. This is extreme territory — treat as a max-effort assessment rather than a training exercise.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2118, name: 'Straddle BL | 2-Finger (Rings)', sidequestKey: "Straddle BL | 1-Finger (Bar)",
+    id: 2118, name: 'Straddle BL | 2-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1254,7 +1253,7 @@ const backlevers = (() => {
 
   // ── 1-FINGER HOLDS ───────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2119, name: 'Tuck BL | 1-Finger (Bar)', sidequestKey: "Tuck BL | One Arm (Parallettes)",
+    id: 2119, name: 'Tuck BL | 1-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.5,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1262,7 +1261,7 @@ const backlevers = (() => {
     cues: 'One finger per hand on bar, tuck body. The index or middle finger is significantly stronger than the others — use one of those. This represents the absolute limit of reduced-finger BL.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2120, name: 'Tuck BL | 1-Finger (Rings)', sidequestKey: "Tuck BL | One Arm Fingertip (Parallettes)",
+    id: 2120, name: 'Tuck BL | 1-Finger (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.5,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1278,7 +1277,7 @@ const backlevers = (() => {
     cues: 'Max straddle, one finger per hand. The straddle is the only lever length at which 1-finger BL is even theoretically possible for most athletes. Treat as a maximum-effort benchmark.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2122, sidequestKey: null, name: 'Advanced Tuck BL | 1-Finger (Bar)',
+    id: 2122, name: 'Advanced Tuck BL | 1-Finger (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.0,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -1288,7 +1287,7 @@ const backlevers = (() => {
 
   // ── ONE-ARM HOLDS ────────────────────────────────────────────────────────────
   entries.push(cloneExercise(tuck, {
-    id: 2123, name: 'Tuck BL | One Arm (Bar)', sidequestKey: "Tuck BL | One Arm (Parallettes)",
+    id: 2123, name: 'Tuck BL | One Arm (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 8.5,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -1304,7 +1303,7 @@ const backlevers = (() => {
     cues: 'One parallette, one hand, tuck body. The neutral grip is significantly more comfortable for long-term one-arm back lever training. The core anti-rotation demand is identical to the bar version.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2125, name: 'Tuck BL | One Arm (Rings)', sidequestKey: "Tuck BL | One Arm Fingertip (Parallettes)",
+    id: 2125, name: 'Tuck BL | One Arm (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 9.5,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -1312,7 +1311,7 @@ const backlevers = (() => {
     cues: 'One ring, one arm, tuck body. The ring will rotate freely — the single-arm grip must resist this on top of the shoulder extension work. Extremely short holds at elite level.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2126, name: 'Advanced Tuck BL | One Arm (Bar)', sidequestKey: "Advanced Tuck BL | 1-Finger (Bar)",
+    id: 2126, name: 'Advanced Tuck BL | One Arm (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.0,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:1, ankle:0, foot:0},
@@ -1320,7 +1319,7 @@ const backlevers = (() => {
     cues: 'Flat back, one arm. The anti-rotation demand is maximised at this body position because there is less mass compression helping the tuck. Build tuck one-arm extensively first.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2127, sidequestKey: null, name: 'Advanced Tuck BL | One Arm (Parallettes)',
+    id: 2127, name: 'Advanced Tuck BL | One Arm (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 8.8,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:1, ankle:0, foot:0},
@@ -1328,7 +1327,7 @@ const backlevers = (() => {
     cues: 'One parallette, flat back, one arm. The neutral grip preserves wrist health for the high training volumes needed to build one-arm BL capacity at this progression.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2128, name: 'Advanced Tuck BL | One Arm (Rings)', sidequestKey: "Advanced Tuck BL | One Arm Fingertip (Bar)",
+    id: 2128, name: 'Advanced Tuck BL | One Arm (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.0,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:1, ankle:0, foot:0},
@@ -1336,7 +1335,7 @@ const backlevers = (() => {
     cues: 'One ring, flat back, one arm. This is near the ceiling of what is achievable outside elite gymnastics competition. Approach with full tendon preparedness.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2129, name: 'Straddle BL | One Arm (Bar)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2129, name: 'Straddle BL | One Arm (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 9.8,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:4, wrist:4, elbow:4, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1344,7 +1343,7 @@ const backlevers = (() => {
     cues: 'Wide straddle, one arm on bar. The straddle\'s lever reduction is what makes one-arm work possible at this progression for most athletes. Core anti-rotation is critical.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2130, name: 'Straddle BL | One Arm (Parallettes)', sidequestKey: "Straddle BL | Supinated Fingertip (Bar)",
+    id: 2130, name: 'Straddle BL | One Arm (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 9.6,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:4, wrist:2, elbow:4, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1352,7 +1351,7 @@ const backlevers = (() => {
     cues: 'Single parallette, straddle body, one arm. Neutral grip keeps wrists out of the equation entirely — focus on the shoulder extension and anti-rotation core bracing.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2131, name: 'Straddle BL | One Arm (Rings)', sidequestKey: "Straddle BL | 1-Finger (Bar)",
+    id: 2131, name: 'Straddle BL | One Arm (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 10.8,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:4, wrist:3, elbow:4, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1360,7 +1359,7 @@ const backlevers = (() => {
     cues: 'One ring, straddle wide, one arm. Ring rotation fights the grip and the shoulder simultaneously. An extreme test of integrated gymnastics strength.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2132, name: 'Full BL | One Arm (Bar)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2132, name: 'Full BL | One Arm (Bar)',
     tags: ['shoulders', 'core', 'bar'], diff: 11.0,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:5, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1368,7 +1367,7 @@ const backlevers = (() => {
     cues: 'One arm, full body extension. Every fibre of shoulder, core, posterior chain and grip must fire maximally and simultaneously. The full one-arm BL represents the absolute peak of this skill family.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2133, name: 'Full BL | One Arm (Parallettes)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2133, name: 'Full BL | One Arm (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes'], diff: 10.8,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:5, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1376,7 +1375,7 @@ const backlevers = (() => {
     cues: 'One parallette, full body, one arm. The neutral grip removes wrist stress but nothing else is easier. This is still peak-level gymnastics strength.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2134, name: 'Full BL | One Arm (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2134, name: 'Full BL | One Arm (Rings)',
     tags: ['shoulders', 'core', 'rings'], diff: 11.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:3, elbow:5, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1402,7 +1401,7 @@ const backlevers = (() => {
     cues: 'Fingertip on single parallette, one arm, tuck. Neutral grip makes this marginally more accessible on the wrist — the finger and shoulder demand remains extreme.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2137, name: 'Tuck BL | One Arm Fingertip (Rings)', sidequestKey: "Tuck BL | One Arm Fingertip (Bar)",
+    id: 2137, name: 'Tuck BL | One Arm Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 11.0,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -1410,7 +1409,7 @@ const backlevers = (() => {
     cues: 'One ring, one arm, fingertip, tuck. Four simultaneous extreme demands. A benchmark rather than a training exercise.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2138, sidequestKey: null, name: 'Advanced Tuck BL | One Arm Fingertip (Bar)',
+    id: 2138, name: 'Advanced Tuck BL | One Arm Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 10.5,
     strength: 5, risk: 5, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:4, shoulder:5, neck:2, thoracic:4, lowerBack:5, si:3, hip:3, groin:0, knee:1, ankle:0, foot:0},
@@ -1418,7 +1417,7 @@ const backlevers = (() => {
     cues: 'Flat back, one arm, fingertip on bar. A frontier-level strength expression. Only proceed after extensive preparation in each component independently.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2139, name: 'Straddle BL | One Arm Fingertip (Bar)', sidequestKey: "Straddle BL | 1-Finger (Bar)",
+    id: 2139, name: 'Straddle BL | One Arm Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 11.0,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:4, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1426,7 +1425,7 @@ const backlevers = (() => {
     cues: 'Max straddle, one arm, fingertip. Sub-2-second holds at this variation represent extraordinary finger and shoulder strength.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2140, name: 'Straddle BL | One Arm Fingertip (Parallettes)', sidequestKey: "Straddle BL | 1-Finger (Bar)",
+    id: 2140, name: 'Straddle BL | One Arm Fingertip (Parallettes)',
     tags: ['shoulders', 'core', 'parallettes', 'fingertip'], diff: 10.8,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Parallettes', position: 'Inverted',
     joints: {fingers:5, wrist:2, elbow:4, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1434,7 +1433,7 @@ const backlevers = (() => {
     cues: 'Single parallette, straddle, one arm, fingertip. Neutral grip is the one concession — everything else is at absolute maximum.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2141, name: 'Straddle BL | One Arm Fingertip (Rings)', sidequestKey: "Straddle BL | 1-Finger (Bar)",
+    id: 2141, name: 'Straddle BL | One Arm Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 12.0,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:4, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1442,7 +1441,7 @@ const backlevers = (() => {
     cues: 'One ring, one arm, fingertip, straddle. A demonstration-level feat. Documented attempts are extraordinarily rare.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2142, name: 'Full BL | One Arm Fingertip (Bar)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2142, name: 'Full BL | One Arm Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 12.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:5, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1450,7 +1449,7 @@ const backlevers = (() => {
     cues: 'This is theoretical territory. Track as a concept boundary. If you\'re reading this and it\'s within reach, document it.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2143, name: 'Full BL | One Arm Fingertip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2143, name: 'Full BL | One Arm Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 13.0,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:5, shoulder:5, neck:2, thoracic:5, lowerBack:5, si:3, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1468,7 +1467,7 @@ const backlevers = (() => {
     cues: 'Supinated (reverse) fingertip grip on bar. The wrist is under dual challenge: reverse angle plus fingertip load. Tuck only. Requires strong reverse-grip and fingertip preparation separately first.',
   }));
   entries.push(cloneExercise(tuck, {
-    id: 2145, name: 'Tuck BL | Supinated Fingertip (Rings)', sidequestKey: "Tuck BL | One Arm (Parallettes)",
+    id: 2145, name: 'Tuck BL | Supinated Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 8.0,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:2, ankle:0, foot:0},
@@ -1476,7 +1475,7 @@ const backlevers = (() => {
     cues: 'Let rings rotate to natural supinated-fingertip angle. Tuck body. Ring rotation relief is the main advantage of this variant over bar supinated fingertip.',
   }));
   entries.push(cloneExercise(advTuck, {
-    id: 2146, name: 'Advanced Tuck BL | Supinated Fingertip (Bar)', sidequestKey: "Advanced Tuck BL | Fingertip (Bar)",
+    id: 2146, name: 'Advanced Tuck BL | Supinated Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 7.5,
     strength: 5, risk: 4, technique: 5, mobility: 2, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:4, shoulder:5, neck:1, thoracic:3, lowerBack:3, si:1, hip:2, groin:0, knee:1, ankle:0, foot:0},
@@ -1492,7 +1491,7 @@ const backlevers = (() => {
     cues: 'Max straddle, supinated fingertip on bar. Wrist stress is maximised at this variant — extensive warm-up and careful progressive loading required.',
   }));
   entries.push(cloneExercise(straddle, {
-    id: 2148, name: 'Straddle BL | Supinated Fingertip (Rings)', sidequestKey: "Straddle BL | 1-Finger (Bar)",
+    id: 2148, name: 'Straddle BL | Supinated Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 10.0,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:4, shoulder:5, neck:1, thoracic:4, lowerBack:4, si:2, hip:4, groin:3, knee:0, ankle:0, foot:0},
@@ -1500,7 +1499,7 @@ const backlevers = (() => {
     cues: 'Straddle wide, let rings rotate into supinated-fingertip position. The ring freedom is the main advantage over bar at this grip/position combination.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2149, name: 'Full BL | Supinated Fingertip (Bar)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2149, name: 'Full BL | Supinated Fingertip (Bar)',
     tags: ['shoulders', 'core', 'bar', 'fingertip'], diff: 10.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Pull-up bar', position: 'Inverted',
     joints: {fingers:5, wrist:5, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1508,7 +1507,7 @@ const backlevers = (() => {
     cues: 'Full body, supinated fingertip grip. All three extreme grip factors combined at the maximum lever. Reserve for strength benchmarking after years of progressive preparation.',
   }));
   entries.push(cloneExercise(full, {
-    id: 2150, name: 'Full BL | Supinated Fingertip (Rings)', sidequestKey: "Full BL | 3-Finger (Bar)",
+    id: 2150, name: 'Full BL | Supinated Fingertip (Rings)',
     tags: ['shoulders', 'core', 'rings', 'fingertip'], diff: 11.5,
     strength: 5, risk: 5, technique: 5, mobility: 4, equipment: 'Gymnastic rings', position: 'Inverted',
     joints: {fingers:5, wrist:4, elbow:5, shoulder:5, neck:1, thoracic:5, lowerBack:5, si:2, hip:5, groin:2, knee:0, ankle:0, foot:0},
@@ -1534,7 +1533,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2152,
-    name: 'Advanced Tuck BL | Negative | (Rings)', sidequestKey: "Advanced Tuck BL | Negative | (Bar)",
+    name: 'Advanced Tuck BL | Negative | (Rings)',
     alt: 'Advanced tuck back lever eccentric rings',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'dynamic'],
@@ -1579,7 +1578,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2155,
-    name: 'Half Lay BL | Negative | (Rings)', sidequestKey: "Half Lay BL | (Parallettes)",
+    name: 'Half Lay BL | Negative | (Rings)',
     alt: 'Half lay back lever eccentric rings',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Glutes', p:false}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'dynamic'],
@@ -1594,7 +1593,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2156,
-    name: 'Straddle BL | Negative | (Rings)', sidequestKey: "Straddle BL | (Parallettes)",
+    name: 'Straddle BL | Negative | (Rings)',
     alt: 'Straddle back lever eccentric rings',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'dynamic'],
@@ -1609,7 +1608,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2157,
-    name: 'Straddle BL | Negative | (Parallettes)', sidequestKey: null,
+    name: 'Straddle BL | Negative | (Parallettes)',
     alt: 'Straddle back lever eccentric parallettes',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'parallettes', 'dynamic'],
@@ -1624,7 +1623,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2158,
-    name: 'Full BL | Negative | (Rings)', sidequestKey: "Full BL | (Parallettes)",
+    name: 'Full BL | Negative | (Rings)',
     alt: 'Full back lever eccentric rings',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Hip Flexors', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'dynamic'],
@@ -1639,7 +1638,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2159,
-    name: 'Tuck BL | Rise | (Bar)', sidequestKey: "Tuck BL | (Parallettes)",
+    name: 'Tuck BL | Rise | (Bar)',
     alt: 'Tuck back lever concentric rise',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}],
     tags: ['shoulders', 'lats', 'core', 'bar', 'dynamic'],
@@ -1654,7 +1653,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2160,
-    name: 'Tuck BL | Rise | (Rings)', sidequestKey: "Tuck BL | Supinated Fingertip (Bar)",
+    name: 'Tuck BL | Rise | (Rings)',
     alt: 'Tuck back lever concentric rise rings',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'dynamic'],
@@ -1669,7 +1668,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2161,
-    name: 'Straddle BL | Rise | (Bar)', sidequestKey: "Straddle BL | (Parallettes)",
+    name: 'Straddle BL | Rise | (Bar)',
     alt: 'Straddle back lever concentric rise bar',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'bar', 'dynamic'],
@@ -1684,7 +1683,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2162,
-    name: 'Straddle BL | Rise | (Rings)', sidequestKey: "Straddle BL | (Parallettes)",
+    name: 'Straddle BL | Rise | (Rings)',
     alt: 'Straddle back lever concentric rise rings',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'dynamic'],
@@ -1699,7 +1698,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2163,
-    name: 'Full BL | Rise | (Bar)', sidequestKey: "Full BL | (Parallettes)",
+    name: 'Full BL | Rise | (Bar)',
     alt: 'Full back lever concentric rise bar',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Hip Flexors', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'bar', 'dynamic'],
@@ -1714,7 +1713,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2164,
-    name: 'Full BL | Rise | (Parallettes)', sidequestKey: "Full BL | (Parallettes)",
+    name: 'Full BL | Rise | (Parallettes)',
     alt: 'Full back lever concentric rise parallettes',
     muscles: [{n:'Biceps', p:true}, {n:'Shoulders', p:true}, {n:'Lats', p:true}, {n:'Core', p:true}, {n:'Hip Flexors', p:true}, {n:'Glutes', p:true}],
     tags: ['shoulders', 'lats', 'core', 'parallettes', 'dynamic'],
@@ -1731,7 +1730,7 @@ const backlevers = (() => {
   // ── ADDITIONAL PREP ENTRIES ──────────────────────────────────────────────────
   entries.push({
     id: 2165,
-    name: 'German Hang | (Parallettes)', sidequestKey: "German Hang | Bent Arm | (Bar)",
+    name: 'German Hang | (Parallettes)',
     alt: 'German hang on parallettes · parallel bar shoulder stretch',
     muscles: [{n:'Biceps', p:false}, {n:'Shoulders', p:true}, {n:'Chest', p:false}],
     tags: ['shoulders', 'chest', 'parallettes', 'prep'],
@@ -1746,7 +1745,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2166,
-    name: 'Straddle German Hang | (Bar)', sidequestKey: "Straddle German Hang | (Parallettes)",
+    name: 'Straddle German Hang | (Bar)',
     alt: 'Straddle German hang bar · wide-leg shoulder hang',
     muscles: [{n:'Shoulders', p:true}, {n:'Hip Flexors', p:false}, {n:'Groin', p:false}],
     tags: ['shoulders', 'core', 'bar', 'prep'],
@@ -1761,7 +1760,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2167,
-    name: 'Straddle German Hang | (Rings)', sidequestKey: "Straddle German Hang | (Parallettes)",
+    name: 'Straddle German Hang | (Rings)',
     alt: 'Straddle German hang rings',
     muscles: [{n:'Shoulders', p:true}, {n:'Hip Flexors', p:false}, {n:'Groin', p:false}],
     tags: ['shoulders', 'core', 'rings', 'prep'],
@@ -1806,7 +1805,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2170,
-    name: 'German Hang | Bent Arm | (Rings)', sidequestKey: "German Hang | Bent Arm | (Bar)",
+    name: 'German Hang | Bent Arm | (Rings)',
     alt: 'Bent arm German hang rings',
     muscles: [{n:'Shoulders', p:true}, {n:'Biceps', p:false}, {n:'Chest', p:false}],
     tags: ['shoulders', 'chest', 'rings', 'prep'],
@@ -1836,7 +1835,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2172,
-    name: 'Half Lay Skin the Cat | (Rings)', sidequestKey: "Tuck BL | (Parallettes)",
+    name: 'Half Lay Skin the Cat | (Rings)',
     alt: 'Half lay skin the cat rings',
     muscles: [{n:'Lats', p:true}, {n:'Shoulders', p:true}, {n:'Core', p:true}, {n:'Hip Flexors', p:false}],
     tags: ['shoulders', 'lats', 'core', 'rings', 'prep'],
@@ -1866,7 +1865,7 @@ const backlevers = (() => {
   });
   entries.push({
     id: 2174,
-    name: 'German Hang | Fingertip | (Rings)', sidequestKey: "German Hang | Fingertip | (Bar)",
+    name: 'German Hang | Fingertip | (Rings)',
     alt: 'Fingertip German hang rings',
     muscles: [{n:'Shoulders', p:true}, {n:'Biceps', p:false}, {n:'Chest', p:false}],
     tags: ['shoulders', 'chest', 'rings', 'prep', 'fingertip'],

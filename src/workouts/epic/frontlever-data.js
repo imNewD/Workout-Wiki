@@ -711,7 +711,7 @@ const frontlevers = (() => {
   /* ── PARALLETTES STATIC VARIANTS ───────────────────────────────────── */
   entries.push(cloneExercise(tuck, {
     id: 1002,
-    name: 'Tuck FL | (Parallettes)',
+    sidequestKey: "Tuck FL | (Bar)", name: 'Tuck FL | (Parallettes)',
     alt: 'Tuck front lever hold on parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:2, lowerBack:3, si:1, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -721,7 +721,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(advancedTuck, {
     id: 1003,
-    name: 'Advanced Tuck FL | (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | (Bar)", name: 'Advanced Tuck FL | (Parallettes)',
     alt: 'Advanced tuck front lever on parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:2, lowerBack:4, si:1, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -731,7 +731,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(oneLeg, {
     id: 1004,
-    name: 'One Leg FL | (Parallettes)',
+    sidequestKey: "One Leg FL | (Bar)", name: 'One Leg FL | (Parallettes)',
     alt: 'One leg front lever on parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:2, lowerBack:4, si:1, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -741,7 +741,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(straddle, {
     id: 1005,
-    name: 'Straddle FL | (Parallettes)',
+    sidequestKey: "Straddle FL | (Bar)", name: 'Straddle FL | (Parallettes)',
     alt: 'Straddle front lever on parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:2, lowerBack:4, si:1, hip:3, groin:2, knee:1, ankle:0, foot:0},
@@ -751,7 +751,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(halfLay, {
     id: 1006,
-    name: 'Half Lay FL | (Parallettes)',
+    sidequestKey: "Half Lay FL | (Bar)", name: 'Half Lay FL | (Parallettes)',
     alt: 'Half lay front lever on parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     joints: {fingers:3, wrist:2, elbow:2, shoulder:5, neck:1, thoracic:2, lowerBack:4, si:1, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -761,7 +761,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(full, {
     id: 1007,
-    name: 'Front Lever | (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | (Parallettes)',
     alt: 'Full front lever on parallettes · parallette front lever',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 10.7,
@@ -774,7 +774,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 1008,
-    name: 'Wide Grip FL | (Parallettes)',
+    sidequestKey: "Wide Grip FL | (Bar)", name: 'Wide Grip FL | (Parallettes)',
     alt: 'Wide grip front lever on parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 11.4,
@@ -786,7 +786,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 1009,
-    name: 'Close Grip FL | (Parallettes)',
+    sidequestKey: "Close Grip FL | (Bar)", name: 'Close Grip FL | (Parallettes)',
     alt: 'Close grip front lever on parallettes · narrow parallette front lever',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 9.7,
@@ -799,7 +799,7 @@ const frontlevers = (() => {
   /* ── RINGS STATIC VARIANTS ─────────────────────────────────────────── */
   entries.push(cloneExercise(tuck, {
     id: 1201,
-    name: 'Tuck FL | (Rings)',
+    sidequestKey: "Tuck FL | (Bar)", name: 'Tuck FL | (Rings)',
     alt: 'Tuck front lever hold on rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
     joints: {fingers:3, wrist:3, elbow:2, shoulder:5, neck:1, thoracic:2, lowerBack:3, si:1, hip:3, groin:0, knee:2, ankle:0, foot:0},
@@ -811,6 +811,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(advancedTuck, {
     id: 1202,
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)",
     name: 'Advanced Tuck FL | (Rings)',
     alt: 'Advanced tuck front lever on rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
@@ -825,7 +826,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(oneLeg, {
     id: 1203,
-    name: 'One Leg FL | (Rings)',
+    sidequestKey: "One Leg FL | (Bar)", name: 'One Leg FL | (Rings)',
     alt: 'One leg front lever on rings · single leg front lever rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
     diff: 8.6,
@@ -839,7 +840,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(straddle, {
     id: 1204,
-    name: 'Straddle FL | (Rings)',
+    sidequestKey: "Straddle FL | (Bar)", name: 'Straddle FL | (Rings)',
     alt: 'Straddle front lever on rings · straddle ring front lever',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
     diff: 8.7,
@@ -853,7 +854,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(halfLay, {
     id: 1205,
-    name: 'Half Lay FL | (Rings)',
+    sidequestKey: "Half Lay FL | (Bar)", name: 'Half Lay FL | (Rings)',
     alt: 'Half lay front lever on rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
     diff: 9.6,
@@ -867,7 +868,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(full, {
     id: 1206,
-    name: 'Front Lever | (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | (Rings)',
     alt: 'Full front lever on rings · ring front lever',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings', 'elite'],
     diff: 11.0,
@@ -882,7 +883,7 @@ const frontlevers = (() => {
   /* ── RINGS DYNAMIC VARIANTS ────────────────────────────────────────── */
   entries.push(cloneExercise(_flRowTuck, {
     id: 1207,
-    name: 'Tuck FL Row | (Rings)',
+    sidequestKey: "Tuck FL Row | (Bar)", name: 'Tuck FL Row | (Rings)',
     alt: 'Tuck front lever row on rings · ring FL row tuck',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings'],
     diff: 7.8,
@@ -910,7 +911,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flRowFull, {
     id: 1209,
-    name: 'Front Lever Row | (Rings)',
+    sidequestKey: "Front Lever Row | (Bar)", name: 'Front Lever Row | (Rings)',
     alt: 'Full front lever row on rings · ring FL row',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings', 'elite'],
     diff: 11.8,
@@ -924,7 +925,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupTuck, {
     id: 1210,
-    name: 'Tuck FL Pull-Up | (Rings)',
+    sidequestKey: "Tuck FL Pull-Up | (Bar)", name: 'Tuck FL Pull-Up | (Rings)',
     alt: 'Tuck front lever pull-up on rings',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings'],
     diff: 8.8,
@@ -938,7 +939,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupStraddle, {
     id: 1211,
-    name: 'Straddle FL Pull-Up | (Rings)',
+    sidequestKey: "Straddle FL Pull-Up | (Bar)", name: 'Straddle FL Pull-Up | (Rings)',
     alt: 'Straddle front lever pull-up on rings',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings'],
     diff: 11.8,
@@ -952,7 +953,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flNegative, {
     id: 1212,
-    name: 'Negative Front Lever | (Rings)',
+    sidequestKey: "Negative Front Lever | (Bar)", name: 'Negative Front Lever | (Rings)',
     alt: 'Front lever negative on rings · eccentric ring front lever',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings', 'eccentric'],
     diff: 10.8,
@@ -967,7 +968,7 @@ const frontlevers = (() => {
   /* ── RINGS MISSING GAPS ────────────────────────────────────────────── */
   entries.push(cloneExercise(_flRowAdvancedTuck, {
     id: 1213,
-    name: 'Advanced Tuck FL Row | (Rings)',
+    sidequestKey: "Advanced Tuck FL Row | (Bar)", name: 'Advanced Tuck FL Row | (Rings)',
     alt: 'Advanced tuck front lever row on rings',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings'],
     diff: 8.8,
@@ -981,7 +982,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupAdvancedTuck, {
     id: 1214,
-    name: 'Advanced Tuck FL Pull-Up | (Rings)',
+    sidequestKey: "Advanced Tuck FL Pull-Up | (Bar)", name: 'Advanced Tuck FL Pull-Up | (Rings)',
     alt: 'Advanced tuck front lever pull-up on rings',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings'],
     diff: 9.8,
@@ -995,7 +996,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flIceCreamMaker, {
     id: 1215,
-    name: 'Ice Cream Maker | (Rings)',
+    sidequestKey: "Ice Cream Maker | (Bar)", name: 'Ice Cream Maker | (Rings)',
     alt: 'Ice cream maker on rings · ring FL swing through',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'rings'],
     diff: 11.2,
@@ -1010,7 +1011,7 @@ const frontlevers = (() => {
   /* ── PARALLETTES DYNAMIC VARIANTS ──────────────────────────────────── */
   entries.push(cloneExercise(_flRowTuck, {
     id: 1300,
-    name: 'Tuck FL Row | (Parallettes)',
+    sidequestKey: "Tuck FL Row | (Bar)", name: 'Tuck FL Row | (Parallettes)',
     alt: 'Tuck front lever row on parallettes',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 7.4,
@@ -1024,7 +1025,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flRowAdvancedTuck, {
     id: 1301,
-    name: 'Advanced Tuck FL Row | (Parallettes)',
+    sidequestKey: "Advanced Tuck FL Row | (Bar)", name: 'Advanced Tuck FL Row | (Parallettes)',
     alt: 'Advanced tuck front lever row on parallettes',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 8.4,
@@ -1038,7 +1039,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flRowStraddle, {
     id: 1302,
-    name: 'Straddle FL Row | (Parallettes)',
+    sidequestKey: "Straddle FL Row | (Bar)", name: 'Straddle FL Row | (Parallettes)',
     alt: 'Straddle front lever row on parallettes',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 9.8,
@@ -1052,7 +1053,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flRowFull, {
     id: 1303,
-    name: 'Front Lever Row | (Parallettes)',
+    sidequestKey: "Front Lever Row | (Bar)", name: 'Front Lever Row | (Parallettes)',
     alt: 'Full front lever row on parallettes · parallette FL row',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 11.3,
@@ -1066,7 +1067,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupTuck, {
     id: 1304,
-    name: 'Tuck FL Pull-Up | (Parallettes)',
+    sidequestKey: "Tuck FL Pull-Up | (Bar)", name: 'Tuck FL Pull-Up | (Parallettes)',
     alt: 'Tuck front lever pull-up on parallettes',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 8.4,
@@ -1080,7 +1081,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupAdvancedTuck, {
     id: 1305,
-    name: 'Advanced Tuck FL Pull-Up | (Parallettes)',
+    sidequestKey: "Advanced Tuck FL Pull-Up | (Bar)", name: 'Advanced Tuck FL Pull-Up | (Parallettes)',
     alt: 'Advanced tuck front lever pull-up on parallettes',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 9.4,
@@ -1094,7 +1095,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupStraddle, {
     id: 1306,
-    name: 'Straddle FL Pull-Up | (Parallettes)',
+    sidequestKey: "Straddle FL Pull-Up | (Bar)", name: 'Straddle FL Pull-Up | (Parallettes)',
     alt: 'Straddle front lever pull-up on parallettes',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes'],
     diff: 11.4,
@@ -1108,7 +1109,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flPullupFull, {
     id: 1307,
-    name: 'Front Lever Pull-Up | (Parallettes)',
+    sidequestKey: "Front Lever Pull-Up | (Bar)", name: 'Front Lever Pull-Up | (Parallettes)',
     alt: 'Full front lever pull-up on parallettes · parallette FL pull-up',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes', 'elite'],
     diff: 12.6,
@@ -1122,7 +1123,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flNegative, {
     id: 1308,
-    name: 'Negative Front Lever | (Parallettes)',
+    sidequestKey: "Negative Front Lever | (Bar)", name: 'Negative Front Lever | (Parallettes)',
     alt: 'Front lever negative on parallettes · eccentric parallette front lever',
     tags: ['back', 'shoulders', 'core', 'pull', 'frontlever', 'parallettes', 'eccentric'],
     diff: 10.3,
@@ -1139,6 +1140,7 @@ const frontlevers = (() => {
   /* ·· PINCH GRIP (thumb + fingertips, pronated) ························ */
   entries.push(cloneExercise(_flStraddle, {
     id: 1400,
+    sidequestKey: "Straddle FL | Fingertip (Bar)",
     name: 'Straddle FL | Pinch Grip (Bar)',
     alt: 'Pinch grip straddle front lever · thumb-pinch straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1158,6 +1160,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1401,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | Pinch Grip (Bar)',
     alt: 'Pinch grip front lever · thumb-pinch FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1178,6 +1181,7 @@ const frontlevers = (() => {
   /* ·· SUPINATED FINGERTIP (underhand, fingertips only) ················ */
   entries.push(cloneExercise(_flStraddle, {
     id: 1402,
+    sidequestKey: "Straddle FL | Fingertip (Bar)",
     name: 'Straddle FL | Supinated Fingertip (Bar)',
     alt: 'Underhand fingertip straddle front lever · supinated open-hand straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1197,6 +1201,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1403,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | Supinated Fingertip (Bar)',
     alt: 'Underhand fingertip front lever · supinated open-hand FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1217,7 +1222,7 @@ const frontlevers = (() => {
   /* ·· NEUTRAL FINGERTIP (parallettes, fingertips only) ················ */
   entries.push(cloneExercise(_flStraddle, {
     id: 1404,
-    name: 'Straddle FL | Fingertip (Parallettes)',
+    sidequestKey: "Straddle FL | Fingertip (Bar)", name: 'Straddle FL | Fingertip (Parallettes)',
     alt: 'Fingertip straddle front lever on parallettes · open-hand straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 9.4,
@@ -1236,7 +1241,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1405,
-    name: 'Front Lever | Fingertip (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Fingertip (Parallettes)',
     alt: 'Fingertip front lever on parallettes · open-hand FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 11.4,
@@ -1275,6 +1280,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1407,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | Fingertip (Bar)',
     alt: 'Fingertip front lever · open-hand FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1295,6 +1301,7 @@ const frontlevers = (() => {
   /* ·· 4-FINGER FL (no thumb, pronated) ································ */
   entries.push(cloneExercise(_flStraddle, {
     id: 1410,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | 4-Finger (Bar)',
     alt: '4-finger straddle front lever · no-thumb straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1314,6 +1321,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1411,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | 4-Finger (Bar)',
     alt: '4-finger front lever · no-thumb FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1334,6 +1342,7 @@ const frontlevers = (() => {
   /* ·· 3-FINGER FL (index + middle + ring, pronated) ·················· */
   entries.push(cloneExercise(_flStraddle, {
     id: 1420,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | 3-Finger (Bar)',
     alt: '3-finger straddle front lever · index-middle-ring straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1353,6 +1362,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1421,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | 3-Finger (Bar)',
     alt: '3-finger front lever · index-middle-ring FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1373,6 +1383,7 @@ const frontlevers = (() => {
   /* ·· 2-FINGER FL (index + middle, pronated) ·························· */
   entries.push(cloneExercise(_flStraddle, {
     id: 1430,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | 2-Finger (Bar)',
     alt: '2-finger straddle front lever · index-middle straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1392,6 +1403,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1431,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | 2-Finger (Bar)',
     alt: '2-finger front lever · index-middle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1413,6 +1425,7 @@ const frontlevers = (() => {
   /* ·· 1-FINGER FL (index only, pronated) ······························ */
   entries.push(cloneExercise(_flStraddle, {
     id: 1440,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | 1-Finger (Bar)',
     alt: '1-finger straddle front lever · single-finger straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1432,6 +1445,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1441,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | 1-Finger (Bar)',
     alt: '1-finger front lever · single-finger FL · index FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1464,6 +1478,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1442,
+    sidequestKey: "Tuck FL | 4-Finger (Bar)",
     name: 'Tuck FL | Pinch Grip (Bar)',
     alt: 'Pinch grip tuck front lever · thumb-pinch tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1479,6 +1494,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1443,
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)",
     name: 'Advanced Tuck FL | Pinch Grip (Bar)',
     alt: 'Pinch grip advanced tuck front lever · thumb-pinch adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1494,6 +1510,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1444,
+    sidequestKey: "One Leg FL | (Bar)",
     name: 'One Leg FL | Pinch Grip (Bar)',
     alt: 'Pinch grip one-leg front lever · thumb-pinch single-leg FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1509,6 +1526,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1445,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | Pinch Grip (Bar)',
     alt: 'Pinch grip half lay front lever · thumb-pinch half lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1526,6 +1544,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1450,
+    sidequestKey: "Tuck FL | 4-Finger (Bar)",
     name: 'Tuck FL | Supinated Fingertip (Bar)',
     alt: 'Underhand fingertip tuck front lever · supinated open-hand tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1541,6 +1560,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1451,
+    sidequestKey: "Advanced Tuck FL | 3-Finger (Bar)",
     name: 'Advanced Tuck FL | Supinated Fingertip (Bar)',
     alt: 'Underhand fingertip advanced tuck FL · supinated open-hand adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1556,6 +1576,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1452,
+    sidequestKey: "One Leg FL | 3-Finger (Bar)",
     name: 'One Leg FL | Supinated Fingertip (Bar)',
     alt: 'Underhand fingertip one-leg FL · supinated open-hand single-leg FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1571,6 +1592,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1453,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | Supinated Fingertip (Bar)',
     alt: 'Underhand fingertip half lay FL · supinated open-hand half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1588,6 +1610,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1460,
+    sidequestKey: "Tuck FL | 4-Finger (Bar)",
     name: 'Tuck FL | Fingertip (Bar)',
     alt: 'Fingertip tuck front lever · open-hand tuck FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1603,6 +1626,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1461,
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)",
     name: 'Advanced Tuck FL | Fingertip (Bar)',
     alt: 'Fingertip advanced tuck FL · open-hand adv tuck FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1618,6 +1642,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1462,
+    sidequestKey: "One Leg FL | (Bar)",
     name: 'One Leg FL | Fingertip (Bar)',
     alt: 'Fingertip one-leg FL · open-hand single-leg FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1633,6 +1658,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1463,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | Fingertip (Bar)',
     alt: 'Fingertip half-lay FL · open-hand half-lay FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1650,7 +1676,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1470,
-    name: 'Tuck FL | Fingertip (Parallettes)',
+    sidequestKey: "Tuck FL | 4-Finger (Bar)", name: 'Tuck FL | Fingertip (Parallettes)',
     alt: 'Fingertip tuck front lever parallettes · open-hand tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 6.3,
@@ -1665,7 +1691,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1471,
-    name: 'Advanced Tuck FL | Fingertip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)", name: 'Advanced Tuck FL | Fingertip (Parallettes)',
     alt: 'Fingertip advanced tuck FL parallettes · open-hand adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 7.4,
@@ -1680,7 +1706,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1472,
-    name: 'One Leg FL | Fingertip (Parallettes)',
+    sidequestKey: "One Leg FL | (Bar)", name: 'One Leg FL | Fingertip (Parallettes)',
     alt: 'Fingertip one-leg FL parallettes · open-hand single-leg FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 8.4,
@@ -1695,6 +1721,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1473,
+    sidequestKey: "Half Lay FL | (Bar)",
     name: 'Half Lay FL | Fingertip (Parallettes)',
     alt: 'Fingertip half-lay FL parallettes · open-hand half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
@@ -1712,6 +1739,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1480,
+    sidequestKey: "Tuck FL | 3-Finger (Bar)",
     name: 'Tuck FL | Fingertip (Rings)',
     alt: 'Fingertip tuck front lever rings · open-hand tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -1727,6 +1755,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1481,
+    sidequestKey: "Advanced Tuck FL | 3-Finger (Bar)",
     name: 'Advanced Tuck FL | Fingertip (Rings)',
     alt: 'Fingertip advanced tuck FL rings · open-hand adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -1742,6 +1771,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1482,
+    sidequestKey: "One Leg FL | 3-Finger (Bar)",
     name: 'One Leg FL | Fingertip (Rings)',
     alt: 'Fingertip one-leg FL rings · open-hand single-leg FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -1757,6 +1787,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 1483,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | Fingertip (Rings)',
     alt: 'Fingertip straddle FL rings · open-hand straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
@@ -1772,7 +1803,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1484,
-    name: 'Half Lay FL | Fingertip (Rings)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | Fingertip (Rings)',
     alt: 'Fingertip half-lay FL rings · open-hand half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 11.8,
@@ -1787,7 +1818,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1485,
-    name: 'Front Lever | Fingertip (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Fingertip (Rings)',
     alt: 'Fingertip full front lever rings · open-hand FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 12.5,
@@ -1835,6 +1866,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1502,
+    sidequestKey: "One Leg FL | (Bar)",
     name: 'One Leg FL | 4-Finger (Bar)',
     alt: '4-finger one-leg FL · no-thumb single-leg FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1850,6 +1882,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1503,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | 4-Finger (Bar)',
     alt: '4-finger half-lay FL · no-thumb half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1912,6 +1945,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1513,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | 3-Finger (Bar)',
     alt: '3-finger half-lay FL · index-middle-ring half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip'],
@@ -1961,6 +1995,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1522,
+    sidequestKey: "One Leg FL | One Arm (Bar)",
     name: 'One Leg FL | 2-Finger (Bar)',
     alt: '2-finger one-leg FL · index-middle single-leg FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1976,6 +2011,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1523,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | 2-Finger (Bar)',
     alt: '2-finger half-lay FL · index-middle half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -1993,6 +2029,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1530,
+    sidequestKey: "Tuck FL | One Arm (Bar)",
     name: 'Tuck FL | 1-Finger (Bar)',
     alt: '1-finger tuck front lever · single-finger tuck FL · index tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -2008,6 +2045,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1531,
+    sidequestKey: "Advanced Tuck FL | One Arm (Bar)",
     name: 'Advanced Tuck FL | 1-Finger (Bar)',
     alt: '1-finger advanced tuck FL · single-finger adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -2023,6 +2061,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1532,
+    sidequestKey: "One Leg FL | One Arm (Bar)",
     name: 'One Leg FL | 1-Finger (Bar)',
     alt: '1-finger one-leg FL · single-finger single-leg FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -2039,6 +2078,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1533,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | 1-Finger (Bar)',
     alt: '1-finger half-lay FL · single-finger half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'elite'],
@@ -2111,7 +2151,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1610,
-    name: 'Tuck FL | One Arm (Parallettes)',
+    sidequestKey: "Tuck FL | One Arm (Bar)", name: 'Tuck FL | One Arm (Parallettes)',
     alt: 'One arm tuck front lever parallettes · single arm tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'parallettes'],
     diff: 10.8,
@@ -2126,7 +2166,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1611,
-    name: 'Advanced Tuck FL | One Arm (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | One Arm (Bar)", name: 'Advanced Tuck FL | One Arm (Parallettes)',
     alt: 'One arm advanced tuck FL parallettes · single arm adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'parallettes'],
     diff: 12.0,
@@ -2141,7 +2181,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1612,
-    name: 'Straddle FL | One Arm (Parallettes)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | One Arm (Parallettes)',
     alt: 'One arm straddle FL parallettes · single arm straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'parallettes'],
     diff: 13.2,
@@ -2156,6 +2196,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1613,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | One Arm (Parallettes)',
     alt: 'One arm full front lever parallettes · single arm FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'parallettes'],
@@ -2174,7 +2215,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1620,
-    name: 'Tuck FL | One Arm (Rings)',
+    sidequestKey: "Tuck FL | One Arm (Bar)", name: 'Tuck FL | One Arm (Rings)',
     alt: 'One arm tuck front lever rings · single arm tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'rings'],
     diff: 11.5,
@@ -2189,7 +2230,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1621,
-    name: 'Advanced Tuck FL | One Arm (Rings)',
+    sidequestKey: "Advanced Tuck FL | One Arm (Bar)", name: 'Advanced Tuck FL | One Arm (Rings)',
     alt: 'One arm advanced tuck FL rings · single arm adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'rings'],
     diff: 12.8,
@@ -2204,7 +2245,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1622,
-    name: 'Straddle FL | One Arm (Rings)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | One Arm (Rings)',
     alt: 'One arm straddle FL rings · single arm straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'rings'],
     diff: 14.0,
@@ -2219,7 +2260,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1623,
-    name: 'Front Lever | One Arm (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | One Arm (Rings)',
     alt: 'One arm full front lever rings · single arm FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'rings'],
     diff: 15.5,
@@ -2244,6 +2285,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1700,
+    sidequestKey: "Tuck FL | One Arm (Bar)",
     name: 'Tuck FL | One Arm Fingertip (Bar)',
     alt: 'One arm fingertip tuck front lever · single arm open-hand tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques'],
@@ -2259,6 +2301,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1701,
+    sidequestKey: "Advanced Tuck FL | One Arm (Bar)",
     name: 'Advanced Tuck FL | One Arm Fingertip (Bar)',
     alt: 'One arm fingertip advanced tuck FL · single arm open-hand adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques'],
@@ -2274,6 +2317,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1702,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | One Arm Fingertip (Bar)',
     alt: 'One arm fingertip straddle FL · single arm open-hand straddle FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques'],
@@ -2290,6 +2334,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1703,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | One Arm Fingertip (Bar)',
     alt: 'One arm fingertip full front lever · single arm open-hand FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques'],
@@ -2309,7 +2354,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1710,
-    name: 'Tuck FL | One Arm Fingertip (Parallettes)',
+    sidequestKey: "Tuck FL | One Arm (Bar)", name: 'Tuck FL | One Arm Fingertip (Parallettes)',
     alt: 'One arm fingertip tuck FL parallettes · single arm open-hand tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'parallettes'],
     diff: 12.3,
@@ -2324,7 +2369,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1711,
-    name: 'Advanced Tuck FL | One Arm Fingertip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | One Arm (Bar)", name: 'Advanced Tuck FL | One Arm Fingertip (Parallettes)',
     alt: 'One arm fingertip advanced tuck FL parallettes · single arm open-hand adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'parallettes'],
     diff: 13.6,
@@ -2339,7 +2384,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1712,
-    name: 'Straddle FL | One Arm Fingertip (Parallettes)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | One Arm Fingertip (Parallettes)',
     alt: 'One arm fingertip straddle FL parallettes · single arm open-hand straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'parallettes'],
     diff: 14.6,
@@ -2355,7 +2400,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1713,
-    name: 'Front Lever | One Arm Fingertip (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | One Arm Fingertip (Parallettes)',
     alt: 'One arm fingertip full front lever parallettes · single arm open-hand FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'parallettes'],
     diff: 15.8,
@@ -2374,7 +2419,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1720,
-    name: 'Tuck FL | One Arm Fingertip (Rings)',
+    sidequestKey: "Tuck FL | One Arm (Bar)", name: 'Tuck FL | One Arm Fingertip (Rings)',
     alt: 'One arm fingertip tuck FL rings · single arm open-hand tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'rings'],
     diff: 13.5,
@@ -2390,7 +2435,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1721,
-    name: 'Advanced Tuck FL | One Arm Fingertip (Rings)',
+    sidequestKey: "Advanced Tuck FL | One Arm (Bar)", name: 'Advanced Tuck FL | One Arm Fingertip (Rings)',
     alt: 'One arm fingertip adv tuck FL rings · single arm open-hand adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'rings'],
     diff: 14.8,
@@ -2406,7 +2451,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1722,
-    name: 'Straddle FL | One Arm Fingertip (Rings)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | One Arm Fingertip (Rings)',
     alt: 'One arm fingertip straddle FL rings · single arm open-hand straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'rings'],
     diff: 16.0,
@@ -2422,7 +2467,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 1723,
-    name: 'Front Lever | One Arm Fingertip (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | One Arm Fingertip (Rings)',
     alt: 'One arm fingertip full front lever rings · single arm open-hand FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'rings'],
     diff: 17.5,
@@ -2447,7 +2492,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1800,
-    name: 'Tuck FL | Pinch Grip (Parallettes)',
+    sidequestKey: "Tuck FL | 4-Finger (Bar)", name: 'Tuck FL | Pinch Grip (Parallettes)',
     alt: 'Pinch grip tuck FL parallettes · thumb-pinch tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 6.6,
@@ -2462,7 +2507,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1801,
-    name: 'Advanced Tuck FL | Pinch Grip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)", name: 'Advanced Tuck FL | Pinch Grip (Parallettes)',
     alt: 'Pinch grip advanced tuck FL parallettes · thumb-pinch adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 7.6,
@@ -2477,7 +2522,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1802,
-    name: 'One Leg FL | Pinch Grip (Parallettes)',
+    sidequestKey: "One Leg FL | (Bar)", name: 'One Leg FL | Pinch Grip (Parallettes)',
     alt: 'Pinch grip one-leg FL parallettes · thumb-pinch single-leg FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 8.6,
@@ -2492,7 +2537,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 1803,
-    name: 'Straddle FL | Pinch Grip (Parallettes)',
+    sidequestKey: "Straddle FL | Fingertip (Bar)", name: 'Straddle FL | Pinch Grip (Parallettes)',
     alt: 'Pinch grip straddle FL parallettes · thumb-pinch straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 9.4,
@@ -2507,7 +2552,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1804,
-    name: 'Half Lay FL | Pinch Grip (Parallettes)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | Pinch Grip (Parallettes)',
     alt: 'Pinch grip half-lay FL parallettes · thumb-pinch half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 10.0,
@@ -2522,7 +2567,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1805,
-    name: 'Front Lever | Pinch Grip (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Pinch Grip (Parallettes)',
     alt: 'Pinch grip full front lever parallettes · thumb-pinch FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 11.6,
@@ -2539,6 +2584,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1810,
+    sidequestKey: "Tuck FL | 3-Finger (Bar)",
     name: 'Tuck FL | Pinch Grip (Rings)',
     alt: 'Pinch grip tuck FL rings · thumb-pinch tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -2554,6 +2600,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 1811,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | Pinch Grip (Rings)',
     alt: 'Pinch grip straddle FL rings · thumb-pinch straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
@@ -2569,7 +2616,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1812,
-    name: 'Front Lever | Pinch Grip (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Pinch Grip (Rings)',
     alt: 'Pinch grip full front lever rings · thumb-pinch FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 12.8,
@@ -2587,6 +2634,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1820,
+    sidequestKey: "Tuck FL | 2-Finger (Bar)",
     name: 'Tuck FL | Supinated Fingertip (Rings)',
     alt: 'Underhand fingertip tuck FL rings · supinated open-hand tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -2602,6 +2650,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 1821,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | Supinated Fingertip (Rings)',
     alt: 'Underhand fingertip straddle FL rings · supinated open-hand straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
@@ -2617,7 +2666,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1822,
-    name: 'Front Lever | Supinated Fingertip (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Supinated Fingertip (Rings)',
     alt: 'Underhand fingertip full FL rings · supinated open-hand FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 13.5,
@@ -2635,7 +2684,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 1830,
-    name: 'Wide Grip FL | (Rings)',
+    sidequestKey: "Wide Grip FL | (Bar)", name: 'Wide Grip FL | (Rings)',
     alt: 'Wide grip front lever rings · wide FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
     diff: 10.0,
@@ -2678,6 +2727,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1900,
+    sidequestKey: "Tuck FL | (Bar)",
     name: 'Tuck FL | Reverse Grip (Bar)',
     alt: 'Underhand tuck front lever · supinated grip tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps'],
@@ -2693,6 +2743,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1901,
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)",
     name: 'Advanced Tuck FL | Reverse Grip (Bar)',
     alt: 'Underhand advanced tuck FL · supinated grip adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps'],
@@ -2708,6 +2759,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1902,
+    sidequestKey: "One Leg FL | (Bar)",
     name: 'One Leg FL | Reverse Grip (Bar)',
     alt: 'Underhand one-leg FL · supinated grip single-leg FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps'],
@@ -2723,6 +2775,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1903,
+    sidequestKey: "Straddle FL | (Bar)",
     name: 'Straddle FL | Reverse Grip (Bar)',
     alt: 'Underhand straddle FL · supinated grip straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps'],
@@ -2738,6 +2791,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1904,
+    sidequestKey: "Half Lay FL | (Bar)",
     name: 'Half Lay FL | Reverse Grip (Bar)',
     alt: 'Underhand half-lay FL · supinated grip half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps'],
@@ -2756,6 +2810,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1910,
+    sidequestKey: "Tuck FL | 4-Finger (Bar)",
     name: 'Tuck FL | Reverse Grip (Parallettes)',
     alt: 'Underhand tuck FL parallettes · supinated grip tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'parallettes'],
@@ -2771,7 +2826,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1911,
-    name: 'Advanced Tuck FL | Reverse Grip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)", name: 'Advanced Tuck FL | Reverse Grip (Parallettes)',
     alt: 'Underhand adv tuck FL parallettes · supinated grip adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'parallettes'],
     diff: 7.2,
@@ -2786,6 +2841,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1912,
+    sidequestKey: "Straddle FL | Fingertip (Bar)",
     name: 'Straddle FL | Reverse Grip (Parallettes)',
     alt: 'Underhand straddle FL parallettes · supinated grip straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'parallettes'],
@@ -2801,6 +2857,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1913,
+    sidequestKey: "Front Lever | (Bar)",
     name: 'Front Lever | Reverse Grip (Parallettes)',
     alt: 'Underhand full FL parallettes · supinated grip FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'parallettes'],
@@ -2818,7 +2875,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1920,
-    name: 'Tuck FL | Reverse Grip (Rings)',
+    sidequestKey: "Tuck FL | 4-Finger (Bar)", name: 'Tuck FL | Reverse Grip (Rings)',
     alt: 'Underhand tuck FL rings · supinated grip tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'rings'],
     diff: 6.8,
@@ -2833,6 +2890,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1921,
+    sidequestKey: "Advanced Tuck FL | 3-Finger (Bar)",
     name: 'Advanced Tuck FL | Reverse Grip (Rings)',
     alt: 'Underhand adv tuck FL rings · supinated grip adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'rings'],
@@ -2848,7 +2906,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1922,
-    name: 'Straddle FL | Reverse Grip (Rings)',
+    sidequestKey: "Straddle FL | Fingertip (Bar)", name: 'Straddle FL | Reverse Grip (Rings)',
     alt: 'Underhand straddle FL rings · supinated grip straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'rings', 'elite'],
     diff: 9.8,
@@ -2863,7 +2921,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 1923,
-    name: 'Front Lever | Reverse Grip (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Reverse Grip (Rings)',
     alt: 'Underhand full FL rings · supinated grip FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'rings', 'elite'],
     diff: 11.2,
@@ -2883,6 +2941,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 1930,
+    sidequestKey: "Tuck FL | 3-Finger (Bar)",
     name: 'Tuck FL | Supinated Fingertip (Parallettes)',
     alt: 'Underhand fingertip tuck FL parallettes · supinated open-hand tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
@@ -2898,7 +2957,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1931,
-    name: 'Advanced Tuck FL | Supinated Fingertip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | 3-Finger (Bar)", name: 'Advanced Tuck FL | Supinated Fingertip (Parallettes)',
     alt: 'Underhand fingertip adv tuck FL parallettes · supinated open-hand adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 8.2,
@@ -2913,7 +2972,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1932,
-    name: 'One Leg FL | Supinated Fingertip (Parallettes)',
+    sidequestKey: "One Leg FL | 3-Finger (Bar)", name: 'One Leg FL | Supinated Fingertip (Parallettes)',
     alt: 'Underhand fingertip one-leg FL parallettes · supinated open-hand single-leg FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 9.2,
@@ -2928,7 +2987,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 1933,
-    name: 'Straddle FL | Supinated Fingertip (Parallettes)',
+    sidequestKey: "Straddle FL | Fingertip (Bar)", name: 'Straddle FL | Supinated Fingertip (Parallettes)',
     alt: 'Underhand fingertip straddle FL parallettes · supinated open-hand straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 9.8,
@@ -2943,7 +3002,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1934,
-    name: 'Half Lay FL | Supinated Fingertip (Parallettes)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | Supinated Fingertip (Parallettes)',
     alt: 'Underhand fingertip half-lay FL parallettes · supinated open-hand half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 10.8,
@@ -2958,7 +3017,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 1935,
-    name: 'Front Lever | Supinated Fingertip (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | Supinated Fingertip (Parallettes)',
     alt: 'Underhand fingertip full FL parallettes · supinated open-hand FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 12.0,
@@ -2979,6 +3038,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1940,
+    sidequestKey: "Advanced Tuck FL | 2-Finger (Bar)",
     name: 'Advanced Tuck FL | Supinated Fingertip (Rings)',
     alt: 'Underhand fingertip adv tuck FL rings · supinated open-hand adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -2994,6 +3054,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1941,
+    sidequestKey: "One Leg FL | One Arm (Bar)",
     name: 'One Leg FL | Supinated Fingertip (Rings)',
     alt: 'Underhand fingertip one-leg FL rings · supinated open-hand single-leg FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -3009,7 +3070,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1942,
-    name: 'Half Lay FL | Supinated Fingertip (Rings)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | Supinated Fingertip (Rings)',
     alt: 'Underhand fingertip half-lay FL rings · supinated open-hand half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 11.4,
@@ -3029,6 +3090,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flAdvancedTuck, {
     id: 1950,
+    sidequestKey: "Advanced Tuck FL | 3-Finger (Bar)",
     name: 'Advanced Tuck FL | Pinch Grip (Rings)',
     alt: 'Pinch grip adv tuck FL rings · thumb-pinch adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -3044,6 +3106,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneLeg, {
     id: 1951,
+    sidequestKey: "One Leg FL | 3-Finger (Bar)",
     name: 'One Leg FL | Pinch Grip (Rings)',
     alt: 'Pinch grip one-leg FL rings · thumb-pinch single-leg FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -3059,7 +3122,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flHalfLay, {
     id: 1952,
-    name: 'Half Lay FL | Pinch Grip (Rings)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | Pinch Grip (Rings)',
     alt: 'Pinch grip half-lay FL rings · thumb-pinch half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 10.8,
@@ -3079,6 +3142,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 1960,
+    sidequestKey: "Tuck FL | (Bar)",
     name: 'Tuck FL | Wide Grip (Bar)',
     alt: 'Wide grip tuck front lever · wide tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever'],
@@ -3094,6 +3158,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 1961,
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)",
     name: 'Advanced Tuck FL | Wide Grip (Bar)',
     alt: 'Wide grip advanced tuck FL · wide adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever'],
@@ -3109,6 +3174,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 1962,
+    sidequestKey: "Straddle FL | Fingertip (Bar)",
     name: 'Straddle FL | Wide Grip (Bar)',
     alt: 'Wide grip straddle FL · wide straddle FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever'],
@@ -3124,6 +3190,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 1963,
+    sidequestKey: "Half Lay FL | (Bar)",
     name: 'Half Lay FL | Wide Grip (Bar)',
     alt: 'Wide grip half-lay front lever · wide half-lay FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever'],
@@ -3156,6 +3223,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 1971,
+    sidequestKey: "Advanced Tuck FL | (Bar)",
     name: 'Advanced Tuck FL | Close Grip (Bar)',
     alt: 'Close grip advanced tuck FL · narrow adv tuck FL',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever'],
@@ -3247,7 +3315,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2010,
-    name: 'One Leg FL | One Arm (Parallettes)',
+    sidequestKey: "One Leg FL | One Arm (Bar)", name: 'One Leg FL | One Arm (Parallettes)',
     alt: 'One arm one-leg FL parallettes · single arm single-leg FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'parallettes'],
     diff: 12.4,
@@ -3262,7 +3330,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2011,
-    name: 'Half Lay FL | One Arm (Parallettes)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | One Arm (Parallettes)',
     alt: 'One arm half-lay FL parallettes · single arm half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'parallettes'],
     diff: 13.7,
@@ -3279,7 +3347,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2020,
-    name: 'One Leg FL | One Arm (Rings)',
+    sidequestKey: "One Leg FL | One Arm (Bar)", name: 'One Leg FL | One Arm (Rings)',
     alt: 'One arm one-leg FL rings · single arm single-leg FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'rings'],
     diff: 13.2,
@@ -3294,7 +3362,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2021,
-    name: 'Half Lay FL | One Arm (Rings)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | One Arm (Rings)',
     alt: 'One arm half-lay FL rings · single arm half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'obliques', 'rings'],
     diff: 14.8,
@@ -3312,6 +3380,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2030,
+    sidequestKey: "One Leg FL | One Arm (Bar)",
     name: 'One Leg FL | One Arm Fingertip (Bar)',
     alt: 'One arm fingertip one-leg FL · single arm open-hand single-leg FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques'],
@@ -3328,6 +3397,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2031,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | One Arm Fingertip (Bar)',
     alt: 'One arm fingertip half-lay FL · single arm open-hand half-lay FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques'],
@@ -3346,7 +3416,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2040,
-    name: 'One Leg FL | One Arm Fingertip (Parallettes)',
+    sidequestKey: "One Leg FL | One Arm (Bar)", name: 'One Leg FL | One Arm Fingertip (Parallettes)',
     alt: 'One arm fingertip one-leg FL parallettes · single arm open-hand single-leg FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'parallettes'],
     diff: 14.0,
@@ -3362,7 +3432,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2041,
-    name: 'Half Lay FL | One Arm Fingertip (Parallettes)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | One Arm Fingertip (Parallettes)',
     alt: 'One arm fingertip half-lay FL parallettes · single arm open-hand half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'parallettes'],
     diff: 15.2,
@@ -3380,7 +3450,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2050,
-    name: 'One Leg FL | One Arm Fingertip (Rings)',
+    sidequestKey: "One Leg FL | One Arm (Bar)", name: 'One Leg FL | One Arm Fingertip (Rings)',
     alt: 'One arm fingertip one-leg FL rings · single arm open-hand single-leg FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'rings'],
     diff: 15.2,
@@ -3396,7 +3466,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flOneArm, {
     id: 2051,
-    name: 'Half Lay FL | One Arm Fingertip (Rings)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | One Arm Fingertip (Rings)',
     alt: 'One arm fingertip half-lay FL rings · single arm open-hand half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'elite', 'grip', 'obliques', 'rings'],
     diff: 16.8,
@@ -3414,7 +3484,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 2060,
-    name: 'One Leg FL | Reverse Grip (Parallettes)',
+    sidequestKey: "One Leg FL | (Bar)", name: 'One Leg FL | Reverse Grip (Parallettes)',
     alt: 'Underhand one-leg FL parallettes · supinated grip single-leg FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'parallettes'],
     diff: 8.4,
@@ -3429,7 +3499,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 2061,
-    name: 'Half Lay FL | Reverse Grip (Parallettes)',
+    sidequestKey: "Half Lay FL | (Bar)", name: 'Half Lay FL | Reverse Grip (Parallettes)',
     alt: 'Underhand half-lay FL parallettes · supinated grip half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'parallettes'],
     diff: 9.4,
@@ -3446,6 +3516,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 2070,
+    sidequestKey: "One Leg FL | 3-Finger (Bar)",
     name: 'One Leg FL | Reverse Grip (Rings)',
     alt: 'Underhand one-leg FL rings · supinated grip single-leg FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'rings', 'elite'],
@@ -3461,6 +3532,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flReverseGrip, {
     id: 2071,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | Reverse Grip (Rings)',
     alt: 'Underhand half-lay FL rings · supinated grip half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'biceps', 'rings', 'elite'],
@@ -3478,6 +3550,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2080,
+    sidequestKey: "One Leg FL | (Bar)",
     name: 'One Leg FL | Wide Grip (Bar)',
     alt: 'Wide grip one-leg FL · wide single-leg FL bar',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever'],
@@ -3493,6 +3566,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2081,
+    sidequestKey: "Tuck FL | 4-Finger (Bar)",
     name: 'Tuck FL | Wide Grip (Rings)',
     alt: 'Wide grip tuck FL rings · wide tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
@@ -3508,6 +3582,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2082,
+    sidequestKey: "Advanced Tuck FL | 3-Finger (Bar)",
     name: 'Advanced Tuck FL | Wide Grip (Rings)',
     alt: 'Wide grip advanced tuck FL rings · wide adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
@@ -3523,6 +3598,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2083,
+    sidequestKey: "Straddle FL | One Arm (Bar)",
     name: 'Straddle FL | Wide Grip (Rings)',
     alt: 'Wide grip straddle FL rings · wide straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings', 'elite'],
@@ -3538,7 +3614,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2084,
-    name: 'Half Lay FL | Wide Grip (Rings)',
+    sidequestKey: "Half Lay FL | One Arm (Bar)", name: 'Half Lay FL | Wide Grip (Rings)',
     alt: 'Wide grip half-lay FL rings · wide half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings', 'elite'],
     diff: 11.4,
@@ -3553,7 +3629,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2085,
-    name: 'Tuck FL | Wide Grip (Parallettes)',
+    sidequestKey: "Tuck FL | (Bar)", name: 'Tuck FL | Wide Grip (Parallettes)',
     alt: 'Wide grip tuck FL parallettes · wide tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 5.4,
@@ -3568,7 +3644,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2086,
-    name: 'Advanced Tuck FL | Wide Grip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)", name: 'Advanced Tuck FL | Wide Grip (Parallettes)',
     alt: 'Wide grip advanced tuck FL parallettes · wide adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 7.6,
@@ -3583,7 +3659,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2087,
-    name: 'Straddle FL | Wide Grip (Parallettes)',
+    sidequestKey: "Straddle FL | Fingertip (Bar)", name: 'Straddle FL | Wide Grip (Parallettes)',
     alt: 'Wide grip straddle FL parallettes · wide straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 9.8,
@@ -3598,6 +3674,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flWideGrip, {
     id: 2088,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | Wide Grip (Parallettes)',
     alt: 'Wide grip half-lay FL parallettes · wide half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
@@ -3615,7 +3692,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2090,
-    name: 'Tuck FL | Close Grip (Parallettes)',
+    sidequestKey: "Tuck FL | Close Grip (Bar)", name: 'Tuck FL | Close Grip (Parallettes)',
     alt: 'Close grip tuck FL parallettes · narrow tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 4.6,
@@ -3630,7 +3707,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2091,
-    name: 'Advanced Tuck FL | Close Grip (Parallettes)',
+    sidequestKey: "Advanced Tuck FL | (Bar)", name: 'Advanced Tuck FL | Close Grip (Parallettes)',
     alt: 'Close grip advanced tuck FL parallettes · narrow adv tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 6.9,
@@ -3645,6 +3722,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2092,
+    sidequestKey: "Straddle FL | (Bar)",
     name: 'Straddle FL | Close Grip (Parallettes)',
     alt: 'Close grip straddle FL parallettes · narrow straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
@@ -3660,7 +3738,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2093,
-    name: 'Half Lay FL | Close Grip (Parallettes)',
+    sidequestKey: "Half Lay FL | Close Grip (Bar)", name: 'Half Lay FL | Close Grip (Parallettes)',
     alt: 'Close grip half-lay FL parallettes · narrow half-lay FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'parallettes'],
     diff: 8.4,
@@ -3677,6 +3755,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2100,
+    sidequestKey: "Tuck FL | 4-Finger (Bar)",
     name: 'Tuck FL | Close Grip (Rings)',
     alt: 'Close grip tuck FL rings · narrow tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
@@ -3692,6 +3771,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2101,
+    sidequestKey: "Advanced Tuck FL | 4-Finger (Bar)",
     name: 'Advanced Tuck FL | Close Grip (Rings)',
     alt: 'Close grip advanced tuck FL rings · narrow adv tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings'],
@@ -3707,6 +3787,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2102,
+    sidequestKey: "Straddle FL | Fingertip (Bar)",
     name: 'Straddle FL | Close Grip (Rings)',
     alt: 'Close grip straddle FL rings · narrow straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings', 'elite'],
@@ -3722,6 +3803,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flCloseGrip, {
     id: 2103,
+    sidequestKey: "Half Lay FL | One Arm (Bar)",
     name: 'Half Lay FL | Close Grip (Rings)',
     alt: 'Close grip half-lay FL rings · narrow half-lay FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'rings', 'elite'],
@@ -3739,7 +3821,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2200,
-    name: 'Tuck FL | 4-Finger (Parallettes)',
+    sidequestKey: "Tuck FL | 4-Finger (Bar)", name: 'Tuck FL | 4-Finger (Parallettes)',
     alt: '4-finger tuck FL parallettes · no-thumb tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 6.4,
@@ -3754,6 +3836,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 2201,
+    sidequestKey: "Straddle FL | Fingertip (Bar)",
     name: 'Straddle FL | 4-Finger (Parallettes)',
     alt: '4-finger straddle FL parallettes · no-thumb straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
@@ -3769,7 +3852,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2202,
-    name: 'Front Lever | 4-Finger (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 4-Finger (Parallettes)',
     alt: '4-finger full front lever parallettes · no-thumb FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 11.8,
@@ -3784,7 +3867,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2210,
-    name: 'Tuck FL | 3-Finger (Parallettes)',
+    sidequestKey: "Tuck FL | 3-Finger (Bar)", name: 'Tuck FL | 3-Finger (Parallettes)',
     alt: '3-finger tuck FL parallettes · index-middle-ring tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 7.0,
@@ -3799,7 +3882,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 2211,
-    name: 'Straddle FL | 3-Finger (Parallettes)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | 3-Finger (Parallettes)',
     alt: '3-finger straddle FL parallettes · index-middle-ring straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes'],
     diff: 10.4,
@@ -3814,7 +3897,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2212,
-    name: 'Front Lever | 3-Finger (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 3-Finger (Parallettes)',
     alt: '3-finger full front lever parallettes · index-middle-ring FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 12.4,
@@ -3829,7 +3912,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2220,
-    name: 'Tuck FL | 2-Finger (Parallettes)',
+    sidequestKey: "Tuck FL | 2-Finger (Bar)", name: 'Tuck FL | 2-Finger (Parallettes)',
     alt: '2-finger tuck FL parallettes · index-middle tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 8.0,
@@ -3844,7 +3927,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 2221,
-    name: 'Straddle FL | 2-Finger (Parallettes)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | 2-Finger (Parallettes)',
     alt: '2-finger straddle FL parallettes · index-middle straddle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 11.2,
@@ -3859,7 +3942,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2222,
-    name: 'Front Lever | 2-Finger (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 2-Finger (Parallettes)',
     alt: '2-finger full front lever parallettes · index-middle FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 13.2,
@@ -3875,6 +3958,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2230,
+    sidequestKey: "Tuck FL | 2-Finger (Rings)",
     name: 'Tuck FL | 1-Finger (Parallettes)',
     alt: '1-finger tuck FL parallettes · single-finger tuck FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
@@ -3890,7 +3974,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2231,
-    name: 'Front Lever | 1-Finger (Parallettes)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 1-Finger (Parallettes)',
     alt: '1-finger full front lever parallettes · single-finger FL parallettes',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'parallettes', 'elite'],
     diff: 14.8,
@@ -3909,6 +3993,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2300,
+    sidequestKey: "Tuck FL | 3-Finger (Bar)",
     name: 'Tuck FL | 4-Finger (Rings)',
     alt: '4-finger tuck FL rings · no-thumb tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -3924,7 +4009,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 2301,
-    name: 'Straddle FL | 4-Finger (Rings)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | 4-Finger (Rings)',
     alt: '4-finger straddle FL rings · no-thumb straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 10.8,
@@ -3939,7 +4024,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2302,
-    name: 'Front Lever | 4-Finger (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 4-Finger (Rings)',
     alt: '4-finger full front lever rings · no-thumb FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 12.8,
@@ -3955,6 +4040,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2310,
+    sidequestKey: "Tuck FL | 2-Finger (Bar)",
     name: 'Tuck FL | 3-Finger (Rings)',
     alt: '3-finger tuck FL rings · index-middle-ring tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings'],
@@ -3970,7 +4056,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flStraddle, {
     id: 2311,
-    name: 'Straddle FL | 3-Finger (Rings)',
+    sidequestKey: "Straddle FL | One Arm (Bar)", name: 'Straddle FL | 3-Finger (Rings)',
     alt: '3-finger straddle FL rings · index-middle-ring straddle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 11.4,
@@ -3985,7 +4071,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2312,
-    name: 'Front Lever | 3-Finger (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 3-Finger (Rings)',
     alt: '3-finger full front lever rings · index-middle-ring FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 13.4,
@@ -4017,7 +4103,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2321,
-    name: 'Front Lever | 2-Finger (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 2-Finger (Rings)',
     alt: '2-finger full front lever rings · index-middle FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 14.2,
@@ -4034,7 +4120,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flTuck, {
     id: 2330,
-    name: 'Tuck FL | 1-Finger (Rings)',
+    sidequestKey: "Tuck FL | One Arm (Bar)", name: 'Tuck FL | 1-Finger (Rings)',
     alt: '1-finger tuck FL rings · single-finger tuck FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 11.0,
@@ -4050,7 +4136,7 @@ const frontlevers = (() => {
 
   entries.push(cloneExercise(_flFull, {
     id: 2331,
-    name: 'Front Lever | 1-Finger (Rings)',
+    sidequestKey: "Front Lever | (Bar)", name: 'Front Lever | 1-Finger (Rings)',
     alt: '1-finger full front lever rings · single-finger FL rings',
     tags: ['back', 'shoulders', 'core', 'isometric', 'frontlever', 'grip', 'rings', 'elite'],
     diff: 17.0,

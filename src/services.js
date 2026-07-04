@@ -818,10 +818,19 @@ ${b?`<text x="${xP(i)}" y="${(+yP(e.v)-11).toFixed(1)}" text-anchor="middle" fon
         <div class="apd-grid" id="apdGrid">${_apdRenderSuggestions()}</div>
       </div>
 
+      <!-- ── BEFORE VS AFTER (progress photos) ───────────────────
+           Populated by renderProgressPhotos() in app.js "PROGRESS
+           PHOTOS" module — IndexedDB-backed, async, so it fills in
+           right after this innerHTML swap (same pattern as the
+           injuries row sync below). ─────────────────────────────── -->
+      <div class="db-section" id="pg-section"></div>
+
     `;
 
     // Sync the injuries row subtitle
     if (typeof window.syncInjuryMetricsRow === 'function') window.syncInjuryMetricsRow();
+    // Fill in the Before/After progress-photo section (async IndexedDB load)
+    if (typeof window.renderProgressPhotos === 'function') window.renderProgressPhotos();
 
     // Make inputs user-selectable (global CSS blocks selection)
     el.querySelectorAll('.metrics-input').forEach(inp => {
@@ -2483,19 +2492,29 @@ ${b?`<text x="${xP(i)}" y="${(+yP(e.v)-11).toFixed(1)}" text-anchor="middle" fon
     setTimeout(function () { t.classList.remove('show'); }, 4000);
   }
 
-  function exportBackup() {
-    const data     = _collect();
-    const json     = JSON.stringify({ _v: 1, _ts: Date.now(), data: data }, null, 2);
-    const blob     = new Blob([json], { type: 'application/json' });
-    const url      = URL.createObjectURL(blob);
-    const date     = new Date().toISOString().slice(0, 10);
-    const a        = document.createElement('a');
-    a.href         = url;
-    a.download     = 'grnd-backup-' + date + '.json';
+  function _downloadBackup(data, progressPhotos) {
+    const json = JSON.stringify({ _v: 1, _ts: Date.now(), data: data, progressPhotos: progressPhotos || [] }, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const date = new Date().toISOString().slice(0, 10);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = 'grnd-backup-' + date + '.json';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+  }
+
+  function exportBackup() {
+    const data = _collect();
+    // Progress photos live in IndexedDB as Blobs — mirror them into the
+    // export as base64 data URLs so a JSON backup carries them too.
+    if (typeof window._grndProgressPhotosExport === 'function') {
+      window._grndProgressPhotosExport(function (photos) { _downloadBackup(data, photos); });
+    } else {
+      _downloadBackup(data, []);
+    }
   }
 
   function importPick() {
@@ -2517,8 +2536,15 @@ ${b?`<text x="${xP(i)}" y="${(+yP(e.v)-11).toFixed(1)}" text-anchor="middle" fon
               count++;
             }
           });
-          _toast('Restored ' + count + ' items', true);
-          setTimeout(function () { location.reload(); }, 1600);
+          const finish = function () {
+            _toast('Restored ' + count + ' items', true);
+            setTimeout(function () { location.reload(); }, 1600);
+          };
+          if (typeof window._grndProgressPhotosImport === 'function' && parsed.progressPhotos) {
+            window._grndProgressPhotosImport(parsed.progressPhotos, finish);
+          } else {
+            finish();
+          }
         } catch (err) {
           _toast('Invalid backup file', false);
         }

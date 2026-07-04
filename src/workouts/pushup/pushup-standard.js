@@ -102,6 +102,7 @@ pushups.push(
 {
   id: 302,
   name: "Narrow Push-Up",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -130,6 +131,7 @@ pushups.push(
 {
   id: 303,
   name: "Push-Up | One Leg",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -159,6 +161,7 @@ pushups.push(
 {
   id: 304,
   name: "Push-Up | Staggered",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -187,6 +190,7 @@ pushups.push(
 {
   id: 307,
   name: "Push-Up | (Bar)",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -244,6 +248,7 @@ pushups.push(
 {
   id: 357,
   name: "Push-Up | Pause",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -300,6 +305,7 @@ pushups.push(
 {
   id: 369,
   name: "Fist Push-Up",
+  sidequestKey: "Knuckle Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -358,6 +364,7 @@ pushups.push(
 {
   id: 306,
   name: "Push-Up | Deficit",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -387,6 +394,7 @@ pushups.push(
 {
   id: 308,
   name: "Push-Up | (Parallettes)",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -416,6 +424,7 @@ pushups.push(
 {
   id: 309,
   name: "Push-Up | (Rings)",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -445,6 +454,7 @@ pushups.push(
 {
   id: 349,
   name: "Push-Up | (TRX)",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -474,6 +484,7 @@ pushups.push(
 {
   id: 358,
   name: "Push-Up | Fingertip",
+  sidequestKey: "Push-Up",
   pathTag: "fingertip",
   pathNode: true,
   alt: null,
@@ -505,6 +516,7 @@ pushups.push(
 {
   id: 359,
   name: "Push-Up | 4-Finger",
+  sidequestKey: "Push-Up | Cross-Body",
   pathTag: "fingertip",
   alt: null,
   muscles: [
@@ -565,6 +577,7 @@ pushups.push(
 {
   id: 394,
   name: "Explosive Push-Up",
+  sidequestKey: "Push-Up",
   pathNode: true,
   alt: "Pop-Up Push-Up",
   muscles: [
@@ -594,6 +607,7 @@ pushups.push(
 {
   id: 361,
   name: "Push-Up | Clap",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -622,6 +636,7 @@ pushups.push(
 {
   id: 380,
   name: "Diamond Push-Up | Deficit",
+  sidequestKey: "Diamond Push-Up | Fingertip",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -650,6 +665,7 @@ pushups.push(
 {
   id: 370,
   name: "Spider-Man Push-Up",
+  sidequestKey: "Push-Up",
   pathNode: true,
   alt: "Spiderman Push-Up",
   muscles: [
@@ -680,6 +696,7 @@ pushups.push(
 {
   id: 371,
   name: "Push-Up | T-Rotation",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -709,6 +726,7 @@ pushups.push(
 {
   id: 388,
   name: "Spider-Man Push-Up | Fingertip",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -740,6 +758,7 @@ pushups.push(
 {
   id: 389,
   name: "Wide Push-Up | Fingertip",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -918,6 +937,7 @@ pushups.push(
 {
   id: 374,
   name: "Push-Up | Clap, Behind Back",
+  sidequestKey: "Push-Up | 2-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1005,6 +1025,7 @@ pushups.push(
 {
   id: 391,
   name: "Push-Up | Typewriter",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -1037,6 +1058,7 @@ pushups.push(
 {
   id: 500,
   name: "Wide Push-Up | (Parallettes)",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1066,6 +1088,7 @@ pushups.push(
 {
   id: 501,
   name: "Wide Push-Up | (Rings)",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1095,6 +1118,7 @@ pushups.push(
 {
   id: 502,
   name: "Wide Push-Up | (Bar)",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1124,6 +1148,7 @@ pushups.push(
 {
   id: 503,
   name: "Wide Push-Up | (TRX)",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1155,6 +1180,7 @@ pushups.push(
 {
   id: 504,
   name: "Narrow Push-Up | (Parallettes)",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1183,6 +1209,7 @@ pushups.push(
 {
   id: 505,
   name: "Narrow Push-Up | (Rings)",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1211,6 +1238,7 @@ pushups.push(
 {
   id: 506,
   name: "Narrow Push-Up | (Bar)",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1241,6 +1269,7 @@ pushups.push(
 {
   id: 507,
   name: "Diamond Push-Up | (Parallettes)",
+  sidequestKey: "Diamond Push-Up | Fingertip",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1269,6 +1298,7 @@ pushups.push(
 {
   id: 508,
   name: "Diamond Push-Up | (Rings)",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1297,6 +1327,7 @@ pushups.push(
 {
   id: 509,
   name: "Diamond Push-Up | (Bar)",
+  sidequestKey: "Diamond Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1327,6 +1358,7 @@ pushups.push(
 {
   id: 510,
   name: "Push-Up | One Leg | (Parallettes)",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1356,6 +1388,7 @@ pushups.push(
 {
   id: 511,
   name: "Push-Up | One Leg | (Rings)",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1385,6 +1418,7 @@ pushups.push(
 {
   id: 512,
   name: "Push-Up | Staggered | (Parallettes)",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1415,6 +1449,7 @@ pushups.push(
 {
   id: 513,
   name: "Explosive Push-Up | (Parallettes)",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1443,6 +1478,7 @@ pushups.push(
 {
   id: 514,
   name: "Explosive Push-Up | (Rings)",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1471,6 +1507,7 @@ pushups.push(
 {
   id: 515,
   name: "Push-Up | Clap | (Parallettes)",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1499,6 +1536,7 @@ pushups.push(
 {
   id: 516,
   name: "Push-Up | Clap | (Rings)",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1557,6 +1595,7 @@ pushups.push(
 {
   id: 518,
   name: "Wide Push-Up | Clap",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1585,6 +1624,7 @@ pushups.push(
 {
   id: 519,
   name: "Wide Push-Up | Negative",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1614,6 +1654,7 @@ pushups.push(
 {
   id: 520,
   name: "Wide Push-Up | Pause",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1644,6 +1685,7 @@ pushups.push(
 {
   id: 521,
   name: "Narrow Push-Up | Explosive",
+  sidequestKey: "Wide Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1672,6 +1714,7 @@ pushups.push(
 {
   id: 522,
   name: "Narrow Push-Up | Clap",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1700,6 +1743,7 @@ pushups.push(
 {
   id: 523,
   name: "Narrow Push-Up | Fingertip",
+  sidequestKey: "Wide Push-Up | Explosive",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -1731,6 +1775,7 @@ pushups.push(
 {
   id: 524,
   name: "Diamond Push-Up | Explosive",
+  sidequestKey: "Diamond Push-Up | Fingertip",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1759,6 +1804,7 @@ pushups.push(
 {
   id: 525,
   name: "Diamond Push-Up | Clap",
+  sidequestKey: "Diamond Push-Up | Fingertip",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1787,6 +1833,7 @@ pushups.push(
 {
   id: 526,
   name: "Diamond Push-Up | Negative",
+  sidequestKey: "Diamond Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1815,6 +1862,7 @@ pushups.push(
 {
   id: 527,
   name: "Diamond Push-Up | Pause",
+  sidequestKey: "Diamond Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1845,6 +1893,7 @@ pushups.push(
 {
   id: 528,
   name: "Knuckle Push-Up | Wide",
+  sidequestKey: "Knuckle Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1873,6 +1922,7 @@ pushups.push(
 {
   id: 529,
   name: "Knuckle Push-Up | (Parallettes)",
+  sidequestKey: "Knuckle Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1901,6 +1951,7 @@ pushups.push(
 {
   id: 530,
   name: "Fist Push-Up | (Parallettes)",
+  sidequestKey: "Knuckle Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1932,6 +1983,7 @@ pushups.push(
 {
   id: 531,
   name: "Hindu Push-Up | (Parallettes)",
+  sidequestKey: "Hindu Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1961,6 +2013,7 @@ pushups.push(
 {
   id: 532,
   name: "Dive Bomber Push-Up | (Parallettes)",
+  sidequestKey: "Dive Bomber Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1990,6 +2043,7 @@ pushups.push(
 {
   id: 533,
   name: "Dive Bomber Push-Up | Wide",
+  sidequestKey: "Dive Bomber Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2021,6 +2075,7 @@ pushups.push(
 {
   id: 534,
   name: "Typewriter Push-Up | (Parallettes)",
+  sidequestKey: "Typewriter Push-Up | Pause",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -2051,6 +2106,7 @@ pushups.push(
 {
   id: 535,
   name: "Typewriter Push-Up | (Rings)",
+  sidequestKey: "Push-Up | 1-Finger",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -2081,6 +2137,7 @@ pushups.push(
 {
   id: 536,
   name: "Typewriter Push-Up | Fingertip",
+  sidequestKey: "Typewriter Push-Up | Pause",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -2142,6 +2199,7 @@ pushups.push(
 {
   id: 538,
   name: "Clockwork Push-Up | Fingertip",
+  sidequestKey: "Push-Up | 2-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2171,6 +2229,7 @@ pushups.push(
 {
   id: 539,
   name: "Clockwork Push-Up | (Parallettes)",
+  sidequestKey: "Clockwork Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2201,6 +2260,7 @@ pushups.push(
 {
   id: 540,
   name: "Scorpion Push-Up",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: "Scorpion Press",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2231,6 +2291,7 @@ pushups.push(
 {
   id: 541,
   name: "Push-Up | Star",
+  sidequestKey: "Push-Up",
   alt: "Starfish Push-Up",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2259,6 +2320,7 @@ pushups.push(
 {
   id: 542,
   name: "Push-Up | Crucifix",
+  sidequestKey: "Push-Up | 1-Finger",
   alt: "Cross Push-Up",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2288,6 +2350,7 @@ pushups.push(
 {
   id: 543,
   name: "T-Rotation Push-Up | (Parallettes)",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2346,6 +2409,7 @@ pushups.push(
 {
   id: 546,
   name: "Hindu Push-Up | Wide",
+  sidequestKey: "Hindu Push-Up",
   alt: "Wide Judo Push-Up",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2375,6 +2439,7 @@ pushups.push(
 {
   id: 547,
   name: "Knuckle Push-Up | Diamond",
+  sidequestKey: "Knuckle Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -2403,6 +2468,7 @@ pushups.push(
 {
   id: 548,
   name: "Fist Push-Up | Wide",
+  sidequestKey: "Knuckle Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2431,6 +2497,7 @@ pushups.push(
 {
   id: 549,
   name: "Push-Up | Staggered | Explosive",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: "Switch Staggered Push-Up",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2455,6 +2522,647 @@ pushups.push(
   position: "Prone",
   youtube: "LINK_TODO"
 },
+
+{
+  id: 602,
+  name: "Push-Up | Hand-Release",
+  sidequestKey: "Push-Up",
+  alt: "Dead-Stop Push-Up",
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 3.3,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 2 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.28, 0.36],
+  desc: "Standard push-up where the chest lowers fully to the floor and both hands release contact for a moment before pressing back up. Killing the stretch reflex at the bottom removes any bounce out of the hole, forcing a genuine dead-stop concentric — a small but real jump in strength demand over the standard push-up, and the standard for military and CrossFit rep counting.",
+  cues: "Lower all the way until the chest touches the floor. Lift both hands a couple of inches off the ground, briefly removing all upper-body support. Replace the hands and press back to full extension with no bounce. Keep the body rigid through the hand-release moment — don't let the hips sag.",
+  equipment: "None",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 603,
+  name: "Push-Up | Uneven (Plate)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: "Push-Up | Offset · Push-Up | Block",
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 4.4,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 2 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 3, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 1, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 2,
+  technique: 2,
+  kcalPerRep: [0.30, 0.39],
+  desc: "Push-up with one hand elevated on a plate or low block, shifting the majority of the load onto the lower-side arm through a deeper unilateral ROM. A direct stepping stone between the Staggered Push-Up and the Archer or One-Arm Push-Up — the elevated hand still contributes real support, but the working side descends noticeably deeper than in a standard rep.",
+  cues: "Place one hand on a plate or low block, the other flat on the floor, both roughly shoulder-width apart. Lower toward the floor-side hand, letting the lower shoulder travel well past the elevated one. Keep the hips square — resist rotating toward the working side. Press back evenly and switch sides between sets.",
+  equipment: "Plate",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 604,
+  name: "Push-Up | Around the World",
+  sidequestKey: "Push-Up | 3-Finger",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Core",      p: true  },
+    { n: "Serratus",  p: false },
+  ],
+  tags: ["chest", "shoulders", "triceps", "core", "serratus"],
+  diff: 5.0,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 4, elbow: 3, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 3,
+  technique: 4,
+  kcalPerRep: [0.32, 0.41],
+  desc: "From a bottom push-up position, one hand walks in a continuous circle out to the side, forward, and back around to the start while the other arm holds a static bent-arm support the entire time. The supporting arm sustains a fixed near-bottom isometric through the full circuit while the wrist of the moving arm rotates through its full range of contact angles — a serious coordination and shoulder-stability combination drill.",
+  cues: "Lower to the bottom of a push-up and hold that depth with one arm. Walk the other hand out to the side, then forward, then back to center, tracing a full circle around the body without standing up out of the bottom position. Keep the hips level and avoid twisting. Complete the circle in both directions, then switch the supporting arm.",
+  equipment: "None",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 605,
+  name: "Push-Up | Band-Assisted (Band)",
+  sidequestKey: "Push-Up | Negative",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 2.0,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 2 },
+  joints: { wrist: 1, elbow: 2, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 1,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.20, 0.26],
+  desc: "Standard push-up with a resistance band looped over the upper back and anchored under the hands (or over a low rig), lifting a portion of bodyweight through the bottom third of the rep where a standard push-up is hardest. Bridges the gap between the knee push-up and the full floor push-up for trainees who can nearly, but not quite, lock out a strict rep.",
+  cues: "Loop a light-to-medium band across the upper back and hold the ends under your hands, or anchor it to a low point in front of you. Set up in a standard plank. Lower under control, feeling the band take over near the bottom. Press back to full extension — the band should help most exactly where the rep is hardest.",
+  equipment: "Band",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 606,
+  name: "Push-Up | Band-Resisted (Band)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 4.0,
+  str:  { suit: true,  eff: 4 },
+  vol:  { suit: true,  eff: 2 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 3, neck: 1, lowerBack: 2,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 4,
+  mobility: 1,
+  technique: 2,
+  kcalPerRep: [0.30, 0.39],
+  desc: "Standard push-up with a band anchored behind the back and looped across the shoulder blades, adding progressively increasing resistance through the concentric as the arms extend — the opposite loading curve to a standard push-up, which is hardest at the bottom. Builds lockout strength and forces the core to resist the band pulling the torso down as it stretches.",
+  cues: "Anchor a band behind you at about hip height and loop it across your upper back, holding the ends stable under your hands. Set up in a standard plank with the band already under light tension. Lower normally, then press through the increasing band resistance to full lockout. Keep the core braced against the band pulling the hips down as tension builds.",
+  equipment: "Band",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 607,
+  name: "Push-Up | Sliding Fly (Sliders)",
+  sidequestKey: "Dive Bomber Push-Up",
+  alt: "Slider Fly Push-Up",
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Triceps",   p: false },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "shoulders", "triceps", "core"],
+  diff: 4.6,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 2 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 1, shoulder: 4, neck: 1, lowerBack: 2,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 3,
+  technique: 3,
+  kcalPerRep: [0.31, 0.40],
+  desc: "From a plank with both hands on sliding discs, the hands glide outward into a wide fly position as the chest descends, then drag back inward to press up — replacing elbow flexion with horizontal shoulder adduction as the primary lowering mechanism. Loads the pec stretch far more than a standard push-up while removing almost all triceps contribution, and demands strong core bracing to stop the hips from dropping as the arms splay wide.",
+  cues: "Place both hands on sliders in a standard plank. Keeping the arms nearly straight, slide both hands outward and down into a wide fly as the chest lowers toward the floor. Feel the stretch across the chest at the bottom. Drag the sliders back in toward the body to press back to the start. Keep the hips locked level throughout — don't let them sag as the hands travel wide.",
+  equipment: "Sliders",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 608,
+  name: "Push-Up | Bottom Hold",
+  sidequestKey: "Push-Up",
+  alt: "Push-Up | Isometric Hold",
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 3.8,
+  str:  { suit: false, eff: 1 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: true,  eff: 4 },
+  joints: { wrist: 3, elbow: 3, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 2,
+  kcalPerRep: [0.05, 0.08],
+  desc: "Static hold with the chest an inch above the floor in the bottom position of a push-up, elbows bent to roughly 90 degrees. Sustaining this depth removes any stretch-reflex assistance and keeps the pecs and anterior delts under continuous tension, building the specific bottom-range strength that most often limits harder push-up variants like the archer or one-arm push-up.",
+  cues: "Lower into a push-up until the chest hovers just above the floor, elbows near 90 degrees. Hold that exact depth — don't rest the chest down, and don't drift upward. Keep the body rigid from head to heels. Breathe through the hold rather than bracing against your breath. Build time before adding load.",
+  equipment: "None",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 609,
+  name: "Push-Up | Turned-Out (Rings)",
+  sidequestKey: "Clockwork Push-Up",
+  alt: "Ring Push-Up | RTO",
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+    { n: "Serratus",  p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core", "serratus"],
+  diff: 5.5,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 4, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 2,
+  technique: 4,
+  kcalPerRep: [0.30, 0.39],
+  desc: "Ring push-up performed with the rings actively rotated outward (turned-out, or 'RTO') and held there for the entire rep rather than only at the top. Maintaining the external rotation under load throughout the descent and press is a core ring-strength skill that carries directly into RTO support holds, ring dips, and muscle-up transitions — significantly harder than a standard ring push-up, which only turns out briefly at lockout.",
+  cues: "Grip the rings and rotate them outward until the palms face slightly away from the body. Maintain that turnout as you lower into the push-up — do not let the rings roll back to neutral at any point. Press back up while keeping the turnout locked in, especially through the bottom third where it's hardest to hold. Master standard ring push-ups before adding full-rep RTO.",
+  equipment: "Rings",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 610,
+  name: "Push-Up | (Stability Ball)",
+  sidequestKey: "Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 3.8,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: true,  eff: 2 },
+  end:  { suit: true,  eff: 2 },
+  joints: { wrist: 3, elbow: 2, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 1, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.27, 0.35],
+  desc: "Push-up with both hands (or, for a harder version, both feet) on a stability ball, adding a constant multi-directional wobble that the shoulders and core must correct on every rep. The pressing demand is close to a standard push-up, but the balance-correction load makes it noticeably harder to execute cleanly, especially near lockout where the ball is easiest to tip.",
+  cues: "Place both hands on top of a stability ball, slightly wider than shoulder-width, in a plank position. Lower under control, actively resisting any side-to-side or forward roll of the ball. Press back up while keeping the ball still beneath the hands. Keep reps slow and controlled — speed amplifies the wobble.",
+  equipment: "Stability ball",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 611,
+  name: "Push-Up | Renegade Row (Dumbbells)",
+  sidequestKey: "Push-Up | 3-Finger",
+  alt: "Renegade Row Push-Up",
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Back",      p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Core",      p: true  },
+    { n: "Shoulders", p: false },
+  ],
+  tags: ["chest", "back", "triceps", "core", "shoulders"],
+  diff: 5.5,
+  str:  { suit: true,  eff: 4 },
+  vol:  { suit: true,  eff: 2 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 3, elbow: 2, shoulder: 3, neck: 1, lowerBack: 2,
+            knee: 0, fingers: 0, thoracic: 1, si: 1, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 4,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.45, 0.58],
+  desc: "A push-up performed with hands gripping a pair of dumbbells, with a one-arm row inserted at the top of every rep — the resting arm must brace the entire bodyweight one-handed on a narrow, slightly unstable base while the working arm rows. Combines a full pushing rep with a full anti-rotation and rowing demand in a single continuous movement.",
+  cues: "Grip a pair of dumbbells in a push-up plank, feet set wide for a stable base. Perform a full push-up rep. At the top, row one dumbbell to the ribs while bracing hard against rotation with the other arm locked out. Lower the dumbbell back down, then repeat the push-up and row on the other side. Keep the hips square throughout — do not let them twist toward the rowing side.",
+  equipment: "Dumbbell",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 616,
+  name: "Diamond Push-Up | (TRX)",
+  sidequestKey: "Diamond Push-Up | Fingertip",
+  alt: null,
+  muscles: [
+    { n: "Triceps",   p: true  },
+    { n: "Chest",     p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["triceps", "chest", "shoulders", "core"],
+  diff: 4.4,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 3, elbow: 4, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.29, 0.37],
+  desc: "Diamond push-up gripping a single pair of TRX handles held close together, adding suspension instability on top of the already triceps-dominant narrow hand position. The straps drift independently, forcing constant elbow-tuck and wrist-alignment correction throughout the rep.",
+  cues: "Bring both TRX handles together at the bottom of the straps, hands touching to form the diamond shape. Lower with the elbows tracking close to the ribs, resisting any strap swing. Press back to full extension while keeping the diamond hand position locked.",
+  equipment: "TRX",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 617,
+  name: "Narrow Push-Up | (TRX)",
+  sidequestKey: "Wide Push-Up | Explosive",
+  alt: null,
+  muscles: [
+    { n: "Triceps",   p: true  },
+    { n: "Chest",     p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["triceps", "chest", "shoulders", "core"],
+  diff: 4.1,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 3, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.28, 0.36],
+  desc: "Narrow-grip push-up on TRX straps set close together, adding suspension drift to the elbows-in, triceps-dominant narrow position. The straps must be actively controlled to stop them splaying outward as the elbows track along the ribs.",
+  cues: "Set the straps close together at shoulder height. Grip and lower with elbows tucked tight to the ribs, resisting any strap movement. Press back to full extension, keeping the hands from drifting apart.",
+  equipment: "TRX",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 618,
+  name: "Narrow Push-Up | Negative",
+  sidequestKey: "Wide Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Triceps",   p: true  },
+    { n: "Chest",     p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Core",      p: false },
+  ],
+  tags: ["triceps", "chest", "shoulders", "core"],
+  diff: 3.5,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 3, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.30, 0.39],
+  desc: "Narrow push-up trained as a slow 3-5 second eccentric-only descent, resetting from the knees rather than pressing back up. Builds the triceps-dominant strength needed for a full narrow push-up without requiring the concentric lockout yet.",
+  cues: "Hands close together, elbows tracking tight to the ribs. Lower over a full 3-5 second count, resisting the descent the whole way. Reset from the knees rather than pressing back up. The slow lower is the working phase.",
+  equipment: "None",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 619,
+  name: "Narrow Push-Up | Pause",
+  sidequestKey: "Wide Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Triceps",   p: true  },
+    { n: "Chest",     p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Core",      p: false },
+  ],
+  tags: ["triceps", "chest", "shoulders", "core"],
+  diff: 3.6,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 3, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 1,
+  technique: 2,
+  kcalPerRep: [0.31, 0.40],
+  desc: "Narrow push-up with a 2-3 second dead-stop pause at the bottom before pressing up, removing the stretch-reflex bounce from the already triceps-dominant narrow position and demanding a genuine dead-stop concentric.",
+  cues: "Lower to the bottom with elbows tucked to the ribs. Hold for 2-3 seconds without relaxing or sagging. Press back to full extension with no bounce out of the pause.",
+  equipment: "None",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 620,
+  name: "Knuckle Push-Up | (Bar)",
+  sidequestKey: "Knuckle Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 3.3,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 3 },
+  joints: { wrist: 1, elbow: 2, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 1, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.26, 0.33],
+  desc: "Knuckle push-up gripping a pair of push-up bars instead of resting on the fists directly — a low-impact way to train knuckle-loading tolerance while the bars keep the wrists neutral. Difficulty is essentially identical to a standard push-up.",
+  cues: "Make loose fists and grip the bars set at shoulder-width, knuckles pressed into the handles. Lower and press as a standard push-up, keeping the wrists straight throughout.",
+  equipment: "Push-Up Bars",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 621,
+  name: "Knuckle Push-Up | (Rings)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 4.2,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 1, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.30, 0.39],
+  desc: "Knuckle push-up gripping gymnastic rings loosely fisted around the ring cords, combining knuckle-loading with full ring instability. The rings must be actively stabilised through the entire rep while the fists maintain a stable press point.",
+  cues: "Make loose fists around the rings, knuckles bearing the load. Set up in a standard plank and lower with control, resisting ring drift. Press back to lockout while rolling the rings inward.",
+  equipment: "Rings",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 622,
+  name: "Knuckle Push-Up | (TRX)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 4.0,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 1, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.29, 0.37],
+  desc: "Knuckle push-up gripping suspension trainer handles with loose fists, adding the strap drift of TRX training on top of knuckle loading. Slightly less unstable than the ring version but still a real step up from the bar variant.",
+  cues: "Make loose fists around the TRX handles. Set up in a standard plank and lower with control, keeping the straps from swinging. Press back to full extension.",
+  equipment: "TRX",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 623,
+  name: "Fist Push-Up | (Bar)",
+  sidequestKey: "Knuckle Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 3.3,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 3 },
+  joints: { wrist: 1, elbow: 2, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 1, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.26, 0.33],
+  desc: "Fist push-up gripping a pair of push-up bars rather than resting fists directly on the floor. The bars keep the wrist neutral while the tight fist position is maintained, with difficulty essentially unchanged from a standard push-up.",
+  cues: "Make tight fists and grip the bars, knuckles down against the handles. Lower and press as a standard push-up, keeping the wrists straight throughout.",
+  equipment: "Push-Up Bars",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 624,
+  name: "Fist Push-Up | (Rings)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 4.2,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 1, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.30, 0.39],
+  desc: "Fist push-up gripping gymnastic rings with tight fists, combining fist-loading with full ring instability. Requires active ring stabilisation on top of maintaining a solid, tight fist through the entire rep.",
+  cues: "Make tight fists around the rings. Set up in a standard plank and lower with control, resisting ring drift. Press back to lockout while rolling the rings inward.",
+  equipment: "Rings",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 625,
+  name: "Fist Push-Up | (TRX)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 4.0,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 1, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 1,
+  technique: 3,
+  kcalPerRep: [0.29, 0.37],
+  desc: "Fist push-up gripping suspension trainer handles with tight fists, adding TRX strap drift on top of the fist position. A slightly less unstable step than the ring version, but a real jump from the bar variant.",
+  cues: "Make tight fists around the TRX handles. Set up in a standard plank and lower with control, keeping the straps from swinging. Press back to full extension.",
+  equipment: "TRX",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 626,
+  name: "Explosive Push-Up | (Bar)",
+  sidequestKey: "Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core", "power"],
+  diff: 3.7,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 3, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 3,
+  mobility: 1,
+  technique: 2,
+  kcalPerRep: [0.24, 0.31],
+  desc: "Explosive push-up gripping a pair of push-up bars, driving hard enough off the bottom to briefly clear the bars off the floor. The neutral wrist grip makes the landing more forgiving than a floor-handed clap push-up while preserving the same power demand.",
+  cues: "Grip the bars at shoulder-width. Lower under control, then drive explosively enough to lift the bars a couple of inches off the floor. Land with soft, bent elbows and immediately absorb the landing before the next rep.",
+  equipment: "Push-Up Bars",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 627,
+  name: "Explosive Push-Up | (TRX)",
+  sidequestKey: "Push-Up | Cross-Body",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core", "power"],
+  diff: 4.8,
+  str:  { suit: true,  eff: 4 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 3, shoulder: 4, neck: 1, lowerBack: 2,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 4,
+  mobility: 2,
+  technique: 4,
+  kcalPerRep: [0.27, 0.35],
+  desc: "Explosive push-up on TRX straps, driving hard enough to briefly release the handles at the top before regripping. The straps swing unpredictably after release, demanding rapid regrip accuracy and shoulder stability on top of the raw power output of the explosive press.",
+  cues: "Set the straps at a comfortable push-up height. Lower under control, then drive explosively enough to release the handles briefly at the top. Regrip immediately and absorb the landing with bent elbows before the next rep.",
+  equipment: "TRX",
+  position: "Prone",
+  youtube: "LINK_TODO"
+}
 
 );
 

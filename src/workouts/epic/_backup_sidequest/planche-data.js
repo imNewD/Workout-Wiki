@@ -100,7 +100,6 @@ const planches = [
 
   {
     id: 101,
-    sidequestKey: "Incline Push-Up | Pseudo Planche",
     name: "Incline Push-Up | Knee, Pseudo Planche",
     alt: null,
     muscles: [
@@ -191,7 +190,6 @@ const planches = [
 
   {
     id: 552,
-    sidequestKey: "Pseudo Planche Push-Up",
     name: "Pseudo Planche Push-Up | Straddle",
     alt: null,
     muscles: [
@@ -222,7 +220,6 @@ const planches = [
 
   {
     id: 554,
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     name: "Pseudo Planche Push-Up | Negative",
     alt: null,
     muscles: [
@@ -283,7 +280,6 @@ const planches = [
 
   {
     id: 553,
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     name: "Pseudo Planche Push-Up | One Leg",
     alt: null,
     muscles: [
@@ -316,7 +312,6 @@ const planches = [
   {
     id: 556,
     name: "Pseudo Planche Push-Up | Deficit",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -348,7 +343,6 @@ const planches = [
 
   {
     id: 115,
-    sidequestKey: "Decline Push-Up | Pseudo Planche",
     name: "Decline Push-Up | Knee, Pseudo Planche",
     alt: null,
     muscles: [
@@ -499,7 +493,6 @@ const planches = [
 
   {
     id: 575,
-    sidequestKey: "Advanced Tuck Planche",
     name: "Advanced Tuck Planche | One Leg",
     alt: "Adv tuck one leg planche",
     muscles: [
@@ -620,7 +613,6 @@ const planches = [
 
   {
     id: 579,
-    sidequestKey: "Banana Planche",
     name: "Banana Planche | Straddle",
     alt: "Straddle banana planche",
     muscles: [
@@ -712,7 +704,6 @@ const planches = [
   {
     id: 581,
     name: "Triangle Planche | Straddle",
-    sidequestKey: "Triangle Planche",
     alt: "Straddle triangle planche",
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -807,7 +798,6 @@ const planches = [
 
   {
     id: 563,
-    sidequestKey: "Tuck Planche Push-Up",
     name: "Tuck Planche Push-Up | Negative",
     alt: null,
     muscles: [
@@ -838,7 +828,6 @@ const planches = [
 
   {
     id: 564,
-    sidequestKey: "Tuck Planche Push-Up",
     name: "Tuck Planche Push-Up | Pause",
     alt: null,
     muscles: [
@@ -900,7 +889,6 @@ const planches = [
   {
     id: 566,
     name: "Advanced Tuck Planche Push-Up | Negative",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -931,7 +919,6 @@ const planches = [
   {
     id: 567,
     name: "Advanced Tuck Planche Push-Up | Pause",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -992,7 +979,6 @@ const planches = [
 
   {
     id: 569,
-    sidequestKey: "Straddle Planche Push-Up",
     name: "Straddle Planche Push-Up | Negative",
     alt: null,
     muscles: [
@@ -1024,7 +1010,6 @@ const planches = [
 
   {
     id: 570,
-    sidequestKey: "Straddle Planche Push-Up",
     name: "Straddle Planche Push-Up | Pause",
     alt: null,
     muscles: [
@@ -1133,7 +1118,6 @@ const planches = [
   {
     id: 582,
     name: "Pseudo Planche Push-Up | (Parallettes)",
-    sidequestKey: "Pseudo Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1164,7 +1148,6 @@ const planches = [
   {
     id: 583,
     name: "Pseudo Planche Push-Up | Straddle, (Parallettes)",
-    sidequestKey: "Pseudo Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1195,7 +1178,6 @@ const planches = [
   {
     id: 584,
     name: "Pseudo Planche Push-Up | Negative, (Parallettes)",
-    sidequestKey: "Pseudo Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1226,7 +1208,6 @@ const planches = [
   {
     id: 585,
     name: "Pseudo Planche Push-Up | Pause, (Parallettes)",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1257,7 +1238,6 @@ const planches = [
   {
     id: 586,
     name: "Pseudo Planche Push-Up | One Leg, (Parallettes)",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1293,7 +1273,6 @@ const planches = [
   {
     id: 587,
     name: "Planche Lean | (Parallettes)",
-    sidequestKey: "Planche Lean",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1379,7 +1358,6 @@ const planches = [
   {
     id: 590,
     name: "Advanced Tuck Planche | One Leg, (Parallettes)",
-    sidequestKey: "Advanced Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1409,7 +1387,6 @@ const planches = [
   {
     id: 591,
     name: "Half Lay Planche | (Parallettes)",
-    sidequestKey: "Half Lay Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1439,7 +1416,6 @@ const planches = [
   {
     id: 592,
     name: "Half Lay Planche | Straddle, (Parallettes)",
-    sidequestKey: "Half Lay Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1498,7 +1474,6 @@ const planches = [
   {
     id: 594,
     name: "Banana Planche | Straddle, (Parallettes)",
-    sidequestKey: "Banana Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -1528,7 +1503,6 @@ const planches = [
   {
     id: 595,
     name: "Straddle Planche | (Parallettes)",
-    sidequestKey: "Straddle Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1558,7 +1532,6 @@ const planches = [
   {
     id: 596,
     name: "Triangle Planche | (Parallettes)",
-    sidequestKey: "Triangle Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1588,7 +1561,6 @@ const planches = [
   {
     id: 597,
     name: "Triangle Planche | Straddle, (Parallettes)",
-    sidequestKey: "Triangle Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1618,7 +1590,6 @@ const planches = [
   {
     id: 598,
     name: "Full Planche | (Parallettes)",
-    sidequestKey: "Full Planche",
     alt: null,
     hof: true,
     muscles: [
@@ -1653,7 +1624,6 @@ const planches = [
   {
     id: 599,
     name: "Tuck Planche Push-Up | (Parallettes)",
-    sidequestKey: "Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1684,7 +1654,6 @@ const planches = [
   {
     id: 600,
     name: "Tuck Planche Push-Up | Negative, (Parallettes)",
-    sidequestKey: "Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1715,7 +1684,6 @@ const planches = [
   {
     id: 601,
     name: "Tuck Planche Push-Up | Pause, (Parallettes)",
-    sidequestKey: "Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1746,7 +1714,6 @@ const planches = [
   {
     id: 602,
     name: "Advanced Tuck Planche Push-Up | (Parallettes)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1777,7 +1744,6 @@ const planches = [
   {
     id: 603,
     name: "Advanced Tuck Planche Push-Up | Negative, (Parallettes)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1808,7 +1774,6 @@ const planches = [
   {
     id: 604,
     name: "Advanced Tuck Planche Push-Up | Pause, (Parallettes)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -1839,7 +1804,6 @@ const planches = [
   {
     id: 605,
     name: "Straddle Planche Push-Up | (Parallettes)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1871,7 +1835,6 @@ const planches = [
   {
     id: 606,
     name: "Straddle Planche Push-Up | Negative, (Parallettes)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1903,7 +1866,6 @@ const planches = [
   {
     id: 607,
     name: "Straddle Planche Push-Up | Pause, (Parallettes)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -1935,7 +1897,6 @@ const planches = [
   {
     id: 608,
     name: "Full Planche Push-Up | (Parallettes)",
-    sidequestKey: "Full Planche Push-Up",
     alt: null,
     hof: true,
     muscles: [
@@ -1947,7 +1908,7 @@ const planches = [
       { n: "Hip Flexors", p: false },
     ],
     tags: ["shoulders", "chest", "triceps", "serratus", "core", "hip flexors"],
-    diff: 10.0,
+    diff: 9.8,
     str:  { suit: true,  eff: 5 },
     vol:  { suit: false, eff: 1 },
     end:  { suit: false, eff: 1 },
@@ -1975,7 +1936,6 @@ const planches = [
   {
     id: 609,
     name: "Pseudo Planche Push-Up | (Bar)",
-    sidequestKey: "Pseudo Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2006,7 +1966,6 @@ const planches = [
   {
     id: 610,
     name: "Pseudo Planche Push-Up | Straddle, (Bar)",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2037,7 +1996,6 @@ const planches = [
   {
     id: 611,
     name: "Pseudo Planche Push-Up | Negative, (Bar)",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2068,7 +2026,6 @@ const planches = [
   {
     id: 612,
     name: "Pseudo Planche Push-Up | Pause, (Bar)",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2099,7 +2056,6 @@ const planches = [
   {
     id: 613,
     name: "Pseudo Planche Push-Up | One Leg, (Bar)",
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2135,7 +2091,6 @@ const planches = [
   {
     id: 614,
     name: "Planche Lean | (Bar)",
-    sidequestKey: "Planche Lean",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2164,7 +2119,6 @@ const planches = [
   {
     id: 615,
     name: "Tuck Planche | (Bar)",
-    sidequestKey: "Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2193,7 +2147,6 @@ const planches = [
   {
     id: 616,
     name: "Advanced Tuck Planche | (Bar)",
-    sidequestKey: "Advanced Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2222,7 +2175,6 @@ const planches = [
   {
     id: 617,
     name: "Advanced Tuck Planche | One Leg, (Bar)",
-    sidequestKey: "Advanced Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2252,7 +2204,6 @@ const planches = [
   {
     id: 618,
     name: "Half Lay Planche | (Bar)",
-    sidequestKey: "Half Lay Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2282,7 +2233,6 @@ const planches = [
   {
     id: 619,
     name: "Half Lay Planche | Straddle, (Bar)",
-    sidequestKey: "Half Lay Planche | Straddle",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2312,7 +2262,6 @@ const planches = [
   {
     id: 620,
     name: "Banana Planche | (Bar)",
-    sidequestKey: "Banana Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -2342,7 +2291,6 @@ const planches = [
   {
     id: 621,
     name: "Banana Planche | Straddle, (Bar)",
-    sidequestKey: "Banana Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -2372,7 +2320,6 @@ const planches = [
   {
     id: 622,
     name: "Straddle Planche | (Bar)",
-    sidequestKey: "Straddle Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2402,7 +2349,6 @@ const planches = [
   {
     id: 623,
     name: "Triangle Planche | (Bar)",
-    sidequestKey: "Triangle Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2432,7 +2378,6 @@ const planches = [
   {
     id: 624,
     name: "Triangle Planche | Straddle, (Bar)",
-    sidequestKey: "Triangle Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2462,7 +2407,6 @@ const planches = [
   {
     id: 625,
     name: "Full Planche | (Bar)",
-    sidequestKey: "Full Planche",
     alt: null,
     hof: true,
     muscles: [
@@ -2497,7 +2441,6 @@ const planches = [
   {
     id: 626,
     name: "Tuck Planche Push-Up | (Bar)",
-    sidequestKey: "Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2528,7 +2471,6 @@ const planches = [
   {
     id: 627,
     name: "Tuck Planche Push-Up | Negative, (Bar)",
-    sidequestKey: "Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2559,7 +2501,6 @@ const planches = [
   {
     id: 628,
     name: "Tuck Planche Push-Up | Pause, (Bar)",
-    sidequestKey: "Tuck Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2590,7 +2531,6 @@ const planches = [
   {
     id: 629,
     name: "Advanced Tuck Planche Push-Up | (Bar)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2621,7 +2561,6 @@ const planches = [
   {
     id: 630,
     name: "Straddle Planche Push-Up | (Bar)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2653,7 +2592,6 @@ const planches = [
   {
     id: 631,
     name: "Full Planche Push-Up | (Bar)",
-    sidequestKey: "Full Planche Push-Up",
     alt: null,
     hof: true,
     muscles: [
@@ -2694,7 +2632,6 @@ const planches = [
   {
     id: 632,
     name: "Planche Lean | (Rings)",
-    sidequestKey: "Planche Lean | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2724,7 +2661,6 @@ const planches = [
   {
     id: 633,
     name: "Tuck Planche | (Rings)",
-    sidequestKey: "Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2754,7 +2690,6 @@ const planches = [
   {
     id: 634,
     name: "Advanced Tuck Planche | (Rings)",
-    sidequestKey: "Advanced Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2784,7 +2719,6 @@ const planches = [
   {
     id: 635,
     name: "Straddle Planche | (Rings)",
-    sidequestKey: "Straddle Planche | 3-Finger",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2815,7 +2749,6 @@ const planches = [
   {
     id: 636,
     name: "Full Planche | (Rings)",
-    sidequestKey: "Full Planche | 3-Finger",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -2851,7 +2784,6 @@ const planches = [
   {
     id: 637,
     name: "Tuck Planche Push-Up | (Rings)",
-    sidequestKey: "Tuck Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2882,7 +2814,6 @@ const planches = [
   {
     id: 638,
     name: "Tuck Planche Push-Up | Negative, (Rings)",
-    sidequestKey: "Tuck Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2913,7 +2844,6 @@ const planches = [
   {
     id: 639,
     name: "Advanced Tuck Planche Push-Up | (Rings)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -2944,7 +2874,6 @@ const planches = [
   {
     id: 640,
     name: "Straddle Planche Push-Up | (Rings)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -2976,7 +2905,6 @@ const planches = [
   {
     id: 641,
     name: "Full Planche Push-Up | (Rings)",
-    sidequestKey: "Full Planche Push-Up",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -3027,7 +2955,6 @@ const planches = [
 
   {
     id: 642,
-    sidequestKey: "Pseudo Planche Push-Up | Pause",
     name: "Pseudo Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
@@ -3088,7 +3015,6 @@ const planches = [
 
   {
     id: 644,
-    sidequestKey: "Tuck Planche",
     name: "Tuck Planche | Fingertip",
     alt: null,
     muscles: [
@@ -3118,7 +3044,6 @@ const planches = [
 
   {
     id: 645,
-    sidequestKey: "Advanced Tuck Planche",
     name: "Advanced Tuck Planche | Fingertip",
     alt: null,
     muscles: [
@@ -3148,7 +3073,6 @@ const planches = [
 
   {
     id: 646,
-    sidequestKey: "Straddle Planche | 3-Finger",
     name: "Straddle Planche | Fingertip",
     alt: null,
     muscles: [
@@ -3179,7 +3103,6 @@ const planches = [
 
   {
     id: 647,
-    sidequestKey: "Full Planche | 3-Finger",
     name: "Full Planche | Fingertip",
     alt: null,
     hof: true,
@@ -3242,7 +3165,6 @@ const planches = [
 
   {
     id: 649,
-    sidequestKey: "Straddle Planche Push-Up | 3-Finger",
     name: "Straddle Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
@@ -3464,7 +3386,6 @@ const planches = [
   {
     id: 655,
     name: "Planche Lean | Fingertip, (Parallettes)",
-    sidequestKey: "Planche Lean | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3494,7 +3415,6 @@ const planches = [
   {
     id: 656,
     name: "Tuck Planche | Fingertip, (Parallettes)",
-    sidequestKey: "Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3524,7 +3444,6 @@ const planches = [
   {
     id: 657,
     name: "Advanced Tuck Planche | Fingertip, (Parallettes)",
-    sidequestKey: "Advanced Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3554,7 +3473,6 @@ const planches = [
   {
     id: 658,
     name: "Planche Lean | 3-Finger, (Parallettes)",
-    sidequestKey: "Planche Lean | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3584,7 +3502,6 @@ const planches = [
   {
     id: 659,
     name: "Tuck Planche | 3-Finger, (Parallettes)",
-    sidequestKey: "Tuck Planche | 3-Finger",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3614,7 +3531,6 @@ const planches = [
   {
     id: 660,
     name: "Advanced Tuck Planche | 3-Finger, (Parallettes)",
-    sidequestKey: "Advanced Tuck Planche | 3-Finger",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3644,7 +3560,6 @@ const planches = [
   {
     id: 661,
     name: "Straddle Planche | 3-Finger, (Parallettes)",
-    sidequestKey: "Straddle Planche | 2-Finger",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -3676,7 +3591,6 @@ const planches = [
   {
     id: 662,
     name: "Straddle Planche | 2-Finger, (Parallettes)",
-    sidequestKey: "Straddle Planche | 2-Finger",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -3746,7 +3660,6 @@ const planches = [
   {
     id: 664,
     name: "Advanced Tuck Planche Push-Up | Negative, (Bar)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3777,7 +3690,6 @@ const planches = [
   {
     id: 665,
     name: "Advanced Tuck Planche Push-Up | Pause, (Bar)",
-    sidequestKey: "Advanced Tuck Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -3815,7 +3727,6 @@ const planches = [
   {
     id: 666,
     name: "Advanced Tuck Planche | One Leg, (Rings)",
-    sidequestKey: "Advanced Tuck Planche | 3-Finger",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -3846,7 +3757,6 @@ const planches = [
   {
     id: 667,
     name: "Half Lay Planche | (Rings)",
-    sidequestKey: "Half Lay Planche | Straddle",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -3877,7 +3787,6 @@ const planches = [
   {
     id: 668,
     name: "Half Lay Planche | Straddle, (Rings)",
-    sidequestKey: "Half Lay Planche | Straddle",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -3908,7 +3817,6 @@ const planches = [
   {
     id: 669,
     name: "Banana Planche | (Rings)",
-    sidequestKey: "Banana Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -3939,7 +3847,6 @@ const planches = [
   {
     id: 670,
     name: "Banana Planche | Straddle, (Rings)",
-    sidequestKey: "Banana Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -4000,7 +3907,6 @@ const planches = [
   {
     id: 672,
     name: "Triangle Planche | Straddle, (Rings)",
-    sidequestKey: "Triangle Planche | (Rings)",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -4035,7 +3941,6 @@ const planches = [
   {
     id: 673,
     name: "Tuck Planche Push-Up | Pause, (Rings)",
-    sidequestKey: "Tuck Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -4066,7 +3971,6 @@ const planches = [
   {
     id: 674,
     name: "Advanced Tuck Planche Push-Up | Negative, (Rings)",
-    sidequestKey: "Advanced Tuck Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -4097,7 +4001,6 @@ const planches = [
   {
     id: 675,
     name: "Advanced Tuck Planche Push-Up | Pause, (Rings)",
-    sidequestKey: "Advanced Tuck Planche Push-Up | Fingertip",
     alt: null,
     muscles: [
       { n: "Shoulders", p: true  },
@@ -4128,7 +4031,6 @@ const planches = [
   {
     id: 676,
     name: "Straddle Planche Push-Up | Negative, (Rings)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -4160,7 +4062,6 @@ const planches = [
   {
     id: 677,
     name: "Straddle Planche Push-Up | Pause, (Rings)",
-    sidequestKey: "Straddle Planche Push-Up",
     alt: null,
     muscles: [
       { n: "Shoulders",   p: true  },
@@ -4227,7 +4128,6 @@ const planches = [
   {
     id: 679,
     name: "Full Planche Push-Up | Fingertip",
-    sidequestKey: "Full Planche Push-Up",
     alt: null,
     hof: true,
     muscles: [
@@ -4376,7 +4276,6 @@ const planches = [
 
   {
     id: 683,
-    sidequestKey: "One Arm Full Planche",
     name: "One Arm Straddle Planche",
     alt: null,
     hof: true,
@@ -4441,7 +4340,6 @@ const planches = [
 
   {
     id: 685,
-    sidequestKey: "One Arm Full Planche Push-Up",
     name: "One Arm Tuck Planche Push-Up",
     alt: null,
     hof: "pantheon",
@@ -4474,7 +4372,6 @@ const planches = [
 
   {
     id: 686,
-    sidequestKey: "One Arm Full Planche Push-Up",
     name: "One Arm Straddle Planche Push-Up",
     alt: null,
     hof: "pantheon",
@@ -4511,7 +4408,6 @@ const planches = [
   {
     id: 687,
     name: "One Arm Planche Lean | (Parallettes)",
-    sidequestKey: "One Arm Planche Lean",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -4541,7 +4437,6 @@ const planches = [
   {
     id: 688,
     name: "One Arm Tuck Planche | (Parallettes)",
-    sidequestKey: "One Arm Tuck Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -4572,7 +4467,6 @@ const planches = [
   {
     id: 689,
     name: "One Arm Straddle Planche | (Parallettes)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: true,
     muscles: [
@@ -4604,7 +4498,6 @@ const planches = [
   {
     id: 690,
     name: "One Arm Full Planche | (Parallettes)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -4638,7 +4531,6 @@ const planches = [
   {
     id: 691,
     name: "One Arm Planche Lean | (Bar)",
-    sidequestKey: "One Arm Tuck Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -4669,7 +4561,6 @@ const planches = [
   {
     id: 692,
     name: "One Arm Straddle Planche | (Bar)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -4703,7 +4594,6 @@ const planches = [
   {
     id: 693,
     name: "One Arm Tuck Planche | (Rings)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -4735,7 +4625,6 @@ const planches = [
   {
     id: 694,
     name: "One Arm Straddle Planche | (Rings)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -4769,7 +4658,6 @@ const planches = [
 
   {
     id: 695,
-    sidequestKey: "One Arm Full Planche",
     name: "One Arm Planche Lean | Fingertip",
     alt: null,
     hof: "pantheon",
@@ -4801,7 +4689,6 @@ const planches = [
 
   {
     id: 696,
-    sidequestKey: "One Arm Full Planche",
     name: "One Arm Tuck Planche | Fingertip",
     alt: null,
     hof: "pantheon",
@@ -4834,7 +4721,6 @@ const planches = [
   {
     id: 697,
     name: "One Arm Straddle Planche | Fingertip",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: true,
     muscles: [
@@ -4883,7 +4769,6 @@ const planches = [
 
   {
     id: 698,
-    sidequestKey: "One Arm Full Planche",
     name: "One Arm Advanced Tuck Planche",
     alt: null,
     muscles: [
@@ -4913,7 +4798,6 @@ const planches = [
 
   {
     id: 699,
-    sidequestKey: "One Arm Full Planche Push-Up",
     name: "One Arm Advanced Tuck Planche Push-Up",
     alt: null,
     hof: "pantheon",
@@ -4982,7 +4866,6 @@ const planches = [
   {
     id: 701,
     name: "One Arm Advanced Tuck Planche | (Parallettes)",
-    sidequestKey: "One Arm Tuck Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -5012,7 +4895,6 @@ const planches = [
   {
     id: 702,
     name: "One Arm Tuck Planche Push-Up | (Parallettes)",
-    sidequestKey: "One Arm Full Planche Push-Up",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5045,7 +4927,6 @@ const planches = [
   {
     id: 703,
     name: "One Arm Advanced Tuck Planche Push-Up | (Parallettes)",
-    sidequestKey: "One Arm Full Planche Push-Up",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5078,7 +4959,6 @@ const planches = [
   {
     id: 704,
     name: "One Arm Straddle Planche Push-Up | (Parallettes)",
-    sidequestKey: "One Arm Full Planche Push-Up",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5114,7 +4994,6 @@ const planches = [
   {
     id: 705,
     name: "One Arm Tuck Planche | (Bar)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     muscles: [
       { n: "Shoulders",  p: true  },
@@ -5144,7 +5023,6 @@ const planches = [
   {
     id: 706,
     name: "One Arm Advanced Tuck Planche | (Bar)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5175,7 +5053,6 @@ const planches = [
   {
     id: 707,
     name: "One Arm Full Planche | (Bar)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5207,7 +5084,6 @@ const planches = [
   {
     id: 708,
     name: "One Arm Tuck Planche Push-Up | (Bar)",
-    sidequestKey: "One Arm Full Planche Push-Up",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5242,7 +5118,6 @@ const planches = [
   {
     id: 709,
     name: "One Arm Planche Lean | (Rings)",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [
@@ -5276,7 +5151,6 @@ const planches = [
   {
     id: 710,
     name: "One Arm Full Planche | Fingertip",
-    sidequestKey: "One Arm Full Planche",
     alt: null,
     hof: "pantheon",
     muscles: [

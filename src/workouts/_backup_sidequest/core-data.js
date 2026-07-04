@@ -310,7 +310,6 @@ const coreExercises = [
   {
     id: 11,
     name: "Reverse Crunch",
-    sidequestKey: "Crunch",
     alt: "Hip curl · pelvic tilt crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -392,7 +391,6 @@ const coreExercises = [
   {
     id: 14,
     name: "Scissor Kicks",
-    sidequestKey: "Flutter Kicks",
     alt: "Crossover scissors · cross-leg raise",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -447,7 +445,6 @@ const coreExercises = [
   {
     id: 16,
     name: "Hollow Rock",
-    sidequestKey: "Hollow Body Hold",
     alt: "Hollow body rock · gymnastic rock",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -559,7 +556,6 @@ const coreExercises = [
   {
     id: 20,
     name: "Bird Dog",
-    sidequestKey: "Superman Hold",
     alt: "Quadruped opposite reach · pointer",
     muscles: [
       {n:"Erector Spinae", p:true},
@@ -588,7 +584,6 @@ const coreExercises = [
   {
     id: 21,
     name: "Bear Plank",
-    sidequestKey: "Plank",
     alt: "Bear crawl hold · quadruped hover",
     muscles: [
       {n:"Transverse Abdominis", p:true},
@@ -617,7 +612,6 @@ const coreExercises = [
   {
     id: 22,
     name: "Plank | Hip Dip",
-    sidequestKey: "Plank",
     alt: "Oblique plank twist · hip rotation plank",
     muscles: [
       {n:"Obliques", p:true},
@@ -645,7 +639,6 @@ const coreExercises = [
   {
     id: 23,
     name: "Copenhagen Plank | (Bench)",
-    sidequestKey: "Single Arm Plank",
     alt: "Copenhagen side plank · adductor plank",
     muscles: [
       {n:"Obliques", p:true},
@@ -730,7 +723,6 @@ const coreExercises = [
   {
     id: 26,
     name: "Pallof Press | (Band)",
-    sidequestKey: "Russian Twist",
     alt: "Anti-rotation press · cable core press",
     muscles: [
       {n:"Transverse Abdominis", p:true},
@@ -758,7 +750,6 @@ const coreExercises = [
   {
     id: 27,
     name: "Plank | Stir the Pot | (Stability Ball)",
-    sidequestKey: "Single Arm Plank",
     alt: "Ball plank circles · stability ball stir",
     muscles: [
       {n:"Transverse Abdominis", p:true},
@@ -786,7 +777,6 @@ const coreExercises = [
   {
     id: 28,
     name: "Suitcase Crunch",
-    sidequestKey: "Bicycle Crunch",
     alt: "Tuck crunch · double crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -814,7 +804,6 @@ const coreExercises = [
   {
     id: 29,
     name: "Sprinter Sit-Up",
-    sidequestKey: "Bicycle Crunch",
     alt: "Running sit-up · dynamic crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -842,7 +831,6 @@ const coreExercises = [
   {
     id: 30,
     name: "Long Lever Plank",
-    sidequestKey: "Plank | Shoulder Tap",
     alt: "Extended arm plank · RKC long lever",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -871,7 +859,6 @@ const coreExercises = [
   {
     id: 31,
     name: "RKC Plank",
-    sidequestKey: "Plank | Shoulder Tap",
     alt: "Hardstyle plank · maximum tension plank",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -928,7 +915,6 @@ const coreExercises = [
   {
     id: 33,
     name: "Plank | Leg Lift",
-    sidequestKey: "Plank | Jack",
     alt: "Single leg plank · unilateral plank",
     muscles: [
       {n:"Glutes", p:true},
@@ -957,7 +943,6 @@ const coreExercises = [
   {
     id: 34,
     name: "Spiderman Plank",
-    sidequestKey: "Plank | Shoulder Tap",
     alt: "Spiderman crawl plank · lateral knee drive plank",
     muscles: [
       {n:"Obliques", p:true},
@@ -986,7 +971,6 @@ const coreExercises = [
   {
     id: 35,
     name: "Ab Walkout",
-    sidequestKey: "Single Arm Plank",
     alt: "Standing rollout · inchworm abs",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1044,7 +1028,6 @@ const coreExercises = [
   {
     id: 37,
     name: "Fallout | (Rings)",
-    sidequestKey: "Ab Rollout | (Ab Wheel)",
     alt: "TRX fallout · suspension trainer rollout",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1074,7 +1057,6 @@ const coreExercises = [
   {
     id: 38,
     name: "Toe-Touch Crunch",
-    sidequestKey: "Crunch",
     alt: "Vertical leg crunch · ceiling reach crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1102,7 +1084,6 @@ const coreExercises = [
   {
     id: 39,
     name: "Oblique Crunch",
-    sidequestKey: "Crunch",
     alt: "Side crunch · lateral crunch",
     muscles: [
       {n:"Obliques", p:true},
@@ -1129,7 +1110,6 @@ const coreExercises = [
   {
     id: 40,
     name: "Crunch | (Decline Bench)",
-    sidequestKey: "Bicycle Crunch",
     alt: "Decline sit-up crunch · incline bench crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1157,7 +1137,6 @@ const coreExercises = [
   {
     id: 41,
     name: "Crunch | (Stability Ball)",
-    sidequestKey: "Crunch",
     alt: "Swiss ball crunch · ball ab crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1185,7 +1164,6 @@ const coreExercises = [
   {
     id: 42,
     name: "McGill Curl-Up",
-    sidequestKey: "Plank | Jack",
     alt: "McGill crunch · neutral spine crunch",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1240,7 +1218,6 @@ const coreExercises = [
   {
     id: 44,
     name: "Butterfly Sit-Up",
-    sidequestKey: "Full Sit-Up",
     alt: "Butterfly crunch · sumo sit-up",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1295,7 +1272,6 @@ const coreExercises = [
   {
     id: 46,
     name: "Single Leg Lowering",
-    sidequestKey: "V-Up",
     alt: "Leg lower · unilateral leg drop",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1379,7 +1355,6 @@ const coreExercises = [
   {
     id: 49,
     name: "Hanging Oblique Knee Raise | (Bar)",
-    sidequestKey: "Hanging Leg Raise | (Bar)",
     alt: "Lateral hanging knee raise · side knee tuck",
     muscles: [
       {n:"Obliques", p:true},
@@ -1408,7 +1383,6 @@ const coreExercises = [
   {
     id: 50,
     name: "Woodchop | (Band)",
-    sidequestKey: "Russian Twist",
     alt: "Cable woodchop · rotational pull-down",
     muscles: [
       {n:"Obliques", p:true},
@@ -1437,7 +1411,6 @@ const coreExercises = [
   {
     id: 51,
     name: "V-Sit Hold",
-    sidequestKey: "Twisting V-Up",
     alt: "V-sit balance · seated pike hold",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1465,7 +1438,6 @@ const coreExercises = [
   {
     id: 52,
     name: "Kneeling Plank",
-    sidequestKey: "Plank",
     alt: "Modified plank · knee plank",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1521,7 +1493,6 @@ const coreExercises = [
   {
     id: 54,
     name: "Reverse Plank",
-    sidequestKey: "Plank | Jack",
     alt: "Posterior plank · supine bridge hold",
     muscles: [
       {n:"Glutes", p:true},
@@ -1578,7 +1549,6 @@ const coreExercises = [
   {
     id: 56,
     name: "Plank | Up-Down",
-    sidequestKey: "Plank | Shoulder Tap",
     alt: "Walkup plank · forearm-to-high plank",
     muscles: [
       {n:"Transverse Abdominis", p:true},
@@ -1607,7 +1577,6 @@ const coreExercises = [
   {
     id: 57,
     name: "Body Saw Plank | (Sliders)",
-    sidequestKey: "Single Arm Plank",
     alt: "Plank rock · forearm plank slide",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1635,7 +1604,6 @@ const coreExercises = [
   {
     id: 58,
     name: "Plank | Rock | (Sliders)",
-    sidequestKey: "Single Arm Plank",
     alt: "Body saw · forearm plank slide",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1719,7 +1687,6 @@ const coreExercises = [
   {
     id: 61,
     name: "Star Plank",
-    sidequestKey: "Single Arm Plank",
     alt: "Starfish plank · side plank abduction",
     muscles: [
       {n:"Obliques", p:true},
@@ -1747,7 +1714,6 @@ const coreExercises = [
   {
     id: 62,
     name: "Starfish Plank",
-    sidequestKey: "Single Arm Plank",
     alt: "Star plank · side plank hip abduction",
     muscles: [
       {n:"Obliques", p:true},
@@ -1776,7 +1742,6 @@ const coreExercises = [
   {
     id: 63,
     name: "Side Plank | Reach-Through",
-    sidequestKey: "Side Plank | Hip Dip",
     alt: "Threading the needle · rotation side plank",
     muscles: [
       {n:"Obliques", p:true},
@@ -1803,7 +1768,6 @@ const coreExercises = [
   {
     id: 65,
     name: "Hanging Tuck Hold | (Bar)",
-    sidequestKey: "Hanging Leg Raise | (Bar)",
     alt: "Bar tuck compression · hanging tuck",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1832,7 +1796,6 @@ const coreExercises = [
   {
     id: 66,
     name: "Hanging Hollow Hold | (Bar)",
-    sidequestKey: "Toes-to-Bar | (Bar)",
     alt: "Active hollow hang · dead hang hollow",
     muscles: [
       {n:"Transverse Abdominis", p:true},
@@ -1861,7 +1824,6 @@ const coreExercises = [
   {
     id: 67,
     name: "Double Leg Lowering",
-    sidequestKey: "Twisting V-Up",
     alt: "Bilateral leg drop · straight-leg lower",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -1890,7 +1852,6 @@ const coreExercises = [
   {
     id: 68,
     name: "Hollow Body | Flutter Kicks",
-    sidequestKey: "Hollow-to-Arch Roll",
     alt: "Hollow flutter · dish kicks",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1919,7 +1880,6 @@ const coreExercises = [
   {
     id: 69,
     name: "Side V-Up",
-    sidequestKey: "V-Up",
     alt: "Side jackknife · lateral crunch raise",
     muscles: [
       {n:"Obliques", p:true},
@@ -1946,7 +1906,6 @@ const coreExercises = [
   {
     id: 70,
     name: "Side Jackknife",
-    sidequestKey: "V-Up",
     alt: "Side V-up · lateral crunch raise",
     muscles: [
       {n:"Obliques", p:true},
@@ -2001,7 +1960,6 @@ const coreExercises = [
   {
     id: 72,
     name: "Oblique V-Up",
-    sidequestKey: "V-Up",
     alt: "Twisting V-up · rotating jackknife",
     muscles: [
       {n:"Obliques", p:true},
@@ -2084,7 +2042,6 @@ const coreExercises = [
   {
     id: 75,
     name: "Ball Pass | (Stability Ball)",
-    sidequestKey: "Hollow-to-Arch Roll",
     alt: "Stability ball transfer · V-up ball toss",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -2140,7 +2097,6 @@ const coreExercises = [
   {
     id: 77,
     name: "Ball Jackknife | (Stability Ball)",
-    sidequestKey: "Pike | (Stability Ball)",
     alt: "Stability ball pike · Swiss ball tuck",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -2169,7 +2125,6 @@ const coreExercises = [
   {
     id: 78,
     name: "Knee Tuck | (Rings)",
-    sidequestKey: "Pike | (Stability Ball)",
     alt: "Ring tuck · TRX knee tuck",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -2198,7 +2153,6 @@ const coreExercises = [
   {
     id: 79,
     name: "Reverse Hyperextension | (Bench)",
-    sidequestKey: "Dead Bug",
     alt: "Prone leg raise · reverse back extension",
     muscles: [
       {n:"Glutes", p:true},
@@ -2226,7 +2180,6 @@ const coreExercises = [
   {
     id: 80,
     name: "Standing Oblique Crunch",
-    sidequestKey: "Crunch",
     alt: "Standing side crunch · hip dip crunch",
     muscles: [
       {n:"Obliques", p:true},
@@ -2254,7 +2207,6 @@ const coreExercises = [
   {
     id: 81,
     name: "Stomach Vacuum",
-    sidequestKey: "Russian Twist",
     alt: "Abdominal vacuum · transverse draw-in",
     muscles: [
       {n:"Transverse Abdominis", p:true}
@@ -2277,9 +2229,33 @@ const coreExercises = [
     youtube: "LINK_TODO"
   },
   {
+    id: 82,
+    name: "Abdominal Vacuum",
+    alt: "Stomach vacuum · transverse draw-in",
+    muscles: [
+      {n:"Transverse Abdominis", p:true}
+    ],
+    tags: ["abs", "core"],
+    diff: 2.5,
+    str: {suit:false, eff:1},
+    vol: {suit:false, eff:1},
+    end: {suit:true, eff:3},
+    risk: 1,
+    joints: {wrist:0, elbow:0, shoulder:0, neck:0, lowerBack:0, hip:0, knee:0, fingers:0, thoracic:0, si:0, groin:0, ankle:0, foot:0},
+    technique: 3,
+    mobility: 1,
+    strength: 1,
+    desc: "A.K.A. Stomach Vacuum — an isometric deep-core exercise performed by exhaling completely, then drawing the navel toward the spine as far as possible without inhaling and holding the depressed position. The only exercise that trains the transversus abdominis in true isolation. Historically used in bodybuilding for waist tightening; now applied in rehabilitation and bracing training to activate the deep core before loaded movements.",
+    cues: "Exhale fully first — completely empty the lungs. Then draw the navel in and up without inhaling; imagine pulling the belly button through the spine. Hold 10–20 seconds per rep. Can be performed standing, seated, or on all-fours.",
+    equipment: "None",
+    position: "Standing",
+    kcalPerRep: [0.4, 0.8],
+    youtube: "LINK_TODO"
+  },
+
+  {
     id: 83,
     name: "Seated Knee Tuck Hold",
-    sidequestKey: "Hollow Body Hold",
     alt: "Compression hold · hip flexor tuck hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -2306,7 +2282,6 @@ const coreExercises = [
   {
     id: 84,
     name: "Compression Hold",
-    sidequestKey: "Hollow-to-Arch Roll",
     alt: "Seated knee tuck hold · hip flexor compression",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -2334,7 +2309,6 @@ const coreExercises = [
   {
     id: 85,
     name: "Bear Crawl",
-    sidequestKey: "Mountain Climbers",
     alt: "Quadruped locomotion · bear walk",
     muscles: [
       {n:"Transverse Abdominis", p:true},
@@ -2363,7 +2337,6 @@ const coreExercises = [
   {
     id: 86,
     name: "Superman Pull",
-    sidequestKey: "Dead Bug",
     alt: "Reverse snow angel · prone arm sweep",
     muscles: [
       {n:"Erector Spinae", p:true},
@@ -2419,7 +2392,6 @@ const coreExercises = [
   {
     id: 88,
     name: "Banana Roll",
-    sidequestKey: "Mountain Climbers",
     alt: "Hollow-to-arch roll · gymnastic body roll",
     muscles: [
       {n:"Rectus Abdominis", p:true},
@@ -2504,7 +2476,6 @@ const coreExercises = [
   {
     id: 91,
     name: "Garhammer Raise | (Bar)",
-    sidequestKey: "Hanging Leg Raise | (Bar)",
     alt: "Hanging partial leg raise · hip-load raise",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -2533,7 +2504,6 @@ const coreExercises = [
   {
     id: 92,
     name: "Seated Pike Leg Lifts",
-    sidequestKey: "Hanging Leg Raise | (Bar)",
     alt: "Seated straight-leg raise · L-sit leg lift",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -2557,62 +2527,6 @@ const coreExercises = [
     position: "Seated",
     kcalPerRep: [0.3, 0.5],
     youtube: "LINK_TODO"
-  },
-
-  {
-    id: 93,
-    name: "Slider Pike | (Sliders)",
-    sidequestKey: "Single Arm Plank",
-    alt: "Sliding pike · gliding disc pike",
-    muscles: [
-      {n:"Rectus Abdominis", p:true},
-      {n:"Transverse Abdominis", p:true},
-      {n:"Hip Flexors", p:true},
-      {n:"Lats", p:false}
-    ],
-    tags: ["abs", "core"],
-    diff: 4.6,
-    str: {suit:true, eff:3},
-    vol: {suit:true, eff:4},
-    end: {suit:false, eff:1},
-    risk: 2,
-    joints: {wrist:2, elbow:0, shoulder:3, neck:0, lowerBack:2, hip:2, knee:0, fingers:0, thoracic:0, si:0, groin:0, ankle:1, foot:0},
-    technique: 3,
-    mobility: 2,
-    strength: 3,
-    desc: "A high plank with the feet resting on sliders or gliding discs, driving the hips up into a full pike by sliding the feet in toward the hands, then sliding back out to plank. The low-friction glide removes the round-surface balance demand of the stability ball version, so the challenge is concentrated almost entirely in hip flexion strength and anti-extension control rather than balance.",
-    cues: "Press the floor away and keep the arms straight throughout — the pike comes from the hips, not the shoulders. Slide back out under control rather than letting the hips drop. A smaller pike with square hips is better than a bigger pike with rotation.",
-    equipment: "Sliders",
-    position: "Prone",
-    kcalPerRep: [0.4, 0.75],
-    youtube: "LINK_TODO"
-  },
-
-  {
-    id: 94,
-    name: "Renegade Row | (Dumbbells)",
-    alt: "Plank row · dumbbell renegade row",
-    muscles: [
-      {n:"Obliques", p:true},
-      {n:"Transverse Abdominis", p:true},
-      {n:"Lats", p:false},
-      {n:"Shoulders", p:false}
-    ],
-    tags: ["abs", "obliques", "core"],
-    diff: 5.0,
-    str: {suit:true, eff:4},
-    vol: {suit:true, eff:3},
-    end: {suit:false, eff:1},
-    risk: 3,
-    joints: {wrist:3, elbow:1, shoulder:3, neck:0, lowerBack:2, hip:1, knee:0, fingers:1, thoracic:0, si:0, groin:0, ankle:0, foot:0},
-    technique: 4,
-    mobility: 1,
-    strength: 3,
-    desc: "A high plank with one hand on each dumbbell, alternately rowing one dumbbell to the hip while the other arm supports the full bodyweight on an unstable, narrow base. Every row rep is an anti-rotation test on top of the pressing demand of the supporting arm — the hips want to twist toward the rowing side, and resisting that torque is the actual point of the exercise.",
-    cues: "Widen the feet for a stable base while learning. Keep the hips square to the floor through every rep — if they rotate, reduce the row weight before adding reps. Row with the elbow tracking close to the body, not flared.",
-    equipment: "Dumbbells",
-    position: "Prone",
-    kcalPerRep: [0.35, 0.65],
-    youtube: "LINK_TODO"
   }
+
 ];

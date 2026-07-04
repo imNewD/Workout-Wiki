@@ -381,7 +381,7 @@ pushups.push(
 {
   id: 79,
   name: "Incline Push-Up | Knee, Typewriter",
-  sidequestKey: "Incline Push-Up | Knee, Archer",
+  sidequestKey: "Incline Push-Up | Knee",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -442,7 +442,7 @@ pushups.push(
 {
   id: 104,
   name: "Incline Push-Up | Knee, Fingertip",
-  sidequestKey: "Incline Push-Up | Knee, Archer",
+  sidequestKey: "Incline Push-Up | Knee",
   alt: null,
   pathTag: "fingertip",
   pathNode: true,
@@ -473,7 +473,7 @@ pushups.push(
 {
   id: 105,
   name: "Incline Push-Up | Knee, 4-Finger",
-  sidequestKey: "Incline Push-Up | Knee, Archer",
+  sidequestKey: "Incline Push-Up | Knee",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -503,7 +503,7 @@ pushups.push(
 {
   id: 106,
   name: "Incline Push-Up | Knee, 3-Finger",
-  sidequestKey: "Incline Push-Up | Knee, Archer",
+  sidequestKey: "Incline Push-Up | Knee",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -533,7 +533,7 @@ pushups.push(
 {
   id: 107,
   name: "Incline Push-Up | Knee, 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | Knee",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -563,7 +563,7 @@ pushups.push(
 {
   id: 108,
   name: "Incline Push-Up | Knee, 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | Knee, One Arm",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -733,7 +733,7 @@ pushups.push(
 {
   id: 207,
   name: "Incline Push-Up | Knee (Bar)",
-  sidequestKey: "Incline Push-Up | Knee",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -761,7 +761,7 @@ pushups.push(
 {
   id: 208,
   name: "Incline Push-Up | Knee (Parallettes)",
-  sidequestKey: "Incline Push-Up | Knee",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -789,7 +789,7 @@ pushups.push(
 {
   id: 209,
   name: "Incline Push-Up | Knee (Rings)",
-  sidequestKey: "Incline Push-Up | Knee",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -818,7 +818,7 @@ pushups.push(
 {
   id: 210,
   name: "Incline Push-Up | Knee (TRX)",
-  sidequestKey: "Incline Push-Up | Knee",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -847,7 +847,7 @@ pushups.push(
 {
   id: 395,
   name: "Preacher Push-Up",
-  sidequestKey: null,
+  sidequestKey: "Push-Up",
   alt: "Prayer push-up · kneeling triceps push-up",
   muscles: [
     { n: "Triceps",     p: true  },
@@ -992,7 +992,7 @@ pushups.push(
 {
   id: 404,
   name: "Incline Push-Up | Fingertip",
-  sidequestKey: "Incline Push-Up | Low Incline",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1080,7 +1080,7 @@ pushups.push(
 {
   id: 408,
   name: "Incline Push-Up | Diamond",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1109,7 +1109,7 @@ pushups.push(
 {
   id: 409,
   name: "Incline Push-Up | Knuckle",
-  sidequestKey: "Incline Push-Up | Low Incline",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1167,7 +1167,7 @@ pushups.push(
 {
   id: 411,
   name: "Incline Push-Up | 4-Finger",
-  sidequestKey: "Incline Push-Up | 3-Finger",
+  sidequestKey: null,
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1197,7 +1197,7 @@ pushups.push(
 {
   id: 412,
   name: "Incline Push-Up | 3-Finger",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | 4-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1227,7 +1227,7 @@ pushups.push(
 {
   id: 415,
   name: "Incline Push-Up | One Arm, Negative",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | One Arm, Straddle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1286,7 +1286,7 @@ pushups.push(
 {
   id: 419,
   name: "Incline Push-Up | Low Incline",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1316,7 +1316,7 @@ pushups.push(
 {
   id: 420,
   name: "Incline Push-Up | Wide",
-  sidequestKey: "Incline Push-Up | Diamond",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1374,7 +1374,7 @@ pushups.push(
 {
   id: 422,
   name: "Incline Push-Up | Fist",
-  sidequestKey: "Incline Push-Up | Low Incline",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1434,7 +1434,7 @@ pushups.push(
 {
   id: 426,
   name: "Incline Push-Up | Narrow",
-  sidequestKey: "Incline Push-Up | Diamond",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1494,7 +1494,7 @@ pushups.push(
 {
   id: 429,
   name: "Incline Push-Up | (Rings)",
-  sidequestKey: "Incline Push-Up | Low Incline",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1523,7 +1523,7 @@ pushups.push(
 {
   id: 430,
   name: "Incline Push-Up | (TRX)",
-  sidequestKey: "Incline Push-Up | Low Incline",
+  sidequestKey: "Incline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1552,7 +1552,7 @@ pushups.push(
 {
   id: 431,
   name: "Incline Push-Up | T-Rotation",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | 4-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1706,7 +1706,7 @@ pushups.push(
 {
   id: 112,
   name: "Incline Push-Up | Knee, One Arm, 2-Finger",
-  sidequestKey: "Incline Push-Up | Knee, One Arm, 1-Finger",
+  sidequestKey: null,
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -1737,7 +1737,7 @@ pushups.push(
 {
   id: 397,
   name: "Preacher Push-Up | Narrow",
-  sidequestKey: "Preacher Push-Up",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",     p: true  },
@@ -1766,7 +1766,7 @@ pushups.push(
 {
   id: 398,
   name: "Preacher Push-Up | Pause",
-  sidequestKey: "Preacher Push-Up",
+  sidequestKey: "Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",     p: true  },
@@ -1795,7 +1795,7 @@ pushups.push(
 {
   id: 399,
   name: "Preacher Push-Up | Negative",
-  sidequestKey: null,
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Triceps",     p: true  },
@@ -1854,7 +1854,7 @@ pushups.push(
 {
   id: 413,
   name: "Incline Push-Up | 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | Knee, One Arm",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2002,7 +2002,7 @@ pushups.push(
 {
   id: 113,
   name: "Incline Push-Up | Knee, One Arm, 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | Knee, One Arm, 2-Finger",
   alt: null,
   pathTag: "one-arm-fingertip",
   pathNode: true,
@@ -2034,7 +2034,7 @@ pushups.push(
 {
   id: 414,
   name: "Incline Push-Up | 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | Knee, One Arm, 2-Finger",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2064,7 +2064,7 @@ pushups.push(
 {
   id: 417,
   name: "Incline Push-Up | One Arm, Fingertip",
-  sidequestKey: "Incline Push-Up | Knee, One Arm, 1-Finger",
+  sidequestKey: "Incline Push-Up | One Arm, Closed Legs",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2095,7 +2095,7 @@ pushups.push(
 {
   id: 425,
   name: "Incline Push-Up | One Arm, One Leg",
-  sidequestKey: null,
+  sidequestKey: "Incline Push-Up | One Arm, Closed Legs",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2126,7 +2126,7 @@ pushups.push(
 {
   id: 434,
   name: "Incline Push-Up | One Arm, 4-Finger",
-  sidequestKey: "Incline Push-Up | Knee, One Arm, 1-Finger",
+  sidequestKey: "Incline Push-Up | One Arm, Closed Legs",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2157,7 +2157,7 @@ pushups.push(
 {
   id: 435,
   name: "Incline Push-Up | One Arm, 3-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Negative",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2188,7 +2188,7 @@ pushups.push(
 {
   id: 436,
   name: "Incline Push-Up | One Arm, 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Pause",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -2246,5 +2246,63 @@ pushups.push(
   position: "Prone",
   youtube: "LINK_TODO"
 },
+
+{
+  id: 614,
+  name: "Incline Push-Up | (Bar)",
+  sidequestKey: "Incline Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 1.0,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 3 },
+  joints: { wrist: 1, elbow: 1, shoulder: 1, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 1,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.14, 0.19],
+  desc: "Incline push-up gripping a pair of push-up bars against an elevated surface, keeping the wrists neutral. A comfortable, beginner-friendly entry point that removes wrist-extension stress without changing the reduced-load nature of the incline angle.",
+  cues: "Grip the bars set on the elevated surface at shoulder-width. Lower with control, keeping wrists straight. Press back to full extension, keeping the body rigid.",
+  equipment: "Push-Up Bars",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 615,
+  name: "Incline Push-Up | (Parallettes)",
+  sidequestKey: "Incline Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Core",      p: false },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core"],
+  diff: 1.4,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 3 },
+  joints: { wrist: 1, elbow: 1, shoulder: 2, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 1,
+  mobility: 1,
+  technique: 1,
+  kcalPerRep: [0.16, 0.21],
+  desc: "Incline push-up on parallettes set on an elevated surface, adding extra ROM on top of the already-reduced incline load. Slightly more demanding than the bar version thanks to the deeper chest travel, while still remaining an accessible entry-level variant.",
+  cues: "Set parallettes on the elevated surface at shoulder-width. Lower the chest below handle height. Press back to full extension, keeping the body rigid from head to heels.",
+  equipment: "Parallettes",
+  position: "Prone",
+  youtube: "LINK_TODO"
+}
 
 );

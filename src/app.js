@@ -996,7 +996,7 @@ const CALC_CM_PER_IN = 2.54;
 const CALC_KG_PER_LB = 0.45359237;
 
 const CALC_STATE = (function() {
-  const defaults = { sex:'male', activity:'1.55', goal:'maintain', heightUnit:'cm', weightUnit:'kg' };
+  const defaults = { sex:'male', activity:'1.55', goal:'maintain', heightUnit:'cm', weightUnit:'kg', mode:'manual' };
   try {
     const raw = localStorage.getItem(CALC_STORAGE_KEY);
     if(raw) {
@@ -1210,8 +1210,71 @@ function resetCalorieCalc() {
   document.getElementById('calcResults').style.display = 'none';
 }
 
+/* ══ CALORIE CALCULATOR — AUTO MODE ═══════════════════════════════════
+   Not adaptive TDEE — just a per-100g nutrition label scaled by however
+   many grams the user enters. Same ratio = mass/100 math the Intake
+   Tracker already uses (data/intake-tracker.js, addIntakeEntry / _intakeComputedKcal),
+   reimplemented here standalone since this panel has no food-log entry
+   to attach to — it's a quick one-off scale, not a logged meal.
+════════════════════════════════════════════════════════════════════════ */
+function setCalcMode(mode) {
+  CALC_STATE.mode = mode;
+  _saveCalcState();
+  document.querySelectorAll('#calcModeSwitch .tree-mode-btn').forEach(b => b.classList.toggle('active', b.dataset.calcMode === mode));
+  const manual = document.getElementById('calcManualPanel');
+  const auto   = document.getElementById('calcAutoPanel');
+  if(manual) manual.style.display = mode === 'auto' ? 'none' : '';
+  if(auto)   auto.style.display   = mode === 'auto' ? '' : 'none';
+  if(mode === 'auto') _calcAutoSyncUI();
+}
+
+function calcAutoUpdate() {
+  const mass      = parseFloat(document.getElementById('calcAuto-mass').value)      || 0;
+  const protein100 = parseFloat(document.getElementById('calcAuto-protein100').value) || 0;
+  const carbs100   = parseFloat(document.getElementById('calcAuto-carbs100').value)   || 0;
+  const fat100     = parseFloat(document.getElementById('calcAuto-fat100').value)     || 0;
+
+  CALC_STATE.auto = { mass, protein100, carbs100, fat100 };
+  _saveCalcState();
+
+  const ratio  = mass / 100;
+  const protein = Math.round(protein100 * ratio * 10) / 10;
+  const carbs   = Math.round(carbs100   * ratio * 10) / 10;
+  const fat     = Math.round(fat100     * ratio * 10) / 10;
+  const kcal    = Math.round(protein * 4 + carbs * 4 + fat * 9);
+
+  document.getElementById('calcAutoMassLabel').textContent = `${mass || 0} g`;
+  document.getElementById('calcAutoProteinVal').innerHTML = protein + '<div class="nutrition-macro-kcal">g</div>';
+  document.getElementById('calcAutoCarbsVal').innerHTML   = carbs   + '<div class="nutrition-macro-kcal">g</div>';
+  document.getElementById('calcAutoFatVal').innerHTML     = fat     + '<div class="nutrition-macro-kcal">g</div>';
+  document.getElementById('calcAutoKcalVal').textContent  = kcal.toLocaleString();
+}
+
+function resetCalcAuto() {
+  ['calcAuto-mass','calcAuto-protein100','calcAuto-carbs100','calcAuto-fat100'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.value = '';
+  });
+  delete CALC_STATE.auto;
+  _saveCalcState();
+  calcAutoUpdate();
+}
+
+function _calcAutoSyncUI() {
+  const a = CALC_STATE.auto;
+  if(!a) { calcAutoUpdate(); return; }
+  if(a.mass)        document.getElementById('calcAuto-mass').value        = a.mass;
+  if(a.protein100)  document.getElementById('calcAuto-protein100').value  = a.protein100;
+  if(a.carbs100)    document.getElementById('calcAuto-carbs100').value    = a.carbs100;
+  if(a.fat100)       document.getElementById('calcAuto-fat100').value      = a.fat100;
+  calcAutoUpdate();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  if(document.getElementById('view-calorie-calculator')) _calcSyncFormUI();
+  if(document.getElementById('view-calorie-calculator')) {
+    _calcSyncFormUI();
+    if(CALC_STATE.mode === 'auto') setCalcMode('auto');
+  }
 });
 
 function _updateNavState(toView) {
@@ -1458,12 +1521,6 @@ const TREE_LIBRARY_SOURCES = [
 
 const TREE_FAMILY_ORDER = ['push','pull','chinup','dip','core','squat','isometric','handstand','frontlever','backlever','planche','combo'];
 
-// Skeleton: only Tuck FL (Bar + Parallettes + Rings) kept — full rework pending.
-const FRONT_LEVER_CHAIN_BRANCHES = [
-  ['frontlever-13', 'frontlever-1002', 'frontlever-1201'],
-];
-const FRONT_LEVER_ROOT_KEYS = new Set(['frontlever-13']);
-
 function getTreeSourceData(source) {
   try {
     if (Array.isArray(LIB_DATA[source.libKey])) return LIB_DATA[source.libKey];
@@ -1489,26 +1546,7 @@ function isTreeItemAvailableByPrereqs(item, progressData) {
   return requires.every(req => getTreePrereqStatus(req, progressData));
 }
 
-function findFrontLeverBranch(key) {
-  return FRONT_LEVER_CHAIN_BRANCHES.find(branch => branch.includes(key)) || null;
-}
-
-function shouldIncludeFrontLeverItem(item, progressData) {
-  const key = item.key;
-  const branch = findFrontLeverBranch(key);
-  if(branch) {
-    const index = branch.indexOf(key);
-    if(index === 0) return true;
-    const prevKey = branch[index - 1];
-    return getTreePrereqStatus(prevKey, progressData) || getTreePrereqStatus(key, progressData);
-  }
-  return FRONT_LEVER_ROOT_KEYS.has(key);
-}
-
 function shouldIncludeTreeItem(item, progressData) {
-  if(item.family === 'frontlever') {
-    return shouldIncludeFrontLeverItem(item, progressData);
-  }
   return isTreeItemAvailableByPrereqs(item, progressData);
 }
 
@@ -1542,7 +1580,7 @@ function getTreeRouteFamily(item) {
   const isPush = /\b(push[- ]?up|pushup)\b/.test(text) || tags.some(t => /^(push|push-up|pushup)$/.test(t));
   if(isPush) return 'push';
 
-  return 'isometric';
+  return item.family;
 }
 
 function resolveTreeFamily(item, activeFilters) {
@@ -1618,13 +1656,6 @@ function getTreeEntries() {
     if(a.tier !== b.tier) return a.tier - b.tier;
     if(a.hof !== b.hof) return a.hof ? 1 : -1;
     if(a.family !== b.family) return TREE_FAMILY_ORDER.indexOf(a.family) - TREE_FAMILY_ORDER.indexOf(b.family);
-    const allFrontLeverKeys = FRONT_LEVER_CHAIN_BRANCHES.flat();
-    const aChainIndex = allFrontLeverKeys.indexOf(a.key);
-    const bChainIndex = allFrontLeverKeys.indexOf(b.key);
-    if(aChainIndex !== -1 || bChainIndex !== -1) {
-      if(aChainIndex !== -1 && bChainIndex !== -1) return aChainIndex - bChainIndex;
-      return aChainIndex !== -1 ? -1 : 1;
-    }
     if(a.diff !== b.diff) return a.diff - b.diff;
     return a.name.localeCompare(b.name);
   });
@@ -2988,12 +3019,259 @@ function _grndWipeEverything() {
   // Without this, the grnd_backup snapshot restores localStorage on the next
   // load (so the background/settings came back), and the grnd_custom alarm
   // blob would survive a "reset everything".
-  var jobs = [_grndClearIdbStore('grnd_backup'), _grndClearIdbStore('grnd_custom')];
+  var jobs = [_grndClearIdbStore('grnd_backup'), _grndClearIdbStore('grnd_custom'), _grndClearIdbStore('grnd_progress_photos')];
   var reloaded = false;
   function finish() { if (reloaded) return; reloaded = true; location.reload(); }
   Promise.all(jobs).then(finish, finish);
   setTimeout(finish, 2000); // safety net if a store hangs
 }
+
+/* ══ PROGRESS PHOTOS ("Before vs After") ═══════════════════════════════
+   Metrics sub-section. Fully local — no network, no leaderboard hooks.
+   IDB store: 'grnd_progress_photos' → objectStore 'kv' (same key/value
+   pattern as the "GRND CUSTOM PERSONALISATION" alarm blob above), so
+   _grndClearIdbStore() already wipes it on "erase everything" (see the
+   jobs array a few lines up) with no extra plumbing.
+   Each record: key = generated photo id, value = { blob, date }.
+   Selection pair + a tiny in-memory URL cache are the only other state;
+   the pair persists to localStorage so it survives a reload.
+════════════════════════════════════════════════════════════════════════ */
+(function () {
+  'use strict';
+
+  const DB = 'grnd_progress_photos', STORE = 'kv';
+  const PAIR_KEY = 'grnd_progress_photos_pair';
+
+  function _openDb(cb) {
+    var req;
+    try { req = indexedDB.open(DB, 1); } catch (e) { cb(e); return; }
+    req.onupgradeneeded = function (e) {
+      try { e.target.result.createObjectStore(STORE); } catch (_) {}
+    };
+    req.onsuccess = function () { cb(null, req.result); };
+    req.onerror  = function () { cb(req.error); };
+  }
+  function _put(key, value, cb) {
+    _openDb(function (err, db) {
+      if (err) { if (cb) cb(err); return; }
+      var tx = db.transaction(STORE, 'readwrite');
+      tx.objectStore(STORE).put(value, key);
+      tx.oncomplete = function () { db.close(); if (cb) cb(null); };
+      tx.onerror    = function () { db.close(); if (cb) cb(tx.error); };
+    });
+  }
+  function _del(key, cb) {
+    _openDb(function (err, db) {
+      if (err) { if (cb) cb(err); return; }
+      var tx = db.transaction(STORE, 'readwrite');
+      tx.objectStore(STORE).delete(key);
+      tx.oncomplete = function () { db.close(); if (cb) cb(null); };
+      tx.onerror    = function () { db.close(); if (cb) cb(tx.error); };
+    });
+  }
+  function _getAllEntries(cb) {
+    _openDb(function (err, db) {
+      if (err) { cb(err); return; }
+      var tx = db.transaction(STORE, 'readonly');
+      var store = tx.objectStore(STORE);
+      var keysReq = store.getAllKeys();
+      var valsReq = store.getAll();
+      var keys, vals, done = 0;
+      function maybeFinish() {
+        done++;
+        if (done < 2) return;
+        db.close();
+        var out = [];
+        for (var i = 0; i < keys.length; i++) out.push({ key: keys[i], value: vals[i] });
+        cb(null, out);
+      }
+      keysReq.onsuccess = function () { keys = keysReq.result; maybeFinish(); };
+      valsReq.onsuccess = function () { vals = valsReq.result; maybeFinish(); };
+      keysReq.onerror = valsReq.onerror = function () { db.close(); cb(keysReq.error || valsReq.error); };
+    });
+  }
+
+  // Serialize every stored record to a JSON-safe form (Blob → base64 data
+  // URL) for GRNDBackup.export(), and back again for importPick(). This is
+  // the "mirror IndexedDB into the backup export" that requirement 5 needs.
+  function _exportAll(cb) {
+    _getAllEntries(function (err, entries) {
+      if (err || !entries.length) { cb([]); return; }
+      var out = [], left = entries.length;
+      entries.forEach(function (e) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          out.push({ id: e.key, date: e.value.date, dataUrl: reader.result });
+          if (--left === 0) cb(out);
+        };
+        reader.onerror = function () { if (--left === 0) cb(out); };
+        reader.readAsDataURL(e.value.blob);
+      });
+    });
+  }
+  function _importAll(records, cb) {
+    if (!records || !records.length) { cb(); return; }
+    _openDb(function (err, db) {
+      if (err) { cb(); return; }
+      var tx = db.transaction(STORE, 'readwrite');
+      var store = tx.objectStore(STORE);
+      store.clear();
+      records.forEach(function (r) {
+        try {
+          var parts = r.dataUrl.split(',');
+          var mime = /data:(.*?);base64/.exec(parts[0])[1];
+          var bin = atob(parts[1]);
+          var arr = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+          store.put({ blob: new Blob([arr], { type: mime }), date: r.date }, r.id);
+        } catch (_) {}
+      });
+      tx.oncomplete = function () { db.close(); cb(); };
+      tx.onerror    = function () { db.close(); cb(); };
+    });
+  }
+  window._grndProgressPhotosExport = _exportAll;
+  window._grndProgressPhotosImport = _importAll;
+
+  /* ── In-memory state ─────────────────────────────────────────── */
+  var _photos = [];          // [{id, date, url}], sorted oldest → newest
+  var _beforeId = null, _afterId = null;
+
+  function _loadPair() {
+    try {
+      var p = JSON.parse(localStorage.getItem(PAIR_KEY) || 'null');
+      if (p) { _beforeId = p.before ?? null; _afterId = p.after ?? null; }
+    } catch (_) {}
+  }
+  function _savePair() {
+    try { localStorage.setItem(PAIR_KEY, JSON.stringify({ before: _beforeId, after: _afterId })); } catch (_) {}
+  }
+  _loadPair();
+
+  function _revokeUrls() {
+    _photos.forEach(function (p) { try { URL.revokeObjectURL(p.url); } catch (_) {} });
+  }
+
+  function _loadAll(cb) {
+    _getAllEntries(function (err, entries) {
+      _revokeUrls();
+      _photos = err ? [] : entries
+        .filter(function (e) { return e.value && e.value.blob; })
+        .map(function (e) { return { id: e.key, date: e.value.date, url: URL.createObjectURL(e.value.blob) }; })
+        .sort(function (a, b) { return a.date - b.date; });
+      var ids = _photos.map(function (p) { return p.id; });
+      if (_beforeId === null || ids.indexOf(_beforeId) === -1) _beforeId = _photos.length ? _photos[0].id : null;
+      if (_afterId  === null || ids.indexOf(_afterId)  === -1) _afterId  = _photos.length ? _photos[_photos.length - 1].id : null;
+      if (cb) cb();
+    });
+  }
+
+  function _fmtDate(ts) {
+    if (!ts) return '—';
+    return new Date(ts).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  function _slotHtml(id, label) {
+    var p = _photos.find(function (x) { return x.id === id; });
+    return '<div class="pg-slot">' +
+      '<div class="pg-slot-img-wrap">' + (p ? '<img src="' + p.url + '" alt="' + label + ' photo">' : '<span class="pg-slot-placeholder">＋</span>') + '</div>' +
+      '<div class="pg-slot-label">' + label + '</div>' +
+      '<div class="pg-slot-date">' + (p ? _fmtDate(p.date) : '—') + '</div>' +
+    '</div>';
+  }
+
+  function _thumbHtml(p) {
+    var role = p.id === _beforeId ? ' before' : (p.id === _afterId ? ' after' : '');
+    return '<div class="pg-thumb' + role + '" onclick="pgSelectThumb(\'' + p.id + '\')" title="' + _fmtDate(p.date) + '">' +
+      '<img src="' + p.url + '" alt="Progress photo from ' + _fmtDate(p.date) + '">' +
+      '<button class="pg-thumb-del" onclick="event.stopPropagation();pgDeletePhoto(\'' + p.id + '\')" aria-label="Delete photo" title="Delete photo">✕</button>' +
+    '</div>';
+  }
+
+  function render() {
+    var el = document.getElementById('pg-section');
+    if (!el) return;
+    if (!_photos.length && !window._pgEverLoaded) {
+      // First paint before the async IDB read resolves — load then re-render.
+      _loadAll(function () { window._pgEverLoaded = true; render(); });
+    }
+    el.innerHTML =
+      '<div class="db-section-hd">' +
+        '<span class="db-section-title">BEFORE VS AFTER</span>' +
+        '<button class="view-toggle-btn" onclick="pgAddPhoto()">📷 Add photo</button>' +
+      '</div>' +
+      '<div class="metrics-consistency-note" style="margin-top:-6px">Private to this device only. Nothing here is shared or compared with other users.</div>' +
+      '<div class="pg-compare-row">' + _slotHtml(_beforeId, 'Before') + _slotHtml(_afterId, 'After') + '</div>' +
+      (_photos.length
+        ? '<div class="pg-gallery-label">All photos</div>' +
+          '<div class="pg-gallery-strip">' + _photos.map(_thumbHtml).join('') + '</div>' +
+          '<div class="metrics-consistency-note">Tap two thumbnails to set them as the Before / After pair shown above.</div>'
+        : '<div class="metrics-empty-block">No photos yet — tap <strong>Add photo</strong> to start tracking your progress.</div>');
+  }
+  window.renderProgressPhotos = render;
+
+  /* ── Adding a photo ───────────────────────────────────────────── */
+  window.pgAddPhoto = function () {
+    var inp = document.getElementById('pgPhotoInput');
+    if (inp) inp.click();
+  };
+
+  window.pgHandleFileSelect = function (evt) {
+    var file = evt.target.files && evt.target.files[0];
+    evt.target.value = '';
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      var img = new Image();
+      img.onload = function () {
+        var maxDim = 1600, w = img.naturalWidth, h = img.naturalHeight;
+        if (w > maxDim || h > maxDim) {
+          var scale = maxDim / Math.max(w, h);
+          w = Math.round(w * scale); h = Math.round(h * scale);
+        }
+        var cv = document.createElement('canvas');
+        cv.width = w; cv.height = h;
+        cv.getContext('2d').drawImage(img, 0, 0, w, h);
+        cv.toBlob(function (blob) {
+          if (!blob) return;
+          var id = 'p' + Date.now() + '-' + Math.random().toString(36).slice(2, 7);
+          _put(id, { blob: blob, date: Date.now() }, function (err) {
+            if (err) { alert('Could not save photo — try again.'); return; }
+            _afterId = id; // newest upload becomes the default "After" shot
+            _savePair();
+            _loadAll(function () { window._pgEverLoaded = true; render(); });
+          });
+        }, 'image/jpeg', 0.88);
+      };
+      img.onerror = function () { alert('Could not read that image.'); };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  };
+
+  /* ── Thumbnail selection: tap two to set the Before/After pair ──── */
+  window.pgSelectThumb = function (id) {
+    if (_beforeId === id) _beforeId = null;
+    else if (_afterId === id) _afterId = null;
+    else if (_beforeId === null) _beforeId = id;
+    else if (_afterId === null) _afterId = id;
+    else { _beforeId = id; _afterId = null; } // both full — start a fresh pick
+    _savePair();
+    render();
+  };
+
+  /* ── Delete (single confirm, no countdown — see PROCESS NOTE) ───── */
+  window.pgDeletePhoto = function (id) {
+    grndConfirm('Delete this photo? This can\'t be undone.', function () {
+      _del(id, function () {
+        if (_beforeId === id) _beforeId = null;
+        if (_afterId === id) _afterId = null;
+        _savePair();
+        _loadAll(render);
+      });
+    }, { danger: true, okText: 'DELETE PHOTO' });
+  };
+})(); /* ══ END PROGRESS PHOTOS ══════════════════════════════════════ */
 
 function _renderJbJointList() {
   document.getElementById('jbJointList').innerHTML = JOINTS_META.map(jm => {

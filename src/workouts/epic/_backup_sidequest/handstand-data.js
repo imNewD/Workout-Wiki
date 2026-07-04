@@ -118,7 +118,6 @@ const handstands = [
   {
     id: 4,
     name: "Tuck Handstand",
-    sidequestKey: "Straddle Handstand",
     alt: "Tuck balance · bent-knee freestanding handstand",
     muscles: [
       {n:"Shoulders", p:true},
@@ -203,7 +202,6 @@ const handstands = [
   {
     id: 7,
     name: "Handstand Push-Up | (Wall)",
-    sidequestKey: "Negative Handstand Push-Up | (Wall)",
     alt: "Wall HSPU · strict handstand push-up",
     muscles: [
       {n:"Shoulders", p:true},
@@ -344,7 +342,6 @@ const handstands = [
   {
     id: 12,
     name: "Handstand Pirouette",
-    sidequestKey: "Handstand",
     alt: "Handstand turn · 360° handstand rotation",
     muscles: [
       {n:"Shoulders", p:true},
@@ -402,7 +399,6 @@ const handstands = [
   {
     id: 14,
     name: "Fingertip Handstand | (Wall)",
-    sidequestKey: "Negative Handstand Push-Up | (Wall)",
     alt: "Fingertip wall hold · fingertip inverted hold",
     muscles: [
       {n:"Shoulders", p:true},
@@ -459,7 +455,6 @@ const handstands = [
   {
     id: 16,
     name: "Fingertip Handstand Push-Up | (Wall)",
-    sidequestKey: "Fingertip Handstand",
     alt: "Fingertip HSPU · fingertip wall push-up",
     muscles: [
       {n:"Shoulders", p:true},
@@ -488,7 +483,6 @@ const handstands = [
   {
     id: 17,
     name: "Deficit Fingertip Handstand Push-Up | (Parallettes)",
-    sidequestKey: "Fingertip Handstand Push-Up",
     alt: "Parallette fingertip HSPU · deep fingertip push-up",
     muscles: [
       {n:"Shoulders", p:true},
@@ -602,7 +596,6 @@ const handstands = [
   {
     id: 21,
     name: "One-Arm Handstand Push-Up | (Wall)",
-    sidequestKey: "One-Arm Handstand",
     alt: "One-arm wall HSPU · unilateral HSPU",
     muscles: [
       {n:"Shoulders", p:true},
@@ -632,7 +625,6 @@ const handstands = [
   {
     id: 22,
     name: "One-Arm Fingertip Handstand Push-Up | (Parallettes)",
-    sidequestKey: "One-Arm Fingertip Handstand",
     alt: "One-arm fingertip HSPU · fingertip unilateral HSPU",
     muscles: [
       {n:"Shoulders", p:true},
@@ -689,7 +681,6 @@ const handstands = [
   {
     id: 24,
     name: "Split Handstand",
-    sidequestKey: "Stag Handstand",
     alt: "Scissors handstand · front-back split hold",
     muscles: [
       {n:"Shoulders", p:true},
@@ -774,7 +765,6 @@ const handstands = [
   {
     id: 27,
     name: "One-Leg Handstand",
-    sidequestKey: "Stag Handstand",
     alt: "Single-leg handstand · unicorn handstand",
     muscles: [
       {n:"Shoulders", p:true},
@@ -803,7 +793,6 @@ const handstands = [
   {
     id: 28,
     name: "Handstand Jump",
-    sidequestKey: "Handstand Walk",
     alt: "Two-foot jump entry · jump kick-up",
     muscles: [
       {n:"Shoulders", p:true},
@@ -832,7 +821,6 @@ const handstands = [
   {
     id: 29,
     name: "Handstand Cartwheel",
-    sidequestKey: "Handstand Walk",
     alt: "Cartwheel entry · cartwheel kick-up",
     muscles: [
       {n:"Shoulders", p:true},
@@ -883,64 +871,6 @@ const handstands = [
     desc: "A transition from a forearm stand (elbow balance) to a full handstand by pressing the elbows off the floor and extending to lockout — with no wall support and no kick. The forearm-to-handstand press requires the triceps and anterior deltoids to generate force from an extremely short, mechanically disadvantaged position while the entire bodyweight is balanced overhead. A rare, high-skill movement found primarily in hand balancing and gymnastics; the elbow joint sees extreme compressive load at the initiation of the press.",
     cues: "The press initiates with the fingertips driving into the floor to rock the elbows up, not by muscling from a passive forearm rest. The transition through the bent-elbow phase is the hardest moment — too slow and you fail the press, too fast and you lose balance. Practise the forearm stand hold extensively first; you cannot tiger bend from an unstable forearm balance.",
     equipment: "Parallettes",
-    position: "Inverted",
-    youtube: "LINK_TODO"
-  },
-
-  {
-    id: 31,
-    name: "Wall Walk | (Wall)",
-    sidequestKey: "Handstand Walk | (Wall)",
-    alt: "Feet-up-the-wall walk · wall walk-up",
-    muscles: [
-      {n:"Shoulders", p:true},
-      {n:"Core", p:true},
-      {n:"Hip Flexors", p:false},
-      {n:"Wrists", p:false}
-    ],
-    tags: ["shoulders", "core", "wrists"],
-    diff: 2.3,
-    str: {suit:false, eff:1},
-    vol: {suit:false, eff:1},
-    end: {suit:true, eff:2},
-    risk: 1,
-    joints: {fingers:1, wrist:2, elbow:1, shoulder:2, neck:1, thoracic:0, lowerBack:1, si:0, hip:1, groin:0, knee:0, ankle:0, foot:0},
-    technique: 2,
-    mobility: 1,
-    strength: 1,
-    kcalPerRep: [0.8, 1.4],
-    desc: "The foundational entry drill for handstand training. From a plank with feet against the wall base, walk the feet up the wall while walking the hands back toward the wall, progressively shifting more bodyweight onto the arms and shoulders until reaching a near-vertical, chest-to-wall position. Builds overhead shoulder loading tolerance and confidence bearing weight on the hands without any kick, jump, or balance component.",
-    cues: "Walk in small steps, keeping the hips extended rather than piking. Stop and build tolerance at each new height over multiple sessions rather than rushing straight to vertical. Keep the neck neutral — don't crank it back to look at the wall.",
-    equipment: "Wall",
-    position: "Inverted",
-    youtube: "LINK_TODO"
-  },
-
-  {
-    id: 32,
-    name: "Handstand Shoulder Taps",
-    sidequestKey: "Handstand",
-    alt: "Freestanding shoulder tap handstand",
-    muscles: [
-      {n:"Shoulders", p:true},
-      {n:"Core", p:true},
-      {n:"Forearms", p:false},
-      {n:"Wrists", p:false}
-    ],
-    tags: ["shoulders", "core", "wrists"],
-    diff: 6.8,
-    str: {suit:false, eff:2},
-    vol: {suit:false, eff:1},
-    end: {suit:true, eff:4},
-    risk: 3,
-    joints: {fingers:4, wrist:4, elbow:1, shoulder:4, neck:1, thoracic:1, lowerBack:2, si:0, hip:1, groin:0, knee:0, ankle:0, foot:0},
-    technique: 5,
-    mobility: 2,
-    strength: 3,
-    kcalPerRep: [3.2, 5.4],
-    desc: "A freestanding handstand hold with alternating shoulder taps — one hand briefly lifts to touch the opposite shoulder while the other hand and forearm absorb the full bodyweight and correct balance alone. Each tap removes half the base of support for a fraction of a second, forcing rapid single-arm balance correction on top of the standard handstand hold demand. A key control and confidence drill on the way toward a one-arm handstand.",
-    cues: "Keep the taps quick and light — this is a balance drill, not a strength hold on one arm. Shift weight subtly toward the supporting hand just before lifting the other. If the hips start piking or arching to compensate, the tap is too slow or too heavy.",
-    equipment: "None",
     position: "Inverted",
     youtube: "LINK_TODO"
   }];

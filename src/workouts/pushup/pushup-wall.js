@@ -145,7 +145,7 @@ pushups.push(
 {
   id: 62,
   name: "Wall Push-Up | Diamond",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true },
@@ -259,7 +259,7 @@ pushups.push(
 {
   id: 7,
   name: "Wall Push-Up | Fingertip",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "fingertip",
   pathNode: true,
@@ -290,7 +290,7 @@ pushups.push(
 {
   id: 9,
   name: "Wall Push-Up | T",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -346,7 +346,7 @@ pushups.push(
 {
   id: 11,
   name: "Wall Push-Up | 4-Finger",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -405,7 +405,7 @@ pushups.push(
 {
   id: 14,
   name: "Wall Push-Up | 3-Finger",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -519,7 +519,7 @@ pushups.push(
 {
   id: 16,
   name: "Wall Push-Up | Archer",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -549,7 +549,7 @@ pushups.push(
 {
   id: 13,
   name: "Wall Push-Up | Typewriter",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -579,7 +579,7 @@ pushups.push(
 {
   id: 17,
   name: "Wall Push-Up | 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -609,7 +609,7 @@ pushups.push(
 {
   id: 19,
   name: "Wall Push-Up | 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "fingertip",
   pathNode: true,
@@ -793,7 +793,7 @@ pushups.push(
 {
   id: 25,
   name: "Wall Push-Up | One Arm, 2-Finger",
-  sidequestKey: "Wall Push-Up | One Arm, 1-Finger",
+  sidequestKey: "Incline Push-Up | One Arm, Straddle",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -824,6 +824,7 @@ pushups.push(
 {
   id: 26,
   name: "Wall Push-Up | One Arm, 1-Finger",
+  sidequestKey: "Incline Push-Up | One Arm, Straddle",
   alt: null,
   pathTag: "one-arm-fingertip",
   pathNode: true,
@@ -855,7 +856,7 @@ pushups.push(
 {
   id: 201,
   name: "Wall Push-Up | Knuckle",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "knuckle",
   pathNode: true,
@@ -885,7 +886,7 @@ pushups.push(
 {
   id: 202,
   name: "Wall Push-Up | Fist",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   pathTag: "knuckle",
   muscles: [
@@ -945,7 +946,7 @@ pushups.push(
 {
   id: 204,
   name: "Wall Push-Up | One Arm, Fist",
-  sidequestKey: null,
+  sidequestKey: "Wall Push-Up | One Arm, Fingertip",
   alt: null,
   pathTag: "knuckle",
   muscles: [
@@ -1003,7 +1004,7 @@ pushups.push(
 {
   id: 66,
   name: "Wall Push-Up | (Parallettes)",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -1031,7 +1032,7 @@ pushups.push(
 {
   id: 67,
   name: "Wall Push-Up | (Rings)",
-  sidequestKey: "Wall Push-Up | Diamond",
+  sidequestKey: "Wall Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -1085,5 +1086,33 @@ pushups.push(
   position: "Standing",
   youtube: "LINK_TODO"
 },
+
+{
+  id: 601,
+  name: "Wall Push-Up | Scapular",
+  sidequestKey: "Wall Push-Up",
+  alt: "Scapular Push-Up · Scap Push-Up",
+  muscles: [
+    { n: "Serratus",  p: true  },
+    { n: "Shoulders", p: false },
+    { n: "Chest",     p: false },
+  ],
+  tags: ["serratus", "shoulders", "chest", "scapular control"],
+  diff: 0.6,
+  str:  { suit: false, eff: 1 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 2 },
+  joints: { wrist: 1, elbow: 0, shoulder: 1, neck: 0, lowerBack: 0,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 1,
+  mobility: 1,
+  technique: 2,
+  kcalPerRep: [0.08, 0.12],
+  desc: "Standing wall plank with the elbows locked straight throughout — the only motion is the shoulder blades protracting and retracting, pushing the body a few inches away from the wall then letting them pinch back together. There is no elbow bend at all, isolating serratus anterior and the lower traps rather than the chest or triceps. The lowest-load, most foundational drill in the entire push-up tree, used to teach scapular control before any pressing strength is asked of the shoulder.",
+  cues: "Stand facing a wall, hands flat at shoulder height and width, arms fully locked out. Without bending the elbows, let the shoulder blades squeeze together, sinking the chest slightly toward the wall. Then push the wall away by spreading the shoulder blades apart — round the upper back slightly at the top. Keep the arms rigid the entire time; only the shoulder blades move.",
+  equipment: "None",
+  position: "Standing",
+  youtube: "LINK_TODO"
+}
 
 );

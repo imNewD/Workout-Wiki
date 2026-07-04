@@ -62,7 +62,6 @@ const dips = [
   {
     id: 2,
     name: "Dip | (Rings)",
-    sidequestKey: "Dip | (TRX)",
     alt: "Gymnastic ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -89,7 +88,6 @@ const dips = [
   },{
     id: 4,
     name: "Korean Dip | (Parallettes)",
-    sidequestKey: null,
     alt: "Behind-the-back dip · reverse dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -118,28 +116,28 @@ const dips = [
   {
     id: 5,
     name: "Tiger Bend | (Parallettes)",
-    alt: "Parallette tiger bend · forearm dip",
+    alt: "Forearm-to-handstand press · tiger bend push-up",
     muscles: [
       {n:"Triceps", p:true},
       {n:"Shoulders", p:true},
-      {n:"Core", p:true},
-      {n:"Chest", p:false}
+      {n:"Chest", p:false},
+      {n:"Core", p:true}
     ],
-    tags: ["triceps", "shoulders", "core", "parallettes"],
-    diff: 7.0,
+    tags: ["triceps", "shoulders", "core"],
+    diff: 8.0,
     str: {suit:true, eff:5},
     vol: {suit:false, eff:1},
     end: {suit:false, eff:1},
-    risk: 3,
-    joints: {fingers:2, wrist:2, elbow:4, shoulder:3, neck:0, thoracic:1, lowerBack:2, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    risk: 4,
+    joints: {fingers:3, wrist:3, elbow:4, shoulder:4, neck:0, thoracic:1, lowerBack:2, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
     technique: 5,
-    mobility: 2,
-    strength: 4,
-    kcalPerRep: [0.35, 0.63],
-    desc: "Forearms are lowered to rest on the parallette rails in the tiger bend position, then pressed back out to full support. The narrow, closely-spaced parallette base makes balance more demanding than a wide fixed bar, but the neutral grip and stable rails make this the most accessible entry point into tiger bend training on equipment — far more approachable than the free-hanging instability of rings. Builds the specific forearm-to-hand pressing strength and core tightness needed before progressing to the bar or ring tiger bend.",
-    cues: "Lower the forearms to rest on the parallette rails, not just the hands. Keep the core hollow throughout — sagging hips make the press-out far harder. Master Tiger Bend Negative before attempting full reps here.",
+    mobility: 3,
+    strength: 5,
+    kcalPerRep: [0.4, 0.72],
+    desc: "Begin in a forearm stand or headstand, then press to a straight-arm handstand by extending at the elbows. The movement is the inverse of a tricep extension — the forearms drive down and back as the elbows straighten. An elite gymnastics pressing skill that bridges forearm-supported positions and full handstand pressing. Requires a solid handstand and strong tricep lockout strength before the transition mechanics can be learned.",
+    cues: "The pressing must be initiated from the elbows, not the wrists. Keep the body tight in a hollow position throughout. If the elbows flare outward, the triceps are not strong enough yet.",
     equipment: "Parallettes",
-    position: "Vertical · Arms Supporting",
+    position: "Inverted",
     youtube: "LINK_TODO"
   },
 
@@ -257,7 +255,6 @@ const dips = [
   {
     id: 10,
     name: "Dip | (Bar)",
-    sidequestKey: "Dip | (Parallettes)",
     alt: "Bar dip · muscle-up lockout dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -286,7 +283,6 @@ const dips = [
   {
     id: 11,
     name: "Box Dip | (Bench)",
-    sidequestKey: "Dip | (Bench)",
     alt: "Floor dip · ground-level dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -398,7 +394,6 @@ const dips = [
   {
     id: 43,
     name: "Tuck Dip | (Rings)",
-    sidequestKey: "Dip | (Parallettes)",
     alt: "Tuck ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -427,7 +422,6 @@ const dips = [
   {
     id: 46,
     name: "Korean Dip | Negative (Parallettes)",
-    sidequestKey: null,
     alt: "Eccentric Korean dip · Korean dip slow lower",
     muscles: [
       {n:"Triceps", p:true},
@@ -456,7 +450,6 @@ const dips = [
   {
     id: 15,
     name: "Wide-Grip Dip | (Parallettes)",
-    sidequestKey: "Narrow-Grip Dip | (Parallettes)",
     alt: "Wide parallel bar dip",
     muscles: [
       {n:"Chest", p:true},
@@ -541,7 +534,6 @@ const dips = [
   {
     id: 18,
     name: "Turned Out Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "RTO dip · externally rotated ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -568,7 +560,6 @@ const dips = [
   }, /* ── LOADED VARIATIONS ──────────────────────────────────── */{
     id: 61,
     name: "Band-Resisted Dip | (Parallettes)",
-    sidequestKey: "Pause Dip | (Parallettes)",
     alt: "Loaded band dip · banded resistance dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -739,7 +730,6 @@ const dips = [
   {
     id: 25,
     name: "Tempo Dip | (Parallettes)",
-    sidequestKey: null,
     alt: "Slow dip · 3-1-3 dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -796,7 +786,6 @@ const dips = [
   {
     id: 27,
     name: "Bottom Hold | (Parallettes)",
-    sidequestKey: null,
     alt: "90° hold · sticking point hold",
     muscles: [
       {n:"Triceps", p:true},
@@ -825,7 +814,6 @@ const dips = [
   {
     id: 57,
     name: "Support Hold | (Rings)",
-    sidequestKey: "Dip | Negative (Parallettes)",
     alt: "Ring lockout hold · ring top hold",
     muscles: [
       {n:"Triceps", p:true},
@@ -854,7 +842,6 @@ const dips = [
   {
     id: 58,
     name: "Korean Dip | Support Hold (Parallettes)",
-    sidequestKey: "Dip | (Parallettes)",
     alt: "Korean dip top hold · reverse dip hold",
     muscles: [
       {n:"Triceps", p:true},
@@ -883,7 +870,6 @@ const dips = [
   {
     id: 28,
     name: "Explosive Dip | (Parallettes)",
-    sidequestKey: "Tempo Dip | (Parallettes)",
     alt: "Plyometric dip · jump dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1108,7 +1094,6 @@ const dips = [
   {
     id: 35,
     name: "False Grip Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "False grip ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1165,7 +1150,6 @@ const dips = [
   {
     id: 37,
     name: "L-Sit Dip | (Rings)",
-    sidequestKey: "L-Sit Dip | (Bar)",
     alt: "Ring L-sit dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1248,7 +1232,6 @@ const dips = [
     {
     id: 60,
     name: "Korean Dip | (Rings)",
-    sidequestKey: "Pike Dip | (Rings)",
     alt: "Korean dip on rings · reverse ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1336,7 +1319,6 @@ const dips = [
   {
     id: 63,
     name: "Gironda Dip | (V-Bar)",
-    sidequestKey: "Dip | (Parallettes)",
     alt: "V-bar dip · Vince Gironda dip",
     muscles: [
       {n:"Chest", p:true},
@@ -1365,7 +1347,6 @@ const dips = [
   {
     id: 67,
     name: "Reverse Grip Dip | (Parallettes)",
-    sidequestKey: "Wide-Grip Dip | (Bar)",
     alt: "Supinated dip · underhand dip",
     muscles: [
       {n:"Front Delts", p:true},
@@ -1421,7 +1402,6 @@ const dips = [
   {
     id: 64,
     name: "Archer Dip | (Rings)",
-    sidequestKey: "Typewriter Dip | (Rings)",
     alt: "One-arm assisted ring dip · ring unilateral dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1450,7 +1430,6 @@ const dips = [
   {
     id: 65,
     name: "Explosive Dip | (Rings)",
-    sidequestKey: "Explosive Dip | (Bar)",
     alt: "Plyometric ring dip · jump ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1459,7 +1438,7 @@ const dips = [
       {n:"Core", p:true}
     ],
     tags: ["triceps", "chest", "shoulders", "core"],
-    diff: 6.7,
+    diff: 6.0,
     str: {suit:true, eff:5},
     vol: {suit:false, eff:1},
     end: {suit:false, eff:1},
@@ -1507,7 +1486,6 @@ const dips = [
   {
     id: 71,
     name: "Pommel Horse Dip | (Pommel)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Gymnastics pommel dip · pommel support dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1538,7 +1516,6 @@ const dips = [
   {
     id: 72,
     name: "Dip | Negative (Rings)",
-    sidequestKey: "Dip | (Parallettes)",
     alt: "Eccentric ring dip · slow lower rings",
     muscles: [
       {n:"Triceps", p:true},
@@ -1567,7 +1544,6 @@ const dips = [
   {
     id: 73,
     name: "Russian Dip | (Rings)",
-    sidequestKey: "Pike Dip | (Rings)",
     alt: "Forearm ring dip · rolling ring dip",
     muscles: [
       {n:"Triceps", p:true},
@@ -1676,7 +1652,6 @@ const dips = [
   {
     id: 77,
     name: "Weighted Dip | (Bar)",
-    sidequestKey: "Weighted Dip | (Parallettes)",
     alt: "Loaded bar dip · belt bar dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}
@@ -1697,7 +1672,6 @@ const dips = [
   {
     id: 78,
     name: "Weighted Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Loaded ring dip · weighted gymnastic ring dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -1720,7 +1694,6 @@ const dips = [
   {
     id: 79,
     name: "Wide-Grip Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Wide ring dip · spread ring dip",
     muscles: [
       {n:"Chest", p:true}, {n:"Triceps", p:true}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -1781,7 +1754,6 @@ const dips = [
   {
     id: 82,
     name: "Narrow-Grip Dip | (Bar)",
-    sidequestKey: "Narrow-Grip Dip | (Parallettes)",
     alt: "Close bar dip · tricep dip close grip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:false}
@@ -1802,7 +1774,6 @@ const dips = [
   {
     id: 83,
     name: "Chest Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Pec dip on rings · forward lean ring dip",
     muscles: [
       {n:"Chest", p:true}, {n:"Triceps", p:false}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -1823,7 +1794,6 @@ const dips = [
   {
     id: 84,
     name: "Chest Dip | (Bar)",
-    sidequestKey: "Chest Dip | (Parallettes)",
     alt: "Forward lean bar dip · pec bar dip",
     muscles: [
       {n:"Chest", p:true}, {n:"Triceps", p:false}, {n:"Front Delts", p:false}
@@ -1866,7 +1836,6 @@ const dips = [
   {
     id: 86,
     name: "Bottom Hold | (Rings)",
-    sidequestKey: "Dip | (TRX)",
     alt: "Ring bottom hold · low position ring isometric",
     muscles: [
       {n:"Triceps", p:false}, {n:"Chest", p:true}, {n:"Front Delts", p:true}, {n:"Core", p:false}
@@ -1887,13 +1856,12 @@ const dips = [
   {
     id: 87,
     name: "Bottom Hold | (Bar)",
-    sidequestKey: "Bottom Hold | (Parallettes)",
     alt: "Bar bottom hold · low dip isometric bar",
     muscles: [
       {n:"Chest", p:true}, {n:"Front Delts", p:true}, {n:"Triceps", p:false}
     ],
     tags: ["chest", "shoulders", "isometric", "bar"],
-    diff: 4.1,
+    diff: 3.5,
     str: {suit:true, eff:2}, vol: {suit:false, eff:1}, end: {suit:true, eff:3},
     risk: 2,
     joints: {fingers:2, wrist:2, elbow:3, shoulder:4, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
@@ -1910,7 +1878,6 @@ const dips = [
   {
     id: 89,
     name: "Dip | Negative (Bar)",
-    sidequestKey: "Dip | Negative (Parallettes)",
     alt: "Bar dip eccentric · slow bar dip lower",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}
@@ -1931,7 +1898,6 @@ const dips = [
   {
     id: 90,
     name: "L-Sit Dip | Negative (Parallettes)",
-    sidequestKey: "L-Sit Dip | (Parallettes)",
     alt: "L-sit dip eccentric parallettes",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Hip Flexors", p:true}, {n:"Core", p:true}
@@ -1952,7 +1918,6 @@ const dips = [
   {
     id: 91,
     name: "L-Sit Dip | Negative (Rings)",
-    sidequestKey: "L-Sit Dip | (Bar)",
     alt: "L-sit ring dip eccentric",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Hip Flexors", p:true}, {n:"Core", p:true}
@@ -1993,7 +1958,6 @@ const dips = [
   {
     id: 93,
     name: "Tiger Bend | (Rings)",
-    sidequestKey: null,
     alt: "Ring tiger bend · ring forearm dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Shoulders", p:true}, {n:"Core", p:true}, {n:"Chest", p:false}
@@ -2014,7 +1978,6 @@ const dips = [
   {
     id: 94,
     name: "Tiger Bend | (Bar)",
-    sidequestKey: "Tiger Bend | (Parallettes)",
     alt: "Bar tiger bend · bar forearm dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Shoulders", p:true}, {n:"Core", p:true}
@@ -2037,7 +2000,6 @@ const dips = [
   {
     id: 95,
     name: "Pause Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Ring dip bottom pause · ring controlled dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -2058,7 +2020,6 @@ const dips = [
   {
     id: 96,
     name: "Pause Dip | (Bar)",
-    sidequestKey: "Pause Dip | (Parallettes)",
     alt: "Bar dip bottom pause · controlled bar dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}
@@ -2079,7 +2040,6 @@ const dips = [
   {
     id: 97,
     name: "Tempo Dip | (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Slow ring dip · 3-1-3 ring dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -2100,13 +2060,12 @@ const dips = [
   {
     id: 98,
     name: "Tempo Dip | (Bar)",
-    sidequestKey: "Tempo Dip | (Parallettes)",
     alt: "Slow bar dip · controlled tempo bar dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}
     ],
     tags: ["triceps", "chest", "bar"],
-    diff: 4.4,
+    diff: 4.0,
     str: {suit:true, eff:4}, vol: {suit:false, eff:1}, end: {suit:true, eff:2},
     risk: 2,
     joints: {fingers:2, wrist:2, elbow:3, shoulder:3, neck:0, thoracic:0, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
@@ -2121,7 +2080,6 @@ const dips = [
   {
     id: 99,
     name: "German Dip | (Rings)",
-    sidequestKey: "Straddle L-Sit Dip | (Rings)",
     alt: "Ring German dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Shoulders", p:true}, {n:"Chest", p:false}, {n:"Core", p:true}
@@ -2202,7 +2160,6 @@ const dips = [
   {
     id: 103,
     name: "Pike Dip | (Bar)",
-    sidequestKey: "Clap Dip | (Parallettes)",
     alt: "Bar pike dip · hip-hinge bar dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Hip Flexors", p:true}, {n:"Core", p:true}
@@ -2223,13 +2180,12 @@ const dips = [
   {
     id: 104,
     name: "Korean Dip | (Bar)",
-    sidequestKey: "Korean Dip | (Parallettes)",
     alt: "Reverse dip bar · Korean dip bar",
     muscles: [
       {n:"Rear Delts", p:true}, {n:"Triceps", p:true}, {n:"Chest", p:false}, {n:"Core", p:true}
     ],
     tags: ["shoulders", "triceps", "bar"],
-    diff: 6.6,
+    diff: 6.0,
     str: {suit:true, eff:4}, vol: {suit:false, eff:1}, end: {suit:false, eff:1},
     risk: 4,
     joints: {fingers:2, wrist:3, elbow:4, shoulder:5, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
@@ -2244,7 +2200,6 @@ const dips = [
   {
     id: 105,
     name: "Korean Dip | Negative (Rings)",
-    sidequestKey: "Narrow-Grip Dip | (Rings)",
     alt: "Korean dip eccentric rings",
     muscles: [
       {n:"Rear Delts", p:true}, {n:"Triceps", p:true}, {n:"Core", p:false}
@@ -2265,7 +2220,6 @@ const dips = [
   {
     id: 106,
     name: "Reverse Grip Dip | (Rings)",
-    sidequestKey: "Pike Dip | (Rings)",
     alt: "Supinated grip ring dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}, {n:"Biceps", p:false}
@@ -2286,7 +2240,6 @@ const dips = [
   {
     id: 107,
     name: "Reverse Grip Dip | (Bar)",
-    sidequestKey: "Wide-Grip Dip | (Bar)",
     alt: "Supinated grip bar dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Biceps", p:false}
@@ -2327,7 +2280,6 @@ const dips = [
   {
     id: 109,
     name: "Fingertip Dip | (Rings)",
-    sidequestKey: "Pike Dip | (Rings)",
     alt: "Fingertip ring dip",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -2368,7 +2320,6 @@ const dips = [
   {
     id: 111,
     name: "Band-Assisted Dip | (Rings)",
-    sidequestKey: "Dip | Negative (Parallettes)",
     alt: "Assisted ring dip · ring dip with band",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}, {n:"Core", p:false}
@@ -2389,7 +2340,6 @@ const dips = [
   {
     id: 112,
     name: "Band-Assisted Dip | (Bar)",
-    sidequestKey: "Band-Assisted Dip | (Parallettes)",
     alt: "Assisted bar dip · bar dip with band",
     muscles: [
       {n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Front Delts", p:false}
@@ -2410,7 +2360,6 @@ const dips = [
   {
     id: 113,
     name: "Dip Shrug | (Rings)",
-    sidequestKey: "Dip | (Parallettes)",
     alt: "Ring support shrug · ring scapular depress",
     muscles: [
       {n:"Triceps", p:false}, {n:"Serratus", p:true}, {n:"Lats", p:true}, {n:"Core", p:false}
@@ -2431,7 +2380,6 @@ const dips = [
   {
     id: 114,
     name: "Dip Shrug | (Bar)",
-    sidequestKey: "Dip Shrug | (Parallettes)",
     alt: "Bar support shrug · scapular depress bar",
     muscles: [
       {n:"Serratus", p:true}, {n:"Lats", p:true}, {n:"Triceps", p:false}
@@ -2512,7 +2460,6 @@ const dips = [
   {
     id: 118,
     name: "L-Sit Dip | Negative (Bar)",
-    sidequestKey: "L-Sit Dip | (Parallettes)",
     alt: "Eccentric L-sit bar dip",
     muscles: [{n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Hip Flexors", p:true}, {n:"Core", p:true}],
     tags: ["triceps", "chest", "core", "bar"],
@@ -2531,7 +2478,6 @@ const dips = [
   {
     id: 119,
     name: "One-Arm Dip | Negative (Rings)",
-    sidequestKey: "One-Arm Dip | (Parallettes)",
     alt: "Eccentric one-arm ring dip",
     muscles: [{n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Core", p:true}, {n:"Front Delts", p:false}],
     tags: ["triceps", "chest", "core", "rings"],
@@ -2550,11 +2496,10 @@ const dips = [
   {
     id: 120,
     name: "Korean Dip | Negative (Bar)",
-    sidequestKey: "Korean Dip | Negative (Parallettes)",
     alt: "Eccentric behind-the-back bar dip",
     muscles: [{n:"Triceps", p:true}, {n:"Rear Delts", p:true}, {n:"Chest", p:false}],
     tags: ["triceps", "shoulders", "bar"],
-    diff: 5.6,
+    diff: 5.0,
     str: {suit:true, eff:4}, vol: {suit:false, eff:1}, end: {suit:false, eff:1},
     risk: 4,
     joints: {fingers:2, wrist:3, elbow:3, shoulder:5, neck:0, thoracic:0, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
@@ -2569,7 +2514,6 @@ const dips = [
   {
     id: 121,
     name: "Straddle L-Sit Dip | (Bar)",
-    sidequestKey: "Straddle L-Sit Dip | (Parallettes)",
     alt: "Bar straddle dip · wide-leg bar L dip",
     muscles: [{n:"Triceps", p:true}, {n:"Chest", p:true}, {n:"Hip Flexors", p:true}, {n:"Core", p:true}],
     tags: ["triceps", "chest", "core", "bar"],
@@ -2583,94 +2527,8 @@ const dips = [
     equipment: "Pull-up bar",
     position: "Vertical · Arms Supporting",
     youtube: "LINK_TODO"
-  },
-
-  {
-    id: 122,
-    name: "1.5 Rep Dip | (Parallettes)",
-    sidequestKey: "Tempo Dip | (Parallettes)",
-    alt: "One-and-a-half rep dip · dip pulse",
-    muscles: [
-      {n:"Triceps", p:true},
-      {n:"Chest", p:true},
-      {n:"Front Delts", p:false},
-      {n:"Core", p:false}
-    ],
-    tags: ["triceps", "chest", "shoulders"],
-    diff: 4.7,
-    str: {suit:true, eff:5},
-    vol: {suit:true, eff:3},
-    end: {suit:false, eff:2},
-    risk: 3,
-    joints: {fingers:2, wrist:2, elbow:3, shoulder:3, neck:0, thoracic:0, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
-    technique: 4,
-    mobility: 2,
-    strength: 3,
-    kcalPerRep: [0.34, 0.61],
-    desc: "Lower to full depth and press all the way up, then immediately lower again to the halfway point (roughly 90°) and press back to lockout before starting the next rep — one full rep plus one half rep counts as a single 1.5 rep. Doubles the time under tension at the hardest part of the range on every single rep, without needing any extra equipment. A well-known intensification technique for breaking through dip plateaus once standard tempo work stops adding difficulty.",
-    cues: "The half-rep pulse must stop at the true sticking point, not a token few inches. Keep both the full descent and the partial pulse fully controlled — do not let the partial turn into a bounce.",
-    equipment: "Parallettes",
-    position: "Vertical · Arms Supporting",
-    youtube: "LINK_TODO"
-  },
-
-  {
-    id: 123,
-    name: "Mid-Range Hold | (Parallettes)",
-    sidequestKey: "Bottom Hold | (Parallettes)",
-    alt: "90° isometric hold · sticking-point hold",
-    muscles: [
-      {n:"Triceps", p:true},
-      {n:"Chest", p:false},
-      {n:"Front Delts", p:true},
-      {n:"Core", p:true}
-    ],
-    tags: ["triceps", "shoulders", "core"],
-    diff: 4.5,
-    str: {suit:true, eff:3},
-    vol: {suit:false, eff:2},
-    end: {suit:true, eff:4},
-    risk: 3,
-    joints: {fingers:2, wrist:2, elbow:4, shoulder:3, neck:0, thoracic:0, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
-    technique: 3,
-    mobility: 2,
-    strength: 3,
-    kcalPerRep: [0.14, 0.25],
-    desc: "A static hold at exactly the halfway point of the dip — elbows near 90°, held motionless rather than pressed through. Unlike the top support hold, there is no lockout to rest the joints on, and unlike a controlled bottom hold this is the true middle of the strength curve where triceps leverage is at its weakest point. Target 15-20 seconds. Directly attacks the mid-range weakness that causes most dip failures to stall exactly at this angle.",
-    cues: "Lower under control to precisely 90° and stop dead — do not drift lower or higher mid-hold. Keep the elbows tracking back, not flaring. Breathe steadily; do not hold your breath through the hold.",
-    equipment: "Parallettes",
-    position: "Vertical · Arms Supporting",
-    youtube: "LINK_TODO"
-  },
-
-  {
-    id: 124,
-    name: "Chain-Resisted Dip | (Parallettes)",
-    sidequestKey: "Pause Dip | (Parallettes)",
-    alt: "Chain dip · accommodating resistance dip",
-    muscles: [
-      {n:"Triceps", p:true},
-      {n:"Chest", p:true},
-      {n:"Front Delts", p:false},
-      {n:"Core", p:false}
-    ],
-    tags: ["triceps", "chest", "shoulders"],
-    diff: 4.8,
-    str: {suit:true, eff:5},
-    vol: {suit:true, eff:3},
-    end: {suit:false, eff:1},
-    risk: 2,
-    joints: {fingers:2, wrist:2, elbow:4, shoulder:3, neck:0, thoracic:0, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
-    technique: 3,
-    mobility: 2,
-    strength: 4,
-    kcalPerRep: [0.24, 0.43],
-    desc: "A dip performed with chains draped over the shoulders or hanging from a dip belt, so more chain links lift off the floor as the body rises — resistance increases through the concentric press and unloads again on the way down. The same accommodating-resistance principle as banded dipping but with a linear rather than elastic loading curve, and no risk of a snapping band. Trains lockout strength without over-taxing the stretched bottom position the way constant added weight does.",
-    cues: "Set the chain length so a meaningful portion is still off the floor at the bottom — chains that fully deload at the bottom defeat the purpose. Keep the chains centred so they do not swing or catch on the bars.",
-    equipment: "Parallettes",
-    position: "Vertical · Arms Supporting",
-    youtube: "LINK_TODO"
   }
+
 ];
 
 /* Pantheon workouts moved from pantheon-data.js.

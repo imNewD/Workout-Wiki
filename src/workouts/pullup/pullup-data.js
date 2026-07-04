@@ -58,6 +58,7 @@ const pullupStatic = [
   {
     id: 134,
     name: "Australian Pull-Up | (Parallettes)",
+    sidequestKey: "Australian Pull-Up | (Low Bar)",
     alt: "Neutral grip bodyweight row Â· parallel bar row",
     muscles: [
       {n:"Lats", p:true},
@@ -85,6 +86,7 @@ const pullupStatic = [
   {
     id: 135,
     name: "Australian Pull-Up | (Rings)",
+    sidequestKey: "Australian Pull-Up | Feet Elevated (Low Bar)",
     alt: "Ring row Â· gymnastics ring row Â· horizontal ring pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -195,6 +197,7 @@ const pullupStatic = [
   {
     id: 61,
     name: "Pinch Grip Pull-Up | (Bar)",
+    sidequestKey: "Fingertip Pull-Up | (Bar)",
     alt: "Thumb-pinch pull-up Â· lateral pinch pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -276,6 +279,7 @@ const pullupStatic = [
   {
     id: 146,
     name: "Chest-to-Bar Pull-Up | (Rings)",
+    sidequestKey: "Fingertip Pull-Up | (Bar)",
     alt: "Ring CTB pull-up Â· ring high pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -303,6 +307,7 @@ const pullupStatic = [
   {
     id: 63,
     name: "Archer Pull-Up | (Rings)",
+    sidequestKey: "Archer Pull-Up | (Bar)",
     alt: "One-arm assisted ring pull-up Â· archer ring pull",
     muscles: [
       {n:"Lats", p:true},
@@ -385,6 +390,7 @@ const pullupStatic = [
   {
     id: 66,
     name: "Knuckle Pull-Up | (Bar)",
+    sidequestKey: "Wide Pull-Up",
     alt: "Fist pull-up Â· closed-fist pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -412,6 +418,7 @@ const pullupStatic = [
   {
     id: 67,
     name: "4-Finger Pull-Up | (Bar)",
+    sidequestKey: "Fingertip Pull-Up | (Bar)",
     alt: "No-thumb pull-up Â· open-crimp pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -439,6 +446,7 @@ const pullupStatic = [
   {
     id: 68,
     name: "3-Finger Pull-Up | (Bar)",
+    sidequestKey: "Full Crimp Pull-Up | (Bar)",
     alt: "3-finger pull-up Â· index-middle-ring pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -524,6 +532,7 @@ const pullupStatic = [
   {
     id: 71,
     name: "L-Sit Pull-Up | (Rings)",
+    sidequestKey: "Straddle L-Sit Pull-Up | (Bar)",
     alt: "Ring L-pull Â· gymnastic ring L-sit pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -532,7 +541,7 @@ const pullupStatic = [
       {n:"Biceps", p:false}
     ],
     tags: ["back", "core", "biceps", "shoulders"],
-    diff: 6,
+    diff: 6.4,
     str: {suit:true, eff:4},
     vol: {suit:false, eff:1},
     end: {suit:false, eff:1},
@@ -578,6 +587,7 @@ const pullupStatic = [
   {
     id: 76,
     name: "Pull-Up | Tempo (Bar)",
+    sidequestKey: "Wide Pull-Up",
     alt: "Slow pull-up Â· controlled pull-up Â· 3-1-3 pull-up",
     muscles: [
       {n:"Lats", p:true},
@@ -605,6 +615,7 @@ const pullupStatic = [
   {
     id: 144,
     name: "Pull-Up | Extended Negative (Bar)",
+    sidequestKey: "Pull-Up | Tempo (Bar)",
     alt: "Slow negative pull-up Â· extended eccentric pull-up Â· max-tempo negative",
     muscles: [
       {n:"Lats", p:true},
@@ -694,6 +705,7 @@ const pullupStatic = [
   {
     id: 98,
     name: "Side Pull-Up | (Bar)",
+    sidequestKey: "Fingertip Pull-Up | (Bar)",
     alt: "Lateral pull-up Â· one-sided vertical pull",
     muscles: [
       {n:"Lats", p:true},
@@ -746,6 +758,679 @@ const pullupStatic = [
     position: "Hanging",
     youtube: "LINK_TODO"
   },
+
+{
+    id: 800,
+    name: "Pull-Up",
+    pathNode: true,
+    alt: "Standard pull-up Â· overhand pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Biceps", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "shoulders", "biceps"],
+    diff: 3.9,
+    str: {suit:true, eff:4},
+    vol: {suit:true, eff:4},
+    end: {suit:true, eff:3},
+    joints: {fingers:2, wrist:1, elbow:2, shoulder:2, neck:0, thoracic:1, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 2,
+    mobility: 1,
+    strength: 3,
+    kcalPerRep: [0.24, 0.42],
+    desc: "The standard vertical pull performed with a pronated (overhand, palms-away) grip at shoulder width, from a full dead hang to chin over the bar. The pronated grip places the biceps in a mechanically weaker line of pull than the supinated chin-up, shifting more of the load onto the lats and rear deltoids and making this the marginally harder of the two base grips for most people. The foundational bilateral vertical pull that every other pull-up variant builds from.",
+    cues: "Grip the bar shoulder-width, palms facing away. Depress the scapulae before bending the elbows. Drive the elbows down and back rather than just down. Reach full extension at the bottom of every rep and clear the chin over the bar at the top.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 801,
+    name: "Close Pull-Up",
+    sidequestKey: "Pull-Up",
+    alt: "Narrow pull-up",
+    muscles: [
+      {n:"Biceps", p:true},
+      {n:"Lats", p:true},
+      {n:"Brachialis", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "biceps"],
+    diff: 3.8,
+    str: {suit:true, eff:4},
+    vol: {suit:true, eff:4},
+    end: {suit:true, eff:3},
+    joints: {fingers:2, wrist:1, elbow:3, shoulder:1, neck:0, thoracic:1, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 2,
+    mobility: 1,
+    strength: 3,
+    kcalPerRep: [0.23, 0.41],
+    desc: "A pull-up with the hands placed close together, thumbs nearly touching, in a pronated grip. The narrow pronated position increases brachialis and biceps involvement compared to standard width, marginally reducing the difficulty relative to the base pull-up despite the grip still being overhand. Elbow loading is elevated versus standard width due to the more direct pulling line.",
+    cues: "Bring the hands in until thumbs are nearly touching, palms facing away. Depress the scapulae, then drive the elbows straight back, keeping them close to the torso. Lower to a full dead hang each rep.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 802,
+    name: "Slow Negative Pull-Up",
+    sidequestKey: "Pull-Up",
+    alt: "Negative pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Rear Delts", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "biceps", "shoulders"],
+    diff: 3.7,
+    str: {suit:true, eff:3},
+    vol: {suit:true, eff:3},
+    end: {suit:false, eff:2},
+    joints: {fingers:2, wrist:1, elbow:2, shoulder:2, neck:0, thoracic:1, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 2,
+    mobility: 1,
+    strength: 1,
+    kcalPerRep: [0.16, 0.28],
+    desc: "Step or jump to the chin-over-bar top position with a pronated grip, then lower under full control to a dead hang as slowly as possible, targeting 5-8 seconds. Since muscles are stronger eccentrically than concentrically, this lets athletes who cannot yet perform a full pull-up train meaningful tension in the pronated pulling line. A key regression before an unassisted pull-up is achievable.",
+    cues: "Use a box to reach the top without exhausting yourself in the jump. Grip the bar palms away. Release the box and resist the descent the entire way down. Control to a full dead hang, then step back up.",
+    equipment: "Pull-up bar + box or jump to reach top",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 803,
+    name: "Wide Pull-Up",
+    sidequestKey: null,
+    alt: "Wide-grip pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Biceps", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "shoulders"],
+    diff: 4.6,
+    str: {suit:true, eff:4},
+    vol: {suit:true, eff:3},
+    end: {suit:true, eff:2},
+    joints: {fingers:2, wrist:1, elbow:1, shoulder:3, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 2,
+    mobility: 1,
+    strength: 3,
+    kcalPerRep: [0.27, 0.48],
+    desc: "A pull-up with the hands placed wider than shoulder-width in a pronated grip. The wider stance further reduces the already-limited biceps leverage of the pronated grip, shifting almost the entire load onto the lats and rear delts. The most bicep-starved bilateral pull-up variant and a real step up from the standard-width pull-up.",
+    cues: "Spread hands to roughly 1.5x shoulder width, palms facing away. Resist the elbows flaring fully forward; drive them down and back. Lower to a full dead hang each rep.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 804,
+    name: "Paused Pull-Up",
+    sidequestKey: "Wide Pull-Up",
+    alt: "Dead-stop pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Rear Delts", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "biceps", "shoulders"],
+    diff: 4.7,
+    str: {suit:true, eff:5},
+    vol: {suit:true, eff:5},
+    end: {suit:false, eff:2},
+    joints: {fingers:2, wrist:1, elbow:2, shoulder:2, neck:0, thoracic:1, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 2,
+    mobility: 1,
+    strength: 3,
+    kcalPerRep: [0.26, 0.46],
+    desc: "A standard pronated pull-up with a deliberate 1-3 second dead-stop pause held with the chin clearly over the bar before lowering. Removing the stretch-reflex and momentum carryover at the top forces the lats and biceps to control the hardest part of the range under pure tension.",
+    cues: "Pull to a full chin-over-bar position. Hold completely still for 1 to 3 seconds - no bouncing. Keep the scapulae depressed through the pause. Lower under full control to a dead hang each rep.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 805,
+    name: "Pull-Up | (Rings)",
+    sidequestKey: "Wide Pull-Up",
+    alt: "Ring pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:false},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "biceps", "shoulders", "core"],
+    diff: 4.9,
+    str: {suit:true, eff:4},
+    vol: {suit:true, eff:4},
+    end: {suit:true, eff:3},
+    joints: {fingers:1, wrist:2, elbow:1, shoulder:2, neck:0, thoracic:1, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 3,
+    mobility: 1,
+    strength: 3,
+    kcalPerRep: [0.27, 0.48],
+    desc: "A pull-up performed on gymnastic rings, held in a pronated grip that the rings will constantly try to rotate out of toward neutral. Resisting that rotation for the full set adds a forearm and wrist stability demand absent from a fixed bar, on top of the already bicep-limited pronated pulling line.",
+    cues: "Grip the rings palms away and actively resist rotation toward neutral throughout every rep. Depress the scapulae, then pull the elbows down and back. Lower to a full hang each rep.",
+    equipment: "Gymnastic rings",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 806,
+    name: "Plyo Pull-Up",
+    sidequestKey: "Fingertip Pull-Up | (Bar)",
+    alt: "Explosive pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Rear Delts", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "biceps", "power"],
+    diff: 5,
+    str: {suit:true, eff:4},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:1, elbow:3, shoulder:2, neck:0, thoracic:1, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 3,
+    mobility: 1,
+    strength: 4,
+    kcalPerRep: [0.34, 0.61],
+    desc: "A pronated pull-up where the concentric is executed explosively enough to briefly release the bar at the top before re-gripping. The pronated catch places high peak demand on the elbow and biceps tendon, and the reduced bicep leverage of the overhand grip makes the required power output higher than the chin-up equivalent.",
+    cues: "Drive maximum acceleration off the dead hang, aiming to get the chest past the bar. Release at the apex, re-grip immediately, never catching with locked elbows. Lower under control to a full hang before the next rep.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 807,
+    name: "Behind-the-Neck Pull-Up",
+    sidequestKey: "Fingertip Pull-Up | (Bar)",
+    alt: "Wide-grip pull-up to nape",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Rhomboids", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "shoulders"],
+    diff: 5.8,
+    str: {suit:true, eff:4},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:2, elbow:1, shoulder:5, neck:2, thoracic:2, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 5,
+    mobility: 4,
+    strength: 3,
+    kcalPerRep: [0.28, 0.50],
+    desc: "A wide pronated pull-up in which the bar is pulled down behind the head to the nape of the neck rather than to the front of the chin. The extreme external shoulder rotation and rearward head position demand exceptional shoulder-joint mobility, and the reduced margin for error at end range means poor mobility converts the movement into a significant impingement risk. Distinct from the Side Pull-Up, where the bar passes beside the head rather than behind it. Not recommended for athletes without well-established overhead shoulder mobility.",
+    cues: "Only attempt with fully warmed-up, mobile shoulders. Take a wide pronated grip and pull with control, letting the bar travel behind the head to the nape of the neck rather than forcing the position. Stop immediately at any pinching sensation. Lower under control to full extension.",
+    equipment: "Wide pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 808,
+    name: "Archer Pull-Up | (Bar)",
+    sidequestKey: null,
+    pathNode: true,
+    alt: "Bar archer pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Rear Delts", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "biceps", "shoulders", "core"],
+    diff: 6.5,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:3, wrist:2, elbow:3, shoulder:4, neck:0, thoracic:2, lowerBack:2, si:1, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 4,
+    mobility: 2,
+    strength: 4,
+    kcalPerRep: [0.34, 0.61],
+    desc: "A pull-up in which one arm does nearly all the pulling in a pronated grip while the other arm extends out to the side, nearly straight, providing only minimal stabilising contact. The pronated working arm has less bicep leverage than the supinated Archer Chin-Up, making this the marginally harder of the two archer variants. The primary bilateral-assisted bridge toward the One-Arm Pull-Up.",
+    cues: "Take a wide grip, working hand pronated, extended arm nearly straight. Pull toward the working side, not straight up. Keep tension through the straight arm and reduce its assistance over time. Train each side for equal sets.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 809,
+    name: "Uneven Pull-Up",
+    sidequestKey: "Archer Pull-Up | (Bar)",
+    alt: "Offset-height pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:false},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "biceps", "core"],
+    diff: 6.1,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    joints: {fingers:3, wrist:1, elbow:4, shoulder:3, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 4,
+    mobility: 1,
+    strength: 4,
+    kcalPerRep: [0.29, 0.52],
+    desc: "One hand grips the bar in a pronated position at standard height while the other hand grips a lower attachment - a hanging band or towel loop - shifting most of the load onto the top arm. The pronated top-arm position has less mechanical advantage than the supinated Uneven Chin-Up, making this fractionally harder. Lowering the assisting attachment over weeks increases unilateral demand toward a full one-arm pull-up.",
+    cues: "Grip the bar pronated with the working hand, and the lower attachment with the assisting hand. Lower the assisting attachment's height gradually over weeks. Keep the torso vertical - no lateral lean toward the working arm.",
+    equipment: "Pull-up bar + hanging band / towel loop",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 810,
+    name: "One-Arm Pull-Up | Lock-Off",
+    sidequestKey: null,
+    alt: "One-arm flex hang",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:true},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "biceps", "core"],
+    diff: 7.3,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:1, elbow:3, shoulder:4, neck:0, thoracic:2, lowerBack:2, si:1, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 3,
+    mobility: 1,
+    strength: 4,
+    kcalPer3SecHold: [0.11, 0.20],
+    desc: "Pull to the top using a bilateral pronated pull-up, then release one hand and hold the chin-over-bar position on a single pronated arm for as long as possible. Only the isometric hold is unilateral - the concentric remains bilateral. The pronated grip's weaker bicep leverage makes this fractionally harder than the equivalent chin-up lock-off. Trains the specific single-arm holding strength required for the One-Arm Pull-Up. Train each side independently.",
+    cues: "Perform a full bilateral pull-up, then release the free hand cleanly at the top. Keep the working elbow close to the torso throughout the hold. Resist lateral torso lean toward the working side. Progress hold duration before advancing to One-Arm Negative Pull-Ups.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 811,
+    name: "One-Arm Pull-Up | Negative",
+    sidequestKey: "One-Arm Pull-Up | Lock-Off",
+    alt: "One-arm negative pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:true},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "biceps", "core"],
+    diff: 7.8,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:3, wrist:2, elbow:5, shoulder:5, neck:0, thoracic:2, lowerBack:3, si:1, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 4,
+    mobility: 1,
+    strength: 5,
+    kcalPerRep: [0.29, 0.51],
+    desc: "Jump or press with both arms to the top position, chin over bar in a pronated grip, then release one hand and lower as slowly as possible on a single pronated arm to a full dead hang. The weaker pronated bicep leverage during the eccentric makes this harder than the equivalent chin-up negative. Elbow loading at the bottom of the single-arm eccentric is extreme. The key bridge toward the full One-Arm Pull-Up. Target 5-8 seconds lowering per rep. Train each side independently.",
+    cues: "Jump or use a box to reach the top without exhausting yourself getting there. Release the assisting hand cleanly at the top. Keep the lowering arm's elbow close to the body throughout. Control the descent to a full dead hang. Stop if elbow pain appears.",
+    equipment: "Pull-up bar + box or jump to reach top",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 812,
+    name: "Wrist-Assisted One-Arm Pull-Up",
+    sidequestKey: "One-Arm Pull-Up | Lock-Off",
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:true},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "biceps", "core"],
+    diff: 7.2,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:3, wrist:3, elbow:5, shoulder:5, neck:0, thoracic:2, lowerBack:3, si:1, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 4,
+    mobility: 1,
+    strength: 5,
+    kcalPerRep: [0.31, 0.55],
+    desc: "One hand grips the bar in a pronated grip while the free hand wraps around the wrist or lower forearm of the working arm at bar height, providing direct self-assistance. The level of help is self-modulated - as unilateral strength builds, grip pressure from the free hand decreases toward zero. The preferred entry point for most athletes approaching their first One-Arm Pull-Up. Train each side independently.",
+    cues: "Grip the wrist - not the bar - with the free hand, both fists at bar height. Reduce assisting pressure progressively across sessions rather than in single jumps. Brace the obliques hard from the first rep.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 813,
+    name: "Finger-Assisted One-Arm Pull-Up",
+    sidequestKey: "One-Arm Pull-Up | Lock-Off",
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:true},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "biceps", "core", "grip"],
+    diff: 7.4,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:5, wrist:3, elbow:5, shoulder:5, neck:0, thoracic:2, lowerBack:3, si:1, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 5,
+    mobility: 1,
+    strength: 5,
+    kcalPerRep: [0.32, 0.57],
+    desc: "The working hand grips the bar in a full pronated grip while the assisting hand grips the bar beside it using only a small, fixed number of fingers - typically starting at four and reduced by one at a time as unilateral strength improves, down to a single finger before the unassisted One-Arm Pull-Up. The finger-count ladder gives a more precisely gradable assistance level than wrist-assisted work. Reduce assisting fingers only once 5-10 clean reps are achieved. Train each side independently.",
+    cues: "Place the working hand on the bar pronated. Place only the agreed number of fingers from the assisting hand beside it, keeping the rest of that hand open. Pull primarily through the working arm - the assisting fingers should feel like a light touch. Drop to one fewer finger once 5-10 reps are clean.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 814,
+    name: "Typewriter Pull-Up",
+    sidequestKey: null,
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "biceps", "shoulders"],
+    diff: 7.7,
+    str: {suit:true, eff:5},
+    vol: {suit:false, eff:2},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:1, elbow:3, shoulder:2, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 3,
+    mobility: 2,
+    strength: 4,
+    kcalPerRep: [0.37, 0.66],
+    desc: "Pull to bar height in a wide pronated grip, then sweep laterally from side to side at constant height before descending. Each side of the sweep approaches Archer Pull-Up loading as the body shifts to one arm. The pronated grip's weaker bicep leverage makes this marginally harder than the Typewriter Chin-Up throughout each lateral traverse.",
+    cues: "Pull to bar height before initiating the lateral shift - never start the sweep from below the bar. Keep constant height throughout the traverse. Control the sweep speed. Return to centre before descending to a full dead hang.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 815,
+    name: "Around The World Pull-Up",
+    sidequestKey: null,
+    hof: true,
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Biceps", p:true},
+      {n:"Core", p:true}
+    ],
+    tags: ["back", "biceps", "shoulders", "core"],
+    diff: 7.2,
+    str: {suit:true, eff:4},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:1, elbow:3, shoulder:3, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 5,
+    mobility: 2,
+    strength: 4,
+    kcalPerRep: [0.42, 0.75],
+    desc: "Pull to bar height in a wide pronated grip, then trace a full lateral arc - sweeping from one side all the way to the other at constant height - before descending. Any sag mid-traverse indicates insufficient base strength. The extreme ends of each sweep approach archer pull-up loading, and this carries the highest technique demand of any bilateral pull-up variant. Master the Typewriter Pull-Up first.",
+    cues: "Pull to bar height before starting the arc - height must stay constant through the entire sweep. Drive each side by shifting weight actively toward that arm, not by dipping. Reverse direction smoothly at the extremes. Lower to a full dead hang after completing the arc.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 816,
+    name: "Scapular Pull-Up",
+    sidequestKey: null,
+    alt: "Scapular retraction pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Rear Delts", p:false},
+      {n:"Rhomboids", p:false}
+    ],
+    tags: ["back", "shoulders"],
+    diff: 2.2,
+    str: {suit:false, eff:1},
+    vol: {suit:false, eff:1},
+    end: {suit:true, eff:3},
+    joints: {fingers:1, wrist:1, elbow:0, shoulder:1, neck:0, thoracic:0, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 1,
+    mobility: 1,
+    strength: 1,
+    kcalPerRep: [0.06, 0.10],
+    desc: "From a full pronated dead hang, the body is raised a few centimetres by depressing and retracting the scapulae only - the elbows stay completely straight throughout. Isolates the scapular initiation that every well-performed pull-up should begin with. Skipping this teaches pulling with the arms alone, losing lat activation and overloading the biceps tendon.",
+    cues: "Hang at full arm extension, palms facing away. Without bending the elbows, draw the shoulder blades down and back. Slowly return to the dead hang. If the elbows bend, it has become the start of a pull-up.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 817,
+    name: "Band-Assisted Pull-Up | (Band)",
+    sidequestKey: null,
+    alt: "Banded pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Biceps", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "shoulders", "biceps"],
+    diff: 2.7,
+    str: {suit:false, eff:2},
+    vol: {suit:true, eff:3},
+    end: {suit:true, eff:4},
+    joints: {fingers:1, wrist:1, elbow:1, shoulder:1, neck:0, thoracic:0, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 1,
+    mobility: 1,
+    strength: 1,
+    kcalPerRep: [0.11, 0.19],
+    desc: "A pronated-grip pull-up with a resistance band looped over the bar and placed under the feet or knees to reduce effective load. The band provides the most assistance at the bottom of the pull, exactly where beginners are weakest, and is the preferred entry point for athletes who cannot yet complete a single unassisted pull-up.",
+    cues: "Loop the band over the bar and step or kneel into it before gripping the bar shoulder-width, palms away. Depress the scapulae before the first pull. Use the lightest band that still allows clean form, and progress to lighter bands over time.",
+    equipment: "Pull-up bar + resistance band",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 818,
+    name: "Machine-Assisted Pull-Up | (Machine)",
+    sidequestKey: null,
+    alt: "Assisted pull-up machine",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:false},
+      {n:"Rear Delts", p:false},
+      {n:"Core", p:false}
+    ],
+    tags: ["back", "shoulders"],
+    diff: 1.8,
+    str: {suit:false, eff:1},
+    vol: {suit:true, eff:4},
+    end: {suit:true, eff:4},
+    joints: {fingers:1, wrist:1, elbow:1, shoulder:1, neck:0, thoracic:0, lowerBack:0, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 1,
+    mobility: 1,
+    strength: 1,
+    kcalPerRep: [0.13, 0.23],
+    desc: "A pull-up performed on a counterweighted assisted pull-up machine, kneeling or standing on a weighted platform that offsets a chosen percentage of bodyweight through the entire range. Unlike a band, the assistance stays constant across the full rep rather than tapering out near the top, making the finish of each rep more forgiving than banded work. The standard gym-based entry point into vertical pulling for beginners without access to a band or a partner spot.",
+    cues: "Set the counterweight to the highest assistance level you can complete 8-10 clean reps with, then reduce the assistance in small increments as pulling strength improves. Step onto the platform smoothly rather than dropping onto it. Pull to a full chin or chest-height finish depending on machine design.",
+    equipment: "Machine",
+    position: "Kneeling",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 819,
+    name: "Kipping Pull-Up",
+    sidequestKey: null,
+    alt: "Kip pull-up",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Core", p:true},
+      {n:"Hip Flexors", p:true},
+      {n:"Biceps", p:false}
+    ],
+    tags: ["back", "core", "power"],
+    diff: 2.4,
+    str: {suit:false, eff:1},
+    vol: {suit:true, eff:4},
+    end: {suit:true, eff:4},
+    joints: {fingers:1, wrist:1, elbow:1, shoulder:2, neck:0, thoracic:1, lowerBack:2, si:1, hip:2, groin:0, knee:0, ankle:0, foot:0},
+    technique: 4,
+    mobility: 1,
+    strength: 1,
+    kcalPerRep: [0.18, 0.32],
+    desc: "A pull-up in which a rhythmic hip and leg swing generates momentum that drives the chin over the bar, replacing much of the strict pulling strength demand with timing and hip-drive technique. The pattern used in CrossFit-style training to accumulate high rep counts well beyond strict pull-up capacity. Trades raw pulling strength for coordination, core-to-shoulder timing, and shoulder mobility under a swinging load.",
+    cues: "Initiate the kip from a hollow-to-arch swing of the hips and legs, not the arms. Time the pull to coincide with the forward drive of the hips at the top of the swing. Keep the shoulders engaged throughout - a fully passive shoulder invites injury. Build the strict pull-up first; the kip should add to existing strength, not replace it entirely.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 820,
+    name: "Butterfly Pull-Up",
+    sidequestKey: "Wide Pull-Up",
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Core", p:true},
+      {n:"Hip Flexors", p:true},
+      {n:"Rear Delts", p:false}
+    ],
+    tags: ["back", "core", "power"],
+    diff: 4.6,
+    str: {suit:false, eff:1},
+    vol: {suit:true, eff:5},
+    end: {suit:true, eff:4},
+    joints: {fingers:2, wrist:2, elbow:1, shoulder:3, neck:0, thoracic:2, lowerBack:2, si:1, hip:3, groin:0, knee:0, ankle:0, foot:0},
+    technique: 5,
+    mobility: 3,
+    strength: 1,
+    kcalPerRep: [0.20, 0.35],
+    desc: "A continuous-cycle kipping pull-up in which the hips trace a circular path rather than a front-to-back swing, allowing the athlete to chain reps together with almost no pause at the top or bottom of each rep. Used in competitive CrossFit to maximise pull-up rate of fire. Demands significantly more shoulder mobility, timing precision, and grip endurance than a standard kipping pull-up, since the continuous circular motion never lets the shoulder rest in a stable position.",
+    cues: "The hips move in a continuous circle - forward and up, then back and down - never stopping at either end of the pull-up. Grip must stay relaxed enough to allow the hands to roll around the bar without repositioning between reps. This is a rate-of-fire skill for high-volume sets, not a strength-building variant - build strict and kipping pull-up capacity first.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 821,
+    name: "Australian Pull-Up | (TRX)",
+    sidequestKey: "Australian Pull-Up | Feet Elevated (Low Bar)",
+    alt: "TRX inverted row",
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Biceps", p:true},
+      {n:"Rear Delts", p:true},
+      {n:"Core", p:true}
+    ],
+    tags: ["back", "biceps", "shoulders", "core"],
+    diff: 2.2,
+    str: {suit:true, eff:3},
+    vol: {suit:true, eff:4},
+    end: {suit:true, eff:3},
+    joints: {fingers:1, wrist:1, elbow:1, shoulder:2, neck:0, thoracic:1, lowerBack:1, si:0, hip:0, groin:0, knee:0, ankle:0, foot:0},
+    technique: 3,
+    mobility: 1,
+    strength: 1,
+    kcalPerRep: [0.13, 0.23],
+    desc: "A horizontal row performed on TRX suspension straps instead of a fixed low bar or rings. The straps hang independently and can drift both toward and away from each other, adding a two-handed instability component beyond what a single rotating ring pair provides. Body angle scales the load the same way as other Australian Pull-Up variants: more horizontal is harder, more upright is easier.",
+    cues: "Set the straps to hover at roughly hip height, handles turned to a comfortable grip. Keep the body rigid from head to heels and pull the chest to the handles, resisting any independent strap drift. Adjust difficulty by walking the feet further under the anchor point for an easier angle, or further away for a harder one.",
+    equipment: "TRX",
+    position: "Supine",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 822,
+    name: "Straddle L-Sit Pull-Up | (Rings)",
+    sidequestKey: "Straddle L-Sit Pull-Up | (Bar)",
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Core", p:true},
+      {n:"Hip Flexors", p:true},
+      {n:"Biceps", p:false}
+    ],
+    tags: ["back", "core", "biceps", "shoulders"],
+    diff: 6.25,
+    str: {suit:true, eff:4},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:2, elbow:2, shoulder:4, neck:0, thoracic:2, lowerBack:2, si:1, hip:4, groin:2, knee:0, ankle:0, foot:0},
+    technique: 5,
+    mobility: 3,
+    strength: 4,
+    kcalPerRep: [0.33, 0.58],
+    desc: "A Straddle L-Sit Pull-Up performed on gymnastic rings instead of a fixed bar. The rings rotate and drift under the combined straddle-hold and pulling demand, adding a stabilisation cost on top of the hip abductor and core tension already required to hold the straddle. Easier than a full ring L-Sit Pull-Up since the straddle reduces hip flexor loading, but harder than the bar version due to the ring instability.",
+    cues: "Establish the straddle position before the first pull and hold it for the entire set - any leg drop ends the rep. Grip the rings firmly and allow them to find a natural rotation rather than forcing a fixed path. Master the bar version first.",
+    equipment: "Gymnastic rings",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  },
+
+{
+    id: 823,
+    name: "L-Sit Pull-Up | (Bar)",
+    sidequestKey: "Straddle L-Sit Pull-Up | (Bar)",
+    alt: null,
+    muscles: [
+      {n:"Lats", p:true},
+      {n:"Core", p:true},
+      {n:"Hip Flexors", p:true},
+      {n:"Biceps", p:false}
+    ],
+    tags: ["back", "core", "biceps"],
+    diff: 6.35,
+    str: {suit:true, eff:4},
+    vol: {suit:false, eff:1},
+    end: {suit:false, eff:1},
+    joints: {fingers:2, wrist:1, elbow:2, shoulder:3, neck:0, thoracic:2, lowerBack:2, si:1, hip:5, groin:1, knee:0, ankle:0, foot:0},
+    technique: 5,
+    mobility: 3,
+    strength: 4,
+    kcalPerRep: [0.34, 0.60],
+    desc: "A pull-up performed on a fixed bar while holding a full L-sit - legs together and extended parallel to the floor - for the entire set. Harder than the Straddle L-Sit Pull-Up because closing the legs removes the hip-abductor assistance the straddle provides, concentrating the isometric load onto the hip flexors and abdominals alone. The direct bridge between the straddle and the full V-Sit Pull-Up.",
+    cues: "Compress the abs and drive the legs to parallel, knees locked, before the first pull. Maintain the L throughout every rep - if the legs drop, the set is over. Master the Straddle L-Sit Pull-Up before progressing here.",
+    equipment: "Pull-up bar",
+    position: "Hanging",
+    youtube: "LINK_TODO"
+  }
 
 ];
 

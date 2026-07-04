@@ -34,6 +34,7 @@ pushups.push(
 {
   id: 322,
   name: "Archer Push-Up | (Bar)",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -95,6 +96,7 @@ pushups.push(
 {
   id: 324,
   name: "Archer Push-Up | (Parallettes)",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -125,6 +127,7 @@ pushups.push(
 {
   id: 325,
   name: "Archer Push-Up | One Leg",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -154,6 +157,7 @@ pushups.push(
 {
   id: 326,
   name: "Archer Push-Up | (Rings)",
+  sidequestKey: "Archer Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -183,6 +187,7 @@ pushups.push(
 {
   id: 364,
   name: "Archer Push-Up | (TRX)",
+  sidequestKey: "Archer Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -212,6 +217,7 @@ pushups.push(
 {
   id: 378,
   name: "Archer Push-Up | Negative",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -242,6 +248,7 @@ pushups.push(
 {
   id: 377,
   name: "Archer Push-Up | Fingertip",
+  sidequestKey: "Archer Push-Up | Explosive",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -272,6 +279,7 @@ pushups.push(
 {
   id: 379,
   name: "Archer Push-Up | Deficit",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -302,6 +310,7 @@ pushups.push(
 {
   id: 327,
   name: "Pike Push-Up | (Bar)",
+  sidequestKey: "Pike Push-Up",
   alt: null,
   pathTag: "handstand",
   muscles: [
@@ -363,6 +372,7 @@ pushups.push(
 {
   id: 329,
   name: "Pike Push-Up | (Parallettes)",
+  sidequestKey: "Pike Push-Up",
   alt: null,
   pathTag: "handstand",
   muscles: [
@@ -393,6 +403,7 @@ pushups.push(
 {
   id: 330,
   name: "Pike Push-Up | (Rings)",
+  sidequestKey: "Pike Push-Up | Pause",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -422,6 +433,7 @@ pushups.push(
 {
   id: 351,
   name: "Pike Push-Up | (TRX)",
+  sidequestKey: "Pike Push-Up | Deficit",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -431,7 +443,7 @@ pushups.push(
     { n: "Serratus",  p: false },
   ],
   tags: ["shoulders", "triceps", "chest", "core", "serratus"],
-  diff: 8.0,
+  diff: 7.2,
   str:  { suit: true,  eff: 4 },
   vol:  { suit: false, eff: 1 },
   end:  { suit: false, eff: 1 },
@@ -461,7 +473,7 @@ pushups.push(
     { n: "Serratus",  p: false },
   ],
   tags: ["shoulders", "triceps", "chest", "core", "serratus"],
-  diff: 8.30,
+  diff: 7.0,
   str:  { suit: true,  eff: 4 },
   vol:  { suit: true,  eff: 3 },
   end:  { suit: false, eff: 1 },
@@ -481,6 +493,7 @@ pushups.push(
 {
   id: 332,
   name: "Pike Push-Up | Feet Elevated",
+  sidequestKey: "Pike Push-Up | Deficit",
   alt: null,
   pathTag: "handstand",
   pathNode: true,
@@ -492,7 +505,7 @@ pushups.push(
     { n: "Serratus",  p: false },
   ],
   tags: ["shoulders", "triceps", "chest", "core", "serratus"],
-  diff: 8.5,
+  diff: 7.3,
   str:  { suit: true,  eff: 4 },
   vol:  { suit: true,  eff: 3 },
   end:  { suit: false, eff: 1 },
@@ -512,6 +525,7 @@ pushups.push(
 {
   id: 333,
   name: "Pike Push-Up | Feet Elevated (Parallettes)",
+  sidequestKey: "Pike Push-Up | Deficit",
   alt: null,
   pathTag: "handstand",
   muscles: [
@@ -522,7 +536,7 @@ pushups.push(
     { n: "Serratus",  p: false },
   ],
   tags: ["shoulders", "triceps", "chest", "core", "serratus"],
-  diff: 8.6,
+  diff: 7.4,
   str:  { suit: true,  eff: 5 },
   vol:  { suit: true,  eff: 2 },
   end:  { suit: false, eff: 1 },
@@ -573,6 +587,7 @@ pushups.push(
 {
   id: 383,
   name: "Pike Push-Up | Negative",
+  sidequestKey: "Pike Push-Up | Pause",
   alt: null,
   pathTag: "handstand",
   muscles: [
@@ -633,6 +648,7 @@ pushups.push(
 {
   id: 392,
   name: "Pike Push-Up | Fingertip",
+  sidequestKey: "Pike Push-Up | Pause",
   alt: null,
   pathTag: "handstand",
   muscles: [
@@ -662,7 +678,8 @@ pushups.push(
 
 {
   id: 396,
-  name: "Preacher Push-Up | One Arm",
+  name: "Elevated Pike Push-Up | One Arm",
+  sidequestKey: "One Arm Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",     p: true  },
@@ -786,6 +803,7 @@ pushups.push(
 {
   id: 460,
   name: "One Arm Push-Up | Strict, Negative",
+  sidequestKey: null,
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -816,6 +834,7 @@ pushups.push(
 {
   id: 461,
   name: "One Arm Push-Up | Strict, Pause",
+  sidequestKey: "One Arm Push-Up | Strict",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -846,6 +865,7 @@ pushups.push(
 {
   id: 340,
   name: "One Arm Push-Up | Negative",
+  sidequestKey: "One Arm Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -876,6 +896,7 @@ pushups.push(
 {
   id: 341,
   name: "One Arm Push-Up | Pause",
+  sidequestKey: "One Arm Push-Up",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -906,6 +927,7 @@ pushups.push(
 {
   id: 342,
   name: "One Arm Push-Up | Fingertip",
+  sidequestKey: "One Arm Push-Up",
   alt: null,
   pathTag: "one-arm-fingertip",
   pathNode: true,
@@ -937,6 +959,7 @@ pushups.push(
 {
   id: 343,
   name: "One Arm Push-Up | (Parallettes)",
+  sidequestKey: "One Arm Push-Up | 4-Finger",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -947,7 +970,7 @@ pushups.push(
     { n: "Obliques",  p: true  },
   ],
   tags: ["chest", "triceps", "shoulders", "core", "obliques"],
-  diff: 6.9,
+  diff: 8.2,
   str:  { suit: true,  eff: 5 },
   vol:  { suit: false, eff: 1 },
   end:  { suit: false, eff: 1 },
@@ -997,6 +1020,7 @@ pushups.push(
 {
   id: 353,
   name: "One Arm Push-Up | 3-Finger",
+  sidequestKey: "One Arm Push-Up | 4-Finger",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -1027,6 +1051,7 @@ pushups.push(
 {
   id: 354,
   name: "One Arm Push-Up | 2-Finger",
+  sidequestKey: "One Arm Push-Up | 4-Finger",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -1057,6 +1082,7 @@ pushups.push(
 {
   id: 355,
   name: "One Arm Push-Up | 1-Finger",
+  sidequestKey: "One Arm Push-Up | Explosive",
   hof: true,
   pathTag: "one-arm-fingertip",
   pathNode: true,
@@ -1090,6 +1116,7 @@ pushups.push(
 {
   id: 387,
   name: "One Arm Push-Up | Knuckle, Straddle",
+  sidequestKey: "One Arm Push-Up, Straddle",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -1120,6 +1147,7 @@ pushups.push(
 {
   id: 462,
   name: "One Arm Push-Up | Deficit",
+  sidequestKey: "One Arm Push-Up | 4-Finger",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -1150,6 +1178,7 @@ pushups.push(
 {
   id: 463,
   name: "One Arm Push-Up | Strict, Fingertip",
+  sidequestKey: "One Arm Push-Up | Strict",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -1181,6 +1210,7 @@ pushups.push(
 {
   id: 464,
   name: "One Arm Push-Up | (Rings)",
+  sidequestKey: "One Arm Push-Up | Explosive",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -1212,6 +1242,7 @@ pushups.push(
 {
   id: 466,
   name: "One Arm Push-Up | One Leg",
+  sidequestKey: "One Arm Push-Up | 4-Finger",
   alt: "Lalanne Push-Up · diagonal one-arm push-up",
   pathTag: "one-arm",
   muscles: [
@@ -1240,36 +1271,6 @@ pushups.push(
 },
 
 // ─── PSEUDO PLANCHE PUSH-UP FAMILY ───────────────────────────────────────────
-
-{
-  id: 550,
-  name: "Pseudo Planche Push-Up",
-  pathNode: true,
-  alt: "Lean Push-Up",
-  muscles: [
-    { n: "Chest",     p: true  },
-    { n: "Shoulders", p: true  },
-    { n: "Triceps",   p: true  },
-    { n: "Core",      p: true  },
-    { n: "Wrist Flexors", p: false },
-  ],
-  tags: ["chest", "shoulders", "triceps", "core", "power"],
-  diff: 5.5,
-  str:  { suit: true,  eff: 4 },
-  vol:  { suit: false, eff: 1 },
-  end:  { suit: false, eff: 1 },
-  joints: { wrist: 4, elbow: 3, shoulder: 4, neck: 1, lowerBack: 2,
-            knee: 0, fingers: 0, thoracic: 2, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
-  strength: 4,
-  mobility: 3,
-  technique: 4,
-  kcalPerRep: [0.32, 0.41],
-  desc: "Push-up with the hands turned to face backward (fingers pointing toward the feet) and the torso leaned significantly forward over the hands, placing the shoulders ahead of the wrists. This forward lean shifts the pressing vector toward a pseudo-horizontal plane, loading the anterior deltoids and chest far more than a standard push-up and conditioning the wrists toward the full planche position. The degree of forward lean governs difficulty — greater lean equals greater load.",
-  cues: "Turn the hands backward — fingers pointing toward the feet — and lean the shoulders forward past the wrists before lowering. Keep the elbows tucked and the core rigid. Lower the chest toward the floor while maintaining the forward lean throughout the rep. Press back to the starting lean angle, not to a standard push-up top position. Start with a moderate 30-40° lean and add lean progressively.",
-  equipment: "None",
-  position: "Prone",
-  youtube: "LINK_TODO"
-},
 
 {
   id: 551,
@@ -1301,37 +1302,9 @@ pushups.push(
 },
 
 {
-  id: 552,
-  name: "Pseudo Planche Push-Up | (Parallettes)",
-  alt: null,
-  muscles: [
-    { n: "Chest",     p: true  },
-    { n: "Shoulders", p: true  },
-    { n: "Triceps",   p: true  },
-    { n: "Core",      p: true  },
-    { n: "Wrist Flexors", p: false },
-  ],
-  tags: ["chest", "shoulders", "triceps", "core", "power"],
-  diff: 6.0,
-  str:  { suit: true,  eff: 4 },
-  vol:  { suit: false, eff: 1 },
-  end:  { suit: false, eff: 1 },
-  joints: { wrist: 2, elbow: 3, shoulder: 5, neck: 1, lowerBack: 2,
-            knee: 0, fingers: 0, thoracic: 2, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
-  strength: 4,
-  mobility: 3,
-  technique: 4,
-  kcalPerRep: [0.34, 0.44],
-  desc: "Pseudo planche push-up on parallettes — handles allow neutral wrist alignment while leaning forward, dramatically reducing wrist stress compared to the floor version where the backward-turned hands under extreme load creates intense wrist discomfort. The elevated handles also allow deeper chest travel at the bottom. The preferred wrist-safe way to train pseudo planche pressing.",
-  cues: "Grip the parallettes and lean the shoulders far forward, keeping the handles neutral under the palms. The wrists will be in a much more comfortable position than the floor version. Lower with the forward lean maintained and press back without losing the shoulder-over-wrist angle. This is the primary pseudo planche training method for athletes with wrist sensitivity.",
-  equipment: "Parallettes",
-  position: "Prone",
-  youtube: "LINK_TODO"
-},
-
-{
   id: 553,
   name: "Pseudo Planche Push-Up | (Rings)",
+  sidequestKey: "Pseudo Planche Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1354,92 +1327,6 @@ pushups.push(
   desc: "Pseudo planche push-up on gymnastic rings — forward body lean combined with ring instability. The rings allow any wrist rotation angle (eliminating wrist stress) while adding three-dimensional instability that demands continuous serratus and rotator cuff co-contraction on top of the already-extreme anterior shoulder loading of the pseudo planche lean.",
   cues: "Set rings at floor height and lean the shoulders forward over the rings as far as possible. Allow the rings to rotate to whatever wrist angle is comfortable. Lower under full body-lean while stabilising the rings from drifting. Press back to the lean position. This combines two advanced skills — respect the shoulder load and build gradually.",
   equipment: "Rings",
-  position: "Prone",
-  youtube: "LINK_TODO"
-},
-
-{
-  id: 554,
-  name: "Pseudo Planche Push-Up | Fingertip",
-  alt: null,
-  pathTag: "fingertip",
-  muscles: [
-    { n: "Chest",     p: true  },
-    { n: "Shoulders", p: true  },
-    { n: "Triceps",   p: true  },
-    { n: "Core",      p: true  },
-    { n: "Forearms",  p: true  },
-  ],
-  tags: ["chest", "shoulders", "triceps", "forearms", "core", "power"],
-  diff: 6.5,
-  str:  { suit: true,  eff: 4 },
-  vol:  { suit: false, eff: 1 },
-  end:  { suit: false, eff: 1 },
-  joints: { wrist: 4, elbow: 3, shoulder: 5, neck: 1, lowerBack: 2,
-            knee: 0, fingers: 5, thoracic: 2, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
-  strength: 5,
-  mobility: 3,
-  technique: 5,
-  kcalPerRep: [0.36, 0.46],
-  desc: "Pseudo planche push-up on the fingertips with backward-pointing fingers. The forward lean places extreme compression force through each fingertip along with the near-maximal wrist and anterior shoulder loading of the pseudo planche. One of the highest finger-tendon-loading floor push-up variants outside of a single-finger one-arm push-up.",
-  cues: "Turn the fingertips to face sideways or backward and lean forward into the pseudo planche position. The fingers will be heavily loaded at an unusual angle — start with a modest lean and increase only after the finger tendons are fully adapted. This is a high-injury-risk variant; progress in very small lean increments over months.",
-  equipment: "None",
-  position: "Prone",
-  youtube: "LINK_TODO"
-},
-
-{
-  id: 555,
-  name: "Pseudo Planche Push-Up | Negative",
-  alt: null,
-  muscles: [
-    { n: "Chest",     p: true  },
-    { n: "Shoulders", p: true  },
-    { n: "Triceps",   p: true  },
-    { n: "Core",      p: true  },
-  ],
-  tags: ["chest", "shoulders", "triceps", "core", "power"],
-  diff: 6.0,
-  str:  { suit: true,  eff: 5 },
-  vol:  { suit: false, eff: 1 },
-  end:  { suit: false, eff: 1 },
-  joints: { wrist: 4, elbow: 3, shoulder: 4, neck: 1, lowerBack: 2,
-            knee: 0, fingers: 0, thoracic: 2, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
-  strength: 4,
-  mobility: 3,
-  technique: 4,
-  kcalPerRep: [0.55, 0.70],
-  desc: "Pseudo planche push-up trained as eccentric-only — lower from the forward-lean position under control over 3-5 seconds, maintaining the lean throughout, then reset without pressing. The slow eccentric under near-maximal anterior shoulder and chest loading is a key strength-building tool for athletes who cannot yet complete a full pseudo planche press rep at their target lean angle.",
-  cues: "Set the hands in backward-turned position and establish the forward lean. Lower slowly over 4 seconds, maintaining the lean — do not shift back to a standard push-up angle mid-descent. Once the chest nears the floor, reset to the starting position using knees or assistance. Build towards full reps at each lean angle with eccentrics.",
-  equipment: "None",
-  position: "Prone",
-  youtube: "LINK_TODO"
-},
-
-{
-  id: 556,
-  name: "Pseudo Planche Push-Up | Pause",
-  alt: null,
-  muscles: [
-    { n: "Chest",     p: true  },
-    { n: "Shoulders", p: true  },
-    { n: "Triceps",   p: true  },
-    { n: "Core",      p: true  },
-  ],
-  tags: ["chest", "shoulders", "triceps", "core", "power"],
-  diff: 5.8,
-  str:  { suit: true,  eff: 5 },
-  vol:  { suit: false, eff: 1 },
-  end:  { suit: false, eff: 1 },
-  joints: { wrist: 4, elbow: 3, shoulder: 4, neck: 1, lowerBack: 2,
-            knee: 0, fingers: 0, thoracic: 2, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
-  strength: 4,
-  mobility: 3,
-  technique: 4,
-  kcalPerRep: [0.40, 0.51],
-  desc: "Pseudo planche push-up with a 1-2 second isometric hold at the bottom — chest just above the floor, shoulders far in front of the hands, the full forward-lean maintained. Killing the bounce at the bottom eliminates elastic energy and forces the pressing muscles to restart from a dead position under near-maximal lean loading.",
-  cues: "Lower into the pseudo planche bottom position and pause for 1-2 seconds without resting. Maintain the forward lean angle during the pause — the hardest part is not collapsing the lean while holding the bottom. Press back to the lean top position from the dead stop.",
-  equipment: "None",
   position: "Prone",
   youtube: "LINK_TODO"
 },
@@ -1536,6 +1423,7 @@ pushups.push(
 {
   id: 560,
   name: "Archer Push-Up | Clap",
+  sidequestKey: "Archer Push-Up | Explosive",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1564,6 +1452,7 @@ pushups.push(
 {
   id: 561,
   name: "Archer Push-Up | Knuckle",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1592,6 +1481,7 @@ pushups.push(
 {
   id: 562,
   name: "Archer Push-Up | Pause",
+  sidequestKey: "Archer Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1622,6 +1512,7 @@ pushups.push(
 {
   id: 563,
   name: "Pike Push-Up | Explosive",
+  sidequestKey: "Pike Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1650,6 +1541,7 @@ pushups.push(
 {
   id: 564,
   name: "Pike Push-Up | Clap",
+  sidequestKey: "Pike Push-Up | Pause",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1678,6 +1570,7 @@ pushups.push(
 {
   id: 565,
   name: "Pike Push-Up | Knuckle",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1706,6 +1599,7 @@ pushups.push(
 {
   id: 566,
   name: "One Arm Pike Push-Up | (Parallettes)",
+  sidequestKey: "Pike Push-Up | One Arm",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1715,7 +1609,7 @@ pushups.push(
     { n: "Traps",     p: false },
   ],
   tags: ["shoulders", "triceps", "traps", "core", "obliques"],
-  diff: 8.5,
+  diff: 9.1,
   str:  { suit: true,  eff: 5 },
   vol:  { suit: false, eff: 1 },
   end:  { suit: false, eff: 1 },
@@ -1735,6 +1629,7 @@ pushups.push(
 {
   id: 567,
   name: "One Arm Pike Push-Up | (Bar)",
+  sidequestKey: "Pike Push-Up | One Arm",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1744,7 +1639,7 @@ pushups.push(
     { n: "Traps",     p: false },
   ],
   tags: ["shoulders", "triceps", "traps", "core", "obliques"],
-  diff: 8.2,
+  diff: 9.0,
   str:  { suit: true,  eff: 5 },
   vol:  { suit: false, eff: 1 },
   end:  { suit: false, eff: 1 },
@@ -1764,6 +1659,7 @@ pushups.push(
 {
   id: 568,
   name: "One Arm Pike Push-Up | (Rings)",
+  sidequestKey: "Pike Push-Up | One Arm",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1773,7 +1669,7 @@ pushups.push(
     { n: "Serratus",  p: true  },
   ],
   tags: ["shoulders", "triceps", "serratus", "core", "obliques"],
-  diff: 9.0,
+  diff: 9.2,
   str:  { suit: true,  eff: 5 },
   vol:  { suit: false, eff: 1 },
   end:  { suit: false, eff: 1 },
@@ -1790,11 +1686,12 @@ pushups.push(
   youtube: "LINK_TODO"
 },
 
-// ─── PREACHER PUSH-UP FAMILY ─────────────────────────────────────────────────
+// ─── ELEVATED PIKE PUSH-UP FAMILY ─────────────────────────────────────────────
 
 {
   id: 569,
-  name: "Preacher Push-Up",
+  name: "Elevated Pike Push-Up",
+  sidequestKey: null,
   pathNode: true,
   alt: "Hands-Elevated Pike Push-Up",
   muscles: [
@@ -1824,7 +1721,8 @@ pushups.push(
 
 {
   id: 570,
-  name: "Preacher Push-Up | (Parallettes)",
+  name: "Elevated Pike Push-Up | (Parallettes)",
+  sidequestKey: "Elevated Pike Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1853,7 +1751,8 @@ pushups.push(
 
 {
   id: 571,
-  name: "Preacher Push-Up | (Rings)",
+  name: "Elevated Pike Push-Up | (Rings)",
+  sidequestKey: "Typewriter Push-Up | Pause",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1881,7 +1780,8 @@ pushups.push(
 
 {
   id: 572,
-  name: "Preacher Push-Up | Fingertip",
+  name: "Elevated Pike Push-Up | Fingertip",
+  sidequestKey: "Elevated Pike Push-Up",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -1910,7 +1810,8 @@ pushups.push(
 
 {
   id: 573,
-  name: "Preacher Push-Up | Negative",
+  name: "Elevated Pike Push-Up | Negative",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1937,7 +1838,8 @@ pushups.push(
 
 {
   id: 574,
-  name: "Preacher Push-Up | Pause",
+  name: "Elevated Pike Push-Up | Pause",
+  sidequestKey: "Elevated Pike Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1964,7 +1866,8 @@ pushups.push(
 
 {
   id: 575,
-  name: "Preacher Push-Up | Deficit",
+  name: "Elevated Pike Push-Up | Deficit",
+  sidequestKey: "Elevated Pike Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1995,6 +1898,7 @@ pushups.push(
 {
   id: 576,
   name: "Typewriter Push-Up | Negative",
+  sidequestKey: "Push-Up | 3-Finger",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -2118,6 +2022,7 @@ pushups.push(
 {
   id: 580,
   name: "One Arm Push-Up | Clap",
+  sidequestKey: "One Arm Push-Up | Explosive",
   alt: null,
   pathTag: "one-arm",
   hof: true,
@@ -2181,6 +2086,7 @@ pushups.push(
 {
   id: 582,
   name: "Push-Up | Hollow Body",
+  sidequestKey: "Push-Up | Cross-Body",
   alt: "Hollow Rock Push-Up",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2210,6 +2116,7 @@ pushups.push(
 {
   id: 583,
   name: "Archer Push-Up | Wide",
+  sidequestKey: "Archer Push-Up",
   alt: "Extra Wide Archer Push-Up",
   muscles: [
     { n: "Chest",     p: true  },
@@ -2264,6 +2171,66 @@ pushups.push(
   position: "Prone",
   youtube: "LINK_TODO"
 },
+
+{
+  id: 628,
+  name: "One Arm Push-Up | (Bar)",
+  sidequestKey: "One Arm Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+    { n: "Obliques",  p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core", "obliques"],
+  diff: 7.9,
+  str:  { suit: true,  eff: 4 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 4, shoulder: 4, neck: 1, lowerBack: 2,
+            knee: 0, fingers: 0, thoracic: 1, si: 1, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 4,
+  mobility: 2,
+  technique: 4,
+  kcalPerRep: [0.42, 0.55],
+  desc: "One-arm push-up gripping a single push-up bar with a neutral wrist. Removes the wrist-extension stress of the floor version at the cost of a narrower, less stable contact base than a flat hand — the difficulty nets out close to the standard floor one-arm push-up.",
+  cues: "Grip a single bar centred under the shoulder, other hand behind the back or on the hip. Lower with control, keeping the neutral wrist locked and elbow tracking close to the torso. Press back to full extension without rotating the hips.",
+  equipment: "Push-Up Bars",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 629,
+  name: "One Arm Push-Up | (TRX)",
+  sidequestKey: "One Arm Push-Up | 4-Finger",
+  alt: null,
+  muscles: [
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Shoulders", p: true  },
+    { n: "Core",      p: true  },
+    { n: "Obliques",  p: true  },
+  ],
+  tags: ["chest", "triceps", "shoulders", "core", "obliques"],
+  diff: 8.7,
+  str:  { suit: true,  eff: 5 },
+  vol:  { suit: false, eff: 1 },
+  end:  { suit: false, eff: 1 },
+  joints: { wrist: 2, elbow: 4, shoulder: 5, neck: 1, lowerBack: 2,
+            knee: 0, fingers: 0, thoracic: 1, si: 1, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 5,
+  mobility: 2,
+  technique: 5,
+  kcalPerRep: [0.46, 0.60],
+  desc: "One-arm push-up gripping a single TRX handle, adding continuous strap drift to the already extreme anti-rotation demand of the one-arm press. The single point of unstable suspension must be actively controlled through the entire rep, well beyond the floor or bar versions.",
+  cues: "Grip a single TRX handle centred under the shoulder, other hand behind the back. Lower with control, actively resisting any strap swing or rotation. Press back to full extension while keeping the hips square.",
+  equipment: "TRX",
+  position: "Prone",
+  youtube: "LINK_TODO"
+}
 
 );
 

@@ -90,7 +90,7 @@ pushups.push(
 {
   id: 91,
   name: "Decline Push-Up | Knee, One Leg",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -149,7 +149,7 @@ pushups.push(
 {
   id: 93,
   name: "Decline Push-Up | Knee, Fist",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   pathTag: "knuckle",
   muscles: [
@@ -179,7 +179,7 @@ pushups.push(
 {
   id: 94,
   name: "Decline Push-Up | Knee, Archer",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -209,7 +209,7 @@ pushups.push(
 {
   id: 119,
   name: "Decline Push-Up | Knee, 4-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -239,6 +239,7 @@ pushups.push(
 {
   id: 97,
   name: "Decline Push-Up | Knee, Explosive",
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -266,7 +267,7 @@ pushups.push(
 {
   id: 98,
   name: "Decline Push-Up | Knee, Clap",
-  sidequestKey: "Decline Push-Up | Knee, Explosive",
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -294,7 +295,7 @@ pushups.push(
 {
   id: 99,
   name: "Decline Push-Up | Knee, Negative",
-  sidequestKey: "Decline Push-Up | Knee, Explosive",
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -322,7 +323,7 @@ pushups.push(
 {
   id: 212,
   name: "Decline Push-Up | Knee (Bar)",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -350,7 +351,7 @@ pushups.push(
 {
   id: 213,
   name: "Decline Push-Up | Knee (Parallettes)",
-  sidequestKey: "Decline Push-Up | Knee, Fingertip",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -358,7 +359,7 @@ pushups.push(
     { n: "Triceps",   p: false },
   ],
   tags: ["chest", "shoulders", "triceps"],
-  diff: 3.95,
+  diff: 3.7,
   str:  { suit: true,  eff: 2 },
   vol:  { suit: true,  eff: 2 },
   end:  { suit: true,  eff: 2 },
@@ -378,7 +379,7 @@ pushups.push(
 {
   id: 215,
   name: "Decline Push-Up | Knee (TRX)",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee, Knuckle",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -521,7 +522,7 @@ pushups.push(
 {
   id: 114,
   name: "Decline Push-Up | Knee, T",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee, Diamond",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -549,6 +550,7 @@ pushups.push(
 {
   id: 95,
   name: "Decline Push-Up | Knee, Typewriter",
+  sidequestKey: "Decline Push-Up | Knee, Diamond",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -578,7 +580,7 @@ pushups.push(
 {
   id: 118,
   name: "Decline Push-Up | Knee, Fingertip",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Knee",
   alt: null,
   pathTag: "fingertip",
   pathNode: true,
@@ -609,7 +611,7 @@ pushups.push(
 {
   id: 120,
   name: "Decline Push-Up | Knee, 3-Finger",
-  sidequestKey: "Decline Push-Up | Fingertip",
+  sidequestKey: "Decline Push-Up | Knee, Diamond",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -639,7 +641,7 @@ pushups.push(
 {
   id: 121,
   name: "Decline Push-Up | Knee, 2-Finger",
-  sidequestKey: "Decline Push-Up | Fingertip",
+  sidequestKey: "Decline Push-Up | Knee, Diamond",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -725,7 +727,7 @@ pushups.push(
 {
   id: 214,
   name: "Decline Push-Up | Knee (Rings)",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Spider-Man",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -754,7 +756,7 @@ pushups.push(
 {
   id: 310,
   name: "Decline Push-Up",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: null,
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -784,7 +786,7 @@ pushups.push(
 {
   id: 311,
   name: "Decline Push-Up | One Leg",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -814,7 +816,7 @@ pushups.push(
 {
   id: 312,
   name: "Decline Push-Up | Staggered",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -843,7 +845,7 @@ pushups.push(
 {
   id: 313,
   name: "Decline Push-Up | Negative",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -872,7 +874,7 @@ pushups.push(
 {
   id: 314,
   name: "Decline Push-Up | Pause",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Spider-Man",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -901,7 +903,7 @@ pushups.push(
 {
   id: 350,
   name: "Decline Push-Up | (TRX)",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -930,7 +932,7 @@ pushups.push(
 {
   id: 315,
   name: "Decline Push-Up | Fingertip",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Spider-Man",
   pathTag: "decline-fingertip",
   pathNode: true,
   alt: null,
@@ -962,7 +964,7 @@ pushups.push(
 {
   id: 316,
   name: "Decline Push-Up | 4-Finger",
-  sidequestKey: "Decline Push-Up | Fingertip",
+  sidequestKey: "Decline Push-Up | Spider-Man",
   pathTag: "decline-fingertip",
   alt: null,
   muscles: [
@@ -993,7 +995,7 @@ pushups.push(
 {
   id: 318,
   name: "Decline Push-Up | Clap",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Spider-Man",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1022,7 +1024,7 @@ pushups.push(
 {
   id: 382,
   name: "Decline Push-Up | Knuckle",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1051,7 +1053,7 @@ pushups.push(
 {
   id: 381,
   name: "Decline Push-Up | Diamond",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1110,7 +1112,7 @@ pushups.push(
 {
   id: 438,
   name: "Decline Push-Up | Wide",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Chest",     p: true  },
@@ -1139,7 +1141,7 @@ pushups.push(
 {
   id: 439,
   name: "Decline Push-Up | Narrow",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Triceps",   p: true  },
@@ -1168,7 +1170,7 @@ pushups.push(
 {
   id: 440,
   name: "Decline Push-Up | Fist",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1197,7 +1199,7 @@ pushups.push(
 {
   id: 441,
   name: "Decline Push-Up | Explosive",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Spider-Man",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1226,7 +1228,7 @@ pushups.push(
 {
   id: 443,
   name: "Decline Push-Up | T-Rotation",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | Spider-Man",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1257,7 +1259,7 @@ pushups.push(
 {
   id: 452,
   name: "Decline Push-Up | Closed Legs",
-  sidequestKey: "Decline Push-Up | Diamond",
+  sidequestKey: "Decline Push-Up",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1378,7 +1380,7 @@ pushups.push(
 {
   id: 122,
   name: "Decline Push-Up | Knee, 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | 3-Finger",
   alt: null,
   pathTag: "fingertip",
   pathNode: true,
@@ -1533,7 +1535,7 @@ pushups.push(
 {
   id: 127,
   name: "Decline Push-Up | Knee, One Arm, 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Pause",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -1595,7 +1597,7 @@ pushups.push(
 {
   id: 319,
   name: "Decline Push-Up | 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Negative",
   pathTag: "decline-fingertip",
   alt: null,
   muscles: [
@@ -1625,7 +1627,7 @@ pushups.push(
 {
   id: 320,
   name: "Decline Push-Up | One Arm, Straddle",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Negative",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1655,7 +1657,7 @@ pushups.push(
 {
   id: 321,
   name: "Decline Push-Up | 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Pause",
   pathTag: "decline-fingertip",
   alt: null,
   muscles: [
@@ -1686,7 +1688,7 @@ pushups.push(
 {
   id: 442,
   name: "Decline Push-Up | (Rings)",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | 3-Finger",
   muscles: [
     { n: "Shoulders", p: true  },
     { n: "Chest",     p: true  },
@@ -1776,7 +1778,7 @@ pushups.push(
 {
   id: 447,
   name: "Decline Push-Up | One Arm, Fingertip",
-  sidequestKey: "Decline Push-Up | One Arm, One Leg",
+  sidequestKey: null,
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1807,7 +1809,7 @@ pushups.push(
 {
   id: 448,
   name: "Decline Push-Up | One Arm, 4-Finger",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Pause",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1838,7 +1840,7 @@ pushups.push(
 {
   id: 449,
   name: "Decline Push-Up | One Arm, 3-Finger",
-  sidequestKey: "Decline Push-Up | One Arm, One Leg",
+  sidequestKey: "Decline Push-Up | One Arm, Fingertip",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1869,7 +1871,7 @@ pushups.push(
 {
   id: 450,
   name: "Decline Push-Up | One Arm, 2-Finger",
-  sidequestKey: "Decline Push-Up | One Arm, One Leg",
+  sidequestKey: "Decline Push-Up | One Arm, Fingertip",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1930,8 +1932,8 @@ pushups.push(
 
 {
   id: 453,
-  name: "Decline Push-Up | One Arm, Straddle",
-  sidequestKey: null,
+  name: "Decline Push-Up | Wide Staggered",
+  sidequestKey: "Decline Push-Up | 3-Finger",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1961,7 +1963,7 @@ pushups.push(
 {
   id: 454,
   name: "Decline Push-Up | One Arm, Fist",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Negative",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -1991,7 +1993,7 @@ pushups.push(
 {
   id: 455,
   name: "Decline Push-Up | One Arm, Knuckle",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Negative",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -2021,7 +2023,7 @@ pushups.push(
 {
   id: 456,
   name: "Decline Push-Up | One Arm, Closed Legs",
-  sidequestKey: null,
+  sidequestKey: "Decline Push-Up | One Arm, Pause",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -2051,6 +2053,7 @@ pushups.push(
 {
   id: 457,
   name: "Decline Push-Up | One Arm, One Leg",
+  sidequestKey: "Decline Push-Up | One Arm, Fingertip",
   alt: null,
   muscles: [
     { n: "Shoulders", p: true  },
@@ -2074,6 +2077,64 @@ pushups.push(
   desc: "Decline one-arm push-up with one foot lifted off the elevated surface, leaving a diagonal two-point base — one hand on the floor and the contralateral foot on the box. The removed foot eliminates a major stabilizing contact, forcing the glutes, hip stabilisers, obliques, and spinal erectors to resist both a lateral-tipping and a rotational moment simultaneously on top of the extreme unilateral pressing load of the decline one-arm.",
   cues: "Set feet on the box in a standard decline one-arm setup, then lift the same-side foot as the working arm — support runs diagonally. Brace absolutely against the compound tendency to tip and rotate before you lower. Minimal rep depth is acceptable; control is the priority. Work both diagonals equally. This is an elite demonstration drill.",
   equipment: "Elevated Surface",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 612,
+  name: "Decline Push-Up | (Bar)",
+  sidequestKey: "Decline Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Shoulders", p: true  },
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["shoulders", "chest", "triceps", "core"],
+  diff: 3.6,
+  str:  { suit: true,  eff: 2 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 3 },
+  joints: { wrist: 1, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 2,
+  technique: 1,
+  kcalPerRep: [0.27, 0.35],
+  desc: "Decline push-up gripping a pair of push-up bars, keeping the wrists neutral throughout. The elevated feet already shift extra load onto the shoulders; the neutral grip removes the wrist-extension stress of the floor-handed version without meaningfully changing the difficulty otherwise.",
+  cues: "Set feet on a box or bench and grip the bars at shoulder-width. Lower with control, keeping wrists straight. Press back to full extension while keeping the body rigid from head to heels.",
+  equipment: "Push-Up Bars",
+  position: "Prone",
+  youtube: "LINK_TODO"
+},
+
+{
+  id: 613,
+  name: "Decline Push-Up | (Parallettes)",
+  sidequestKey: "Decline Push-Up",
+  alt: null,
+  muscles: [
+    { n: "Shoulders", p: true  },
+    { n: "Chest",     p: true  },
+    { n: "Triceps",   p: true  },
+    { n: "Core",      p: false },
+  ],
+  tags: ["shoulders", "chest", "triceps", "core"],
+  diff: 3.9,
+  str:  { suit: true,  eff: 3 },
+  vol:  { suit: true,  eff: 3 },
+  end:  { suit: true,  eff: 2 },
+  joints: { wrist: 1, elbow: 2, shoulder: 3, neck: 1, lowerBack: 1,
+            knee: 0, fingers: 0, thoracic: 1, si: 0, hip: 0, groin: 0, ankle: 0, foot: 0 },
+  strength: 2,
+  mobility: 2,
+  technique: 1,
+  kcalPerRep: [0.29, 0.37],
+  desc: "Decline push-up on parallettes, combining the elevated-feet shoulder loading with the deeper ROM the raised handles allow — the chest can travel well below hand height. The extra depth on top of the decline angle makes this genuinely harder than either modification alone.",
+  cues: "Set feet on a box and grip parallettes at shoulder-width. Lower the chest below handle height, feeling the deep stretch across the shoulders and chest. Press back to full extension, keeping the hips level throughout.",
+  equipment: "Parallettes",
   position: "Prone",
   youtube: "LINK_TODO"
 }

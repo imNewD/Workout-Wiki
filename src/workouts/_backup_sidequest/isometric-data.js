@@ -72,7 +72,8 @@ const isometrics = [
 
      RINGS:
        Tuck EL → One-Leg EL → Straddle EL → Full EL
-       → One-Arm Tuck EL → One-Arm Straddle EL → One-Arm EL
+       → Reverse Grip EL → One-Arm Tuck EL → Fingertip EL
+       → One-Arm Straddle EL → One-Arm EL
   ──────────────────────────────────────────────────────────── */
 
   /* ─── FLOOR ─────────────────────────────────────────────── */
@@ -334,7 +335,6 @@ const isometrics = [
   {
     id: 127,
     name: "Tuck EL | (Parallettes)",
-    sidequestKey: "Tuck EL",
     alt: "Tuck elbow balance parallettes · bent-knee elevated balance",
     muscles: [
       {n:"Core", p:true},
@@ -363,7 +363,6 @@ const isometrics = [
   {
     id: 63,
     name: "Straddle EL | (Parallettes)",
-    sidequestKey: "Straddle EL",
     alt: "Straddle forearm balance · wide-leg elbow lever parallettes",
     muscles: [
       {n:"Core", p:true},
@@ -392,7 +391,6 @@ const isometrics = [
   {
     id: 129,
     name: "One-Leg EL | (Parallettes)",
-    sidequestKey: "One-Leg EL",
     alt: "Half-lay elbow lever parallettes · single-leg extension parallette balance",
     muscles: [
       {n:"Core", p:true},
@@ -421,7 +419,6 @@ const isometrics = [
   {
     id: 26,
     name: "Elbow Lever | (Parallettes)",
-    sidequestKey: "Elbow Lever",
     alt: "Elbow balance parallettes · forearm balance on parallettes",
     muscles: [
       {n:"Core", p:true},
@@ -450,7 +447,6 @@ const isometrics = [
   {
     id: 9003, // TODO: assign real id from registry
     name: "One-Arm Tuck EL | (Parallettes)",
-    sidequestKey: "One-Arm Tuck EL",
     alt: "Tucked single-arm elbow lever parallettes · bent-knee one-arm elevated balance",
     muscles: [
       {n:"Core", p:true},
@@ -479,7 +475,6 @@ const isometrics = [
   {
     id: 9004, // TODO: assign real id from registry
     name: "One-Arm Straddle EL | (Parallettes)",
-    sidequestKey: "One-Arm Straddle EL",
     alt: "Straddled single-arm elbow lever parallettes · wide-leg one-arm elevated balance",
     muscles: [
       {n:"Core", p:true},
@@ -508,7 +503,6 @@ const isometrics = [
   {
     id: 27,
     name: "One-Arm EL | (Parallettes)",
-    sidequestKey: "One-Arm EL",
     alt: "Single-arm elbow lever parallettes · one-arm balance elevated",
     muscles: [
       {n:"Core", p:true},
@@ -772,7 +766,6 @@ const isometrics = [
   {
     id: 9020, // TODO: assign real id from registry
     name: "Tuck L-sit | (Parallettes)",
-    sidequestKey: "Tuck L-sit",
     alt: "Tuck L-sit parallettes · bent-knee elevated compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -802,7 +795,6 @@ const isometrics = [
   {
     id: 9021, // TODO: assign real id from registry
     name: "One-Leg L-sit | (Parallettes)",
-    sidequestKey: "One-Leg L-sit | (Dip Bars)",
     alt: "One-leg L-sit parallettes · single-leg extension elevated hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -832,7 +824,6 @@ const isometrics = [
   {
     id: 9022, // TODO: assign real id from registry
     name: "Straddle L-sit | (Parallettes)",
-    sidequestKey: "Straddle L-sit",
     alt: "Straddle L-sit parallettes · wide-leg elevated compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -862,7 +853,6 @@ const isometrics = [
   {
     id: 9023, // TODO: assign real id from registry
     name: "L-sit | (Parallettes)",
-    sidequestKey: "L-sit | (Dip Bars)",
     alt: "L-sit parallettes · straight-leg elevated compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -892,7 +882,6 @@ const isometrics = [
   {
     id: 9024, // TODO: assign real id from registry
     name: "N-sit | (Parallettes)",
-    sidequestKey: "N-sit",
     alt: "N-sit parallettes · above-horizontal leg hold elevated",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -951,7 +940,6 @@ const isometrics = [
   {
     id: 9026, // TODO: assign real id from registry
     name: "Manna | (Parallettes)",
-    sidequestKey: "Manna",
     alt: "Manna parallettes · maximum compression elevated skill",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -983,7 +971,6 @@ const isometrics = [
   {
     id: 9030, // TODO: assign real id from registry
     name: "Tuck L-sit | (Dip Bars)",
-    sidequestKey: "Tuck L-sit",
     alt: "Tuck L-sit dip bars · bent-knee suspended compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1099,7 +1086,6 @@ const isometrics = [
   {
     id: 9034, // TODO: assign real id from registry
     name: "N-sit | (Dip Bars)",
-    sidequestKey: "N-sit",
     alt: "N-sit dip bars · above-horizontal leg hold suspended",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1129,7 +1115,6 @@ const isometrics = [
   {
     id: 9035, // TODO: assign real id from registry
     name: "V-sit | (Dip Bars)",
-    sidequestKey: "V-sit | (Parallettes)",
     alt: "V-sit dip bars · high-leg elevated suspended hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1161,7 +1146,6 @@ const isometrics = [
   {
     id: 9040, // TODO: assign real id from registry
     name: "Tuck L-sit | (Rings)",
-    sidequestKey: "Straddle L-sit",
     alt: "Tuck L-sit rings · bent-knee suspended ring compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1191,7 +1175,6 @@ const isometrics = [
   {
     id: 9041, // TODO: assign real id from registry
     name: "One-Leg L-sit | (Rings)",
-    sidequestKey: "One-Leg L-sit",
     alt: "One-leg L-sit rings · single-leg extension ring hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1221,7 +1204,6 @@ const isometrics = [
   {
     id: 9042, // TODO: assign real id from registry
     name: "Straddle L-sit | (Rings)",
-    sidequestKey: "Straddle L-sit",
     alt: "Straddle L-sit rings · wide-leg ring compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1251,7 +1233,6 @@ const isometrics = [
   {
     id: 9043, // TODO: assign real id from registry
     name: "L-sit | (Rings)",
-    sidequestKey: "L-sit",
     alt: "L-sit rings · straight-leg ring compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1281,7 +1262,6 @@ const isometrics = [
   {
     id: 9044, // TODO: assign real id from registry
     name: "N-sit | (Rings)",
-    sidequestKey: "One-Arm Straddle EL",
     alt: "N-sit rings · above-horizontal leg ring hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1311,7 +1291,6 @@ const isometrics = [
   {
     id: 9045, // TODO: assign real id from registry
     name: "V-sit | (Rings)",
-    sidequestKey: "V-sit",
     alt: "V-sit rings · high-leg ring compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1343,7 +1322,6 @@ const isometrics = [
   {
     id: 9050, // TODO: assign real id from registry
     name: "One-Arm Tuck L-sit | (Parallettes)",
-    sidequestKey: "One-Arm Tuck L-sit | (Dip Bars)",
     alt: "One-arm tuck L-sit parallettes · single-arm bent-knee compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1373,7 +1351,6 @@ const isometrics = [
   {
     id: 9051, // TODO: assign real id from registry
     name: "One-Arm L-sit | (Parallettes)",
-    sidequestKey: "One-Arm L-sit | (Dip Bars)",
     alt: "One-arm L-sit parallettes · single-arm straight-leg compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -1412,7 +1389,6 @@ const isometrics = [
   {
     id: 9059, // TODO: assign real id from registry
     name: "Tuck EL | (Rings)",
-    sidequestKey: "Elbow Lever",
     alt: "Tuck elbow balance rings · bent-knee ring elbow lever",
     muscles: [
       {n:"Core", p:true},
@@ -1442,7 +1418,6 @@ const isometrics = [
   {
     id: 9060, // TODO: assign real id from registry
     name: "One-Leg EL | (Rings)",
-    sidequestKey: "EL | Fingertip",
     alt: "Half-lay elbow lever rings · single-leg extension ring balance",
     muscles: [
       {n:"Core", p:true},
@@ -1472,7 +1447,6 @@ const isometrics = [
   {
     id: 9061, // TODO: assign real id from registry
     name: "Straddle EL | (Rings)",
-    sidequestKey: "One-Arm Tuck L-sit | (Dip Bars)",
     alt: "Straddle elbow balance rings · wide-leg ring balance",
     muscles: [
       {n:"Core", p:true},
@@ -1502,7 +1476,6 @@ const isometrics = [
   {
     id: 9062, // TODO: assign real id from registry
     name: "Elbow Lever | (Rings)",
-    sidequestKey: "One-Arm EL",
     alt: "Elbow balance rings · straight-body ring elbow lever",
     muscles: [
       {n:"Core", p:true},
@@ -1532,7 +1505,6 @@ const isometrics = [
   {
     id: 9063, // TODO: assign real id from registry
     name: "One-Arm Tuck EL | (Rings)",
-    sidequestKey: "One-Arm L-sit | (Dip Bars)",
     alt: "Tucked single-arm elbow lever rings · bent-knee one-arm ring balance",
     muscles: [
       {n:"Core", p:true},
@@ -1562,7 +1534,6 @@ const isometrics = [
   {
     id: 9064, // TODO: assign real id from registry
     name: "One-Arm Straddle EL | (Rings)",
-    sidequestKey: "Manna",
     alt: "Straddled single-arm elbow lever rings · wide-leg one-arm ring balance",
     muscles: [
       {n:"Core", p:true},
@@ -1592,7 +1563,6 @@ const isometrics = [
   {
     id: 9065, // TODO: assign real id from registry
     name: "One-Arm EL | (Rings)",
-    sidequestKey: "Manna",
     alt: "Single-arm elbow lever rings · one-arm straight-body ring balance",
     muscles: [
       {n:"Core", p:true},
@@ -1688,7 +1658,6 @@ const isometrics = [
   {
     id: 9068, // TODO: assign real id from registry
     name: "Mixed Grip Dead Hang (Bar)",
-    sidequestKey: "Passive Dead Hang (Bar)",
     alt: "Mixed grip hang · one palm in, one palm out bar hang",
     muscles: [
       {n:"Forearms", p:true},
@@ -1770,7 +1739,6 @@ const isometrics = [
   {
     id: 9071, // TODO: assign real id from registry
     name: "Dead Hang | (Rings)",
-    sidequestKey: "Active Dead Hang (Bar)",
     alt: "Ring hang · freely-rotating ring dead hang",
     muscles: [
       {n:"Forearms", p:true},
@@ -1798,7 +1766,6 @@ const isometrics = [
   {
     id: 9072, // TODO: assign real id from registry
     name: "One-Arm Dead Hang (Bar)",
-    sidequestKey: "Flexed-Arm Hang (Bar)",
     alt: "Single-arm hang · one-arm bar hang",
     muscles: [
       {n:"Forearms", p:true},
@@ -2011,7 +1978,6 @@ const isometrics = [
   {
     id: 9079, // TODO: assign real id from registry
     name: "Support Hold (Rings)",
-    sidequestKey: "Towel Dead Hang (Bar)",
     alt: "Ring support · straight-arm ring support hold",
     muscles: [
       {n:"Triceps", p:true},
@@ -2083,7 +2049,6 @@ const isometrics = [
   {
     id: 9081, // TODO: assign real id from registry
     name: "EL | Reverse Grip (Parallettes)",
-    sidequestKey: "EL | Reverse Grip",
     alt: "Reverse grip elbow lever parallettes · backward-hand elevated balance",
     muscles: [
       {n:"Core", p:true},
@@ -2112,7 +2077,6 @@ const isometrics = [
   {
     id: 9082, // TODO: assign real id from registry
     name: "EL | Fingertip (Parallettes)",
-    sidequestKey: "EL | Fingertip",
     alt: "Fingertip elbow lever parallettes · open-hand elevated balance",
     muscles: [
       {n:"Core", p:true},
@@ -2146,7 +2110,6 @@ const isometrics = [
   {
     id: 9085, // TODO: assign real id from registry
     name: "Weighted Dead Hang (Bar)",
-    sidequestKey: "Towel Dead Hang (Bar)",
     alt: "Loaded dead hang · dead hang with added external load",
     muscles: [
       {n:"Forearms", p:true},
@@ -2202,7 +2165,6 @@ const isometrics = [
   {
     id: 9087, // TODO: assign real id from registry
     name: "Rope Dead Hang (Rope)",
-    sidequestKey: "Towel Dead Hang (Bar)",
     alt: "Climbing rope hang · thick-rope grip hang",
     muscles: [
       {n:"Forearms", p:true},
@@ -2234,7 +2196,6 @@ const isometrics = [
   {
     id: 9088, // TODO: assign real id from registry
     name: "Human Flag | Reverse Grip",
-    sidequestKey: "Human Flag",
     alt: "Reverse grip flag · underhand top-arm human flag",
     muscles: [
       {n:"Obliques", p:true},
@@ -2297,7 +2258,6 @@ const isometrics = [
   {
     id: 9090, // TODO: assign real id from registry
     name: "One-Arm Support Hold (Rings)",
-    sidequestKey: "One-Arm L-sit | (Dip Bars)",
     alt: "Single-arm ring support · one-arm locked-out ring hold",
     muscles: [
       {n:"Triceps", p:true},
@@ -2326,7 +2286,6 @@ const isometrics = [
   {
     id: 9091, // TODO: assign real id from registry
     name: "Support Scale (Rings)",
-    sidequestKey: "L-sit",
     alt: "Ring scale · single-leg raised support hold",
     muscles: [
       {n:"Triceps", p:true},
@@ -2418,7 +2377,6 @@ const isometrics = [
   {
     id: 9094, // TODO: assign real id from registry
     name: "One-Arm Tuck L-sit | (Rings)",
-    sidequestKey: "V-sit",
     alt: "One-arm tuck L-sit rings · single-arm bent-knee ring compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -2448,7 +2406,6 @@ const isometrics = [
   {
     id: 9095, // TODO: assign real id from registry
     name: "One-Arm L-sit | (Rings)",
-    sidequestKey: "Manna",
     alt: "One-arm L-sit rings · single-arm straight-leg ring compression hold",
     muscles: [
       {n:"Hip Flexors", p:true},
@@ -2478,7 +2435,6 @@ const isometrics = [
   {
     id: 9096, // TODO: assign real id from registry
     name: "Manna | (Rings)",
-    sidequestKey: "Manna",
     alt: "Ring manna · maximum compression hold on freely-hanging rings",
     muscles: [
       {n:"Hip Flexors", p:true},

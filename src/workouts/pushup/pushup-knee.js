@@ -352,7 +352,7 @@ pushups.push(
 {
   id: 49,
   name: "Knee Push-Up | Typewriter",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | Fingertip",
   alt: null,
   pathTag: "one-arm",
   muscles: [
@@ -668,7 +668,7 @@ pushups.push(
 {
   id: 60,
   name: "Knee Push-Up | (Rings)",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | Fingertip",
   alt: null,
   muscles: [
     { n: "Chest",     p: true },
@@ -726,7 +726,7 @@ pushups.push(
 {
   id: 46,
   name: "Knee Push-Up | One Arm, Knuckle",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm",
   alt: null,
   pathTag: "knuckle",
   pathNode: true,
@@ -757,7 +757,7 @@ pushups.push(
 {
   id: 47,
   name: "Knee Push-Up | One Arm, Fist",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm",
   alt: null,
   pathTag: "knuckle",
   muscles: [
@@ -818,7 +818,7 @@ pushups.push(
 {
   id: 37,
   name: "Knee Push-Up | 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm",
   alt: null,
   pathTag: "fingertip",
   muscles: [
@@ -848,7 +848,7 @@ pushups.push(
 {
   id: 39,
   name: "Knee Push-Up | One Arm, Fingertip",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm",
   alt: null,
   pathTag: "one-arm-fingertip",
   pathNode: true,
@@ -911,7 +911,7 @@ pushups.push(
 {
   id: 41,
   name: "Knee Push-Up | One Arm, 3-Finger",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm, 4-Finger",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -942,7 +942,7 @@ pushups.push(
 {
   id: 38,
   name: "Knee Push-Up | 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm, 4-Finger",
   alt: null,
   pathTag: "fingertip",
   pathNode: true,
@@ -973,7 +973,7 @@ pushups.push(
 {
   id: 42,
   name: "Knee Push-Up | One Arm, 2-Finger",
-  sidequestKey: null,
+  sidequestKey: "Knee Push-Up | One Arm, 4-Finger",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
@@ -1004,7 +1004,7 @@ pushups.push(
 {
   id: 43,
   name: "Knee Push-Up | One Arm, 1-Finger",
-  sidequestKey: null,
+  sidequestKey: "One Arm Push-Up",
   alt: null,
   pathTag: "one-arm-fingertip",
   muscles: [
